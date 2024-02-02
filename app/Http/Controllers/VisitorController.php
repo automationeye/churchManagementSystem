@@ -5,9 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Dcblogdev\Countries\Facades\Countries;
 use \App\User;
+use \App\Member;
 use \App\Event;
 use \App\Branch;
+use \App\Channel;
 use \App\Setting;
+use Illuminate\Support\Facades\Auth;
 
 class VisitorController extends Controller
 {
@@ -21,6 +24,94 @@ class VisitorController extends Controller
 
         return view('landing',compact('events'));
     }
+
+    public function memberreg(){
+        return view('members.selfreg');
+    }
+    public function channels(){
+        $channels=Channel::orderBy('channel_name', 'ASC')->paginate(10);
+        return view('members.channels', compact('channels'));
+    }
+
+    public function updateteam(Request $request){
+
+        $tel=Auth::user()->phone;
+        $team=$request->team;
+
+        $update=Member::where('phone',$tel)->update(['team'=>$team]);
+
+        if($update){
+            return redirect()->back()->with('success', 'Team successfuly updated!');
+        }else{
+            return redirect()->back()->with('error', 'An error occured!');
+        }
+    }
+
+    public function memberlog(){
+        return view('members.selflog');
+    }
+    public function contributions(){
+        return view('members.contributions');
+    }
+
+    public function member(){
+        return view('members.member');
+    }
+    public function memberregpost(Request $request)
+    {
+    // Validate the incoming data
+    $validatedData = $request->validate([
+        'firstname' => 'required|string|max:255',
+        'email' => 'email|unique:members,email',
+        'phone' => 'nullable|string|max:20',
+        'password' => 'required|string|min:6',
+    ]);
+
+    // Check if the phone number exists
+    if ($validatedData['phone']) {
+        $existingMember = Member::where('phone', $validatedData['phone'])->first();
+        if ($existingMember) {
+            return redirect()->back()->with('error', 'Phone number already exists.');
+        }
+    }
+
+    // Create a new member instance
+    $member = new Member();
+    $member->firstname = $validatedData['firstname'];
+    $member->email = $validatedData['email'];
+    $member->phone = $validatedData['phone'];
+    $member->password = bcrypt($validatedData['password']); // You should hash the password for security
+    $member->save();
+    Auth::login($member);
+
+    return redirect()->route('memberdash')->with('success', 'Registration successful!');
+
+}
+
+public function memberlogpost(Request $request)
+    {
+        // Validate the request data
+        $request->validate([
+            'phone' => 'required|string',
+            'password' => 'required|string',
+        ]);
+
+        // Retrieve the user by phone number
+        $user = Member::where('phone', $request->phone)->first();
+
+        // Check if the user exists and the password is correct
+        if ($user && password_verify($request->password, $user->password)) {
+            // Authenticate the user
+            Auth::login($user);
+
+            // Authentication successful, redirect to dashboard or any other route
+            return redirect()->route('memberdash')->with('success', 'Authentication successful!');
+        }
+
+        // Authentication failed, redirect back with error message
+        return redirect()->back()->with('error', 'Invalid phone number or password.');
+    }
+    
 
     public function events(){
         $events=Event::where('id','!=',-1)

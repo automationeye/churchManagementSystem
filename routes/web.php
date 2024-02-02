@@ -12,6 +12,19 @@
 */
 
 Route::get('/', 'VisitorController@landing')->name('landing');
+Route::get('/member/registration', 'VisitorController@memberreg')->name('member.registration');
+
+Route::post('/member/registration/post', 'VisitorController@memberregpost')->name('member.post');
+Route::post('/member/login/post', 'VisitorController@memberlogpost')->name('member.logpost');
+Route::get('/member/login', 'VisitorController@memberlog')->name('member.log');
+
+Route::middleware('auth.member')->group(function () {
+    Route::get('/memberdash', 'VisitorController@member')->name('memberdash');
+    Route::get('/channels', 'VisitorController@channels')->name('channels');
+    Route::get('/contributions', 'VisitorController@contributions')->name('contributions');
+    Route::post('/update/team', 'VisitorController@updateteam')->name('updateteam');
+});
+
 
 Route::get('/about', function () {
     return view('about');
@@ -48,8 +61,10 @@ Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
 
-Route::group(['middleware' => ['auth']], function () {
+Route::group(['middleware' => ['auth.admin']], function () {
+    
 
+    
     Route::get('/dashboard', 'HomeController@index')->name('dashboard');
     Route::get('/member/register', 'MemberController@create')->name('member.register.form');
     Route::post('/member/register', 'MemberController@store')->name('member.register');

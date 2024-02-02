@@ -2,76 +2,45 @@
 
 namespace App;
 
+use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Auth\Authenticatable as AuthenticatableTrait;
 
-class Member extends Model
+class Member extends Model implements Authenticatable
 {
+    use AuthenticatableTrait;
+
     protected $guarded = ['id'];
 
-    public function getFullname()
+    // Your existing methods...
+
+    public function getAuthIdentifierName()
     {
-        return "$this->firstname $this->lastname";
+        return 'id';
     }
 
-    public function InGroup($group_id)
+    public function getAuthIdentifier()
     {
-
-        $count = \App\GroupMember::where('member_id', $this->id)->where('group_id', $group_id)->get()->count();
-
-        return $count > 0;
+        return $this->getKey();
     }
 
-    public static function getNameById($id)
+    public function getAuthPassword()
     {
-        return \DB::table('members')->select('firstname', 'lastname')
-            ->where('id', $id)->orderby('firstname')->orderBy('lastname')->first();
+        return $this->password;
     }
 
-    public static function getNameByEmail($email)
+    public function getRememberToken()
     {
-        if ($std = Member::select('firstname', 'lastname')
-            ->where('email', $email)->orderby('firstname')->orderBy('lastname')->first()
-        ) {
-            $name = $std->firstname . ' ' . $std->lastname;
-            return $name;
-        }
-        return null;
+        return $this->remember_token;
     }
 
-    public static function getPhotoByEmail($email)
+    public function setRememberToken($value)
     {
-        return $std = Member::select('photo')->where('email', $email)->first()->photo;
+        $this->remember_token = $value;
     }
 
-    public function upgrade()
+    public function getRememberTokenName()
     {
-        $this->member_status = 'old';
-        $this->save();
-        return $this->getFullname();
-    }
-
-    public function profile()
-    {
-        return route('member.profile', ['id' => $this->id]); //../member/profile/${id}
-    }
-
-    public function groupMember()
-    {
-        return $this->belongsTo(GroupMember::class);
-    }
-
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
-
-    public function member_savings()
-    {
-        return $this->hasMany(MemberSavings::class);
-    }
-
-    public function attendances()
-    {
-        return $this->hasMany(MemberAttendance::class);
+        return 'remember_token';
     }
 }

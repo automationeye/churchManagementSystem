@@ -1,60 +1,59 @@
 @extends('layouts.dashboard')
-@section('title', 'Dashboard')
 
 @section('content')
 <div class="row">
     <div class="col-lg-3 col-6">
         <!-- small card -->
-        <div class="small-box bg-info">
+        <div class="small-box bg-danger">
             <div class="inner">
 
                 @if(auth()->user()->team==null)
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                        Select team
-                    </button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Select team
+                </button>
 
                 @else
                 <h3>
                     {{ auth()->user()->team }}
 
-                    </h3>
+                </h3>
                 @endif
                 <p>My Team</p>
             </div>
             <div class="icon">
-                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-user-plus"></i>
             </div>
         </div>
     </div>
     <!-- ./col -->
     <div class="col-lg-3 col-6">
         <!-- small card -->
-        <div class="small-box bg-success">
+        <div class="small-box bg-danger" style="filter: opacity(0);">
             <div class="inner">
                 <h3>KES 100,000</h3>
 
                 <p>Tithe contribution (total)</p>
             </div>
             <div class="icon">
-                <i class="ion ion-stats-bars"></i>
+                <i class="fas fa-money-bill"></i>
             </div>
         </div>
     </div>
     <!-- ./col -->
     <div class="col-lg-3 col-6">
         <!-- small card -->
-        <div class="small-box bg-warning">
+        <div class="small-box bg-danger">
             <div class="inner">
                 <h3>
                     KES
-                   180,000
+                    180,000
 
                 </h3>
 
                 <p>Collection contribution (total)</p>
             </div>
             <div class="icon">
-                <i class="fas fa-user-plus"></i>
+                <i class="fas fa-wallet"></i>
             </div>
         </div>
     </div>
@@ -145,8 +144,7 @@
 </div>
 
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -173,7 +171,7 @@
                         </div>
 
                     </div>
-                  
+
 
 
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -192,7 +190,7 @@
 
 
 <script>
-    $(function () {
+    $(function() {
 
     });
 
@@ -211,7 +209,6 @@
             }
         })
     }
-
 </script>
 
 

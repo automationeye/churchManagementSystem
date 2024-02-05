@@ -2,148 +2,25 @@
 
 @section('content')
 
+<div class="button-section margin-top-35">
+    <a class="btn btn-default" href=" " title=" ">Select Team</a>
+    @if(auth()->user()->team==null)
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Select team
+    </button>
 
-<div class="row">
-    <div class="col-lg-3 col-6">
-        <!-- small card -->
-        <div class="small-box bg-danger">
-            <div class="inner">
+    @else
+    <h3>
+        {{ auth()->user()->team }}
 
-                @if(auth()->user()->team==null)
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                    Select team
-                </button>
+    </h3>
+    @endif
+    <p>My Team</p>
 
-                @else
-                <h3>
-                    {{ auth()->user()->team }}
-
-                </h3>
-                @endif
-                <p>My Team</p>
-            </div>
-            <div class="icon">
-                <i class="fas fa-user-plus"></i>
-            </div>
-        </div>
-    </div>
-    <!-- ./col -->
-    <div class="col-lg-3 col-6">
-        <!-- small card -->
-        <div class="small-box bg-danger" style="filter: opacity(0);">
-            <div class="inner">
-                <h3>KES 100,000</h3>
-
-                <p>Tithe contribution (total)</p>
-            </div>
-            <div class="icon">
-                <i class="fas fa-money-bill"></i>
-            </div>
-        </div>
-    </div>
-    <!-- ./col -->
-    <div class="col-lg-3 col-6">
-        <!-- small card -->
-        <div class="small-box bg-danger">
-            <div class="inner">
-                <h3>
-                    KES
-                    180,000
-
-                </h3>
-
-                <p>Collection contribution (total)</p>
-            </div>
-            <div class="icon">
-                <i class="fas fa-wallet"></i>
-            </div>
-        </div>
-    </div>
-    <!-- ./col -->
-    <div class="col-lg-3 col-6">
-        <!-- small card -->
-        <div class="small-box bg-danger">
-            <div class="inner">
-                <h3>0</h3>
-
-                <p>Any other contribution</p>
-            </div>
-            <div class="icon">
-                <i class="fas fa-chart-pie"></i>
-            </div>
-        </div>
-    </div>
-    <!-- ./col -->
 </div>
 
-<div class="row">
-    <div class="col-lg-12">
-        <div class="card card-primary card-outline">
-            <div class="card-header">
-                <h5 class="card-title m-0">Search Transaction</h5>
-            </div>
-            <div class="card-body">
-                <form class="row" method="GET">
-                    <div class="col-md-2 mb-2">
-                        <input type="text" class="form-control" name="TransID" placeholder="Transaction ID">
-                    </div>
-                    <div class="col-md-2 mb-2">
-                        <input type="text" class="form-control" name="BillRefNumber" placeholder="Account number">
-                    </div>
-                    <div class="col-md-2 mb-2">
-                        <input type="text" class="form-control" name="MSISDN" placeholder="Phone number">
-                    </div>
 
-
-                    <div class="col-md-2 mb-2">
-                        <button type="submit" class="btn btn-primary btn-block">
-                            <i class="fas fa-search"></i> Search
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div><!-- /.card -->
-
-        <div class="card card-primary card-outline">
-            <div class="card-header">
-                <h5 class="card-title m-0">Transactions</h5>
-                <div class="card-tools">
-
-                </div>
-            </div>
-
-            <div class="card-body">
-                <div class="table-responsive">
-                    <table class="table table-bordered table-striped table-sm">
-                        <thead>
-                            <tr>
-
-                                <th>TransactionType</th>
-                                <th>TransID</th>
-                                <th>TransAmount</th>
-                                <th>Member</th>
-                                <th>Channel</th>
-                                <th>Phone</th>
-                                <th>FirstName</th>
-                                <th>created at</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-
-                            <tr>
-                                <td colspan="8">No transactions found</td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center">
-
-            </div>
-        </div>
-    </div>
-</div>
+<br><br><br><br>
 
 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

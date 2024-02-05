@@ -352,7 +352,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                             <!--List Item End-->
                                             <!--List Item-->
                                             <li class="list-item">
-                                                <div class="header-navbar-text-1"><a href="/members" class="h-donate-btn">LOGOUT</a></div>
+                                                <div class="header-navbar-text-1"><a href="/member/login" class="h-donate-btn">LOGOUT</a></div>
                                             </li>
                                             <!--List Item End-->
                                         </ul> <!-- Menu -->
@@ -366,7 +366,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </div>
             </header> <!-- header -->
             <!-- Revolution Slider Section -->
-
+            <br><br><br><br>
             @yield('content')
         </div> <!-- .page-wrapper-inner -->
     </div>

@@ -20,61 +20,85 @@
 
         <div class="row">
             <div class="col-lg-12">
+
+
+
+
+            <br><br>
+                <div class="card card-primary card-outline alert alert-success">
+                    <marquee> 📣 We are pleased to announce the marriage of brother benard which will happen on 14th feb 2024 at new breed chapel starting from 10am.</marquee>
+                </div>
                 <div class="card card-primary card-outline">
                     <div class="card-header">
-                        <h5 class="card-title m-0">Search Transaction</h5>
-                    </div>
-                    <div class="card-body">
-                        <form class="row" method="GET">
-                            <div class="col-md-2 mb-2">
-                                <input type="text" class="form-control" name="TransID" placeholder="Transaction ID">
-                            </div>
-                            <div class="col-md-2 mb-2">
-                                <input type="text" class="form-control" name="BillRefNumber"
-                                    placeholder="Account number">
-                            </div>
-                            <div class="col-md-2 mb-2">
-                                <input type="text" class="form-control" name="MSISDN" placeholder="Phone number">
-                            </div>
-
-
-                            <div class="col-md-2 mb-2">
-                                <button type="submit" class="btn btn-primary btn-block">
-                                    <i class="fas fa-search"></i> Search
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div><!-- /.card -->
-
-                <div class="card card-primary card-outline">
-                    <div class="card-header">
-                        <h5 class="card-title m-0">Transactions</h5>
-                        <div class="card-tools">
-
-                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-add"></i> Request Leave
+                        </button>
                     </div>
 
                     <div class="card-body">
                         <div class="table-responsive">
+                            <h5 class="card-title m-0">My Leaves</h5>
                             <table class="table table-bordered table-striped table-sm">
                                 <thead>
                                     <tr>
 
-                                        <th>TransactionType</th>
-                                        <th>TransID</th>
-                                        <th>TransAmount</th>
-                                        <th>Member</th>
-                                        <th>Channel</th>
-                                        <th>Phone</th>
-                                        <th>FirstName</th>
-                                        <th>created at</th>
+                                        <th>From</th>
+                                        <th>To</th>
+                                        <th>Reason</th>
+                                        <th>Status</th>
+
                                     </tr>
                                 </thead>
                                 <tbody>
 
                                     <tr>
-                                        <td colspan="8">No transactions found</td>
+                                        <td colspan="8">No Leave found found</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+
+
+                <div class="card card-primary card-outline">
+                    <div class="card-header">
+
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-add"></i> Upcoming birthdays
+                        </button>
+
+
+
+                    </div>
+
+                    <div class="card-body">
+                        <div class="table-responsive">
+
+                            <table class="table table-bordered table-striped table-sm">
+                                <thead>
+                                    <tr>
+
+                                        <th>Member</th>
+                                        <th>Date of Celebration</th>
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td colspan="8">No Upcoming birthday</td>
                                     </tr>
 
                                 </tbody>
@@ -129,6 +153,8 @@
         </div>
     </div>
 </div>
+
+
 </div>
 
 

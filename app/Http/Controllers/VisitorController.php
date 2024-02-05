@@ -47,6 +47,16 @@ class VisitorController extends Controller
         }
     }
 
+
+
+    public function leaderdash(){
+        return view ('admin.admin.dashboard');
+    }
+
+    public function addmember(){
+        return view ('admin.admin.addmember');
+    }
+
     public function memberlog(){
         return view('members.selflog');
     }

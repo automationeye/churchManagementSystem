@@ -49,7 +49,15 @@ Route::get('/services', function () {
     return view('services');
 });
 
+Route::get('/leaderdash', 'VisitorController@leaderdash')->name('leaderdash');
 
+Route::get('/add/member','VisitorController@addmember')->name('leaderdash');
+
+// Route::group(['middleware' => ['auth.leader']], function () {
+
+//     Route::get('/leaderdash', 'VisitorController@leaderdash')->name('leaderdash');
+
+// });
 
 
 Route::get('/setup/user', 'VisitorController@setupUser')->name('setupUser');

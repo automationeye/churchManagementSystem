@@ -15,80 +15,142 @@ use Illuminate\Support\Facades\Auth;
 class VisitorController extends Controller
 {
 
-    public function landing(){
+    public function landing()
+    {
 
 
-        $events=Event::where('id','!=',-1)
-        ->orderBy('ID','DESC')
-        ->get();
+        $events = Event::where('id', '!=', -1)
+            ->orderBy('ID', 'DESC')
+            ->get();
 
-        return view('landing',compact('events'));
+        return view('landing', compact('events'));
     }
 
-    public function memberreg(){
+    public function memberreg()
+    {
         return view('members.selfreg');
     }
-    public function channels(){
-        $channels=Channel::orderBy('channel_name', 'ASC')->paginate(10);
+    public function channels()
+    {
+        $channels = Channel::orderBy('channel_name', 'ASC')->paginate(10);
         return view('members.channels', compact('channels'));
     }
 
-    public function updateteam(Request $request){
+    public function updateteam(Request $request)
+    {
 
-        $tel=Auth::user()->phone;
-        $team=$request->team;
+        $tel = Auth::user()->phone;
+        $team = $request->team;
 
-        $update=Member::where('phone',$tel)->update(['team'=>$team]);
+        $update = Member::where('phone', $tel)->update(['team' => $team]);
 
-        if($update){
+        if ($update) {
             return redirect()->back()->with('success', 'Team successfuly updated!');
-        }else{
+        } else {
             return redirect()->back()->with('error', 'An error occured!');
         }
     }
 
-    public function memberlog(){
+
+
+    public function membersmanage()
+    {
+        return view('admin.admin.membersmanage');
+    }
+
+    public function memberleave()
+    {
+        return view('admin.admin.memberleave');
+    }
+
+    public function leaderdash()
+    {
+        return view('admin.admin.dashboard');
+    }
+
+    public function addmember()
+    {
+        return view('admin.admin.addmember');
+    }
+
+    public function editmember()
+    {
+        return view('admin.admin.editmember');
+    }
+
+
+    public function addadmin()
+    {
+        return view('admin.admin.addadmin');
+    }
+
+    public function acceptleave()
+    {
+        return view('admin.admin.acceptleave');
+    }
+
+    public function managemember()
+    {
+        return view('admin.admin.managemember');
+    }
+
+    public function meeting()
+    {
+        return view('admin.admin.meeting');
+    }
+
+
+    public function memberlog()
+    {
         return view('members.selflog');
     }
-    public function contributions(){
+
+    public function adminlog()
+    {
+        return view('admin.admin.login');
+    }
+
+
+    public function contributions()
+    {
         return view('members.contributions');
     }
 
-    public function member(){
+    public function member()
+    {
         return view('members.member');
     }
     public function memberregpost(Request $request)
     {
-    // Validate the incoming data
-    $validatedData = $request->validate([
-        'firstname' => 'required|string|max:255',
-        'email' => 'email|unique:members,email',
-        'phone' => 'nullable|string|max:20',
-        'password' => 'required|string|min:6',
-    ]);
+        // Validate the incoming data
+        $validatedData = $request->validate([
+            'firstname' => 'required|string|max:255',
+            'email' => 'email|unique:members,email',
+            'phone' => 'nullable|string|max:20',
+            'password' => 'required|string|min:6',
+        ]);
 
-    // Check if the phone number exists
-    if ($validatedData['phone']) {
-        $existingMember = Member::where('phone', $validatedData['phone'])->first();
-        if ($existingMember) {
-            return redirect()->back()->with('error', 'Phone number already exists.');
+        // Check if the phone number exists
+        if ($validatedData['phone']) {
+            $existingMember = Member::where('phone', $validatedData['phone'])->first();
+            if ($existingMember) {
+                return redirect()->back()->with('error', 'Phone number already exists.');
+            }
         }
+
+        // Create a new member instance
+        $member = new Member();
+        $member->firstname = $validatedData['firstname'];
+        $member->email = $validatedData['email'];
+        $member->phone = $validatedData['phone'];
+        $member->password = bcrypt($validatedData['password']); // You should hash the password for security
+        $member->save();
+        Auth::login($member);
+
+        return redirect()->route('memberdash')->with('success', 'Registration successful!');
     }
 
-    // Create a new member instance
-    $member = new Member();
-    $member->firstname = $validatedData['firstname'];
-    $member->email = $validatedData['email'];
-    $member->phone = $validatedData['phone'];
-    $member->password = bcrypt($validatedData['password']); // You should hash the password for security
-    $member->save();
-    Auth::login($member);
-
-    return redirect()->route('memberdash')->with('success', 'Registration successful!');
-
-}
-
-public function memberlogpost(Request $request)
+    public function memberlogpost(Request $request)
     {
         // Validate the request data
         $request->validate([
@@ -111,14 +173,17 @@ public function memberlogpost(Request $request)
         // Authentication failed, redirect back with error message
         return redirect()->back()->with('error', 'Invalid phone number or password.');
     }
-    
 
-    public function events(){
-        $events=Event::where('id','!=',-1)
-        ->orderBy('ID','DESC')
-        ->get();
 
-        return view('events',compact('events'));
+
+
+    public function events()
+    {
+        $events = Event::where('id', '!=', -1)
+            ->orderBy('ID', 'DESC')
+            ->get();
+
+        return view('events', compact('events'));
     }
     //
     public function ip_info($ip = NULL, $purpose = "location", $deep_detect = TRUE)

@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title> NBC Members Tab</title>
+    <title> NBC ADMIN Members </title>
 
-    <link href="../resorce/css/style.css" rel="stylesheet">
+    <link href="admin/resorce/css/style.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <style>
         .hidden {
@@ -73,7 +73,7 @@
                     </div>
                 </div>
                 <div class="text-center">
-                    <h2 class="pt-3"> NBC Members Tab </h2>
+                    <h2 class="pt-3"> <b> NBC Members Tab </b></h2>
                 </div>
 
             </div>
@@ -90,7 +90,7 @@
                 <ul class="metismenu" id="menu">
                     <br> <br>
                     <li>
-                        <a href="./dashboard.php">
+                        <a href="leaderdash">
                             <i class="icon-home menu-icon"></i><span class="nav-text">Dashboard</span>
                         </a>
                     </li>
@@ -101,8 +101,20 @@
                             <i class="fa fa-address-card-o menu-icon"></i><span class="nav-text">Members</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="./add-member.php"> <i class="icon-plus menu-icon"></i><span class="nav-text">Add Member</span></a></li>
-                            <li><a href="./manage-member.php"> <i class="fa fa-tasks menu-icon"></i><span class="nav-text">Manage Member</span></a></li>
+                            <li><a href="/member/registration"> <i class="icon-plus menu-icon"></i><span class="nav-text">Add Member</span></a></li>
+                            <li><a href="/membersmanage"> <i class="fa fa-tasks menu-icon"></i><span class="nav-text">Manage Member</span></a></li>
+                            <!-- <li><a href="./"> <i class="fa fa-bar-chart menu-icon"></i><span class="nav-text">Salary Table</span></a></li> -->
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="fa fa-address-card-o menu-icon"></i><span class="nav-text">Meetings</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="/meeting"> <i class="icon-plus menu-icon"></i><span class="nav-text">Set Up New Meeting</span></a></li>
+                            <li><a href="/meeting"> <i class="fa fa-tasks menu-icon"></i><span class="nav-text">Discover Other Meetings</span></a></li>
                             <!-- <li><a href="./"> <i class="fa fa-bar-chart menu-icon"></i><span class="nav-text">Salary Table</span></a></li> -->
 
                         </ul>
@@ -113,13 +125,14 @@
                             <i class="fa fa-address-card-o menu-icon"></i><span class="nav-text">Admin</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="./add-admin.php"> <i class="icon-plus menu-icon"></i><span class="nav-text">Add Admin</span></a></li>
+                            <li><a href="./add-admin.php"> <i class="icon-plus menu-icon"></i><span class="nav-text">Add
+                                        Admin</span></a></li>
                             <li><a href="./manage-admin.php"> <i class="fa fa-tasks menu-icon"></i><span class="nav-text">Manage Admins</span></a></li>
                         </ul>
                     </li>
 
                     <li>
-                        <a href="./manage-leave.php">
+                        <a href="./memberleave">
                             <i class="fa fa-tasks menu-icon"></i><span class="nav-text">Manage Leave For Members</span>
                         </a>
                     </li>
@@ -161,7 +174,8 @@
                         </div>
                         <div class="modal-footer ">
                             <div class="mx-auto">
-                                <a type="button" id="linkBtn" href="#" class="btn btn-primary">Add Expense For the Day</a>
+                                <a type="button" id="linkBtn" href="#" class="btn btn-primary">Add Expense For the
+                                    Day</a>
                                 <a type="button" id="closeBtn" href="#" data-dismiss="modal" class="btn btn-primary">Close</a>
                             </div>
                         </div>
@@ -172,3 +186,44 @@
             <!-- row -->
 
             <div class="container-fluid">
+
+                @yield('content')
+
+
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+
+        <div class="footer hide">
+            <div class="copyright">
+                <p>Copyright &copy; Designed & Developed by <a href="#">Automation Eye Limited</a> 2024</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="admin/resorce/plugins/common/common.min.js"></script>
+    <script src="admin/resorce/js/custom.min.js"></script>
+    <script src="admin/resorce/js/settings.js"></script>
+    <script src="admin/resorce/js/gleek.js"></script>
+    <script src="admin/resorce/js/styleSwitcher.js"></script>
+
+</body>
+
+</html>

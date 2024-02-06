@@ -366,7 +366,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </div>
             </header> <!-- header -->
             <!-- Revolution Slider Section -->
-            <br><br><br><br>
+           
             @yield('content')
         </div> <!-- .page-wrapper-inner -->
     </div>

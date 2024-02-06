@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link href="../resorce/css/style.css" rel="stylesheet">
 
-  <title>Admin </title>
+  <title>Admin Login </title>
   <style>
     body,
     html {
@@ -32,54 +32,6 @@
 
 <body>
 
-  <!-- php script start -->
-  <?php
-
-  $email_err = $pass_err = $login_Err = "";
-  $email = $pass = "";
-
-  if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-    if (empty($_REQUEST["email"])) {
-      $email_err = " <p style='color:red'> * Email Can Not Be Empty</p> ";
-    } else {
-      $email = $_REQUEST["email"];
-    }
-
-    if (empty($_REQUEST["password"])) {
-      $pass_err =  " <p style='color:red'> * Password Can Not Be Empty</p> ";
-    } else {
-      $pass = $_REQUEST["password"];
-    }
-
-    if (!empty($email) && !empty($pass)) {
-
-      // database connection
-      require_once "../connection.php";
-
-      $sql_query = "SELECT * FROM admin WHERE email='$email' && password = '$pass'  ";
-      $result = mysqli_query($conn, $sql_query);
-
-      if (mysqli_num_rows($result) > 0) {
-        while ($rows = mysqli_fetch_assoc($result)) {
-          session_start();
-          session_unset();
-          $_SESSION["email"] = $rows["email"];
-          header("Location: dashboard.php?login-sucess");
-        }
-      } else {
-        $login_Err = "<div class='alert alert-warning alert-dismissible fade show'>
-            <strong>Invalid Email/Password</strong>
-            <button type='button' class='close' data-dismiss='alert' >
-              <span aria-hidden='true'>&times;</span>
-            </button>
-          </div>";
-      }
-    }
-  }
-
-  ?>
-  <!-- php script end -->
 
 
   <div class="bg">
@@ -94,7 +46,7 @@
                   <h4 class="text-center">Admin </h4>
                   <div class="text-center my-5"> <?php echo $login_Err; ?> </div>
 
-                  <form method="POST" action=" <?php htmlspecialchars($_SERVER['PHP_SELF']) ?>">
+                  <form method="POST" action=" {{ url('admin/login/post') }}">
 
                     <div class="form-group">
                       <label>Email :</label>

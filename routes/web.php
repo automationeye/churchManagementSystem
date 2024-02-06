@@ -18,6 +18,13 @@ Route::post('/member/registration/post', 'VisitorController@memberregpost')->nam
 Route::post('/member/login/post', 'VisitorController@memberlogpost')->name('member.logpost');
 Route::get('/member/login', 'VisitorController@memberlog')->name('member.log');
 
+
+
+
+Route::post('/admin/login/post', 'VisitorController@adminlogpost')->name('admin.logpost');
+Route::get('/admin/admin/login', 'VisitorController@adminlog')->name('admin.log');
+
+
 Route::middleware('auth.member')->group(function () {
     Route::get('/memberdash', 'VisitorController@member')->name('memberdash');
     Route::get('/channels', 'VisitorController@channels')->name('channels');
@@ -26,10 +33,15 @@ Route::middleware('auth.member')->group(function () {
 });
 
 
+
+
+
 Route::get('/about', function () {
     return view('about');
 });
 Route::get('/events', 'VisitorController@events')->name('events');
+
+
 Route::get('/gallery', function () {
     return view('gallery');
 });
@@ -49,7 +61,29 @@ Route::get('/services', function () {
     return view('services');
 });
 
+Route::get('/leaderdash', 'VisitorController@leaderdash')->name('leaderdash');
 
+Route::get('/addmember', 'VisitorController@addmember')->name('addmember');
+
+Route::get('/editmember', 'VisitorController@editmember')->name('editmember');
+
+Route::get('/addadmin', 'VisitorController@addadmin')->name('addadmin');
+
+Route::get('/acceptleave', 'VisitorController@acceptleave')->name('acceptleave');
+
+Route::get('/managemember', 'VisitorController@managemember')->name('managemember');
+
+Route::get('/meeting', 'VisitorController@meeting')->name('meeting');
+
+Route::get('/membersmanage', 'VisitorController@membersmanage')->name('membersmanage');
+
+Route::get('/memberleave', 'VisitorController@memberleave')->name('memberleave');
+
+// Route::group(['middleware' => ['auth.leader']], function () {
+
+//     Route::get('/leaderdash', 'VisitorController@leaderdash')->name('leaderdash');
+
+// });
 
 
 Route::get('/setup/user', 'VisitorController@setupUser')->name('setupUser');
@@ -62,9 +96,9 @@ Auth::routes();
 //Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['middleware' => ['auth.admin']], function () {
-    
 
-    
+
+
     Route::get('/dashboard', 'HomeController@index')->name('dashboard');
     Route::get('/member/register', 'MemberController@create')->name('member.register.form');
     Route::post('/member/register', 'MemberController@store')->name('member.register');

@@ -26,48 +26,50 @@
 
                 <br><br>
                 <div class="card card-primary card-outline alert alert-success">
-                    <marquee> 📣 We are pleased to announce the marriage of brother benard which will happen on 14th feb 2024 at new breed chapel starting from 10am.</marquee>
+                    <marquee> 📣 We are pleased to announce the marriage of brother benard which will happen on 14th feb
+                        2024 at new breed chapel starting from 10am.</marquee>
                 </div>
-                <div class="card card-primary card-outline">
-                    <div class="card-header">
-                        <button type="submit" class="btn btn-primary btn-block">
-                            <i class="fas fa-add"></i> Request Leave
-                        </button>
-                    </div>
 
-                    <div class="card-body">
-                        <div class="table-responsive">
-                            <h5 class="card-title m-0">My Leaves</h5>
-                            <table class="table table-bordered table-striped table-sm">
-                                <thead>
-                                    <tr>
-
-                                        <th>From</th>
-                                        <th>To</th>
-                                        <th>Reason</th>
-                                        <th>Status</th>
-
-                                    </tr>
-                                </thead>
-                                <tbody>
-
-                                    <tr>
-                                        <td colspan="8">No Leave found found</td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-center">
-
-                    </div>
-                </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-md-6 card card-primary card-outline">
+                <div class="card-header">
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-add"></i> Request Leave
+                    </button>
+                </div>
+
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <h5 class="card-title m-0">My Leaves</h5>
+                        <table class="table table-bordered table-striped table-sm">
+                            <thead>
+                                <tr>
+
+                                    <th>From</th>
+                                    <th>To</th>
+                                    <th>Reason</th>
+                                    <th>Status</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td colspan="8">No Leave found found</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6">
 
 
                 <div class="card card-primary card-outline">
@@ -99,6 +101,87 @@
 
                                     <tr>
                                         <td colspan="8">No Upcoming birthday</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 card card-primary card-outline">
+                <div class="card-header">
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-add"></i> Upcoming events
+                    </button>
+                </div>
+
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <h5 class="card-title m-0">Upcoming events</h5>
+                        <table class="table table-bordered table-striped table-sm">
+                            <thead>
+                                <tr>
+
+                                    <th>Event description</th>
+                                    <th>From</th>
+                                    <th>To</th>
+                                    <th>Status</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td colspan="8">No upcoming event found found</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6">
+
+
+                <div class="card card-primary card-outline">
+                    <div class="card-header">
+
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-add"></i> My attendance History
+                        </button>
+
+
+
+                    </div>
+
+                    <div class="card-body">
+                        <div class="table-responsive">
+
+                            <table class="table table-bordered table-striped table-sm">
+                                <thead>
+                                    <tr>
+
+                                        <th>Member</th>
+                                        <th>Status</th>
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td colspan="8">No attendance history found</td>
                                     </tr>
 
                                 </tbody>

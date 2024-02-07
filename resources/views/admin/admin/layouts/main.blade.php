@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title> NBC ADMIN Members </title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
     <link href="admin/resorce/css/style.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <style>
@@ -45,7 +49,7 @@
     <div id="main-wrapper">
 
         <!--**********************************-->
-        Nav header start
+
         <!-- ***********************************-->
         <div class="nav-header">
 
@@ -101,7 +105,7 @@
                             <i class="fa fa-address-card-o menu-icon"></i><span class="nav-text">Members</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="/member/registration"> <i class="icon-plus menu-icon"></i><span class="nav-text">Add Member</span></a></li>
+                            <li><a href="/addmember"> <i class="icon-plus menu-icon"></i><span class="nav-text">Approve Member</span></a></li>
                             <li><a href="/membersmanage"> <i class="fa fa-tasks menu-icon"></i><span class="nav-text">Manage Member</span></a></li>
                             <!-- <li><a href="./"> <i class="fa fa-bar-chart menu-icon"></i><span class="nav-text">Salary Table</span></a></li> -->
 
@@ -110,15 +114,29 @@
 
                     <li>
                         <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                            <i class="fa fa-address-card-o menu-icon"></i><span class="nav-text">Meetings</span>
+                            <i class="fas fa-users"></i><span class="nav-text">Meetings</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="/meeting"> <i class="icon-plus menu-icon"></i><span class="nav-text">Set Up New Meeting</span></a></li>
+                            <li><a href="/newmeeting"> <i class="icon-plus menu-icon"></i><span class="nav-text">Set Up New Meeting</span></a></li>
                             <li><a href="/meeting"> <i class="fa fa-tasks menu-icon"></i><span class="nav-text">Discover Other Meetings</span></a></li>
                             <!-- <li><a href="./"> <i class="fa fa-bar-chart menu-icon"></i><span class="nav-text">Salary Table</span></a></li> -->
 
                         </ul>
                     </li>
+
+
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="fas fa-bullhorn"></i><span class="nav-text">Announcements</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="/announcement"> <i class="icon-plus menu-icon"></i><span class="nav-text">Create Announcement</span></a></li>
+                            <li><a href="/editannouncement"> <i class="fa fa-pencil menu-icon"></i><span class="nav-text">Edit An Announcement</span></a></li>
+                            <!-- <li><a href="./"> <i class="fa fa-bar-chart menu-icon"></i><span class="nav-text">Salary Table</span></a></li> -->
+
+                        </ul>
+                    </li>
+
 
                     <li>
                         <a class="has-arrow" href="javascript:void()" aria-expanded="false">
@@ -132,17 +150,17 @@
                     </li>
 
                     <li>
-                        <a href="./memberleave">
-                            <i class="fa fa-tasks menu-icon"></i><span class="nav-text">Manage Leave For Members</span>
+                        <a href="/memberleave">
+                            <i class="fas fa-calendar"></i><span class="nav-text">Manage Leave For Members</span>
                         </a>
                     </li>
                     <li>
-                        <a href="./logout.php">
+                        <a href="">
                             <i class="icon-logout menu-icon"></i><span class="nav-text">Logout</span>
                         </a>
                     </li>
                     <li>
-                        <a href="./profile.php">
+                        <a href="">
                             <!-- <img src="https://icon-library.net//images/icon-profile/icon-profile-20.jpg" width="14"> -->
                             <i class="fa fa-user menu-icon"></i><span class="nav-text"> Profile</span>
                         </a>

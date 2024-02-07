@@ -12,7 +12,9 @@
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item text-center">Upcoming Meetings </li>
                     <li class="list-group-item">Total Meetings : 0 </li>
-                    <li class="list-group-item text-center"><a href=""><b>View All Meetings</b></a></li>
+                    <li class="list-group-item text-center"><a href="/viewmeeting"><b>View All Meetings</b></a>
+
+                    </li>
                 </ul>
             </div>
         </div>
@@ -21,7 +23,7 @@
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item text-center"> Set Up New Meeting</li>
 
-                    <li class="list-group-item text-center"><a href=""> <b>Select The Date</b></a></li>
+                    <li class="list-group-item text-center"><a href="/newmeeting"><b>Select The Date</b></a></li>
                 </ul>
             </div>
         </div>
@@ -30,11 +32,18 @@
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item text-center">Cancel A Meeting</li>
 
-                    <li class="list-group-item text-center"><a href=""><b>Select The Date</b> </a></li>
+                    <li class="list-group-item text-center"><a href="/viewmeeting"><b>Select The Date</b> </a></li>
                 </ul>
             </div>
         </div>
+
+
+
+
     </div>
+
+
+
 
 
 </div>

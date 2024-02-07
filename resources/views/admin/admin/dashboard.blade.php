@@ -20,8 +20,8 @@
             <div class="card shadow " style="width: 18rem;">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item text-center">Announcements</li>
-                    <li class="list-group-item">Total Members : 0</li>
-                    <li class="list-group-item text-center"><a href="manage-employee.php"> <b>View All Members</b></a></li>
+                    <li class="list-group-item">Total Announcements : 0</li>
+                    <li class="list-group-item text-center"><a href="manage-employee.php"> <b>View All Announcements</b></a></li>
                 </ul>
             </div>
         </div>
@@ -36,6 +36,18 @@
         </div>
     </div>
     <div class="row mt-5 ">
+
+        <div class="col-4">
+            <div class="card shadow " style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-center">Total Members </li>
+                    <li class="list-group-item">All Members : </li>
+                    <li class="list-group-item">Available Members : </li>
+                </ul>
+            </div>
+        </div>
+
+
         <div class="col-4">
             <div class="card shadow " style="width: 18rem;">
                 <ul class="list-group list-group-flush">

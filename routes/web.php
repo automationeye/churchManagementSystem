@@ -12,6 +12,8 @@
 */
 
 Route::get('/', 'VisitorController@landing')->name('landing');
+
+
 Route::get('/member/registration', 'VisitorController@memberreg')->name('member.registration');
 
 Route::post('/member/registration/post', 'VisitorController@memberregpost')->name('member.post');
@@ -21,8 +23,12 @@ Route::get('/member/login', 'VisitorController@memberlog')->name('member.log');
 
 
 
+Route::get('/admin/registration', 'VisitorController@adminreg')->name('admin.registration');
+
+Route::post('/admin/registration/post', 'VisitorController@adminregpost')->name('admin.regpost');
+
 Route::post('/admin/login/post', 'VisitorController@adminlogpost')->name('admin.logpost');
-Route::get('/admin/admin/login', 'VisitorController@adminlog')->name('admin.log');
+Route::get('/admin/login', 'VisitorController@adminlog')->name('admin.log');
 
 
 Route::middleware('auth.member')->group(function () {
@@ -78,6 +84,18 @@ Route::get('/meeting', 'VisitorController@meeting')->name('meeting');
 Route::get('/membersmanage', 'VisitorController@membersmanage')->name('membersmanage');
 
 Route::get('/memberleave', 'VisitorController@memberleave')->name('memberleave');
+
+Route::get('/adminlog', 'VisitorController@adminlog')->name('adminlog');
+
+Route::get('/edit', 'VisitorController@edit')->name('edit');
+
+Route::get('/announcement', 'VisitorController@announcement')->name('announcement');
+
+Route::get('/editannouncement', 'VisitorController@editannouncement')->name('editannouncement');
+
+Route::get('/newmeeting', 'VisitorController@newmeeting')->name('newmeeting');
+
+Route::get('/viewmeeting', 'VisitorController@viewmeeting')->name('viewmeeting');
 
 // Route::group(['middleware' => ['auth.leader']], function () {
 

@@ -18,6 +18,7 @@
                         <th scope="col">Reason</th>
                         <th scope="col">Starting Date :</th>
                         <th scope="col">Last Date :</th>
+                        <th scope="col">Status :</th>
                     </tr>
                 </thead>
                 <tbody>

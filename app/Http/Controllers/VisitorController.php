@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Admin;
 use Illuminate\Http\Request;
 use Dcblogdev\Countries\Facades\Countries;
 use \App\User;
@@ -30,6 +31,14 @@ class VisitorController extends Controller
     {
         return view('members.selfreg');
     }
+
+
+    public function adminreg()
+    {
+        return view('admin.admin.addadmin');
+    }
+
+
     public function channels()
     {
         $channels = Channel::orderBy('channel_name', 'ASC')->paginate(10);
@@ -110,6 +119,31 @@ class VisitorController extends Controller
         return view('admin.admin.login');
     }
 
+    public function edit()
+    {
+        return view('admin.admin.edit');
+    }
+
+    public function announcement()
+    {
+        return view('admin.admin.announcement');
+    }
+
+    public function editannouncement()
+    {
+        return view('admin.admin.editannouncement');
+    }
+
+    public function newmeeting()
+    {
+        return view('admin.admin.newmeeting');
+    }
+
+    public function viewmeeting()
+    {
+        return view('admin.admin.viewmeeting');
+    }
+
 
     public function contributions()
     {
@@ -120,6 +154,9 @@ class VisitorController extends Controller
     {
         return view('members.member');
     }
+
+
+
     public function memberregpost(Request $request)
     {
         // Validate the incoming data
@@ -150,6 +187,44 @@ class VisitorController extends Controller
         return redirect()->route('memberdash')->with('success', 'Registration successful!');
     }
 
+
+    public function adminregpost(Request $request)
+    {
+        // Validate the incoming data
+        $validatedData = $request->validate([
+            'firstname' => 'required|string|max:255',
+            'email' => 'email|unique:members,email',
+            'phone' => 'nullable|string|max:20',
+            'password' => 'required|string|min:6',
+        ]);
+
+        // Check if the phone number exists
+        if ($validatedData['phone']) {
+            $existingMember = MemberAdmin::where('phone', $validatedData['phone'])->first();
+            if ($existingMember) {
+                return redirect()->back()->with('error', 'Phone number already exists.');
+            }
+        }
+
+        // Create a new member instance
+        $member = new Admin();
+        $member->firstname = $validatedData['firstname'];
+        $member->email = $validatedData['email'];
+        $member->phone = $validatedData['phone'];
+        $member->password = bcrypt($validatedData['password']); // You should hash the password for security
+        $member->save();
+        Auth::login($member);
+
+        return redirect()->route('leaderdash')->with('success', 'Registration successful!');
+    }
+
+
+
+
+
+
+
+
     public function memberlogpost(Request $request)
     {
         // Validate the request data
@@ -173,6 +248,34 @@ class VisitorController extends Controller
         // Authentication failed, redirect back with error message
         return redirect()->back()->with('error', 'Invalid phone number or password.');
     }
+
+
+
+    public function adminlogpost(Request $request)
+    {
+        // Validate the request data
+        $request->validate([
+            'phone' => 'required|string',
+            'password' => 'required|string',
+        ]);
+
+        // Retrieve the user by phone number
+        $user = MemberAdmin::where('phone', $request->phone)->first();
+
+        // Check if the user exists and the password is correct
+        if ($user && password_verify($request->password, $user->password)) {
+            // Authenticate the user
+            Auth::login($user);
+
+            // Authentication successful, redirect to dashboard or any other route
+            return redirect()->route('memberdash')->with('success', 'Authentication successful!');
+        }
+
+        // Authentication failed, redirect back with error message
+        return redirect()->back()->with('error', 'Invalid phone number or password.');
+    }
+
+
 
 
 

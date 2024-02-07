@@ -11,17 +11,14 @@
                 <div class="form-input-content">
                     <div class="card login-form mb-0">
                         <div class="card-body pt-4 shadow">
-                            <h4 class="text-center">Add New member To Team</h4>
+                            <h4 class="text-center">Edit Announcement</h4>
                             <table class="table  table-hover">
                                 <thead>
-                                    <tr class="bg-dark">
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Tel. No</th>
-
-                                        <th scope="col"> Email</th>
-                                        <th scope="col">Accept</th>
-
+                                    <tr class="">
+                                        <th scope="col">Announcement Title :</th>
+                                        <th scope="col">Message :</th>
                                     </tr>
+
                                 </thead>
                                 <tbody>
 

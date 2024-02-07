@@ -8,7 +8,7 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <link href="../resorce/css/style.css" rel="stylesheet">
+  <link href="admin/resorce/css/style.css" rel="stylesheet">
 
   <title>Admin Login </title>
   <style>
@@ -19,7 +19,7 @@
     }
 
     .bg {
-      background-image: url("../background1.jpg");
+
       height: 100%;
       background-position: center;
       background-repeat: no-repeat;
@@ -44,20 +44,24 @@
                 <div class="card-body pt-5 shadow">
 
                   <h4 class="text-center">Admin </h4>
-                  <div class="text-center my-5"> <?php echo $login_Err; ?> </div>
+                  <div class="text-center my-5">
+
+
+
+                  </div>
 
                   <form method="POST" action=" {{ url('admin/login/post') }}">
 
                     <div class="form-group">
                       <label>Email :</label>
-                      <input type="email" class="form-control" value="<?php echo $email; ?>" name="email">
-                      <?php echo $email_err; ?>
+                      <input type="email" class="form-control" value="  " name="email">
+
                     </div>
 
                     <div class="form-group">
                       <label>Password :</label>
                       <input type="password" class="form-control" name="password">
-                      <?php echo $pass_err; ?>
+
 
                     </div>
 

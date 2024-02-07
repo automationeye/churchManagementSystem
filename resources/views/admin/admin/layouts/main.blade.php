@@ -17,28 +17,6 @@
         .hidden {
             display: none;
         }
-
-        /* Default styles */
-
-        /* Add your default styles here */
-
-        /* Media query for screens smaller than 768px (typical mobile phones) */
-        @media (max-width: 767px) {
-            /* Adjust styles for smaller screens */
-            /* For example, make elements stack vertically */
-        }
-
-        /* Media query for screens between 768px and 991px (small tablets) */
-        @media (min-width: 768px) and (max-width: 991px) {
-            /* Adjust styles for small tablets */
-            /* For example, reduce font sizes or adjust column widths */
-        }
-
-        /* Media query for screens larger than 992px (typical desktops) */
-        @media (min-width: 992px) {
-            /* Adjust styles for larger screens */
-            /* For example, use a multi-column layout or increase font sizes */
-        }
     </style>
 
 </head>

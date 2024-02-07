@@ -19,9 +19,7 @@
             display: none;
         }
 
-        @media (max-width: 767px) {
-            /* CSS rules for screens smaller than 768px */
-        }
+        @media only screen and (max-width:575px) {}
     </style>
 
 </head>

@@ -50,30 +50,7 @@
 
 </div>
 
-<script>
-    window.onload = function() {
-        document.getElementById('meeting-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the form from submitting normally
-            // Get the values from the form
-            const title = document.getElementById('meeting-title').value;
-            const details = document.getElementById('meeting-details').value;
-            const meetingDateTime = document.getElementById('meeting-date').value;
-            // Split date and time
-            const [date, time] = meetingDateTime.split('T');
-            // Create a new table row with the meeting details
-            const newRow = document.createElement('tr');
-            newRow.innerHTML = `
-                <td>${title}</td>
-                <td>${details}</td>
-                <td>${date}</td>
-                <td>${time}</td>
-            `;
-            // Append the new row to the table body
-            document.getElementById('meeting-table-body').appendChild(newRow);
-            // Optionally, you can perform additional actions here, such as sending the data to a server
-        });
-    };
-</script>
+
 
 
 

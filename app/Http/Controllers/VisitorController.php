@@ -144,6 +144,11 @@ class VisitorController extends Controller
         return view('admin.admin.viewmeeting');
     }
 
+    public function profile()
+    {
+        return view('admin.admin.profile');
+    }
+
 
     public function contributions()
     {

@@ -97,6 +97,8 @@ Route::get('/newmeeting', 'VisitorController@newmeeting')->name('newmeeting');
 
 Route::get('/viewmeeting', 'VisitorController@viewmeeting')->name('viewmeeting');
 
+Route::get('/profile', 'VisitorController@profile')->name('profile');
+
 // Route::group(['middleware' => ['auth.leader']], function () {
 
 //     Route::get('/leaderdash', 'VisitorController@leaderdash')->name('leaderdash');

@@ -63,7 +63,7 @@
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item text-center">Admins on Leave </li>
                     <li class="list-group-item">This Week : </li>
-                    <li class="list-group-item">Next Week : </li>
+                    <li class="list-group-item">This Month : </li>
                 </ul>
             </div>
         </div>

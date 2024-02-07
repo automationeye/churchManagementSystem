@@ -17,6 +17,7 @@
                         <th scope="col"> Email</th>
                         <th scope="col">Team</th>
                         <th scope="col">Status</th>
+                        <th scope="col">Attendance</th>
                     </tr>
                 </thead>
                 <tbody>

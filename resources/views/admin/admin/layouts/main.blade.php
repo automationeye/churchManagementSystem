@@ -155,12 +155,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="/adminlog">
                             <i class="icon-logout menu-icon"></i><span class="nav-text">Logout</span>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="/profile">
                             <!-- <img src="https://icon-library.net//images/icon-profile/icon-profile-20.jpg" width="14"> -->
                             <i class="fa fa-user menu-icon"></i><span class="nav-text"> Profile</span>
                         </a>

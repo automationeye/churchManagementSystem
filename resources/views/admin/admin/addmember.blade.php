@@ -3,30 +3,33 @@
 
 
 
+<div class="addmember">
+    <div class="login-form-bg h-100">
+        <div class="container  h-100">
+            <div class="row justify-content-center h-100">
+                <div class="col-xl-10">
+                    <div class="form-input-content">
+                        <div class="card login-form mb-0">
+                            <div class="card-body pt-4 shadow">
+                                <h4 class="text-center">Add Team Member</h4>
+                                <div class="tablet">
+                                    <table class="table  table-hover">
+                                        <thead>
+                                            <tr class="bg-dark">
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Tel. No</th>
 
-<div class="login-form-bg h-100">
-    <div class="container  h-100">
-        <div class="row justify-content-center h-100">
-            <div class="col-xl-10">
-                <div class="form-input-content">
-                    <div class="card login-form mb-0">
-                        <div class="card-body pt-4 shadow">
-                            <h4 class="text-center">Add New member To Team</h4>
-                            <table class="table  table-hover">
-                                <thead>
-                                    <tr class="bg-dark">
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Tel. No</th>
+                                                <th scope="col"> Email</th>
+                                                <th scope="col">Accept</th>
 
-                                        <th scope="col"> Email</th>
-                                        <th scope="col">Accept</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
 
-                                    </tr>
-                                </thead>
-                                <tbody>
-
-                                </tbody>
-                            </table>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

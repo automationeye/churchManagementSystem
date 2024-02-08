@@ -15,7 +15,7 @@
                             <table class="table  table-hover">
                                 <thead>
                                     <tr class="">
-                                        <th scope="col">Announcement Title :</th>
+                                        <th scope="col">Title :</th>
                                         <th scope="col">Message :</th>
                                     </tr>
 

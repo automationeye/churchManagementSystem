@@ -19,7 +19,47 @@
             display: none;
         }
 
-        @media only screen and (max-width:575px) {}
+        /* Additional CSS for responsiveness */
+        @media only screen and (max-width: 575px) {
+
+            /* Adjust styles for screens smaller than 576px */
+            .nav-header {
+                padding: 10px;
+            }
+
+            .header-content {
+                padding: 10px;
+            }
+
+            .header-content h2 {
+                font-size: 18px;
+            }
+
+
+
+            .content-body {
+                margin-left: 0;
+            }
+
+            .col-4 {
+                width: 100% !important;
+                /* Make each column take up full width */
+                margin-bottom: 20px;
+                /* Add some space between columns */
+            }
+
+            .cardy {
+                width: 100% !important;
+                /* Make each column take up full width */
+                margin-bottom: 20px;
+                /* Add some space between columns */
+                margin-right: 10px;
+            }
+
+
+
+
+        }
     </style>
 
 </head>
@@ -97,7 +137,7 @@
                 <ul class="metismenu" id="menu">
                     <br> <br>
                     <li>
-                        <a href="leaderdash">
+                        <a href="/leaderdash">
                             <i class="icon-home menu-icon"></i><span class="nav-text">Dashboard</span>
                         </a>
                     </li>

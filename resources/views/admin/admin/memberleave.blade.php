@@ -8,16 +8,14 @@
             <div class=" text-center my-3 ">
                 <h4>Member's Leave Requests</h4>
             </div>
-            <table class="table  table-hover">
+            <table class="table">
                 <thead>
                     <tr class="bg-dark">
                         <th scope="col">Name</th>
-                        <th scope="col">Tel. No</th>
+                        <th scope="col">Phone</th>
 
                         <th scope="col"> Email</th>
-                        <th scope="col">Reason</th>
-                        <th scope="col">Starting Date :</th>
-                        <th scope="col">Last Date :</th>
+
                         <th scope="col">Status :</th>
                     </tr>
                 </thead>

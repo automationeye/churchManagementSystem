@@ -19,13 +19,15 @@ Route::post('/member/login/post', 'VisitorController@memberlogpost')->name('memb
 Route::get('/member/login', 'VisitorController@memberlog')->name('member.log');
 
 Route::middleware('auth.member')->group(function () {
+    Route::get('/memberleaverequest', 'LeaveController@index')->name('leaverequest');
+    Route::post('/memberleaverequest', 'LeaveController@store')->name('leaverequest');
     Route::get('/memberdash', 'VisitorController@member')->name('memberdash');
     Route::get('/channels', 'VisitorController@channels')->name('channels');
     Route::get('/contributions', 'VisitorController@contributions')->name('contributions');
     Route::post('/update/team', 'VisitorController@updateteam')->name('updateteam');
 });
 
-
+Route::get('/logout', 'Auth\LoginController@logout')->name('landing');
 Route::get('/about', function () {
     return view('about');
 });
@@ -69,7 +71,7 @@ Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
 
-Route::group(['middleware' => ['auth.admin']], function () {
+Route::group(['middleware' => ['admin']], function () {
     
 
     

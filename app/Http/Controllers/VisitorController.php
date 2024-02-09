@@ -10,6 +10,7 @@ use \App\Event;
 use \App\Branch;
 use \App\Channel;
 use \App\Setting;
+use \App\Leave;
 use Illuminate\Support\Facades\Auth;
 
 class VisitorController extends Controller
@@ -48,6 +49,10 @@ class VisitorController extends Controller
     }
 
 
+    public function leaverequest(){
+        // return view ('members.requestleave');
+    }
+
 
     public function leaderdash(){
         return view ('admin.admin.dashboard');
@@ -65,7 +70,10 @@ class VisitorController extends Controller
     }
 
     public function member(){
-        return view('members.member');
+
+        $leaves=Leave::where('id','!=',-1)->orderBy('id','DESC')->get();
+
+        return view('members.member',compact('leaves'));
     }
     public function memberregpost(Request $request)
     {

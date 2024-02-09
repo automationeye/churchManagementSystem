@@ -25,6 +25,27 @@
 
 
                 <br><br>
+
+                @if(auth()->user()->team==null && auth()->user()->team_status==0)
+
+                    <div class="card card-primary card-outline alert alert-danger" style="text-align: center;"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <p>You are currently not enrolled to a team, Click here to select a team and join one today</p>
+                    </div>
+                @elseif(auth()->user()->team_status==0)
+
+                    <div class="card card-primary card-outline alert alert-warning" style="text-align: center;">
+                        You belong to team {{ auth()->user()->team }} but awaiting confirmation from admin
+                    </div>
+
+                @else
+
+                    <div class="card card-primary card-outline alert alert-success" style="text-align: center;">
+                        You belong to team {{ auth()->user()->team }}
+                    </div>
+
+                @endif
+
                 <div class="card card-primary card-outline alert alert-success">
                     <marquee> 📣 We are pleased to announce the marriage of brother benard which will happen on 14th feb
                         2024 at new breed chapel starting from 10am.</marquee>
@@ -36,9 +57,9 @@
         <div class="row">
             <div class="col-md-6 card card-primary card-outline">
                 <div class="card-header">
-                    <button type="submit" class="btn btn-primary btn-block">
+                    <a href="/memberleaverequest" type="submit" class="btn btn-primary btn-block">
                         <i class="fas fa-add"></i> Request Leave
-                    </button>
+                    </a>
                 </div>
 
                 <div class="card-body">
@@ -57,9 +78,37 @@
                             </thead>
                             <tbody>
 
-                                <tr>
-                                    <td colspan="8">No Leave found found</td>
-                                </tr>
+                                @if(count($leaves)>0)
+
+                                    @foreach($leaves as $leave)
+                                        <tr>
+                                            <td>{{ $leave->from }}</td>
+                                            <td>{{ $leave->to }}</td>
+                                            <td>{{ $leave->reason }}</td>
+
+                                            <td>
+
+                                                @if($leave->status==0)
+                                                    <span class="badge bg-warning text-dark">Pending</span>
+                                                @elseif($leave->status==1)
+                                                    <span class="badge bg-success">Approved</span>
+                                                @else
+                                                    <span class="badge bg-success">Rejected</span>
+
+                                                @endif
+                                            </td>
+
+                                        </tr>
+                                    @endforeach
+
+                                @else
+                                    <tr>
+                                        <td colspan="8">No Leave found found</td>
+                                    </tr>
+                                @endif
+
+
+
 
                             </tbody>
                         </table>
@@ -209,10 +258,10 @@
                     <form class="form-group" method="POST" action="{{ url('update/team') }}">
                         @csrf
                         <div class="modal-body">
-
-                            <div class="md-6">
-                                <label for="teamSelect" class="form-label">Select Team</label>
-                                <div class="col-md-2 mb-2">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <!-- Use col-md-12 for full width on medium and larger screens -->
+                                    <label for="teamSelect" class="form-label">Select Team</label>
                                     <select class="form-control" id="teamSelect" name="team">
                                         <option value="1">Team 1</option>
                                         <option value="2">Team 2</option>
@@ -222,14 +271,23 @@
                                         <!-- Add more options as needed -->
                                     </select>
                                 </div>
-
                             </div>
 
-
-
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary">Submit for Approval</button>
+                            <div class="row mt-3">
+                                <!-- Use Bootstrap spacing class to add margin top -->
+                                <div class="col-md-6">
+                                    <!-- Use appropriate col classes for responsive layout -->
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                                <br>
+                                <div class="col-md-6">
+                                    <!-- Use appropriate col classes for responsive layout -->
+                                    <button type="submit" class="btn btn-primary">Submit for Approval</button>
+                                </div>
+                            </div>
+                        </div>
                     </form>
+
                 </div>
 
             </div>

@@ -35,12 +35,13 @@ return [
     |
     */
 
+ 
+
     'guards' => [
         'admin' => [
             'driver' => 'session',
             'provider' => 'users',
         ],
-
         'api' => [
             'driver' => 'token',
             'provider' => 'users',
@@ -50,6 +51,7 @@ return [
             'provider' => 'members',
         ],
     ],
+    
 
     /*
     |--------------------------------------------------------------------------

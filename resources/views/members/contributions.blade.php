@@ -110,107 +110,139 @@
                 </div>
             </div>
 
-            <div class="card-body">
-                <div class="table-responsive">
-                    <table class="table table-bordered table-striped table-sm">
-                        <thead>
-                            <tr>
+            <div class="row">
 
-                                <th>TransactionType</th>
-                                <th>TransID</th>
-                                <th>TransAmount</th>
-                                <th>Member</th>
-                                <th>Channel</th>
-                                <th>Phone</th>
-                                <th>FirstName</th>
-                                <th>created at</th>
-                            </tr>
-                        </thead>
-                        <tbody>
+                <!-- ./col -->
+                <div class="col-lg-3 col-6">
+                    <!-- small card -->
+                    <div class="small-box bg-danger">
+                        <div class="inner">
+                            <h3>
+                                <!-- KES 100,000 -->
+                            </h3>
 
                             <tr>
                                 <td colspan="8">No transactions found</td>
                             </tr>
 
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center">
-
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Select team</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <form class="form-group" method="POST" action="{{url('update/team')}}">
-                @csrf
-                <div class="modal-body">
-
-                    <div class="md-6">
-                        <label for="teamSelect" class="form-label">Select Team</label>
-                        <div class="col-md-2 mb-2">
-                            <select class="form-control" id="teamSelect" name="team">
-                                <option value="1">Team 1</option>
-                                <option value="2">Team 2</option>
-                                <option value="3">Team 3</option>
-                                <option value="4">Team 4</option>
-                                <option value="5">Team 5</option>
-                                <!-- Add more options as needed -->
-                            </select>
+                            </tbody>
+                            </table>
                         </div>
+                        <!-- ./col -->
+                        <div class="col-lg-3 col-6">
+                            <!-- small card -->
+                            <div class="small-box bg-danger">
+                                <div class="inner">
+                                    <h3>
+                                        <!-- KES 180,000 -->
+
+                                    </h3>
+
+                                    <h6>Collection contribution (total)</h6>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-wallet"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./col -->
+                        <div class="col-lg-3 col-6">
+                            <!-- small card -->
+                            <div class="small-box bg-danger">
+                                <div class="inner">
+                                    <h3>
+                                        <!-- 0 -->
+                                    </h3>
+
+                                    <h6>Any other contribution</h6>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-chart-pie"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./col -->
+                    </div>
+                    <div class="d-flex justify-content-center">
 
                     </div>
-
-
-
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Submit for Approval</button>
-            </form>
+                </div>
+            </div>
         </div>
 
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Select team</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form class="form-group" method="POST" action="{{url('update/team')}}">
+                        @csrf
+                        <div class="modal-body">
+
+                            <div class="md-6">
+                                <label for="teamSelect" class="form-label">Select Team</label>
+                                <div class="col-md-2 mb-2">
+                                    <select class="form-control" id="teamSelect" name="team">
+                                        <option value="1">Team 1</option>
+                                        <option value="2">Team 2</option>
+                                        <option value="3">Team 3</option>
+                                        <option value="4">Team 4</option>
+                                        <option value="5">Team 5</option>
+                                        <!-- Add more options as needed -->
+                                    </select>
+                                </div>
+
+                            </div>
+
+
+
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Submit for Approval</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
     </div>
-</div>
-</div>
 
 
 
-@endsection
-@section('scripts')
+    @endsection
+    @section('scripts')
 
 
-<script>
-    $(function() {
+    <script>
+        $(function() {
 
-    });
+        });
 
-    function confirmDelete(id) {
-        Swal.fire({
-            title: 'Are you sure?',
-            text: "You want to delete this member!",
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#d33',
-            cancelButtonColor: '#aaa',
-            confirmButtonText: 'Yes, delete it!'
-        }).then((result) => {
-            if (result.isConfirmed) {
-                $('#deleteRecord' + id).submit();
-            }
-        })
-    }
-</script>
-
-
-
-@endsection
+        function confirmDelete(id) {
+            Swal.fire({
+                title: 'Are you sure?',
+                <<
+                << << < HEAD
+                text: "You want to delete this channel!",
+                ===
+                === =
+                text: "You want to delete this member!",
+                >>>
+                >>> > origin / main
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#aaa',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $('#deleteRecord' + id).submit();
+                }
+            })
+        }
+    </script>
+    <<<<<<< HEAD=======>>>>>>> origin/main
+        @endsection

@@ -39,6 +39,45 @@ Route::middleware('auth.member')->group(function () {
     Route::get('/contributions', 'VisitorController@contributions')->name('contributions');
     Route::post('/update/team', 'VisitorController@updateteam')->name('updateteam');
 });
+Route::get('/leader/login', 'VisitorController@leaderlogin')->name('leaderlogin');
+Route::post('/leader/login/post', 'VisitorController@leaderloginpost')->name('leaderloginpost');
+
+Route::group(['middleware' => ['auth.leader']], function () {
+
+        Route::get('/leaderdash', 'VisitorController@leaderdash')->name('leaderdash');
+
+        Route::get('/addmember', 'VisitorController@addmember')->name('addmember');
+
+        Route::get('/editmember', 'VisitorController@editmember')->name('editmember');
+
+        Route::get('/addadmin', 'VisitorController@addadmin')->name('addadmin');
+
+        Route::get('/acceptleave', 'VisitorController@acceptleave')->name('acceptleave');
+
+        Route::get('/managemember', 'VisitorController@managemember')->name('managemember');
+
+        Route::get('/meeting', 'VisitorController@meeting')->name('meeting');
+
+        // Route::get('/membersmanage', 'VisitorController@membersmanage')->name('membersmanage');
+
+        Route::get('/memberleave', 'VisitorController@memberleave')->name('memberleave');
+
+        Route::get('/adminlog', 'VisitorController@adminlog')->name('adminlog');
+
+        Route::get('/edit', 'VisitorController@edit')->name('edit');
+
+        Route::get('/announcement', 'VisitorController@announcement')->name('announcement');
+
+        Route::get('/editannouncement', 'VisitorController@editannouncement')->name('editannouncement');
+
+        Route::get('/newmeeting', 'VisitorController@newmeeting')->name('newmeeting');
+
+        Route::get('/viewmeeting', 'VisitorController@viewmeeting')->name('viewmeeting');
+
+        Route::get('/profile', 'VisitorController@profile')->name('profile');
+
+});
+
 
 
 
@@ -69,37 +108,7 @@ Route::get('/services', function () {
     return view('services');
 });
 
-Route::get('/leaderdash', 'VisitorController@leaderdash')->name('leaderdash');
 
-Route::get('/addmember', 'VisitorController@addmember')->name('addmember');
-
-Route::get('/editmember', 'VisitorController@editmember')->name('editmember');
-
-Route::get('/addadmin', 'VisitorController@addadmin')->name('addadmin');
-
-Route::get('/acceptleave', 'VisitorController@acceptleave')->name('acceptleave');
-
-Route::get('/managemember', 'VisitorController@managemember')->name('managemember');
-
-Route::get('/meeting', 'VisitorController@meeting')->name('meeting');
-
-Route::get('/membersmanage', 'VisitorController@membersmanage')->name('membersmanage');
-
-Route::get('/memberleave', 'VisitorController@memberleave')->name('memberleave');
-
-Route::get('/adminlog', 'VisitorController@adminlog')->name('adminlog');
-
-Route::get('/edit', 'VisitorController@edit')->name('edit');
-
-Route::get('/announcement', 'VisitorController@announcement')->name('announcement');
-
-Route::get('/editannouncement', 'VisitorController@editannouncement')->name('editannouncement');
-
-Route::get('/newmeeting', 'VisitorController@newmeeting')->name('newmeeting');
-
-Route::get('/viewmeeting', 'VisitorController@viewmeeting')->name('viewmeeting');
-
-Route::get('/profile', 'VisitorController@profile')->name('profile');
 
 // Route::group(['middleware' => ['auth.leader']], function () {
 
@@ -112,6 +121,7 @@ Route::get('/setup/user', 'VisitorController@setupUser')->name('setupUser');
 Route::post('/setup/user', 'VisitorController@register')->name('visitor.register');
 Route::post('/setup/logo', 'VisitorController@uploadLogo')->name('app.logo');
 Route::post('/setup/name', 'VisitorController@saveAppName')->name('app.name');
+Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 
 Auth::routes();
 

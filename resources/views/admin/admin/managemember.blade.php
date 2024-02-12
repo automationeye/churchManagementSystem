@@ -1,20 +1,5 @@
 @extends('admin.admin.layouts.main')
 @section('content')
-
-<?php
-
-//  database connection
-require_once "../connection.php";
-
-$sql = "SELECT * FROM member";
-$result = mysqli_query($conn, $sql);
-
-$i = 1;
-$you = "";
-
-
-?>
-
 <style>
     table,
     th,
@@ -35,83 +20,41 @@ $you = "";
         </div>
         <table style="width:100%" class="table-hover text-center ">
             <tr class="bg-dark">
-                <th>S.No.</th>
+              
                 <th>Members Id</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Gender</th>
-                <th>Date of Birth</th>
-                <th>Age in Years</th>
-                <th>Total</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                      
                 <th>Action</th>
             </tr>
-            <?php
 
-            if (mysqli_num_rows($result) > 0) {
-                while ($rows = mysqli_fetch_assoc($result)) {
-                    $name = $rows["name"];
-                    $email = $rows["email"];
-                    $dob = $rows["dob"];
-                    $gender = $rows["gender"];
-                    $id = $rows["id"];
-                    $total = $rows["total"];
-                    if ($gender == "") {
-                        $gender = "Not Defined";
-                    }
-
-                    if ($dob == "") {
-                        $dob = "Not Defined";
-                        $age = "Not Defined";
-                    } else {
-                        $dob = date('jS F, Y', strtotime($dob));
-                        $date1 = date_create($dob);
-                        $date2 = date_create("now");
-                        $diff = date_diff($date1, $date2);
-                        $age = $diff->format("%Y");
-                    }
-
-                    if ($total == "") {
-                        $total = "Not Defined";
-                    }
-
-            ?>
+            @foreach($members as $member)
+            
                     <tr>
-                        <td><?php echo "{$i}."; ?></td>
-                        <td><?php echo $id; ?></td>
-                        <td> <?php echo $name; ?></td>
-                        <td><?php echo $email; ?></td>
-                        <td><?php echo $gender; ?></td>
-                        <td><?php echo $dob; ?></td>
-                        <td><?php echo $age; ?></td>
-                        <td><?php echo $total; ?></td>
+                        
+                        <td>{{$member->id}}<td>
+                        <td>{{$member->firstname}}<td>
 
-                        <td> <?php
-                                $edit_icon = "<a href='edit-member.php?id= {$id}' class='btn-sm btn-primary float-right ml-3 '> <span ><i class='fa fa-edit '></i></span> </a>";
-                                $delete_icon = " <a href='delete-member.php?id={$id}' id='bin' class='btn-sm btn-primary float-right'> <span ><i class='fa fa-trash '></i></span> </a>";
-                                echo $edit_icon . $delete_icon;
-                                ?>
+                        <td>{{$member->lastname}}<td>
+                      
+
+                        <td>
+                        @if($member->team_status==0)
+
+                        <a href="/aprove/{{$member->id}}" class="btn btn-warning">Approve</a>
+
+                        @else
+
+                        <a href="/managemember" class="btn btn-success">Approved</a>
+
+                        @endif
                         </td>
+                        
 
 
-
-
-                <?php
-                    $i++;
-                }
-            } else {
-                echo "<script>
-            $(document).ready( function(){
-                $('#showModal').modal('show');
-                $('#linkBtn').attr('href', 'add-member.php');
-                $('#linkBtn').text('Add member');
-                $('#addMsg').text('No members Found!');
-                $('#closeBtn').text('Remind Me Later!');
-            })
-         </script>
-         ";
-            }
-                ?>
                     </tr>
+
+            @endforeach
         </table>
     </div>
 </div>

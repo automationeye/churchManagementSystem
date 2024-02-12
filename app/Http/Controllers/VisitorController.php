@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Admins;
 use App\Admin;
 use Illuminate\Http\Request;
 use Dcblogdev\Countries\Facades\Countries;
@@ -12,7 +13,7 @@ use \App\Branch;
 use \App\Channel;
 use \App\Setting;
 use \App\Leave;
-use Illuminate\Support\Facades\Auth;
+use Auth;
 
 class VisitorController extends Controller
 {
@@ -37,6 +38,42 @@ class VisitorController extends Controller
     public function adminreg()
     {
         return view('admin.admin.addadmin');
+    }
+
+    public function leaderlogin(){
+
+        return view('admin.admin.login');
+
+    }
+
+    public function leaderloginpost(Request $request){
+        
+
+      
+
+        $request->validate([
+            'phone' => 'required|string',
+            'password' => 'required|string',
+        ]);
+
+        // Retrieve the user by phone number
+        $user = Admins::where('phone', $request->phone)->first();
+
+        
+        // Check if the user exists and the password is correct
+        if (Auth::guard('leader')->attempt(['phone' => $request->phone, 'password' => $request->password])) {
+
+            // dd(Auth::guard());
+            // Authenticate the user
+            Auth::login($user);
+
+            // Authentication successful, redirect to dashboard or any other route
+            return redirect()->route('leaderdash')->with('success', 'Authentication successful!');
+        }
+
+
+        // Authentication failed, redirect back with error message
+        return redirect()->back()->with('error', 'Invalid phone number or password.');
     }
 
 
@@ -94,7 +131,15 @@ class VisitorController extends Controller
 
     public function managemember()
     {
-        return view('admin.admin.managemember');
+        $user=Auth::guard('leader')->user();
+
+        $team=$user->team;
+
+        //get members in that team
+        $members=Member::where('team',$team)
+        ->orderBy('id','DESC')
+        ->get();
+        return view('admin.admin.managemember',compact('members'));
     }
 
     public function meeting()

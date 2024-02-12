@@ -50,25 +50,49 @@
 
                   </div>
 
-                  <form method="POST" action=" {{ url('admin/login/post') }}">
+                  @if($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
+                    @if(session('error'))
+                        <div class="alert alert-danger">
+                            {{ session('error') }}
+                        </div>
+                    @endif
+
+                    @if(session('success'))
+                        <div class="alert alert-success">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+
+                  <form method="POST" action=" {{ url('leader/login/post') }}">
+
+                  @csrf
 
                     <div class="form-group">
-                      <label>Email :</label>
-                      <input type="email" class="form-control" value="  " name="email">
+                      <label>Mobile:</label>
+                      <input type="tel" class="form-control" value="" name="phone">
 
                     </div>
 
                     <div class="form-group">
-                      <label>Password :</label>
+                      <label>Password:</label>
                       <input type="password" class="form-control" name="password">
 
 
                     </div>
 
                     <div class="form-group">
-                      <input type="submit" value="Log-In" class="btn btn-primary btn-lg w-100 " name="signin">
+                      <input type="submit" class="btn btn-primary btn-lg w-100 " name="signin">
                     </div>
-                    <p class=" login-form__footer"> <a href="../employee/login.php" class="text-primary"> </a></p>
+                    <p class=" login-form__footer"> <a href="/" class="text-primary"> </a></p>
                   </form>
                 </div>
               </div>

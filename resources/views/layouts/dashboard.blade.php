@@ -1,12 +1,4 @@
 <!DOCTYPE html>
-<!--
-This is a starter template page. Use this page to start your new project from
-scratch. This page gets rid of all links and provides the needed markup only.
--->
-
-
-
-
 <html class="no-js" lang="zxx">
 
 <head>
@@ -37,6 +29,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         #rev_slider_6_1_wrapper .tp-loader.spinner1 {
             background-color: #FFFFFF !important;
         }
+
     </style>
     <style>
         .rs-layer.Concept-Content a,
@@ -61,11 +54,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
             border-bottom: 1px solid transparent !important
         }
 
-        @media only screen and (max-width:575px) {
-            rs-layer.res-slide-btn {
-                padding: 7px 16px !important;
-                font-size: 13px !important
-            }
+        <blade media|%20only%20screen%20and%20(max-width%3A575px)%20%7B%0D>rs-layer.res-slide-btn {
+            padding: 7px 16px !important;
+            font-size: 13px !important
+        }
         }
 
         #rev_slider_1_1_wrapper .zeus.tparrows {
@@ -181,6 +173,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             line-height: 60px !important;
             font-size: 17px !important
         }
+
     </style>
 </head>
 <!--Body Start-->
@@ -195,18 +188,23 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <div class="zmm-main-nav"> </div>
             <div class="search-form-wrapper margin-top-30">
                 <form class="search-form" role="search">
-                    <div class="input-group add-on"> <input class="form-control" placeholder="Search for.." name="srch-term" type="text">
-                        <div class="input-group-btn"> <button class="btn btn-default search-btn" type="submit"><i class="ti-arrow-right"></i></button> </div>
+                    <div class="input-group add-on"> <input class="form-control" placeholder="Search for.."
+                            name="srch-term" type="text">
+                        <div class="input-group-btn"> <button class="btn btn-default search-btn" type="submit"><i
+                                    class="ti-arrow-right"></i></button> </div>
                     </div>
                 </form>
             </div>
         </div>
     </div> <!-- Overlay Search -->
-    <div class="overlay-search text-center hide"> <a href="index.html#" class="close close-light overlay-search-close"></a>
+    <div class="overlay-search text-center hide"> <a href="index.html#"
+            class="close close-light overlay-search-close"></a>
         <div class="search-form-wrapper">
             <form class="navbar-form search-form sliding-search-form" role="search">
-                <div class="input-group add-on"> <input class="form-control" placeholder="Search for.." name="srch-term" type="text">
-                    <div class="input-group-btn"> <button class="btn btn-default search-btn" type="submit"><i class="ti-arrow-right"></i></button> </div>
+                <div class="input-group add-on"> <input class="form-control" placeholder="Search for.." name="srch-term"
+                        type="text">
+                    <div class="input-group-btn"> <button class="btn btn-default search-btn" type="submit"><i
+                                class="ti-arrow-right"></i></button> </div>
                 </div>
             </form>
         </div>
@@ -221,13 +219,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <div class="sticky-head">
                                 <div class="basic-container clearfix">
                                     <ul class="nav mobile-header-items pull-left">
-                                        <li class="nav-item"><a href="index.html#" class="zmm-toggle img-before"><i class="ti-menu"></i></a></li>
+                                        <li class="nav-item"><a href="index.html#" class="zmm-toggle img-before"><i
+                                                    class="ti-menu"></i></a></li>
                                     </ul>
                                     <ul class="nav mobile-header-items pull-center">
                                         <li> <a href="index.html" class="img-before"></a> </li>
                                     </ul>
                                     <ul class="nav mobile-header-items pull-right">
-                                        <li class="nav-item"><a href="index.html#" class="img-before overlay-search-switch"><i class="icon-magnifier icons"></i></a></li>
+                                        <li class="nav-item"><a href="index.html#"
+                                                class="img-before overlay-search-switch"><i
+                                                    class="icon-magnifier icons"></i></a></li>
                                     </ul>
                                 </div> <!-- .basic-container -->
                             </div> <!-- .sticky-head -->
@@ -259,25 +260,29 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                             <span class="ti-twitter"></span>
                                         </a>
 
-                                        <a href="https://www.instagram.com/newbreedcity_chapel/" class="social-instagram">
+                                        <a href="https://www.instagram.com/newbreedcity_chapel/"
+                                            class="social-instagram">
                                             <span class="ti-instagram"></span>
                                         </a>
 
 
 
-                                        <a href="https://www.youtube.com/channel/UCKCKWbNti31vgVbl0-LbvJw" class="social-youtube">
+                                        <a href="https://www.youtube.com/channel/UCKCKWbNti31vgVbl0-LbvJw"
+                                            class="social-youtube">
                                             <span class="ti-youtube"></span>
                                         </a>
 
                                     </div>
                                 </li>
-                                <li><a href="index.html#" class="full-view-switch text-center"><i class="ti-search typo-white"></i></a></li>
+                                <li><a href="index.html#" class="full-view-switch text-center"><i
+                                            class="ti-search typo-white"></i></a></li>
                             </ul>
                         </div>
                         <!--Search-->
                         <div class="full-view-wrapper hide"> <a href="index.html#" class="close full-view-close"></a>
                             <form class="navbar-form search-form" role="search">
-                                <div class="input-group"> <input class="form-control" placeholder="Search hit enter.." name="srch-term" type="text"> </div>
+                                <div class="input-group"> <input class="form-control" placeholder="Search hit enter.."
+                                        name="srch-term" type="text"> </div>
                             </form>
                         </div>
                     </div>
@@ -291,7 +296,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     <div class="">
                                         <!--Overlay Menu Switch-->
                                         <ul class="nav navbar-items pull-left">
-                                            <li class="list-item"> <a href="{{ route('memberdash') }}" class="logo-general"><img src="web/images/newbr.jpg" class="img-fluid changeable-light" width="166" height="50" alt="Logo" /></a> <a href="/" class="logo-sticky"><img src="web/images/newbreed.png" class="img-fluid changeable-dark" width="166" height="100" alt="Logo" /></a> </li>
+                                            <li class="list-item"> <a href="{{ route('memberdash') }}"
+                                                    class="logo-general"><img src="web/images/newbr.jpg"
+                                                        class="img-fluid changeable-light" width="166" height="50"
+                                                        alt="Logo" /></a> <a href="/" class="logo-sticky"><img
+                                                        src="web/images/newbreed.png" class="img-fluid changeable-dark"
+                                                        width="166" height="100" alt="Logo" /></a> </li>
                                         </ul> <!-- Menu -->
                                         <ul class="nav navbar-items pull-right">
                                             <!--List Item-->
@@ -307,35 +317,50 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
                                                     <li class="nav-item">
-                                                        <a href="{{ route('memberdash') }}" class="nav-link">Dashboard</a>
+                                                        <a href="{{ route('memberdash') }}"
+                                                            class="nav-link">Dashboard</a>
                                                     </li>
                                                     <li class="nav-item">
                                                         <a href="/team" class="nav-link">Team</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a href="{{ url('/channels') }}" class="nav-link">Channels</a>
+                                                        <a href="{{ url('/channels') }}"
+                                                            class="nav-link">Channels</a>
                                                     </li>
 
                                                     <li class="nav-item">
-                                                        <a href="{{ url('contributions') }}" class="nav-link">Contributions</a>
+                                                        <a href="{{ url('contributions') }}"
+                                                            class="nav-link">Contributions</a>
                                                     </li>
 
                                                     <li class="nav-item">
+<<<<<<< HEAD
                                                         <a class="nav-link " href="{{ url('/contact-support') }}" id="submenuDropdown">
+=======
+                                                        <a class="nav-link "
+                                                            href="{{ url('/reports') }}"
+                                                            id="submenuDropdown">
+>>>>>>> origin/main
                                                             Contact support
                                                         </a>
                                                     </li>
                                                     <li class="nav-item dropdown">
-                                                        <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><i class="fas fa-user-circle"></i> </a>
-                                                        <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+                                                        <a id="dropdownSubMenu1" href="#" data-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"
+                                                            class="nav-link dropdown-toggle"><i
+                                                                class="fas fa-user-circle"></i> </a>
+                                                        <ul aria-labelledby="dropdownSubMenu1"
+                                                            class="dropdown-menu border-0 shadow">
                                                             <li><a href="#" class="dropdown-item">View profile </a></li>
-                                                            <li><a href="#" class="dropdown-item">Change password</a></li>
+                                                            <li><a href="#" class="dropdown-item">Change password</a>
+                                                            </li>
 
                                                             <li class="dropdown-divider"></li>
 
                                                             <!-- Level two dropdown-->
                                                             <li class="dropdown-submenu dropdown-hover">
-                                                                <a id="dropdownSubMenu2" href="/logout" class="dropdown-item ">Logout</a>
+                                                                <a id="dropdownSubMenu2" href="/logout"
+                                                                    class="dropdown-item ">Logout</a>
 
                                                             </li>
                                                             <!-- End Level two -->
@@ -352,7 +377,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                             <!--List Item End-->
                                             <!--List Item-->
                                             <li class="list-item">
-                                                <div class="header-navbar-text-1"><a href="/member/login" class="h-donate-btn">LOGOUT</a></div>
+                                                <div class="header-navbar-text-1"><a href="/logout"
+                                                        class="h-donate-btn">LOGOUT</a></div>
                                             </li>
                                             <!--List Item End-->
                                         </ul> <!-- Menu -->
@@ -367,6 +393,32 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </header> <!-- header -->
             <!-- Revolution Slider Section -->
 
+<<<<<<< HEAD
+=======
+
+            @if($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
+            @if(session('error'))
+                <div class="alert alert-danger">
+                    {{ session('error') }}
+                </div>
+            @endif
+
+            @if(session('success'))
+                <div class="alert alert-success">
+                    {{ session('success') }}
+                </div>
+            @endif
+
+>>>>>>> origin/main
             @yield('content')
         </div> <!-- .page-wrapper-inner -->
     </div>
@@ -399,7 +451,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     <span class="ti-instagram"></span>
                                 </a>
 
-                                <a href="https://www.youtube.com/channel/UCKCKWbNti31vgVbl0-LbvJw" class="social-youtube">
+                                <a href="https://www.youtube.com/channel/UCKCKWbNti31vgVbl0-LbvJw"
+                                    class="social-youtube">
                                     <span class="ti-youtube"></span>
                                 </a>
                             </div>
@@ -429,13 +482,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     <!-- List Items -->
                                     <li>
 
-                                        <div class="side-item-text"><a href="blog-single.html">OUR PROPHETIC COVENANT ANOINTING SERVICE WITH BISHOP ERICK MWANGI</a>
+                                        <div class="side-item-text"><a href="blog-single.html">OUR PROPHETIC COVENANT
+                                                ANOINTING SERVICE WITH BISHOP ERICK MWANGI</a>
                                             <span class="post-date d-block">JAN 7, 2024</span>
                                         </div>
                                     </li>
                                     <li>
 
-                                        <div class="side-item-text"><a href="blog-single.html"> OUR NIGHT OF DOMINION CROSSOVER KESHA With BISHOP ERICK MWANGI AND PROPHET NANA YAW OBENG</a>
+                                        <div class="side-item-text"><a href="blog-single.html"> OUR NIGHT OF DOMINION
+                                                CROSSOVER KESHA With BISHOP ERICK MWANGI AND PROPHET NANA YAW OBENG</a>
                                             <span class="post-date d-block">JAN 1, 2024</span>
                                         </div>
                                     </li>
@@ -447,13 +502,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <!-- Title -->
                                 <h3 class="title typo-white">Newsletter</h3>
                             </div>
-                            <p>Sign up for our weekly newsletter to stay updated on all news and events at New Breed City Chapel.
+                            <p>Sign up for our weekly newsletter to stay updated on all news and events at New Breed
+                                City Chapel.
                                 Email updates on new product Announcements, Gift Ideas, Special Promotions and More.</p>
                             <div class="mailchimp-widget-wrap">
                                 <!-- subscribe form -->
                                 <form id="subscribe-form-1" class="subscribe-form" action=" ">
-                                    <div class="input-group add-on"> <input type="text" class="form-control" name="mcemail" autocomplete="off" id="mcemail-1" placeholder="Email Address">
-                                        <div class="input-group-btn"> <button class="btn btn-default subscribe-btn" type="submit">Sign Up</button> </div>
+                                    <div class="input-group add-on"> <input type="text" class="form-control"
+                                            name="mcemail" autocomplete="off" id="mcemail-1"
+                                            placeholder="Email Address">
+                                        <div class="input-group-btn"> <button class="btn btn-default subscribe-btn"
+                                                type="submit">Sign Up</button> </div>
                                     </div>
                                     <p class="subscribe-status-msg hide"></p>
                                 </form>
@@ -473,7 +532,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <li class="nav-item">
                                     <div class="nav-item-inner"> Copyrights © <script>
                                             document.write(new Date().getFullYear())
-                                        </script> <a href="index.html"> </a>. Designed by <a href="http://automationeye.com">Automation Eye Limited</a> </div>
+
+                                        </script> <a href="index.html"> </a>. Designed by <a
+                                            href="http://automationeye.com">Automation Eye Limited</a> </div>
                                 </li>
                             </ul>
                             <ul class="footer-bottom-items footer-menu pull-right">

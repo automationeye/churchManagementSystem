@@ -6,14 +6,22 @@
         <h2> <b> Administrator Dashboard</b></h2>
     </div>
 
+    <?php
+    $user=Auth::guard('leader')->user();
+    
+    ?>
+
+
+   
+
     <div class="row mt-5">
         <div class="cardy">
             <div class="col-4">
                 <div class="card shadow " style="width: 18rem;">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item text-center">Meetings</li>
-                        <li class="list-group-item">Total Admin : 0 </li>
-                        <li class="list-group-item text-center"><a href="manage-admin.php"><b>View All Admins</b></a></li>
+                        <li class="list-group-item">Total Meetings : 0 </li>
+                        <li class="list-group-item text-center"><a href=""><b>View All Meetings</b></a></li>
                     </ul>
                 </div>
             </div>

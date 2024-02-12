@@ -129,6 +129,21 @@ class VisitorController extends Controller
         return view('admin.admin.acceptleave');
     }
 
+    public function approvemember(Request $request){
+
+        $id=$request->id;
+        
+        if($id==null){
+            return redirect()->route('managemember')->with('error', 'An error occured!');
+        }
+        $update=Member::where('id',$id)->update(['team_status'=>1]);
+        if($update){
+            return redirect()->route('managemember')->with('success', 'Member approved successfully!');
+        }else{
+            return redirect()->route('managemember')->with('error', 'An error occured!');
+        }
+    }
+
     public function managemember()
     {
         $user=Auth::guard('leader')->user();

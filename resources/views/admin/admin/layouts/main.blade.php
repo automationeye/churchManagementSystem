@@ -148,8 +148,8 @@
                             <i class="fa fa-address-card-o menu-icon"></i><span class="nav-text">Members</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="/addmember"> <i class="icon-plus menu-icon"></i><span class="nav-text">Approve Member</span></a></li>
-                            <li><a href="/membersmanage"> <i class="fa fa-tasks menu-icon"></i><span class="nav-text">Manage Member</span></a></li>
+                            <li><a href="/addmember"> <i class="icon-plus menu-icon"></i><span class="nav-text">Add Member</span></a></li>
+                            <li><a href="/managemember"> <i class="fa fa-tasks menu-icon"></i><span class="nav-text">Manage Member</span></a></li>
                             <!-- <li><a href="./"> <i class="fa fa-bar-chart menu-icon"></i><span class="nav-text">Salary Table</span></a></li> -->
 
                         </ul>

@@ -56,7 +56,9 @@ Route::group(['middleware' => ['auth.leader']], function () {
 
         Route::get('/managemember', 'VisitorController@managemember')->name('managemember');
 
-        Route::get('/meeting', 'VisitorController@meeting')->name('meeting');
+        Route::get('/approve/{id}', 'VisitorController@approvemember')->name('approved');
+
+        Route::get('/meeting', 'MeetingController@index')->name('meeting');
 
         // Route::get('/membersmanage', 'VisitorController@membersmanage')->name('membersmanage');
 

@@ -11,6 +11,7 @@
     table {
         border-spacing: 10px;
     }
+
 </style>
 
 <div class="container bg-white shadow">
@@ -18,43 +19,37 @@
         <div class='text-center pb-2'>
             <h4> Members</h4>
         </div>
-        <table style="width:100%" class="table-hover text-center ">
-            <tr class="bg-dark">
-              
-                <th>Members Id</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                      
-                <th>Action</th>
-            </tr>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Team</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach($members as $member)
+                <tr>
+                    <th scope="row">{{$member->id}}</th>
+                    <td>{{$member->firstname}}</td>
+                    <td>{{$member->team}}</td>
 
-            @foreach($members as $member)
-            
-                    <tr>
-                        
-                        <td>{{$member->id}}<td>
-                        <td>{{$member->firstname}}<td>
-
-                        <td>{{$member->lastname}}<td>
-                      
-
-                        <td>
-                        @if($member->team_status==0)
-
-                        <a href="/aprove/{{$member->id}}" class="btn btn-warning">Approve</a>
-
-                        @else
-
-                        <a href="/managemember" class="btn btn-success">Approved</a>
-
-                        @endif
-                        </td>
-                        
-
-
-                    </tr>
-
-            @endforeach
+                    @if($member->team_status==0)
+                    <td>
+                        <a href="{{url('approve')}}/{{$member->id}}" class="btn btn-warning">Approve</a>
+                    </td>
+                    @else
+                    <td>
+                    <a href="/" class="btn btn-success">Approved</a>
+                    </td>
+                    
+                    @endif
+                 
+                </tr>
+                @endforeach
+               
+            </tbody>
         </table>
     </div>
 </div>

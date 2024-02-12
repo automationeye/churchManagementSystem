@@ -45,9 +45,11 @@ Route::get('/leader/login', 'VisitorController@leaderlogin')->name('leaderlogin'
 Route::post('/leader/login/post', 'VisitorController@leaderloginpost')->name('leaderloginpost');
 
 
-Route::post('/meeting/post', 'MeetingController@meetingpost')->name('meeting.post');
+
 
 Route::group(['middleware' => ['auth.leader']], function () {
+
+    Route::post('/meeting/post', 'MeetingController@store')->name('meeting.post');
 
     Route::get('/leaderdash', 'VisitorController@leaderdash')->name('leaderdash');
 

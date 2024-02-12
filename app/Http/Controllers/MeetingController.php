@@ -39,6 +39,7 @@ class MeetingController extends Controller
     public function store(Request $request)
     {
         // Validate the incoming request data
+        // dd($request->all());
         $validatedData = $request->validate([
             'title' => 'required|string|max:255',
             'description' => 'required|string|max:255',

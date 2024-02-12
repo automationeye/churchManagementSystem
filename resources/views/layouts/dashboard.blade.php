@@ -310,7 +310,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                                         <a href="{{ route('memberdash') }}" class="nav-link">Dashboard</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a href="" class="nav-link">Teams</a>
+                                                        <a href="/team" class="nav-link">Team</a>
                                                     </li>
                                                     <li class="nav-item">
                                                         <a href="{{ url('/channels') }}" class="nav-link">Channels</a>
@@ -321,7 +321,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                                     </li>
 
                                                     <li class="nav-item">
-                                                        <a class="nav-link " href="{{ url('/reports') }}" id="submenuDropdown">
+                                                        <a class="nav-link " href="{{ url('/contact-support') }}" id="submenuDropdown">
                                                             Contact support
                                                         </a>
                                                     </li>
@@ -366,7 +366,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </div>
             </header> <!-- header -->
             <!-- Revolution Slider Section -->
-           
+
             @yield('content')
         </div> <!-- .page-wrapper-inner -->
     </div>

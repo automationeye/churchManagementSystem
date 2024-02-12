@@ -36,6 +36,8 @@ Route::middleware('auth.member')->group(function () {
     Route::get('/channels', 'VisitorController@channels')->name('channels');
     Route::get('/contributions', 'VisitorController@contributions')->name('contributions');
     Route::post('/update/team', 'VisitorController@updateteam')->name('updateteam');
+    Route::get('/team', 'VisitorController@team')->name('team');
+    Route::get('/contact-support', 'VisitorController@contact-support')->name('contact-support');
 });
 
 

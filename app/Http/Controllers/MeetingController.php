@@ -38,19 +38,36 @@ class MeetingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // Validate the incoming request data
         $validatedData = $request->validate([
             'title' => 'required|string|max:255',
-            'description' => 'email|unique:members,email',
-            'venue' => 'nullable|string|max:20',
-            'datetime' => 'required|string|min:6',
+            'description' => 'required|string|max:255',
+            'venue' => 'required|string|max:255',
+            'datetime' => 'required|date_format:Y-m-d\TH:i', // Assuming datetime format is like "YYYY-MM-DDTHH:MM"
         ]);
 
-        
-        $meeting = new Meeting();
-        $meeting->title=$request->title;
+        try {
+            // Create a new instance of the Meeting model
+            $meeting = new Meeting();
 
+            // Assign values to the model attributes
+            $meeting->title = $request->title;
+            $meeting->description = $request->description;
+            $meeting->venue = $request->venue;
+            $meeting->datetime = $request->datetime;
+
+            // Save the meeting data into the database
+            $meeting->save();
+
+            // Optionally, you can redirect the user to a success page or return a success response
+            return redirect()->route('meetings.index')->with('success', 'Meeting created successfully');
+        } catch (\Exception $e) {
+            // Handle any exceptions that occur during the database operation
+            // You can log the error, display a user-friendly message, or redirect the user to an error page
+            return back()->withInput()->withErrors(['error' => 'An error occurred while creating the meeting']);
+        }
     }
+
 
     /**
      * Display the specified resource.

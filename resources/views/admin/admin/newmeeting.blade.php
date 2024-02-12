@@ -6,7 +6,7 @@
     </div>
     <div class="container mt-5">
 
-        <form>
+        <form action="{{ url('meeting/post') }}">
 
 
             <div class="form-group">

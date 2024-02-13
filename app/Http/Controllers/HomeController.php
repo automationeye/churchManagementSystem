@@ -16,7 +16,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // $this->middleware('auth.admin');
     }
 
     /**
@@ -29,7 +29,9 @@ class HomeController extends Controller
         if (Setting::notSet()) {
             return view('setup');
         }
-        $user = \Auth::user();
+        $user=\Auth::guard('admin')->user();
+
+       
         $c_types = \App\CollectionsType::getTypes();
         $eventsall =  \App\Announcement::leftjoin('users', "announcements.branch_id", '=', 'users.id')->where('announcements.branch_id', $user->id)->orWhere('announcements.branch_id', $user->id)->orderBy('announcements.id', 'desc')->get();
         $members = \App\Member::where('branch_id', $user->id)->get();
@@ -42,7 +44,7 @@ class HomeController extends Controller
         $currencies = Countries::all();
         $options = Setting::findName(['logo', 'name']);
         // $currencies = findName(['logo', 'name'], $options);
-        $currency = auth()->user()->getCurrency();
+        $currency = \Auth::guard('admin')->user()->getCurrency();
         // get due savings
         $dueSavings = \App\CollectionCommission::dueSavings($user);
         // get the commission percentage

@@ -21,9 +21,12 @@
 @section('content')
     @include('layouts.helpers.colors')
     <!--CONTENT CONTAINER-->
-    <?php $user = Auth::user();
+
+    {{$user = \Auth::guard('admin')->user();}}
+    <?php 
+    
     $money = function ($number) {
-        return \Auth::user()::toMoney((float) $number);
+        return \Auth::guard('admin')->user()::toMoney((float) $number);
     }; ?>
     <?php
     $colors = colo(); //$generateColor($c_types);
@@ -188,8 +191,7 @@
                                 </div>
                             </div>
                         </div>
-                        <?php $isAdmin = auth()
-                            ->user()
+                        <?php $isAdmin = \Auth::guard('admin')->user()
                             ->isAdmin(); ?>
                         <div class="col-md-8">
                             <div class="row">
@@ -643,7 +645,7 @@
 
 
             <div class="row">
-                @if (auth()->user()->isAdmin())
+                @if (Auth::guard('admin')->user()->isAdmin())
                     <div class="col-xs-12">
                         <div class="panel">
                             <div class="panel-heading">

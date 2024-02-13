@@ -90,7 +90,7 @@
 					<a href="{{url('/dashboard')}}" class="navbar-brand">
 						<img src="{{ URL::asset('img/logo.png') }}" alt="Nifty Logo" class="brand-icon">
 						<div class="brand-title">
-							<span class="brand-text">{{strtoupper(\Auth::user()->branchname)}}</span>
+							<span class="brand-text">{{strtoupper(\Auth::guard('admin')->user()->branchname)}}</span>
 						</div>
 					</a>
 				</div>
@@ -147,7 +147,7 @@
 									<!--You can use an image instead of an icon.-->
 									<!--<img class="img-circle img-user media-object" src="img/profile-photos/1.png" alt="Profile Picture">-->
 									<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-									<i class="fa fa-user"> Hello {{\Auth::user()->branchname}}</i>
+									<i class="fa fa-user"> Hello {{\Auth::guard('admin')->user()->branchname}}</i>
 								</span>
 								<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 								<!--You can also display a user name in the navbar.-->
@@ -201,8 +201,8 @@
 											<span class="pull-right dropdown-toggle">
 												<i class="dropdown-caret"></i>
 											</span>
-											<p class="mnp-name"><!--span class="flag-icon flag-icon-ng"></span--> {{\Auth::user()->branchname}}</p>
-											<p class="mnp-desc">{{\Auth::user()->branchcode}}</p>
+											<p class="mnp-name"><!--span class="flag-icon flag-icon-ng"></span--> {{\Auth::guard('admin')->user()->branchname}}</p>
+											<p class="mnp-desc">{{\Auth::guard('admin')->user()->branchcode}}</p>
 										</a>
 									</div>
 								</div>
@@ -387,7 +387,7 @@
 											<i class="arrow"></i>
 										</a>
 										<ul class="collapse">
-											@if (\Auth::user()->isAdmin())
+											@if (\Auth::guard('admin')->user()->isAdmin())
 											<li class="{{Route::currentRouteName() === 'branches' ? 'active-sub' : ''}}">
 												<a href="{{route('branches')}}"><i class="fa fa-tree"></i> Branches</a>
 											</li>
@@ -419,7 +419,7 @@
 											<i class="arrow"></i>
 										</a>
 										<ul class="collapse">
-											@if(!(\Auth::user()->isAdmin()))
+											@if(!(\Auth::guard('admin')->user()->isAdmin()))
 											<li class="{{ Route::currentRouteName() === 'report.membership' ? 'active-sub active' : '' }}">
 												<a href="{{route('report.membership')}}">Membership</a>
 											</li>

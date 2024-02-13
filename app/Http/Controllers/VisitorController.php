@@ -216,6 +216,16 @@ class VisitorController extends Controller
         return view('members.member',compact('leaves'));
     }
 
+    public function team()
+    {
+        return view('members.team');
+    }
+
+    public function contact()
+    {
+        return view('members.contact-support');
+    }
+
 
 
     public function memberregpost(Request $request)

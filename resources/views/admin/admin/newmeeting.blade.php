@@ -6,8 +6,8 @@
     </div>
     <div class="container mt-5">
 
-        <form>
-
+        <form method="POST" action="{{ url('meeting/post') }}">
+            @csrf
 
             <div class="form-group">
                 <label> Meeting Title :</label>
@@ -18,14 +18,24 @@
 
             <div class="form-group">
                 <label>Meeting Details :</label>
-                <input type="text" class="form-control" value=" " name="text">
+                <input type="text" class="form-control" value=" " name="description">
 
+            </div>
+
+            <div class="form-group">
+                <label>Meeting Details:</label>
+                <select class="form-control" name="venue">
+
+                    <option value="physical">Physical</option>
+                    <option value="virtual">virtual</option>
+
+                </select>
             </div>
 
             <div class="form-group">
 
                 <label for="meeting-date">Select Meeting Date and Time:</label>
-                <input type="datetime-local" class="form-control" id="meeting-date" name="meeting-date">
+                <input type="datetime-local" class="form-control" id="meeting-date" name="datetime">
             </div>
             <button type="submit" class="btn btn-primary">Schedule Meeting</button>
         </form>

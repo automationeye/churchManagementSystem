@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Announcement;
+use App\Member;
+use Auth;
 use Illuminate\Http\Request;
 
 class AnnouncementController extends Controller
@@ -42,13 +44,17 @@ class AnnouncementController extends Controller
         //dd($request->all());
 
 
+        $user=Auth::guard('leader')->user();
+
+       
+
         $validatedData = $request->validate([
             'details' => 'required|string|max:255',
             'by_who' => 'required|string|max:255',
-            'start_date' => 'required|date_format:Y-m-d\TH:i',
-            'stop_date' => 'required|date_format:Y-m-d\TH:i',
-            'start_time' => 'required|date_format:H:i',
-            'stop_time' =>  'required|date_format:H:i',
+            'start_date' => 'required',
+            'stop_date' => 'required',
+            'start_time' => 'required',
+            'stop_time' =>  'required',
 
         ]);
 
@@ -65,6 +71,23 @@ class AnnouncementController extends Controller
             $announcement->start_time = $request->start_time;
             $announcement->stop_time = $request->stop_time;
 
+
+            //fetch members of that team
+
+            $team=$user->team;
+
+            $members=Member::where('team',$team)->get('phone');
+
+            $message="Hello newbreed member, $request->details happening on $request->start_date from $request->start_time to $request->stop_date $request->stop_time";
+            foreach($members as $member){
+                $phones=$member->phone;
+                $modifiedNumber = substr($phones, 1);
+                sendSmsUsingCurl($modifiedNumber,'20642','plain',$message);
+            }
+
+          
+
+            
         
 
             if($announcement->save()){

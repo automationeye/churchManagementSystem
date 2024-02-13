@@ -42,7 +42,7 @@ class AnnouncementController extends Controller
         //dd($request->all());
 
 
-        /* $validatedData = $request->validate([
+        $validatedData = $request->validate([
             'details' => 'required|string|max:255',
             'by_who' => 'required|string|max:255',
             'start_date' => 'required|date_format:Y-m-d\TH:i',
@@ -51,7 +51,7 @@ class AnnouncementController extends Controller
             'stop_time' =>  'required|date_format:H:i',
 
         ]);
-*/
+
         try {
             // Create a new instance of the Meeting model
 
@@ -65,17 +65,23 @@ class AnnouncementController extends Controller
             $announcement->start_time = $request->start_time;
             $announcement->stop_time = $request->stop_time;
 
-            // dd('code reached here');
+        
+
+            if($announcement->save()){
+                return redirect()->route('announcements')->with('success', 'Announcement created successfully');
+            }else{
+                return redirect()->route('announcements')->with('error', 'An error occured');
+            }
 
             // Save the Announcement data into the database
-            $announcement->save();
+            
 
             // Optionally, you can redirect the user to a success page or return a success response
-            return redirect()->route('announcement.index')->with('success', 'Announcement created successfully');
+            
         } catch (\Exception $e) {
             // Handle any exceptions that occur during the database operation
             // You can log the error, display a user-friendly message, or redirect the user to an error page
-            return back()->withInput()->withErrors(['error' => 'An error occurred while creating the Announcement']);
+            return back()->withInput()->withErrors(['error' => $e->getMessage()]);
         }
     }
 

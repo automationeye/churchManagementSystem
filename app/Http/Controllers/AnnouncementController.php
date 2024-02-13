@@ -42,7 +42,7 @@ class AnnouncementController extends Controller
         //dd($request->all());
 
 
-        /* $validatedData = $request->validate([
+        $validatedData = $request->validate([
             'details' => 'required|string|max:255',
             'by_who' => 'required|string|max:255',
             'start_date' => 'required|date_format:Y-m-d\TH:i',
@@ -51,7 +51,7 @@ class AnnouncementController extends Controller
             'stop_time' =>  'required|date_format:H:i',
 
         ]);
-*/
+
         try {
             // Create a new instance of the Meeting model
 

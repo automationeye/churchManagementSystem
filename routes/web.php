@@ -53,6 +53,9 @@ Route::group(['middleware' => ['auth.leader']], function () {
 
     Route::post('/meeting/post', 'MeetingController@store')->name('meeting.post');
 
+    Route::get('/announcements', 'AnnouncementController@index')->name('announcements');
+
+
     Route::get('/leaderdash', 'VisitorController@leaderdash')->name('leaderdash');
 
     Route::get('/addmember', 'VisitorController@addmember')->name('addmember');
@@ -133,7 +136,10 @@ Route::post('/setup/logo', 'VisitorController@uploadLogo')->name('app.logo');
 Route::post('/setup/name', 'VisitorController@saveAppName')->name('app.name');
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 
-Auth::routes();
+Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('/login', 'Auth\LoginController@login')->name('login');
+
+// Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
 

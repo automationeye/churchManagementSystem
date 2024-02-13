@@ -46,7 +46,7 @@ class User extends Authenticatable
     public static function getCurrency()
     {
         $curObj;
-        $currency = auth()->user()->currency;
+        $currency = \Auth::guard('admin')->user()->currency;
         foreach (Countries::all() as $value) {
             if ($value->currency_symbol == $currency) {
                 $curObj = $value;

@@ -40,7 +40,7 @@
             <!--===================================================-->
             <div class="panel rounded-top" style="background-color: #e8ddd3;">
                 <div class="panel-heading card-block text-center">
-                    <h1 class="panel-title text-primary text-bold">List of Members In {{ \Auth::user()->branchname }}</h1>
+                    <h1 class="panel-title text-primary text-bold">List of Members In {{ \Auth::guard('admin')->user()->branchname }}</h1>
                 </div>
                 <div class="panel-body">
                     <!--div style="height:100px;border:1px solid green">

@@ -38,7 +38,7 @@ class LoginController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest')->except('logout');
+        // $this->middleware('guest')->except('logout');
     }
 
     public function showLoginForm()
@@ -52,6 +52,35 @@ class LoginController extends Controller
         } else {
             return Redirect()->route('setupUser');
         }
+    }
+
+    public function login(Request $request){
+
+        $request->validate([
+            'email' => 'required|string',
+            'password' => 'required|string',
+        ]);
+
+        // Retrieve the user by phone number
+        $user = User::where('email', $request->email)->first();
+
+        
+        // Check if the user exists and the password is correct
+        if (Auth::guard('admin')->attempt(['email' => $request->email, 'password' => $request->password])) {
+
+            // dd(Auth::guard());
+            // Authenticate the user
+            Auth::login($user);
+
+            // dd(Auth::guard());
+
+            // Authentication successful, redirect to dashboard or any other route
+            return redirect()->route('dashboard')->with('success', 'Authentication successful!');
+        }
+
+
+        // Authentication failed, redirect back with error message
+        return redirect()->route('dashboard')->with('error', 'Invalid phone number or password.');
     }
 
 

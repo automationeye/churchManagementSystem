@@ -13,25 +13,40 @@
                         <div class="card login-form mb-0">
                             <div class="card-body pt-5 shadow">
                                 <h4 class="text-center">Create Announcement</h4>
-                                <form method="POST" action=" ">
-
+                                <form method="POST" action=" {{ url('announcement/post') }}">
+                                    @csrf
                                     <div class="form-group">
-                                        <label> Announcement Title :</label>
-                                        <input type="text" class="form-control" value="" name="title">
+                                        <label> Announcement Details :</label>
+                                        <input type="text" class="form-control" value="" name="details">
 
                                     </div>
 
 
                                     <div class="form-group">
-                                        <label>Message :</label>
-                                        <input type="text" class="form-control" value=" " name="text">
+                                        <label>By Who :</label>
+                                        <input type="text" class="form-control" value=" " name="by_who">
 
                                     </div>
 
+                                    <div class="form-group">
+                                        <label for="start-date">Select Start Date:</label>
+                                        <input type="date" class="form-control" id="start-date" name="start_date">
+                                    </div>
 
+                                    <div class="form-group">
+                                        <label for="stop-date">Select Stop Date:</label>
+                                        <input type="date" class="form-control" id="stop-date" name="stop_date">
+                                    </div>
 
+                                    <div class="form-group">
+                                        <label for="start-time">Select Start Time:</label>
+                                        <input type="time" class="form-control" id="start-time" name="start_time">
+                                    </div>
 
-
+                                    <div class="form-group">
+                                        <label for="stop-time">Select Stop Time:</label>
+                                        <input type="time" class="form-control" id="stop-time" name="stop_time">
+                                    </div>
 
                                     <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
                                         <div class="btn-group">

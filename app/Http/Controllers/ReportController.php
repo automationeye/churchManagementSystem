@@ -126,7 +126,7 @@ class ReportController extends Controller
 
     public function allCollections()
     {
-        $user = \Auth::user();
+        $user = \Auth::guard('admin')->user();
         if (!$user->isAdmin()) {
             return redirect()->route('report.collections');
         }

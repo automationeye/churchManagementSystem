@@ -18,7 +18,7 @@ class MemberController extends Controller
      */
     public function __construct()
     {
-        $this->user = \Auth::user();
+        $this->user = \Auth::guard('admin')->user();
     }
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class MemberController extends Controller
      */
     public function index(Request $request)
     {
-        $user = \Auth::user();
+        $user = \Auth::guard('admin')->user();
         if ($request->draw) {
             return DataTables::of($user->members)->make(true);
         } else {
@@ -65,7 +65,7 @@ class MemberController extends Controller
             return response()->json(['status' => false, 'text' => "The phone ($request->phone) already exists for a member."]);
         }
 
-        $user = \Auth::user();
+        $user = \Auth::guard('admin')->user();
 
         $relatives = null;
 
@@ -202,7 +202,7 @@ class MemberController extends Controller
     public function show(Member $member, $id)
     {
         $member = Member::find($id);
-        $user = \Auth::user();
+        $user = \Auth::guard('admin')->user();
         // dd($user->members()->where('members.id', $id)->get());
         $c_types = CollectionsType::getTypes();
         // $sql = 'SELECT COUNT(case when attendance = "yes" then 1 end) AS present, COUNT(case when attendance = "no" then 1 end) AS absent,
@@ -317,7 +317,7 @@ class MemberController extends Controller
     public function getRelative(Request $request, $search_term)
     {
 
-        $user = \Auth::user();
+        $user = \Auth::guard('admin')->user();
 
         $sql = "SELECT * from members WHERE branch_id = '$user->id' AND  MATCH (firstname,lastname)
       AGAINST ('$search_term')";
@@ -327,7 +327,7 @@ class MemberController extends Controller
 
     public function modify($id)
     {
-        $user = \Auth::user();
+        $user = \Auth::guard('admin')->user();
         $member = Member::whereId($id)->where('branch_id', $user->id)->first();
         if (!$member) {
             return 'Member Not exists';
@@ -372,7 +372,7 @@ class MemberController extends Controller
 
     public function testMail(Request $request)
     {
-        return new \App\Mail\MailToMember($request, \Auth::user());
+        return new \App\Mail\MailToMember($request, \Auth::guard('admin')->user());
     }
 
     public function updateMember(Request $request)
@@ -413,7 +413,7 @@ class MemberController extends Controller
 
     public function memberAnalysis(Request $request)
     {
-        $user = \Auth::user();
+        $user = \Auth::guard('admin')->user();
         $c_types = \App\CollectionsType::getTypes();
         $savings = \App\MemberCollection::rowToColumn(\App\MemberCollection::where('branch_id', $user->id)->where('member_id', $request->id)->get());
         $interval = $request->interval;
@@ -527,7 +527,7 @@ class MemberController extends Controller
     // count(case when sex = 'male' then 1 end) AS male, count(case when sex = 'female' then 1 end) AS female,
     public function memberRegStats(Request $request)
     {
-        $user = \Auth::user();
+        $user = \Auth::guard('admin')->user();
         $members = Member::selectRaw("COUNT(id) as total, SUM(CASE WHEN sex='male' THEN 1 ELSE 0 END) AS male, SUM(CASE WHEN sex='female' THEN 1 ELSE 0 END) AS female,
     MONTH(member_since) AS month")->whereRaw("member_since > DATE(now() + INTERVAL - 12 MONTH)")->where("branch_id", $user->id)->groupBy("month")->get();
         // dd($members);

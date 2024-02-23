@@ -140,7 +140,7 @@
                         cols.push({
                             data: 'amounts.' + v.name,
                             render: (data) => (
-                                `{{ \Auth::user()->getCurrencySymbol()->currency_symbol }}${data ? data : 0}`
+                                `{{ \Auth::guard('admin')->user()->getCurrencySymbol()->currency_symbol }}${data ? data : 0}`
                             )
                         })
                     ))
@@ -194,7 +194,7 @@
                         cols.push({
                             data: 'amounts.' + v.name,
                             render: (data) => (
-                                `{{ \Auth::user()->getCurrencySymbol()->currency_symbol }}${data ? data : 0}`
+                                `{{ \Auth::guard('admin')->user()->getCurrencySymbol()->currency_symbol }}${data ? data : 0}`
                             )
                         })
                     ))

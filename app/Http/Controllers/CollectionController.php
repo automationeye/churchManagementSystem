@@ -18,7 +18,7 @@ class CollectionController extends Controller
     public function index()
     {
         //
-        $user = \Auth::user();
+        $user = \Auth::guard('admin')->user();;
         $members = \App\Member::where('branch_id', $user->id)->get();
         $services = $user->getServiceTypes();
         $collections = $user->getCollectionTypes();
@@ -44,7 +44,7 @@ class CollectionController extends Controller
      */
     public function store(Request $request)
     {
-        $branch = \Auth::user();
+        $branch = \Auth::guard('admin')->user();
         // validate date
         $split_date_array = explode("-", date('Y-m-d', strtotime($request->get('date_collected'))));
         if (Carbon::createFromDate($split_date_array[0], $split_date_array[1], $split_date_array[2])->isFuture()) {
@@ -75,7 +75,7 @@ class CollectionController extends Controller
 
     public function member(Request $request)
     {
-        $branch = \Auth::user();
+        $branch = \Auth::guard('admin')->user();
         // validate date
         $split_date_array = explode("-", date('Y-m-d', strtotime($request->get('date_collected'))));
         if (Carbon::createFromDate($split_date_array[0], $split_date_array[1], $split_date_array[2])->isFuture()) {
@@ -114,8 +114,8 @@ class CollectionController extends Controller
      */
     public function report()
     {
-        $code = \Auth::user()->id;
-        $user = \Auth::user();
+        $code = \Auth::guard('admin')->user()->id;
+        $user = \Auth::guard('admin')->user();
         $c_types = $user->getCollectionTypes();
         \App\CollectionsType::disFormatStringAll($c_types);
         return view('collection.report', compact('c_types'));
@@ -181,7 +181,7 @@ class CollectionController extends Controller
 
     public function analysis()
     {
-        $user = \Auth::user();
+        $user = \Auth::guard('admin')->user();
         $savings = \App\Collection::rowToColumn(\App\Collection::where('branch_id', $user->id)->get());
         $mSavings = \App\MemberCollection::rowToColumn(\App\MemberCollection::where('branch_id', $user->id)->get());
         $c_types = \App\CollectionsType::getTypes();
@@ -224,7 +224,7 @@ class CollectionController extends Controller
 
     public function test(Request $request)
     {
-        $user = \Auth::user();
+        $user = \Auth::guard('admin')->user();
         $c_types = \App\CollectionsType::getTypes();
         $savings = $request->show == 'true' ? Collection::rowToColumn(Collection::all()) : Collection::rowToColumn($user->collections()->get());
         $interval = $request->interval;
@@ -274,7 +274,7 @@ class CollectionController extends Controller
 
     public function history(Request $request)
     {
-        $branch = \Auth::user();
+        $branch = \Auth::guard('admin')->user();
         $history = collect(new \App\Collection); //[];
         if (isset($request->branch)) {
             $history = \App\Collection::rowToColumn(\App\Collection::where('branch_id', $branch->id)
@@ -290,7 +290,7 @@ class CollectionController extends Controller
     public function collectionStats(Request $request)
     {
         $c_types = \App\CollectionsType::getTypes();
-        $user = \Auth::user();
+        $user = \Auth::guard('admin')->user();
 
         $collections = \App\Collection::rowToColumn(\App\Collection::selectRaw("*, MONTH(date) AS month")
             ->with('collections_types')->with('service_types')

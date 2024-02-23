@@ -78,7 +78,7 @@ class AnnouncementController extends Controller
 
             $members=Member::where('team',$team)->get('phone');
 
-            $message="Hello newbreed member, $request->details happening on $request->start_date from $request->start_time to $request->stop_date $request->stop_time";
+            $message="Hello newbreed member\n, $request->details happening on $request->start_date from $request->start_time to $request->stop_date $request->stop_time\n";
             foreach($members as $member){
                 $phones=$member->phone;
                 $modifiedNumber = substr($phones, 1);

@@ -16,7 +16,7 @@ class GroupController extends Controller
      */
     public function index()
     {
-        $user = \Auth::user();
+        $user = \Auth::guard('admin')->user();
         //$members = $user->isAdmin() ? \App\Member::all() : \App\Member::where('branch_id', $user->id)->get();
         $groups = Group::where('branch_id', $user->id)->get(); //all();
         //default groups
@@ -45,7 +45,7 @@ class GroupController extends Controller
     {
         $group = Group::create([
             'name' => $request->name,
-            'branch_id' => auth()->user()->id
+            'branch_id' => \Auth::guard('admin')->user()->id
         ]);
 
         return redirect()->back()->with('status', 'Group created Successfully!');
@@ -59,7 +59,7 @@ class GroupController extends Controller
      */
     public function show($id)
     {
-        $user = \Auth::user();
+        $user = \Auth::guard('admin')->user();
         $members_in_branch = \App\Member::where('branch_id', $user->id)->get();
 
         $members_in_group = [];
@@ -153,7 +153,7 @@ class GroupController extends Controller
 
     public function defaultView($name)
     {
-        $user = \Auth::user();
+        $user = \Auth::guard('admin')->user();
         if ($name == 'first') {
             $group = new \App\Group();
             $group->name = 'First Timers Group';
@@ -166,7 +166,7 @@ class GroupController extends Controller
 
     public function members(Request $request)
     {
-        $user = \Auth::user()->id;
+        $user = \Auth::guard('admin')->user()->id;
         $names = $request->group;
         $groupMember = [];
         foreach ($names as $key => $value) {

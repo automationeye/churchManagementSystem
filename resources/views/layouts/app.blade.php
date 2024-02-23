@@ -257,7 +257,7 @@
 									<!--<li class="list-header">Components</li>-->
 									<!--Menu list item-->
 
-                  <li class="{{ (Route::currentRouteName() == 'members.all' || Route::currentRouteName() ==  'member.register.form') ? 'active-sub active' : ''}}
+                  <li class="{{ (Route::currentRouteName() == 'members.all' || Route::currentRouteName() ==  'member.register.form') ? '' : ''}}
                   	{{Route::currentRouteName() === 'member.profile' ? 'active-sub' : ''}}">
 
 										<a href="{{route('members.all')}}">
@@ -266,7 +266,7 @@
 											<i class="arrow"></i>
 										</a>
 										<ul class="collapse">
-											<li class="{{ Route::currentRouteName() === 'members.all' ? 'active-sub active' : '' }}">
+											<li class="{{ Route::currentRouteName() === 'members.all' ? '' : '' }}">
 												<a href="{{ route('members.all') }}"><i class="fa fa-list"></i> All Members</a>
 											</li>
 											<li class="{{ Route::currentRouteName() === 'member.register.form' ? 'active-sub active' : '' }}">
@@ -275,7 +275,7 @@
 										</ul>
 									</li>
 
-									<li class="{{ (Route::currentRouteName() == 'members.all' || Route::currentRouteName() ==  'member.register.form') ? 'active-sub active' : ''}}
+									<li class="{{ (Route::currentRouteName() == 'members.all' || Route::currentRouteName() ==  'member.register.form') ? '' : ''}}
                   	{{Route::currentRouteName() === 'member.profile' ? 'active-sub' : ''}}">
 
 										<a href="{{route('members.all')}}">
@@ -284,15 +284,15 @@
 											<i class="arrow"></i>
 										</a>
 										<ul class="collapse">
-											<li class="{{ Route::currentRouteName() === 'events' ? 'active-sub active' : '' }}">
+											<li class="{{ Route::currentRouteName() === 'events' ? '' : '' }}">
 												<a href="{{ route('events.all') }}"><i class="fa fa-list"></i> All Events</a>
 											</li>
-											<li class="{{ Route::currentRouteName() === 'member.register.form' ? 'active-sub active' : '' }}">
+											<li class="{{ Route::currentRouteName() === 'member.register.form' ? ' ' : '' }}">
 												<a href="{{route('events.create')}}"><i class="fa fa-registered"></i> Create Event</a>
                       </li>
 										</ul>
 									</li>
-									<li class="{{ (Route::currentRouteName() == 'members.all' || Route::currentRouteName() ==  'member.register.form') ? 'active-sub active' : ''}}
+									<li class="{{ (Route::currentRouteName() == 'members.all' || Route::currentRouteName() ==  'member.register.form') ? '' : ''}}
                   	{{Route::currentRouteName() === 'member.profile' ? 'active-sub' : ''}}">
 
 										<a href="{{route('members.all')}}">
@@ -301,7 +301,7 @@
 											<i class="arrow"></i>
 										</a>
 										<ul class="collapse">
-											<li class="{{ Route::currentRouteName() === 'events' ? 'active-sub active' : '' }}">
+											<li class="{{ Route::currentRouteName() === 'events' ? '' : '' }}">
 												<a href="{{ route('sermons') }}"><i class="fa fa-list"></i> All Sermons</a>
 											</li>
 											<li class="{{ Route::currentRouteName() === 'member.register.form' ? 'active-sub active' : '' }}">

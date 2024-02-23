@@ -78,7 +78,7 @@ class CollectionCommission extends Model
 
     public static function calculateUnsettledCommission(bool $type = false)
     {
-        $user = \Auth::user();
+        $user = \Auth::guard('admin')->user();
         $percentage = \App\Options::getLatestCommission();
         $percentage = $percentage ? (float)$percentage->value : 0;
         $total = $type ? [] : 0;
@@ -117,7 +117,7 @@ class CollectionCommission extends Model
 
     public static function setCollection(Collection $savings)
     {
-        $user = \Auth::user();
+        $user = \Auth::guard('admin')->user();
         return CollectionCommission::create([
             'collection_date' => $savings->date,
             'branch_id' => $user->id,

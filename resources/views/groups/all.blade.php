@@ -32,7 +32,7 @@
 
         </div>
         <!-- check if admin -->
-        <?php $admin = \Auth::user()->isAdmin(); ?>
+        <?php $admin = \Auth::guard('admin')->user()->isAdmin(); ?>
 
         <!--Page content-->
         <!--===================================================-->
@@ -69,7 +69,7 @@
                 <div class="pad-all">
                     <form method="POST" action="{{ route('group.create') }}">
                         @csrf
-                        <input type=text name=branch_id value="{{ \Auth::user()->branchcode }}" hidden=hidden />
+                        <input type=text name=branch_id value="{{ \Auth::guard('admin')->user()->branchcode }}" hidden=hidden />
                         <input style="border:1px solid #ddd; padding:7px;outline:none" name=name type=text
                             Placeholder="Group Name" required />
                         <button type="submit" class="btn btn-success btn-md"><i class="fa fa-plus"></i> Create
@@ -83,8 +83,8 @@
             <!--===================================================-->
             <div class="panel" style="background-color: #e8ddd3;">
                 <div class="panel-heading">
-                    <h3 class="panel-title text-center">List of Groups in <strong>{{ \Auth::user()->branchname }}</strong>
-                        (<i>{{ \Auth::user()->branchcode }}</i>)</h3>
+                    <h3 class="panel-title text-center">List of Groups in <strong>{{ \Auth::guard('admin')->user()->branchname }}</strong>
+                        (<i>{{ \Auth::guard('admin')->user()->branchcode }}</i>)</h3>
                 </div>
                 <div class="panel-body" style="overflow:scroll">
                     <table id="demo-dt-basic" class="table table-striped table-bordered datatable" cellspacing="0"
@@ -104,7 +104,7 @@
                                 <tr>
                                     <th>{{ $count }}</th>
                                     <td><strong>{{ strtoupper($group->name) }}</strong></td>
-                                    <td>{{ $group->getNumberOfMembers(\Auth::user()->branchcode) }}</td>
+                                    <td>{{ $group->getNumberOfMembers(\Auth::guard('admin')->user()->branchcode) }}</td>
                                     <td>{{ \Carbon\Carbon::parse(substr($group->created_at, 0, 10))->format('l, jS \\of F Y') }}
                                     </td>
                                     <td>

@@ -15,7 +15,7 @@ class OptionController extends Controller
     //
     public function getOneBranchOption(Request $request)
     {
-        $branch = Auth::user();
+        $branch = \Auth::guard('admin')->user();
         $status = false;
         $text = "Option not found";
         if ($option = Options::getOneBranchOption($request->name, $branch)) {
@@ -27,7 +27,7 @@ class OptionController extends Controller
 
     public function getBranchOption()
     {
-        $branch = Auth::user();
+        $branch = \Auth::guard('admin')->user();
         $status = false;
         $options = Options::getBranchOption($branch);
         if (sizeof($options)) {
@@ -39,7 +39,7 @@ class OptionController extends Controller
 
     public function putBranchOption(Request $request)
     {
-        $branch = Auth::user();
+        $branch = \Auth::guard('admin')->user();
         $status = false;
         $text = "Option Name Not Valid";
         $optionName = array('smsbalanceapi', 'collection_commission', 'smsapi', 'sub_account');
@@ -74,7 +74,7 @@ class OptionController extends Controller
     {
         $status = false;
         $text = "Action Not Valid";
-        $branch_id = Auth::user()->id;
+        $branch_id = \Auth::guard('admin')->user()->id;
         if (isset($request->c_type_c)) {
             # code...
             \App\CollectionsType::create(['name' => \App\CollectionsType::formatString($request->name), 'branch_id' => $branch_id]);
@@ -106,14 +106,14 @@ class OptionController extends Controller
 
     public function collectionTypeGet(Request $request)
     {
-        $branch_id = Auth::user()->id;
+        $branch_id = \Auth::guard('admin')->user()->id;
         $types = \App\CollectionsType::all();
         return DataTables::of($types)->make(true);
     }
 
     public function serviceTypeGet(Request $request)
     {
-        $branch_id = Auth::user()->id;
+        $branch_id = \Auth::guard('admin')->user()->id;
         $types = \App\ServiceType::all();
         return DataTables::of($types)->make(true);
     }

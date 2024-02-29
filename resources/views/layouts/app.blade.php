@@ -310,6 +310,24 @@
 										</ul>
 									</li>
 
+									<li class="{{ (Route::currentRouteName() == 'teams.all' || Route::currentRouteName() ==  'member.register.form') ? '' : ''}}
+                  	{{Route::currentRouteName() === 'member.profile' ? 'active-sub' : ''}}">
+
+										<a href="{{route('teams')}}">
+											<i class="fa fa-book"></i>
+											<span class="menu-title">Teams</span>
+											<i class="arrow"></i>
+										</a>
+										<ul class="collapse">
+											<li class="{{ Route::currentRouteName() === 'events' ? '' : '' }}">
+												<a href="{{ route('teams') }}"><i class="fa fa-list"></i> All Teams</a>
+											</li>
+											<li class="{{ Route::currentRouteName() === 'member.register.form' ? 'active-sub active' : '' }}">
+												<a href="{{route('teams.create')}}"><i class="fa fa-registered"></i> Create Team</a>
+                      </li>
+										</ul>
+									</li>
+
 									
 									<!--Menu list item-->
                   

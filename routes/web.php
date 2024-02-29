@@ -162,6 +162,11 @@ Route::group(['middleware' => ['auth.admin']], function () {
     Route::get('/member/stats', 'MemberController@memberRegStats')->name('member.reg.stats');
     Route::get('/member/attendance/{id}', 'MemberController@attendance')->name('member.attendance');
 
+    //teams
+    Route::get('/team/create', 'ChurchTeamsController@create')->name('teams.create');
+    Route::get('/teams', 'ChurchTeamsController@index')->name('teams');
+
+
     Route::get('/branches', 'BranchController@index')->name('branches');
     Route::get('/branches/{id}/destroy', 'BranchController@destroy')->name('branch.destroy');
     Route::get('/branches/register', 'BranchController@registerForm')->name('branch.register.form');

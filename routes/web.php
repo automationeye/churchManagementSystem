@@ -179,10 +179,10 @@ Route::group(['middleware' => ['auth.admin']], function () {
 
 
 
-    Route::get('/leaders/register', 'MemberController@create')->name('member.register.form');
-    Route::post('/leaders/register', 'MemberController@store')->name('member.register');
+    Route::get('/leaders/register', 'LeadersController@create')->name('leaders.register');
+    Route::post('/leaders/register', 'LeadersController@store')->name('leaders.register.post');
 
-    Route::get('/leaders/all', 'MemberController@store')->name('member.all');
+    Route::get('/leaders/all', 'LeadersController@index')->name('leaders');
 
 
 

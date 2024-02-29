@@ -245,7 +245,8 @@
         </div>
 
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -260,13 +261,25 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <!-- Use col-md-12 for full width on medium and larger screens -->
+                                    <label for="teamSelect" class="form-label">Select Branch</label>
+
+                                    <?php $users=App\User::all();?>
+                                    <select class="form-control" id="teamSelect" name="branch">
+                                        @foreach($users as $user)
+                                            <option value="{{ $user->id }}">{{ $user->branchname }}</option>
+                                        @endforeach
+                                        <!-- Add more options as needed -->
+                                    </select>
+                                </div>
+                                <div class="col-md-12">
+                                    <!-- Use col-md-12 for full width on medium and larger screens -->
                                     <label for="teamSelect" class="form-label">Select Team</label>
+
+                                    <?php $teams=App\ChurchTeams::all();?>
                                     <select class="form-control" id="teamSelect" name="team">
-                                        <option value="1">Team 1</option>
-                                        <option value="2">Team 2</option>
-                                        <option value="3">Team 3</option>
-                                        <option value="4">Team 4</option>
-                                        <option value="5">Team 5</option>
+                                        @foreach($teams as $team)
+                                            <option value="{{ $team->id }}">{{ $team->team }}</option>
+                                        @endforeach
                                         <!-- Add more options as needed -->
                                     </select>
                                 </div>
@@ -303,7 +316,7 @@
 
 
 <script>
-    $(function() {
+    $(function () {
 
     });
 
@@ -322,6 +335,7 @@
             }
         })
     }
+
 </script>
 
 

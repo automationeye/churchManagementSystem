@@ -18,7 +18,7 @@ class EventController extends Controller
      */
     public function index()
     {
-        $user = \Auth::user();
+        $user = \Auth::Guard('admin')->user();
         $pastors = Member::whereIn('position', ['senior pastor', 'pastor'])
             ->where('branch_id', $user->id)->get();
         $events = Event::where('events.branch_id', $user->id)->get();

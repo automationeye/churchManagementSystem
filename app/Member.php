@@ -10,7 +10,7 @@ class Member extends Model implements Authenticatable
 {
     use AuthenticatableTrait;
 
-    protected $guarded = ['id'];
+    protected $guarded = [];
 
     // Your existing methods...
 

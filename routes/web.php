@@ -81,6 +81,8 @@ Route::group(['middleware' => ['auth.leader']], function () {
 
     Route::get('/approve/{id}', 'VisitorController@approvemember')->name('approved');
 
+    Route::get('/remove/{id}', 'VisitorController@removemember')->name('removemember');
+
     Route::get('/meeting', 'MeetingController@index')->name('meeting');
 
     // Route::get('/membersmanage', 'VisitorController@membersmanage')->name('membersmanage');

@@ -59,16 +59,21 @@ Sermons
                                     <th>Team</th>
 
                                     <th>Created At</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
 
-                                @foreach($admins as $leader)
+                                @foreach($leaders as $leader)
                                 <tr>
                                     <td>{{ $leader->id }}</td>
                                     <td>{{ $leader->fullName }}</td>
                                     <td>{{ App\ChurchTeams::where('id', $leader->team)->value('team') }}</td>
-                                    <td>{{ $team->created_at }}</td>
+                                    <td>{{ $leader->created_at }}</td>
+                                    <td>
+                                        <button class="btn btn-info">Edit</button>
+                                        <button class="btn btn-danger">Delete</button>
+                                    </td>
 
                                 </tr>
                                 @endforeach

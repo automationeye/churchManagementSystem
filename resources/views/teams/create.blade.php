@@ -48,19 +48,25 @@ Teams
                 <!--div style="height:100px;border:1px solid green">
                     Sort by Newest Members, Gender
                   </div-->
-                <form method="post" action="{{ route('sermons.store') }}">
+                <form method="post" action="{{ route('teams.store') }}">
                     @csrf
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputName">Team name</label>
-                            <input type="text" class="form-control" id="inputName" name="team" placeholder="Sermon Title" required>
+                            <input type="text" class="form-control" id="inputName" name="team" placeholder="Team name" required>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputName">Leader</label>
-                            <select class="form-control">
-                                <option></
+                            <select class="form-control" name="leader">
+                                {{$leaders=App\Admins::all()}}
+
+                                @foreach($leaders as $leader)
+                        
+                                <option value="{{$leader->id}}">{{$leader->fullName}}</option>
+
+                                @endforeach
                             </select>
-                            <input type="text" class="form-control" name="by" id="inputName" placeholder="Sermon Leader" required>
+                           
                         </div>
                         
                     </div>

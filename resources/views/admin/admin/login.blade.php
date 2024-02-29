@@ -34,9 +34,9 @@
 
 
 
-  <div class="bg">
+  <div class="">
     <div class="login-form-bg h-100">
-      <div class="container h-100">
+      <div class="container mt-5 h-100">
         <div class="row justify-content-center h-100">
           <div class="col-xl-6">
             <div class="form-input-content">
@@ -51,33 +51,33 @@
                   </div>
 
                   @if($errors->any())
-                        <div class="alert alert-danger">
-                            <ul>
-                                @foreach($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    @endif
+                  <div class="alert alert-danger">
+                    <ul>
+                      @foreach($errors->all() as $error)
+                      <li>{{ $error }}</li>
+                      @endforeach
+                    </ul>
+                  </div>
+                  @endif
 
-                    @if(session('error'))
-                        <div class="alert alert-danger">
-                            {{ session('error') }}
-                        </div>
-                    @endif
+                  @if(session('error'))
+                  <div class="alert alert-danger">
+                    {{ session('error') }}
+                  </div>
+                  @endif
 
-                    @if(session('success'))
-                        <div class="alert alert-success">
-                            {{ session('success') }}
-                        </div>
-                    @endif
+                  @if(session('success'))
+                  <div class="alert alert-success">
+                    {{ session('success') }}
+                  </div>
+                  @endif
 
                   <form method="POST" action=" {{ url('leader/login/post') }}">
 
-                  @csrf
+                    @csrf
 
                     <div class="form-group">
-                      <label>Mobile:</label>
+                      <label>Phone Number:</label>
                       <input type="tel" class="form-control" value="" name="phone">
 
                     </div>

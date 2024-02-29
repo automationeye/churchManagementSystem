@@ -38,7 +38,7 @@ Member Registration
         <!--Page Title-->
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <div id="page-title">
-            <h1 class="page-header text-overflow">Member Registration</h1>
+            <h1 class="page-header text-overflow">Leader Registration</h1>
         </div>
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <!--End page title-->
@@ -60,7 +60,7 @@ Member Registration
             <div class="col-lg-8 col-lg-offset-2">
                 <div class="panel rounded-top" style="background-color: #e8ddd3;">
                     <div class="panel-heading">
-                        <h1 class="text-center" style="padding-top:5px">Register Member</h2>
+                        <h1 class="text-center" style="padding-top:5px">Register Leader</h2>
                     </div>
                     <div class="col-lg-10 col-lg-offset-2">
                         @if (session('status'))

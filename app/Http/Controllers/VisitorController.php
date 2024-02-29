@@ -40,16 +40,64 @@ class VisitorController extends Controller
         return view('admin.admin.addadmin');
     }
 
-    public function leaderlogin(){
+
+
+    // Leader section
+
+
+
+    public function leaderlogin()
+    {
 
         return view('admin.admin.login');
-
     }
 
-    public function leaderloginpost(Request $request){
-        
+    public function leaderreg()
+    {
 
-      
+        return view('admin.admin.addadmin');
+    }
+
+
+
+    public function leaderregpost(Request $request)
+    {
+        // Validate the incoming data
+        $validatedData = $request->validate([
+            'firstname' => 'required|string|max:255',
+            'email' => 'email|unique:admins,email',
+            'phone' => 'nullable|string|max:20',
+            'password' => 'required|string|min:6',
+        ]);
+
+        // Check if the phone number exists
+        if ($validatedData['phone']) {
+            $existingAdmin = Admins::where('phone', $validatedData['phone'])->first();
+            if ($existingAdmin) {
+                return redirect()->back()->with('error', 'Phone number already exists.');
+            }
+        }
+
+        // Create a new member instance
+        $user = new Admins();
+        $user->firstname = $validatedData['firstname'];
+        $user->email = $validatedData['email'];
+        $user->phone = $validatedData['phone'];
+        $user->password = bcrypt($validatedData['password']); // You should hash the password for security
+        $user->save();
+        Auth::login($user);
+
+        return redirect()->route('leaderdash')->with('success', 'Registration successful!');
+    }
+
+
+
+
+    public function leaderloginpost(Request $request)
+    {
+
+
+
 
         $request->validate([
             'phone' => 'required|string',
@@ -59,7 +107,7 @@ class VisitorController extends Controller
         // Retrieve the user by phone number
         $user = Admins::where('phone', $request->phone)->first();
 
-        
+
         // Check if the user exists and the password is correct
         if (Auth::guard('leader')->attempt(['phone' => $request->phone, 'password' => $request->password])) {
 
@@ -68,7 +116,7 @@ class VisitorController extends Controller
             Auth::login($user);
 
             // Authentication successful, redirect to dashboard or any other route
-            return redirect()->route('leaderdash')->with('success', 'Authentication successful!');
+            return redirect()->route('leaderdash')->with('success', 'Authentication was successful!');
         }
 
 
@@ -76,6 +124,12 @@ class VisitorController extends Controller
         return redirect()->back()->with('error', 'Invalid phone number or password.');
     }
 
+
+
+
+
+
+    // channels
 
     public function channels()
     {
@@ -99,13 +153,15 @@ class VisitorController extends Controller
     }
 
 
-    public function leaverequest(){
+    public function leaverequest()
+    {
         // return view ('members.requestleave');
     }
 
 
-    public function leaderdash(){
-        return view ('admin.admin.dashboard');
+    public function leaderdash()
+    {
+        return view('admin.admin.dashboard');
     }
 
     public function addmember()
@@ -129,32 +185,33 @@ class VisitorController extends Controller
         return view('admin.admin.acceptleave');
     }
 
-    public function approvemember(Request $request){
+    public function approvemember(Request $request)
+    {
 
-        $id=$request->id;
-        
-        if($id==null){
+        $id = $request->id;
+
+        if ($id == null) {
             return redirect()->route('managemember')->with('error', 'An error occured!');
         }
-        $update=Member::where('id',$id)->update(['team_status'=>1]);
-        if($update){
+        $update = Member::where('id', $id)->update(['team_status' => 1]);
+        if ($update) {
             return redirect()->route('managemember')->with('success', 'Member approved successfully!');
-        }else{
+        } else {
             return redirect()->route('managemember')->with('error', 'An error occured!');
         }
     }
 
     public function managemember()
     {
-        $user=Auth::guard('leader')->user();
+        $user = Auth::guard('leader')->user();
 
-        $team=$user->team;
+        $team = $user->team;
 
         //get members in that team
-        $members=Member::where('team',$team)
-        ->orderBy('id','DESC')
-        ->get();
-        return view('admin.admin.managemember',compact('members'));
+        $members = Member::where('team', $team)
+            ->orderBy('id', 'DESC')
+            ->get();
+        return view('admin.admin.managemember', compact('members'));
     }
 
     public function meeting()
@@ -209,11 +266,12 @@ class VisitorController extends Controller
         return view('members.contributions');
     }
 
-    public function member(){
+    public function member()
+    {
 
-        $leaves=Leave::where('id','!=',-1)->orderBy('id','DESC')->get();
+        $leaves = Leave::where('id', '!=', -1)->orderBy('id', 'DESC')->get();
 
-        return view('members.member',compact('leaves'));
+        return view('members.member', compact('leaves'));
     }
 
     public function team()
@@ -225,6 +283,11 @@ class VisitorController extends Controller
     {
         return view('members.contact-support');
     }
+
+
+
+
+    // Admin Registration and Login Section 
 
 
 
@@ -259,6 +322,37 @@ class VisitorController extends Controller
     }
 
 
+
+
+    public function memberlogpost(Request $request)
+    {
+        // Validate the request data
+        $request->validate([
+            'phone' => 'required|string',
+            'password' => 'required|string',
+        ]);
+
+        // Retrieve the user by phone number
+        $user = Member::where('phone', $request->phone)->first();
+
+        // Check if the user exists and the password is correct
+        if ($user && password_verify($request->password, $user->password)) {
+            // Authenticate the user
+            Auth::login($user);
+
+            // Authentication successful, redirect to dashboard or any other route
+            return redirect()->route('memberdash')->with('success', 'Authentication successful!');
+        }
+
+        // Authentication failed, redirect back with error message
+        return redirect()->back()->with('error', 'Invalid phone number or password.');
+    }
+
+
+
+    // Admin Registration and Login Section 
+
+
     public function adminregpost(Request $request)
     {
         // Validate the incoming data
@@ -291,37 +385,6 @@ class VisitorController extends Controller
 
 
 
-
-
-
-
-
-    public function memberlogpost(Request $request)
-    {
-        // Validate the request data
-        $request->validate([
-            'phone' => 'required|string',
-            'password' => 'required|string',
-        ]);
-
-        // Retrieve the user by phone number
-        $user = Member::where('phone', $request->phone)->first();
-
-        // Check if the user exists and the password is correct
-        if ($user && password_verify($request->password, $user->password)) {
-            // Authenticate the user
-            Auth::login($user);
-
-            // Authentication successful, redirect to dashboard or any other route
-            return redirect()->route('memberdash')->with('success', 'Authentication successful!');
-        }
-
-        // Authentication failed, redirect back with error message
-        return redirect()->back()->with('error', 'Invalid phone number or password.');
-    }
-
-
-
     public function adminlogpost(Request $request)
     {
         // Validate the request data
@@ -339,7 +402,7 @@ class VisitorController extends Controller
             Auth::login($user);
 
             // Authentication successful, redirect to dashboard or any other route
-            return redirect()->route('memberdash')->with('success', 'Authentication successful!');
+            return redirect()->route('leaderdash')->with('success', 'Authentication was successful!');
         }
 
         // Authentication failed, redirect back with error message

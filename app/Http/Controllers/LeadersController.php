@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Leaders;
 use Illuminate\Http\Request;
+use Auth;
 
 class LeadersController extends Controller
 {
@@ -15,6 +16,10 @@ class LeadersController extends Controller
     public function index()
     {
         //
+
+        $leaders = leaders::where('id', '>', 0)->orderBy('id', 'DESC')->get();
+
+        return view('leaders.index')->with(compact('leaders'));
     }
 
     /**
@@ -25,6 +30,7 @@ class LeadersController extends Controller
     public function create()
     {
         //
+        return view('leaders.register');
     }
 
     /**
@@ -36,6 +42,27 @@ class LeadersController extends Controller
     public function store(Request $request)
     {
         //
+
+        $fullName = $request->fullName;
+        $phone = $request->phone;
+        $team = $request->team;
+
+
+        $admin = Auth::Guard('admin')->user();
+
+        $admin->branchcode;
+
+        $leaders = new Leaders();
+
+        $leaders->team = $team;
+        $leaders->fullName = $fullName;
+        $leaders->phone = $phone;
+
+        if ($leaders->save()) {
+            return redirect('leaders')->with('success', 'Leader registered successfuly');
+        } else {
+            return redirect('leaders.register')->with('error', 'Leader not registered');
+        }
     }
 
     /**

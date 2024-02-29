@@ -183,7 +183,7 @@ Route::group(['middleware' => ['auth.admin']], function () {
     Route::get('/leaders/register', 'LeadersController@create')->name('leaders.register');
     Route::post('/leaders/register', 'LeadersController@store')->name('leaders.register.post');
 
-    Route::get('/leaders/all', 'LeadersController@index')->name('leaders');
+    Route::get('/leaders', 'LeadersController@index')->name('leaders');
 
 
 

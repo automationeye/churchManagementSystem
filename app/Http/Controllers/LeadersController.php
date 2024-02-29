@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use App\Leaders;
 use Illuminate\Http\Request;
 use Auth;
-
+use Hash;
+use App\Member;
 class LeadersController extends Controller
 {
     /**
@@ -41,22 +42,21 @@ class LeadersController extends Controller
      */
     public function store(Request $request)
     {
-        //
 
-        $fullName = $request->fullName;
-        $phone = $request->phone;
-        $team = $request->team;
+        //this is the leaders id so we fetch data about the member and promote the leader
 
-
+        $leaderid = $request->memberId;
+        $leaderDetails=Member::where('id',$leaderid)->first();
+        $phone = $leaderDetails->phone;
+        $team = $leaderDetails->team;
+        $fullName=$leaderDetails->firstname;
         $admin = Auth::Guard('admin')->user();
-
         $admin->branchcode;
-
         $leaders = new Leaders();
-
         $leaders->team = $team;
         $leaders->fullName = $fullName;
         $leaders->phone = $phone;
+        $leaders->password = $leaderDetails->password;
 
         if ($leaders->save()) {
             return redirect('leaders')->with('success', 'Leader registered successfuly');

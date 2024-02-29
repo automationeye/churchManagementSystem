@@ -5,9 +5,11 @@ Teams
 @endsection
 
 @section('link')
-<link href="{{ URL::asset('plugins/bootstrap-datepicker/bootstrap-datepicker.min.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('plugins/bootstrap-datepicker/bootstrap-datepicker.min.css') }}"
+    rel="stylesheet">
 <link href="{{ URL::asset('css/sweetalert.css') }}" rel="stylesheet">
-<link href="{{ URL::asset('plugins/datatables/media/css/dataTables.bootstrap.css') }}" rel="stylesheet">
+<link href="{{ URL::asset('plugins/datatables/media/css/dataTables.bootstrap.css') }}"
+    rel="stylesheet">
 @endsection
 
 @section('content')
@@ -50,18 +52,18 @@ Teams
                     @csrf
                     <div class="form-row">
                         <div class="form-group col-md-3">
-                            <label for="inputName">Full name</label>
-                            <input type="text" class="form-control" id="fullName" name="fullName" placeholder="full Name" required>
-                        </div>
+                            <label for="inputName">Select member</label>
+                            <select name="memberId" class="form-control" required>
 
-                        <div class="form-group col-md-3">
-                            <label for="inputName">Phone Number</label>
-                            <input type="text" class="form-control" id="phone" name="phone" placeholder="phone" required>
-                        </div>
+                            <?php $members=App\Member::all() ?>
 
-                        <div class="form-group col-md-3">
-                            <label for="inputName">Team</label>
-                            <input type="text" class="form-control" id="team" name="team" placeholder="Team" required>
+                                @foreach($members as $member)
+
+                                    <option value="{{ $member->id }}">{{ $member->firstname }}</option>
+
+                                @endforeach
+                            </select>
+                            
                         </div>
 
 

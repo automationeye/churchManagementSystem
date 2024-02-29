@@ -65,7 +65,7 @@
                             <input type="password" name="password" class="form-control" id="password"
                                 placeholder="Password" required>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block">Register</button>
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
                     </form>
                 </div>
             </div>

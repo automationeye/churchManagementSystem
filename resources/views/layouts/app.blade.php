@@ -272,10 +272,10 @@
 										</a>
 										<ul class="collapse">
 											<li class="{{ Route::currentRouteName() === 'members.all' ? '' : '' }}">
-												<a href="{{ route('members.all') }}"><i class="fa fa-list"></i> All Leaders</a>
+												<a href="{{ route('leaders') }}"><i class="fa fa-list"></i> All Leaders</a>
 											</li>
 											<li class="{{ Route::currentRouteName() === 'member.register.form' ? 'active-sub active' : '' }}">
-												<a href="{{route('member.register.form')}}"><i class="fa fa-registered"></i> Registration</a>
+												<a href="{{route('leaders.register')}}"><i class="fa fa-registered"></i> Registration</a>
 											</li>
 										</ul>
 									</li>

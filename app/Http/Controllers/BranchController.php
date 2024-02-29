@@ -16,7 +16,7 @@ class BranchController extends Controller
 
     public function __construct()
     {
-        $this->user = \Auth::user();
+        $this->user = \Auth::Guard('admin')->user();
     }
     /**
      * Display a listing of the resource.
@@ -25,7 +25,7 @@ class BranchController extends Controller
      */
     public function index(Request $request)
     {
-        $user = \Auth::user();
+        $user = \Auth::Guard('admin')->user();
         if (!$user->isAdmin()) {
             return redirect()->route('dashboard');
         }
@@ -52,7 +52,7 @@ class BranchController extends Controller
     {
         //
         $id = $request->id;
-        $user = \Auth::user();
+        $user = \Auth::Guard('admin')->user();
         DB::table('users')->where('id', '=', $id)->delete();
         return response()->json(['success' => true,]);
     }
@@ -60,7 +60,7 @@ class BranchController extends Controller
     public function registerForm()
     {
         //
-        $user = \Auth::user();
+        $user = \Auth::Guard('admin')->user();
         $currencies = Countries::all();
 
         return ($user->isAdmin()) ? view('branch.register', compact('currencies')) : redirect()->route('dashboard');
@@ -132,7 +132,7 @@ class BranchController extends Controller
 
     public function ho(Request $request)
     {
-        $user = \Auth::user();
+        $user = \Auth::Guard('admin')->user();
         $options = \App\head_office_options::all();
 
         return view('branch.ho', ['options' => $options]);
@@ -192,7 +192,7 @@ class BranchController extends Controller
 
     public function invoice(Request $request)
     {
-        $user = \Auth::user();
+        $user = \Auth::Guard('admin')->user();
         // get due savings
         $dueSavings = \App\CollectionCommission::dueSavings($user);
         // if nothing found for the branch

@@ -142,8 +142,9 @@ class VisitorController extends Controller
 
         $tel = Auth::user()->phone;
         $team = $request->team;
+        $branch = $request->branch;
 
-        $update = Member::where('phone', $tel)->update(['team' => $team]);
+        $update = Member::where('phone', $tel)->update(['team' => $team,'branch_id'=>$branch]);
 
         if ($update) {
             return redirect()->back()->with('success', 'Team successfuly updated!');
@@ -196,6 +197,20 @@ class VisitorController extends Controller
         $update = Member::where('id', $id)->update(['team_status' => 1]);
         if ($update) {
             return redirect()->route('managemember')->with('success', 'Member approved successfully!');
+        } else {
+            return redirect()->route('managemember')->with('error', 'An error occured!');
+        }
+    }
+
+    public function removemember(Request $request){
+        $id = $request->id;
+
+        if ($id == null) {
+            return redirect()->route('managemember')->with('error', 'An error occured!');
+        }
+        $update = Member::where('id', $id)->update(['team_status' => 0,'team'=>'']);
+        if ($update) {
+            return redirect()->route('managemember')->with('success', 'Member removed successfully!');
         } else {
             return redirect()->route('managemember')->with('error', 'An error occured!');
         }

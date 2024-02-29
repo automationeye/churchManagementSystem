@@ -35,16 +35,20 @@
                     <td>{{$member->firstname}}</td>
                     <td>{{$member->team}}</td>
 
+                    <td>
                     @if($member->team_status==0)
-                    <td>
+                  
                         <a href="{{url('approve')}}/{{$member->id}}" class="btn btn-warning">Approve</a>
-                    </td>
+                
                     @else
-                    <td>
+                   
                     <a href="/" class="btn btn-success">Approved</a>
-                    </td>
+
+                    <a href="{{url('remove')}}/{{$member->id}}" class="btn btn-info">Remove member</a>
+                    
                     
                     @endif
+                    </td>
                  
                 </tr>
                 @endforeach

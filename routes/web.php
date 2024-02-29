@@ -176,6 +176,7 @@ Route::group(['middleware' => ['auth.admin']], function () {
     //teams
     Route::get('/team/create', 'ChurchTeamsController@create')->name('teams.create');
     Route::get('/teams', 'ChurchTeamsController@index')->name('teams');
+    Route::post('/teams/post', 'ChurchTeamsController@store')->name('teams.store');
 
 
 

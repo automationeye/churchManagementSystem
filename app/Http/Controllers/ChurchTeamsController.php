@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\ChurchTeams;
 use Illuminate\Http\Request;
-
+use Auth;
 class ChurchTeamsController extends Controller
 {
     /**
@@ -15,6 +15,9 @@ class ChurchTeamsController extends Controller
     public function index()
     {
         //
+        $teams=ChurchTeams::where('id','>',0)->orderBy('id','DESC')->get();
+
+        return view('teams.index')->with(compact('teams'));
     }
 
     /**
@@ -24,9 +27,11 @@ class ChurchTeamsController extends Controller
      */
     public function create()
     {
+
+        
         //
         return view('teams.create');
-        
+
     }
 
     /**
@@ -38,6 +43,27 @@ class ChurchTeamsController extends Controller
     public function store(Request $request)
     {
         //
+        $team=$request->team;
+        $leader=$request->leader;
+
+        $admin=Auth::Guard('admin')->user();
+
+        $branch_id=$admin->branchcode;
+
+        $status=1;
+
+        $churchTeams=new ChurchTeams();
+
+        $churchTeams->team=$team;
+        $churchTeams->leader=$leader;
+        $churchTeams->branch=$branch_id;
+        
+        if($churchTeams->save()){
+            return redirect('teams')->with('success','Team created successfuly');
+        }else{
+            return redirect('teams.create')->with('error','Team not created');
+        }
+
     }
 
     /**

@@ -69,9 +69,13 @@
     =================================================-->
     <style type="text/css">
         .cls-container {
-            background-image: url("{{ URL::asset('img/Banff2.jpg') }}");
+            background-image: url("{{ URL::asset('img/reg_bg.jpg') }}");
             background-color: #cccccc;
             background-size: cover;
+        }
+
+        .bg-maroon {
+            background-color: #dc3545;
         }
     </style>
 
@@ -93,66 +97,61 @@
         <!--===================================================-->
         <div class="cls-content">
             <div class="cls-content-sm panel">
-                <div class="panel-body  bg-warning shadow-lg p-3 mb-5 rounded">
-                    <div class="mar-ver pad-btm">
-                        <h1 class="h3">Account Login</h1>
-                        <p>Sign In to your account</p>
+                <div class="panel-body  bg-maroon shadow-lg p-3 mb-5 rounded">
+                    <div class="mar-ver pad-btm" style="color: white;">
+                        <h1 class="h3" style="color: white;">Super Administrator</h1>
+                        <p>Sign In</p>
                     </div>
                     @if($errors->any())
-                        <div class="alert alert-danger">
-                            <ul>
-                                @foreach($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
                     @endif
 
                     @if(session('error'))
-                        <div class="alert alert-danger">
-                            {{ session('error') }}
-                        </div>
+                    <div class="alert alert-danger">
+                        {{ session('error') }}
+                    </div>
                     @endif
 
                     @if(session('success'))
-                        <div class="alert alert-success">
-                            {{ session('success') }}
-                        </div>
+                    <div class="alert alert-success">
+                        {{ session('success') }}
+                    </div>
                     @endif
 
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
                         <div class="form-group">
-                            <input id="email" type="email" Placeholder="Email "
-                                class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email"
-                                value="{{ old('email') }}" required autofocus>
+                            <input id="email" type="email" Placeholder="Email " class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
                             @if ($errors->has('email'))
-                                <span class="invalid-feedback">
-                                    <strong>{{ $errors->first('email') }}</strong>
-                                </span>
+                            <span class="invalid-feedback">
+                                <strong>{{ $errors->first('email') }}</strong>
+                            </span>
                             @endif
                         </div>
                         <div class="form-group">
-                            <input id="password" type="password" Placeholder="Password "
-                                class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password"
-                                required>
+                            <input id="password" type="password" Placeholder="Password " class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
 
                             @if ($errors->has('password'))
-                                <span class="invalid-feedback">
-                                    <strong>{{ $errors->first('password') }}</strong>
-                                </span>
+                            <span class="invalid-feedback">
+                                <strong>{{ $errors->first('password') }}</strong>
+                            </span>
                             @endif
                         </div>
                         <div class="checkbox pad-btm text-left">
-                            <input id="demo-form-checkbox" class="magic-checkbox" type="checkbox" name="remember"
-                                {{ old('remember') ? 'checked' : '' }}>
-                            <label class="font-weight-bold" for="demo-form-checkbox" style="">Remember me</label>
+                            <input id="demo-form-checkbox" class="magic-checkbox" type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}>
+                            <label class="font-weight-bold" for="demo-form-checkbox" style="color: white;">Remember me</label>
                         </div>
                         <button class="btn btn-primary btn-lg btn-block" type="submit">Sign In</button>
                     </form>
 
                     <div class="pad-all">
-                        <a href="{{ route('recover') }}" class="btn-link mar-rgt">Forgot password ?</a>
+                        <a href="{{ route('recover') }}" class="btn-link mar-rgt" style="color: white;">Forgot password ?</a>
                         <!--a href="register" class="btn-link mar-lft">Create a new account</a-->
 
                         <!--<div class="media pad-top bord-top">

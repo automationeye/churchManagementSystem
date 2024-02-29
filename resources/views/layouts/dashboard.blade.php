@@ -311,13 +311,9 @@
                                                         <a href="{{ url('contributions') }}" class="nav-link">Contributions</a>
                                                     </li>
 
-                                                    <li class="nav-item">
-                                                        <a class="nav-link " href="{{ url('/contact-support') }}" id="submenuDropdown">
-                                                            Contact support
-                                                        </a>
-                                                    </li>
+
                                                     <li class="nav-item dropdown">
-                                                        <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><i class="fas fa-user-circle"></i> </a>
+                                                        <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Profile </a>
                                                         <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
                                                             <li><a href="#" class="dropdown-item">View profile </a></li>
                                                             <li><a href="#" class="dropdown-item">Change password</a>
@@ -360,29 +356,29 @@
             <!-- Revolution Slider Section -->
 
             @if($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-                @endif
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+            @endif
 
-                @if(session('error'))
-                <div class="alert alert-danger">
-                    {{ session('error') }}
-                </div>
-                @endif
+            @if(session('error'))
+            <div class="alert alert-danger">
+                {{ session('error') }}
+            </div>
+            @endif
 
-                @if(session('success'))
-                <div class="alert alert-success">
-                    {{ session('success') }}
-                </div>
-                @endif
+            @if(session('success'))
+            <div class="alert alert-success">
+                {{ session('success') }}
+            </div>
+            @endif
 
-                >>>>>>> origin/main
-                @yield('content')
+            >>>>>>> origin/main
+            @yield('content')
         </div> <!-- .page-wrapper-inner -->
     </div>
     <!--page-wrapper-->

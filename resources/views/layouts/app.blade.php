@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,9 +22,9 @@
 	<!-- PARTICLES -->
 
 	@yield('link')
-  @if (Route::currentRouteName() == ('calendar')  || Route::currentRouteName() == ('notification')  || Route::currentRouteName() == ('ticket'))
-  <link href="{{ URL::asset('plugins/bootstrap-datepicker/bootstrap-clockpicker.min.css') }}" rel="stylesheet">
-  @endif
+	@if (Route::currentRouteName() == ('calendar') || Route::currentRouteName() == ('notification') || Route::currentRouteName() == ('ticket'))
+	<link href="{{ URL::asset('plugins/bootstrap-datepicker/bootstrap-clockpicker.min.css') }}" rel="stylesheet">
+	@endif
 	<!--=================================================-->
 	@if(Route::currentRouteName() == "gallery")
 	<link href="{{ URL::asset('plugins/gallery/ekko-lightbox.css') }}" rel="stylesheet">
@@ -33,21 +34,21 @@
 	<!--Font Awesome [ OPTIONAL ]-->
 	<link href="{{ URL::asset('css/font-awesome.min.css')}}" rel="stylesheet">
 
-    @if (Route::currentRouteName() == 'member.register.form' || Route::currentRouteName() == 'attendance' || Route::currentRouteName() == 'attendance.mark' || Route::currentRouteName() == 'collection.offering' || Route::currentRouteName() == 'calendar'  || Route::currentRouteName() == ('ticket'))
+	@if (Route::currentRouteName() == 'member.register.form' || Route::currentRouteName() == 'attendance' || Route::currentRouteName() == 'attendance.mark' || Route::currentRouteName() == 'collection.offering' || Route::currentRouteName() == 'calendar' || Route::currentRouteName() == ('ticket'))
 	<!--Bootstrap Datepicker [ OPTIONAL ]-->
 	<link href="{{ URL::asset('plugins/bootstrap-datepicker/bootstrap-datepicker.min.css') }}" rel="stylesheet">
-  <!--Bootstrap Select [ OPTIONAL ]-->
-  <link href="{{ URL::asset('plugins/bootstrap-select/bootstrap-select.min.css') }}" rel="stylesheet">
-  @endif
+	<!--Bootstrap Select [ OPTIONAL ]-->
+	<link href="{{ URL::asset('plugins/bootstrap-select/bootstrap-select.min.css') }}" rel="stylesheet">
+	@endif
 
 	@if (Route::currentRouteName() == 'inbox')
 	<!--CHAT [ OPTIONAL ]-->
 	<link href="{{ URL::asset('css/chat.css') }}" rel="stylesheet">
 	@endif
 
-	@if (Route::currentRouteName() == ('calendar')  || Route::currentRouteName() == ('notification')  || Route::currentRouteName() == ('ticket'))
-    <!--Full Calendar [ OPTIONAL ]-->
-    <link href="{{ URL::asset('plugins/fullcalendar/fullcalendar.min.css') }}" rel="stylesheet">
+	@if (Route::currentRouteName() == ('calendar') || Route::currentRouteName() == ('notification') || Route::currentRouteName() == ('ticket'))
+	<!--Full Calendar [ OPTIONAL ]-->
+	<link href="{{ URL::asset('plugins/fullcalendar/fullcalendar.min.css') }}" rel="stylesheet">
 	<link href="{{ URL::asset('plugins/fullcalendar/nifty-skin/fullcalendar-nifty.min.css') }}" rel="stylesheet">
 	@endif
 
@@ -55,10 +56,10 @@
 	<link href="{{ URL::asset('css/sweetalert.css') }}" rel="stylesheet">
 	@endif
 
-    <!--Morris.js [ OPTIONAL ]-->
-		@if (Route::currentRouteName() == 'member.profile' || Route::currentRouteName() == 'attendance.analysis' || Route::currentRouteName() == 'collection.analysis')
-		<link href="{{ URL::asset('plugins/morris-js/morris.min.css') }}" rel="stylesheet">
-		@endif
+	<!--Morris.js [ OPTIONAL ]-->
+	@if (Route::currentRouteName() == 'member.profile' || Route::currentRouteName() == 'attendance.analysis' || Route::currentRouteName() == 'collection.analysis')
+	<link href="{{ URL::asset('plugins/morris-js/morris.min.css') }}" rel="stylesheet">
+	@endif
 
 	<!--<link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
 	<link href="https://cdn.datatables.net/buttons/1.5.1/css/buttons.dataTables.min.css" rel="stylesheet">-->
@@ -73,7 +74,7 @@
 
 	<link href="{{ URL::asset('plugins/datatables/semantic.min.css') }}" rel="stylesheet">
 	<!-- <link href="{{ URL::asset('plugins/flag-icon-css/css/flag-icon.min.css') }}" rel="stylesheet"> -->
-	    <!--Ion Icons [ OPTIONAL ]-->
+	<!--Ion Icons [ OPTIONAL ]-->
 	<!-- <link href="{{ URL::asset('plugins/ionicons/css/ionicons.min.css') }}" rel="stylesheet"> -->
 </head>
 
@@ -128,14 +129,14 @@
 					</ul>
 					<ul class="nav navbar-top-links">
 						<li class="dropdown">
-								<a href="{{ route('notification') }}">
-									<i class="fa fa-bullhorn fa-3x" aria-hidden="true"></i> Announcement &nbsp;&nbsp;&nbsp
-										<span class="badge badge-header badge-danger"></span>
-								</a>
+							<a href="{{ route('notification') }}">
+								<i class="fa fa-bullhorn fa-3x" aria-hidden="true"></i> Announcement &nbsp;&nbsp;&nbsp
+								<span class="badge badge-header badge-danger"></span>
+							</a>
 
 
 
-								<!--Notification dropdown menu-->
+							<!--Notification dropdown menu-->
 
 						</li>
 						<!--User dropdown-->
@@ -157,10 +158,10 @@
 							<div class="dropdown-menu dropdown-menu-sm dropdown-menu-right panel-default">
 								<ul class="head-list">
 									<li>
-	                  <form method="POST" action="{{route('logout')}}">
-	                  @csrf
-	                  <button type="submit"><i class="demo-pli-unlock icon-lg icon-fw"></i> Logout</button>
-	                  </form>
+										<form method="POST" action="{{route('logout')}}">
+											@csrf
+											<button type="submit"><i class="demo-pli-unlock icon-lg icon-fw"></i> Logout</button>
+										</form>
 									</li>
 								</ul>
 							</div>
@@ -178,7 +179,7 @@
 		<div class="boxed">
 			<!--CONTENT CONTAINER-->
 			<!--===================================================-->
-            @yield('content')
+			@yield('content')
 			<!--===================================================-->
 			<!--END CONTENT CONTAINER-->
 			<!--MAIN NAVIGATION-->
@@ -206,7 +207,8 @@
 										</a>
 									</div>
 								</div>
-                                                                <!--Shortcut buttons-->                                                                <!--================================-->                                                                <div id="mainnav-shortcut" class="hidden">
+								<!--Shortcut buttons--> <!--================================-->
+								<div id="mainnav-shortcut" class="hidden">
 									<ul class="list-unstyled shortcut-wrap">
 										<li class="col-xs-3" data-content="My Profile">
 											<a class="shortcut-grid" href="dashboard">
@@ -257,7 +259,35 @@
 									<!--<li class="list-header">Components</li>-->
 									<!--Menu list item-->
 
-                  <li class="{{ (Route::currentRouteName() == 'members.all' || Route::currentRouteName() ==  'member.register.form') ? '' : ''}}
+
+									<!-- Leaders -->
+
+									<li class="{{ (Route::currentRouteName() == 'members.all' || Route::currentRouteName() ==  'member.register.form') ? '' : ''}}
+                  	{{Route::currentRouteName() === 'member.profile' ? 'active-sub' : ''}}">
+
+										<a href="{{route('members.all')}}">
+											<i class="fa fa-users"></i>
+											<span class="menu-title">Leaders</span>
+											<i class="arrow"></i>
+										</a>
+										<ul class="collapse">
+											<li class="{{ Route::currentRouteName() === 'members.all' ? '' : '' }}">
+												<a href="{{ route('members.all') }}"><i class="fa fa-list"></i> All Leaders</a>
+											</li>
+											<li class="{{ Route::currentRouteName() === 'member.register.form' ? 'active-sub active' : '' }}">
+												<a href="{{route('member.register.form')}}"><i class="fa fa-registered"></i> Registration</a>
+											</li>
+										</ul>
+									</li>
+
+
+
+									<!-- Members -->
+
+
+
+
+									<li class="{{ (Route::currentRouteName() == 'members.all' || Route::currentRouteName() ==  'member.register.form') ? '' : ''}}
                   	{{Route::currentRouteName() === 'member.profile' ? 'active-sub' : ''}}">
 
 										<a href="{{route('members.all')}}">
@@ -271,7 +301,7 @@
 											</li>
 											<li class="{{ Route::currentRouteName() === 'member.register.form' ? 'active-sub active' : '' }}">
 												<a href="{{route('member.register.form')}}"><i class="fa fa-registered"></i> Registration</a>
-                      </li>
+											</li>
 										</ul>
 									</li>
 
@@ -289,7 +319,7 @@
 											</li>
 											<li class="{{ Route::currentRouteName() === 'member.register.form' ? ' ' : '' }}">
 												<a href="{{route('events.create')}}"><i class="fa fa-registered"></i> Create Event</a>
-                      </li>
+											</li>
 										</ul>
 									</li>
 									<li class="{{ (Route::currentRouteName() == 'members.all' || Route::currentRouteName() ==  'member.register.form') ? '' : ''}}
@@ -306,13 +336,13 @@
 											</li>
 											<li class="{{ Route::currentRouteName() === 'member.register.form' ? 'active-sub active' : '' }}">
 												<a href="{{route('sermons.create')}}"><i class="fa fa-registered"></i> Create Sermon</a>
-                      </li>
+											</li>
 										</ul>
 									</li>
 
-									
+
 									<!--Menu list item-->
-                  
+
 									<li class="{{Route::currentRouteName() === 'attendance.analysis' || Route::currentRouteName() === 'attendance.view.form' ? 'active-sub active' : ''}}
 									{{Route::currentRouteName() === 'attendance' ? 'active-sub active' : ''}}">
 										<a href="#">
@@ -324,8 +354,8 @@
 											<li class="{{ Route::currentRouteName() === 'attendance' ? 'active-sub active' : '' }}">
 												<a href="{{route('attendance')}}"><i class="fa fa-save"></i> Mark Attendance</a>
 											</li>
-                      <li class="{{ Route::currentRouteName() === 'attendance.view.form' ? 'active-sub active' : '' }}">
-	                      <a href="{{route('attendance.view.form')}}"><i class="fa fa-eye"></i> View Attendance</a>
+											<li class="{{ Route::currentRouteName() === 'attendance.view.form' ? 'active-sub active' : '' }}">
+												<a href="{{route('attendance.view.form')}}"><i class="fa fa-eye"></i> View Attendance</a>
 											</li>
 											<li class="{{ Route::currentRouteName() === 'attendance.analysis' ? 'active-sub active' : '' }}">
 												<a href="{{route('attendance.analysis')}}"><i class="fa fa-signal"></i> Analysis</a>
@@ -431,76 +461,76 @@
 											</li>
 											@else
 											<li class="{{Route::currentRouteName() == 'report.membership.all' || Route::currentRouteName() == 'report.membership' || Route::currentRouteName() == 'report.collections' || Route::currentRouteName() == 'report.collections.all' || Route::currentRouteName() == 'report.attendance' || Route::currentRouteName() == 'report.attendance.all' ? 'active-sub active' : ''}}">
-												<li class="{{Route::currentRouteName() == 'report.membership.all' || Route::currentRouteName() === 'report.membership' ? 'active-sub active' : '' }}">
-													<a href="#">
-														<i class="fa fa-users"></i>
-														<span class="menu-title">Membership</span>
-														<i class="arrow"></i>
-													</a>
-													<ul class="collapse">
-														<li class="{{ Route::currentRouteName() == 'report.membership.all' ? 'active-sub active' : '' }}">
-															<a href="{{route('report.membership.all')}}"><i class="fa fa-level-up"></i> All Branches</a>
-														</li>
-														<li class="{{ Route::currentRouteName() == 'report.membership' ? 'active-sub active' : '' }}">
-															<a href="{{route('report.membership')}}"><i class="fa fa-map-marker"></i> This Branch</a>
-														</li>
-													</ul>
-												</li>
-												<li class="{{Route::currentRouteName() == 'report.collections' || Route::currentRouteName() == 'report.collections.all' ? 'active-sub active' : '' }}">
-													<a href="#">
-														<i class="fa fa-money"></i>
-														<span class="menu-money">Collections</span>
-														<i class="arrow"></i>
-													</a>
-													<ul class="collapse">
-														<li class="{{Route::currentRouteName() == 'report.collections.all' ? 'active-sub active' : '' }}">
-															<a href="{{route('report.collections.all')}}"><i class="fa fa-level-up"></i> All Branches</a>
-														</li>
-														<li class="{{ Route::currentRouteName() === 'report.collections' ? 'active-sub active' : '' }}">
-															<a href="{{route('report.collections')}}"><i class="fa fa-map-marker"></i> This Branch</a>
-														</li>
-													</ul>
-												</li>
-												<li class="{{Route::currentRouteName() == 'report.attendance' || Route::currentRouteName() == 'report.attendance.all' ? 'active-sub active' : '' }}">
-													<a href="#">
-														<i class="fa fa-check"></i>
-														<span class="menu-mark">Attendance</span>
-														<i class="arrow"></i>
-													</a>
-													<ul class="collapse">
-														<li class="{{ Route::currentRouteName() == 'report.attendance.all' ? 'active-sub active' : '' }}">
-															<a href="{{route('report.attendance.all')}}"><i class="fa fa-level-up"></i> All Branches</a>
-														</li>
-														<li class="{{ Route::currentRouteName() == 'report.attendance' ? 'active-sub active' : '' }}">
-															<a href="{{route('report.attendance')}}"><i class="fa fa-map-marker"></i> This Branch</a>
-														</li>
-													</ul>
-												</li>
-
+											<li class="{{Route::currentRouteName() == 'report.membership.all' || Route::currentRouteName() === 'report.membership' ? 'active-sub active' : '' }}">
+												<a href="#">
+													<i class="fa fa-users"></i>
+													<span class="menu-title">Membership</span>
+													<i class="arrow"></i>
+												</a>
+												<ul class="collapse">
+													<li class="{{ Route::currentRouteName() == 'report.membership.all' ? 'active-sub active' : '' }}">
+														<a href="{{route('report.membership.all')}}"><i class="fa fa-level-up"></i> All Branches</a>
+													</li>
+													<li class="{{ Route::currentRouteName() == 'report.membership' ? 'active-sub active' : '' }}">
+														<a href="{{route('report.membership')}}"><i class="fa fa-map-marker"></i> This Branch</a>
+													</li>
+												</ul>
+											</li>
+											<li class="{{Route::currentRouteName() == 'report.collections' || Route::currentRouteName() == 'report.collections.all' ? 'active-sub active' : '' }}">
+												<a href="#">
+													<i class="fa fa-money"></i>
+													<span class="menu-money">Collections</span>
+													<i class="arrow"></i>
+												</a>
+												<ul class="collapse">
+													<li class="{{Route::currentRouteName() == 'report.collections.all' ? 'active-sub active' : '' }}">
+														<a href="{{route('report.collections.all')}}"><i class="fa fa-level-up"></i> All Branches</a>
+													</li>
+													<li class="{{ Route::currentRouteName() === 'report.collections' ? 'active-sub active' : '' }}">
+														<a href="{{route('report.collections')}}"><i class="fa fa-map-marker"></i> This Branch</a>
+													</li>
+												</ul>
+											</li>
+											<li class="{{Route::currentRouteName() == 'report.attendance' || Route::currentRouteName() == 'report.attendance.all' ? 'active-sub active' : '' }}">
+												<a href="#">
+													<i class="fa fa-check"></i>
+													<span class="menu-mark">Attendance</span>
+													<i class="arrow"></i>
+												</a>
+												<ul class="collapse">
+													<li class="{{ Route::currentRouteName() == 'report.attendance.all' ? 'active-sub active' : '' }}">
+														<a href="{{route('report.attendance.all')}}"><i class="fa fa-level-up"></i> All Branches</a>
+													</li>
+													<li class="{{ Route::currentRouteName() == 'report.attendance' ? 'active-sub active' : '' }}">
+														<a href="{{route('report.attendance')}}"><i class="fa fa-map-marker"></i> This Branch</a>
+													</li>
+												</ul>
 											</li>
 
-											@endif
-										</ul>
 									</li>
-									<li class="{{Route::currentRouteName() == 'ticket' ? 'active-sub' : ''}}">
-	                  <a href="{{ route('ticket') }}">
-                      <i class="fa fa-life-ring"></i>
-                      <span class="menu-title">Ticket</span>
-	                  </a>
-	                </li>
-									<li>
-										<form id="logout" method="POST" action="{{route('logout')}}">
-		                  @csrf
-										</form>
-										<a href="#" onclick="$('#logout').submit()">
-											<i class="fa fa-sign-out"></i>
-											<span class="menu-title">Logout</span>
-										</a>
-									</li>
-									<!--Menu list item-->
-									<li class="list-divider"></li>
-									<!--Category name-->
-									<!--Menu list item-->
+
+									@endif
+								</ul>
+								</li>
+								<li class="{{Route::currentRouteName() == 'ticket' ? 'active-sub' : ''}}">
+									<a href="{{ route('ticket') }}">
+										<i class="fa fa-life-ring"></i>
+										<span class="menu-title">Ticket</span>
+									</a>
+								</li>
+								<li>
+									<form id="logout" method="POST" action="{{route('logout')}}">
+										@csrf
+									</form>
+									<a href="#" onclick="$('#logout').submit()">
+										<i class="fa fa-sign-out"></i>
+										<span class="menu-title">Logout</span>
+									</a>
+								</li>
+								<!--Menu list item-->
+								<li class="list-divider"></li>
+								<!--Category name-->
+								<!--Menu list item-->
 								</ul>
 							</div>
 						</div>
@@ -526,7 +556,7 @@
 			<!-- Visible when footer positions are static -->
 			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 			<div class="hide-fixed pull-right pad-rgt">
-			Powered By <a href="" style="color:#274868;font-weight:bolder"> automationeye </a>
+				Powered By <a href="" style="color:#274868;font-weight:bolder"> automationeye </a>
 			</div>
 			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 			<!-- Remove the class "show-fixed" and "hide-fixed" to make the content always appears. -->
@@ -557,10 +587,12 @@
 	<!-- PARTICLES -->
 	<script src="{{ URL::asset('js/particles.min.js') }}"></script>
 	<!-- PARTICLES -->
-  @if (Route::currentRouteName() == 'calendar'  || Route::currentRouteName() == 'notification'  || Route::currentRouteName() == 'ticket')
-  <script src="{{ URL::asset('plugins/bootstrap-datepicker/bootstrap-clockpicker.min.js') }}"></script>
-  <script type="text/javascript">	$('.clockpicker').clockpicker(); </script>
-  @endif
+	@if (Route::currentRouteName() == 'calendar' || Route::currentRouteName() == 'notification' || Route::currentRouteName() == 'ticket')
+	<script src="{{ URL::asset('plugins/bootstrap-datepicker/bootstrap-clockpicker.min.js') }}"></script>
+	<script type="text/javascript">
+		$('.clockpicker').clockpicker();
+	</script>
+	@endif
 
 	@if (Route::currentRouteName() == 'member.register.form' || Route::currentRouteName() == 'attendance.view.form' || Route::currentRouteName() == 'collection.offering')
 	<script src="{{ URL::asset('js/sweetalert.min.js') }}"></script>
@@ -570,36 +602,38 @@
 	<script src="{{ URL::asset('js/functions.js') }}"></script>
 	@endif
 
-		@if (Route::currentRouteName() == 'w')
-	    <!--Bootstrap Timepicker [ OPTIONAL ]-->
-		<script src="{{ URL::asset('plugins/bootstrap-timepicker/bootstrap-timepicker.min.js') }}"></script>
-		@endif
+	@if (Route::currentRouteName() == 'w')
+	<!--Bootstrap Timepicker [ OPTIONAL ]-->
+	<script src="{{ URL::asset('plugins/bootstrap-timepicker/bootstrap-timepicker.min.js') }}"></script>
+	@endif
 
-		@if (Route::currentRouteName() == 'member.register.form' || Route::currentRouteName() == 'attendance' || Route::currentRouteName() == 'attendance.mark' || Route::currentRouteName() == 'collection.offering' || Route::currentRouteName() == 'calendar'  || Route::currentRouteName() == ('ticket'))
-    <!--Bootstrap Select [ OPTIONAL ]-->
-    <script src="{{ URL::asset('plugins/bootstrap-select/bootstrap-select.min.js') }}"></script>
-		<script src="{{ URL::asset('plugins/bootstrap-datepicker/bootstrap-datepicker.min.js') }}"></script>
-		<script> $('.datepicker').datepicker(); </script>
-    @endif
+	@if (Route::currentRouteName() == 'member.register.form' || Route::currentRouteName() == 'attendance' || Route::currentRouteName() == 'attendance.mark' || Route::currentRouteName() == 'collection.offering' || Route::currentRouteName() == 'calendar' || Route::currentRouteName() == ('ticket'))
+	<!--Bootstrap Select [ OPTIONAL ]-->
+	<script src="{{ URL::asset('plugins/bootstrap-select/bootstrap-select.min.js') }}"></script>
+	<script src="{{ URL::asset('plugins/bootstrap-datepicker/bootstrap-datepicker.min.js') }}"></script>
+	<script>
+		$('.datepicker').datepicker();
+	</script>
+	@endif
 
-		@if (Route::currentRouteName() == 'gallery')
-		<script src="{{ URL::asset('plugins/gallery/ekko-lightbox.min.js') }}"></script>
-		@endif
+	@if (Route::currentRouteName() == 'gallery')
+	<script src="{{ URL::asset('plugins/gallery/ekko-lightbox.min.js') }}"></script>
+	@endif
 
-		@if (Route::currentRouteName() == 'attendance.view.form' )
-    <!--DataTables [ OPTIONAL ]-->
-		<script src="{{ URL::asset('plugins/datatables/media/js/jquery.dataTables.js') }}"></script>
-		<script src="{{ URL::asset('plugins/datatables/media/js/dataTables.bootstrap.js') }}"></script>
-		<script src="{{ URL::asset('plugins/datatables/dataTables.buttons.min.js') }}"></script>
-		<script src="{{ URL::asset('plugins/datatables/buttons.semanticui.min.js') }}"></script>
-		<script src="{{ URL::asset('plugins/datatables/jszip.min.js') }}"></script>
-		<script src="{{ URL::asset('plugins/datatables/pdfmake.min.js') }}"></script>
-		<script src="{{ URL::asset('plugins/datatables/vfs_fonts.js') }}"></script>
-		<script src="{{ URL::asset('plugins/datatables/buttons.html5.min.js') }}"></script>
-		<script src="{{ URL::asset('plugins/datatables/buttons.colVis.min.js') }}"></script>
+	@if (Route::currentRouteName() == 'attendance.view.form' )
+	<!--DataTables [ OPTIONAL ]-->
+	<script src="{{ URL::asset('plugins/datatables/media/js/jquery.dataTables.js') }}"></script>
+	<script src="{{ URL::asset('plugins/datatables/media/js/dataTables.bootstrap.js') }}"></script>
+	<script src="{{ URL::asset('plugins/datatables/dataTables.buttons.min.js') }}"></script>
+	<script src="{{ URL::asset('plugins/datatables/buttons.semanticui.min.js') }}"></script>
+	<script src="{{ URL::asset('plugins/datatables/jszip.min.js') }}"></script>
+	<script src="{{ URL::asset('plugins/datatables/pdfmake.min.js') }}"></script>
+	<script src="{{ URL::asset('plugins/datatables/vfs_fonts.js') }}"></script>
+	<script src="{{ URL::asset('plugins/datatables/buttons.html5.min.js') }}"></script>
+	<script src="{{ URL::asset('plugins/datatables/buttons.colVis.min.js') }}"></script>
 
 	<script>
-		$(document).ready(function () {
+		$(document).ready(function() {
 
 			if ($.fn.dataTable.isDataTable('.datatable')) {
 				table = $('.datatable').DataTable()
@@ -617,9 +651,9 @@
 	@endif
 
 
-  @if (Route::currentRouteName() == 'attendance.analysis')
-  <!--Morris.js [ OPTIONAL ]-->
-  <script src="{{ URL::asset('plugins/morris-js/morris.min.js') }}"></script>
+	@if (Route::currentRouteName() == 'attendance.analysis')
+	<!--Morris.js [ OPTIONAL ]-->
+	<script src="{{ URL::asset('plugins/morris-js/morris.min.js') }}"></script>
 	<script src="{{ URL::asset('plugins/morris-js/raphael-js/raphael.min.js') }}"></script>
 	@endif
 
@@ -628,108 +662,108 @@
 	<script src="plugins/fullcalendar/lib/moment.min.js"></script>
 	<script src="plugins/fullcalendar/lib/jquery-ui.custom.min.js"></script>
 	<script src="plugins/fullcalendar/fullcalendar.min.js"></script>
-    <!--Full Calendar [ SAMPLE ]-->
-        <script>
-// Misc-FullCalendar.js
-// ====================================================================
-// This file should not be included in your project.
-// This is just a sample how to initialize plugins or components.
-//
-// - ThemeOn.net -
-$(document).on('nifty.ready', function() {
-// Calendar
-// =================================================================
-// Require Full Calendar
-// -----------------------------------------------------------------
-// http://fullcalendar.io/
-// =================================================================
-// initialize the external events
-// -----------------------------------------------------------------
-$('#demo-external-events .fc-event').each(function() {
-        // store data so the calendar knows to render an event upon drop
-        $(this).data('event', {
-                title: $.trim($(this).text()), // use the element's text as the event title
-                stick: true, // maintain when user navigates (see docs on the renderEvent method)
-                className : $(this).data('class')
-        });
+	<!--Full Calendar [ SAMPLE ]-->
+	<script>
+		// Misc-FullCalendar.js
+		// ====================================================================
+		// This file should not be included in your project.
+		// This is just a sample how to initialize plugins or components.
+		//
+		// - ThemeOn.net -
+		$(document).on('nifty.ready', function() {
+			// Calendar
+			// =================================================================
+			// Require Full Calendar
+			// -----------------------------------------------------------------
+			// http://fullcalendar.io/
+			// =================================================================
+			// initialize the external events
+			// -----------------------------------------------------------------
+			$('#demo-external-events .fc-event').each(function() {
+				// store data so the calendar knows to render an event upon drop
+				$(this).data('event', {
+					title: $.trim($(this).text()), // use the element's text as the event title
+					stick: true, // maintain when user navigates (see docs on the renderEvent method)
+					className: $(this).data('class')
+				});
 
-        // make the event draggable using jQuery UI
-        $(this).draggable({
-                zIndex: 99999,
-                revert: true,      // will cause the event to go back to its
-                revertDuration: 0  //  original position after the drag
-        });
-});
+				// make the event draggable using jQuery UI
+				$(this).draggable({
+					zIndex: 99999,
+					revert: true, // will cause the event to go back to its
+					revertDuration: 0 //  original position after the drag
+				});
+			});
 
 
-// Initialize the calendar
-// -----------------------------------------------------------------
-$('#demo-calendar').fullCalendar({
-        header: {
-                left: 'prev,next today',
-                center: 'title',
-                right: 'month,agendaWeek,agendaDay'
-        },
-        editable: true,
-        droppable: true, // this allows things to be dropped onto the calendar
-        drop: function() {
-                // is the "remove after drop" checkbox checked?
-                if ($('#drop-remove').is(':checked')) {
-                        // if so, remove the element from the "Draggable Events" list
-                        $(this).remove();
-                }
-        },
-        defaultDate: new Date,
-        eventLimit: true, // allow "more" link when too many events
-        events: [
-									<?php $pastors = []; ?>
-                @foreach ($events as $event)
+			// Initialize the calendar
+			// -----------------------------------------------------------------
+			$('#demo-calendar').fullCalendar({
+				header: {
+					left: 'prev,next today',
+					center: 'title',
+					right: 'month,agendaWeek,agendaDay'
+				},
+				editable: true,
+				droppable: true, // this allows things to be dropped onto the calendar
+				drop: function() {
+					// is the "remove after drop" checkbox checked?
+					if ($('#drop-remove').is(':checked')) {
+						// if so, remove the element from the "Draggable Events" list
+						$(this).remove();
+					}
+				},
+				defaultDate: new Date,
+				eventLimit: true, // allow "more" link when too many events
+				events: [
+					<?php $pastors = []; ?>
+					@foreach($events as $event)
 
-								<?php
-								$pastors = [];
-								if(isset($event->assign_to)){
-								$emails = explode(',',$event->assign_to);
-								$i = 0;
-									foreach($emails as $email){
-										$name = App\Member::getNameByEmail($email);
-										if ($name) {
-											$pastors[$i] = $name;
-											$i++;
-										}
-									}
-									$pastors = implode(',',$pastors);
-								}else{$pastors = '';}
-								 ?>
-                {
-                        title: '{{$event->title}}',
-                        start: '{{$event->date}}',
-												location: '{{$event->location}}',
-												by: '{{$event->by_who}}',
-												time: '{{$event->time}}',
-												idss: '{{$event->id}}',
-                        className: 'purple',
-												details: '{{$event->details}}',
-												assign_to: '{{$pastors}}'
-								},
-                @endforeach
-                {
-                        title: 'Meeting',
-                        start: '2017-12-20T10:30:00',
-                        end: '2017-12-20T12:30:00',
-                        className: 'danger'
-                },
-                {
-                        id: 999,
-                        title: 'Repeating Event',
-                        start: '2018-01-09T16:00:00'
-                },
-                {
-                        title: 'Click for Google',
-                        url: 'http://google.com/',
-                        start: '2018-08-28'
-                }
-        ],
-				eventClick: function(calEvent, jsEvent, view){
+					<?php
+					$pastors = [];
+					if (isset($event->assign_to)) {
+						$emails = explode(',', $event->assign_to);
+						$i = 0;
+						foreach ($emails as $email) {
+							$name = App\Member::getNameByEmail($email);
+							if ($name) {
+								$pastors[$i] = $name;
+								$i++;
+							}
+						}
+						$pastors = implode(',', $pastors);
+					} else {
+						$pastors = '';
+					}
+					?> {
+						title: '{{$event->title}}',
+						start: '{{$event->date}}',
+						location: '{{$event->location}}',
+						by: '{{$event->by_who}}',
+						time: '{{$event->time}}',
+						idss: '{{$event->id}}',
+						className: 'purple',
+						details: '{{$event->details}}',
+						assign_to: '{{$pastors}}'
+					},
+					@endforeach {
+						title: 'Meeting',
+						start: '2017-12-20T10:30:00',
+						end: '2017-12-20T12:30:00',
+						className: 'danger'
+					},
+					{
+						id: 999,
+						title: 'Repeating Event',
+						start: '2018-01-09T16:00:00'
+					},
+					{
+						title: 'Click for Google',
+						url: 'http://google.com/',
+						start: '2018-08-28'
+					}
+				],
+				eventClick: function(calEvent, jsEvent, view) {
 					var title = calEvent.title;
 					var location = calEvent.location;
 					var by = calEvent.by;
@@ -740,8 +774,8 @@ $('#demo-calendar').fullCalendar({
 					var assign_tos = [];
 					var assignee = assign_to.split(',');
 					var i = 0;
-					assignee.forEach(function(ch){
-						assign_tos[i] = '<span><p class="bg-primary">'+ch+'</p></span>';
+					assignee.forEach(function(ch) {
+						assign_tos[i] = '<span><p class="bg-primary">' + ch + '</p></span>';
 						i++;
 					});
 					$('#by').text(by);
@@ -754,60 +788,58 @@ $('#demo-calendar').fullCalendar({
 
 					$('#assign').html(assign_tos);
 				},
-				eventMouseover: function(calEvent, jsEvent, view){
-				},
-				eventMouseout: function(){
+				eventMouseover: function(calEvent, jsEvent, view) {},
+				eventMouseout: function() {
 					//$('#myModal').modal('hide');
 				},
-				dayClick: function(){
-				}
-});
+				dayClick: function() {}
+			});
 
-});
+		});
 
 
-function dele(input){
-	var decide = confirm('Are you sure you want to delete this event?');
-	if(decide){
-		var url = "./calendar/"+input+"/delete";
-		window.location.replace(url);
-	}
-}
-        </script>
+		function dele(input) {
+			var decide = confirm('Are you sure you want to delete this event?');
+			if (decide) {
+				var url = "./calendar/" + input + "/delete";
+				window.location.replace(url);
+			}
+		}
+	</script>
 	@endif
 
-<!-- FOR ATTENDANCE ANALYSIS -->
-@if (Route::currentRouteName() == ('attendance.analysis'))
-<?php require_once 'js/views/attendance/analysis.php';?>
-@endif
-<!-- FOR ATTENDANCE ANALYSIS -->
+	<!-- FOR ATTENDANCE ANALYSIS -->
+	@if (Route::currentRouteName() == ('attendance.analysis'))
+	<?php require_once 'js/views/attendance/analysis.php'; ?>
+	@endif
+	<!-- FOR ATTENDANCE ANALYSIS -->
 
-<!-- FOR ATTENDANCE MARK -->
-@if (Route::currentRouteName() == ('attendance'))
-<?php require_once 'js/views/attendance/mark.php';?>
-@endif
-<!-- FOR ATTENDANCE MARK -->
+	<!-- FOR ATTENDANCE MARK -->
+	@if (Route::currentRouteName() == ('attendance'))
+	<?php require_once 'js/views/attendance/mark.php'; ?>
+	@endif
+	<!-- FOR ATTENDANCE MARK -->
 
-<!-- Head Office -->
-@if (Route::currentRouteName() == ('branch.options'))
-<script>
-    $(document).ready(function() {
+	<!-- Head Office -->
+	@if (Route::currentRouteName() == ('branch.options'))
+	<script>
+		$(document).ready(function() {
 			//head office module
-			$('#save-ho').click(function (){
+			$('#save-ho').click(function() {
 				$('#mod').hide();
 				$('#def').show();
 				$('#save-ho').hide();
 				$('#cancel-ho').hide();
 				$('#edit-ho').show();
 			});
-			$('#edit-ho').click(function (){
+			$('#edit-ho').click(function() {
 				$('#mod').show();
 				$('#cancel-ho').show();
 				$('#def').hide();
 				$('#edit-ho').hide();
 				$('#save-ho').show();
 			});
-			$('#cancel-ho').click(function (){
+			$('#cancel-ho').click(function() {
 				$('#mod').hide();
 				$('#cancel-ho').hide();
 				$('#def').show();
@@ -815,323 +847,327 @@ function dele(input){
 				$('#save-ho').hide();
 			});
 
-    // process the form
-    $('#update_hog').submit(function(event) {
-        var confirmed = confirm('confirm to update');
-        var values = {};
-        $.each($('#update_ho').serializeArray(), function(i, field) {
-            values[field.name] = field.value;
-        });
-        // process the form
-        $.ajax({
-            type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-            url         : "{{route('branch.optionsPost')}}", // the url where we want to POST
-            data        : values, // our data object
-            dataType    : 'json', // what type of data do we expect back from the server
-                        encode          : true
-        })
-            // using the done promise callback
-            .done(function(data) {
+			// process the form
+			$('#update_hog').submit(function(event) {
+				var confirmed = confirm('confirm to update');
+				var values = {};
+				$.each($('#update_ho').serializeArray(), function(i, field) {
+					values[field.name] = field.value;
+				});
+				// process the form
+				$.ajax({
+						type: 'POST', // define the type of HTTP verb we want to use (POST for our form)
+						url: "{{route('branch.optionsPost')}}", // the url where we want to POST
+						data: values, // our data object
+						dataType: 'json', // what type of data do we expect back from the server
+						encode: true
+					})
+					// using the done promise callback
+					.done(function(data) {
 
-                // log data to the console so we can see
-                console.log(data);
-                location.reload();
-                // here we will handle errors and validation messages
-            });
-
-        // stop the form from submitting the normal way and refreshing the page
-        event.preventDefault();
-    });
-});
-</script>
-@endif
-
-
-@if(Route::currentRouteName() == "attendance")
-<!-- mark attendance -->
-<script>
-	$(":checkbox").change(function() {
-		if($(this).is(':checked')){
-			$(this).next().val('yes');
-		}else{
-			$(this).next().val('no');
-		}
-	});
-</script>
-@endif
-
-@if(Route::currentRouteName() == "inbox")
-<script>
-$(document).ready(function(){
-
-	$('#reply-btn').click(function(){
-		var msg = $('#reply-text').val();//get d value from the input
-		var to = $('#reply-to').val();//get d value from the input
-		var from = $('#reply-from').val();//get d value from the input
-		//var value = {'msg': msg, 'to': to, 'from': from};
-		var values = {};//emtpy json obj
-		$.each($('#chat-form').serializeArray(), function(i, field) {
-				values[field.name] = field.value;//populate the values into d json obj
-		});
-		if(msg != ''){
-			$.ajax({
-				type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-				url         : "{{route('reply')}}", // the url where we want to POST
-				data        : values, // use the data object
-				dataType    : 'json', // what type of data do we expect back from the server
-				encode      : true
-			}).done(function(data){
-				get_msg(from,to);
-			});
-		}
-	});
-});
-var To;
-var From;
-
-function get_msg(to,from){
-	$('#inbox-chat-body').html(`<div id="wait" style="display:none;width:69px;height:89px;position:absolute;top:50%;left:50%;padding:2px;"><img src="{{URL::asset('images/msg-loader.gif')}}" width="64" height="64" /><br>Loading..	</div>`);
-	$("#wait").css("display", "block");
-	To = to;
-	From = from;
-	var values = {'to':to, 'from':from};
-	$.ajax({
-			type        : 'GET', // define the type of HTTP verb we want to use (POST for our form)
-			url         : "{{route('conversation')}}", // the url where we want to POST
-			data        : values, // our data object
-			dataType    : 'json', // what type of data do we expect back from the server
-			encode      : true
-	}).done(function(data) {
-					$("#wait").css("display", "none");
-					//alert(data['chats'][0]['msg']);
-					// log data to the console so we can see
-					var chat_msg = "";
-					data['chats'].forEach(function(ch){
-						if(ch.msg_from == from){
-							chat_msg += '<div class="message info">'+
-									'<img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">'+
-
-									'<div class="message-body">'+
-											'<div class="message-info">'+
-													'<h4 id="msg-from-name">'+ ch.branchname +' </h4>'+
-													'<h5> <i class="fa fa-clock-o"></i>'+ch.date+'</h5>'+
-											'</div>'+
-											'<hr>'+
-											'<div class="message-text" id="msg-from"><p>'+
-											ch.msg+
-											'</p></div>'+
-									'</div>'+
-									'<br>'+
-							'</div>';
-						}else{
-						chat_msg +='<div class="message my-message">'+
-								'<img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">'+
-
-								'<div class="message-body">'+
-								'<div class="message-body-inner">'+
-										'<div class="message-info">'+
-												'<h4 id="msg-from-name">'+ ch.branchname+'</h4>'+
-												'<h5> <i class="fa fa-clock-o"></i>'+ch.date+'</h5>'+
-										'</div>'+
-										'<hr>'+
-										'<div class="message-text" id="msg-to"><p>'+
-										ch.msg+
-										'</p></div>'+
-								'</div>'+
-								'</div>'+
-								'<br>'+
-						'</div>';
-							//chat_msg += "";
-						}
+						// log data to the console so we can see
+						console.log(data);
+						location.reload();
+						// here we will handle errors and validation messages
 					});
-					$('#inbox-chat-body').html(chat_msg);
-					$('#reply-from').val(to);
-					$('#reply-to').val(from);
-					$('#reply-text').val('');
-					// Prior to getting your messages.
-				  var shouldScroll = messages.scrollTop + messages.clientHeight === messages.scrollHeight;
-				  /*
-				   * Get your messages, we'll just simulate it by appending a new one syncronously.
-				   */
-				  //appendMessage();
-				  // After getting your messages.
-				  if (!shouldScroll) {
-				    scrollToBottom();
-				  }
-					// here we will handle errors and validation messages
+
+				// stop the form from submitting the normal way and refreshing the page
+				event.preventDefault();
 			});
-}
-var messages = document.getElementById('inbox-chat-body');
+		});
+	</script>
+	@endif
 
-function scrollToBottom() {
-  messages.scrollTop = messages.scrollHeight;
-}
-function clr_msg_box(){
-	$('#inbox-chat-body').html('');
-}
-scrollToBottom();
 
-</script>
-@endif
-@if(Route::currentRouteName() == "gallery")
-<script>
-function readURL(input) {
+	@if(Route::currentRouteName() == "attendance")
+	<!-- mark attendance -->
+	<script>
+		$(":checkbox").change(function() {
+			if ($(this).is(':checked')) {
+				$(this).next().val('yes');
+			} else {
+				$(this).next().val('no');
+			}
+		});
+	</script>
+	@endif
 
-  if (input.files && input.files[0]) {
-    var reader = new FileReader();
+	@if(Route::currentRouteName() == "inbox")
+	<script>
+		$(document).ready(function() {
 
-    reader.onload = function(e) {
-      $('#blah').attr('src', e.target.result);
-    }
+			$('#reply-btn').click(function() {
+				var msg = $('#reply-text').val(); //get d value from the input
+				var to = $('#reply-to').val(); //get d value from the input
+				var from = $('#reply-from').val(); //get d value from the input
+				//var value = {'msg': msg, 'to': to, 'from': from};
+				var values = {}; //emtpy json obj
+				$.each($('#chat-form').serializeArray(), function(i, field) {
+					values[field.name] = field.value; //populate the values into d json obj
+				});
+				if (msg != '') {
+					$.ajax({
+						type: 'POST', // define the type of HTTP verb we want to use (POST for our form)
+						url: "{{route('reply')}}", // the url where we want to POST
+						data: values, // use the data object
+						dataType: 'json', // what type of data do we expect back from the server
+						encode: true
+					}).done(function(data) {
+						get_msg(from, to);
+					});
+				}
+			});
+		});
+		var To;
+		var From;
 
-    reader.readAsDataURL(input.files[0]);
-  }
-}
+		function get_msg(to, from) {
+			$('#inbox-chat-body').html(`<div id="wait" style="display:none;width:69px;height:89px;position:absolute;top:50%;left:50%;padding:2px;"><img src="{{URL::asset('images/msg-loader.gif')}}" width="64" height="64" /><br>Loading..	</div>`);
+			$("#wait").css("display", "block");
+			To = to;
+			From = from;
+			var values = {
+				'to': to,
+				'from': from
+			};
+			$.ajax({
+				type: 'GET', // define the type of HTTP verb we want to use (POST for our form)
+				url: "{{route('conversation')}}", // the url where we want to POST
+				data: values, // our data object
+				dataType: 'json', // what type of data do we expect back from the server
+				encode: true
+			}).done(function(data) {
+				$("#wait").css("display", "none");
+				//alert(data['chats'][0]['msg']);
+				// log data to the console so we can see
+				var chat_msg = "";
+				data['chats'].forEach(function(ch) {
+					if (ch.msg_from == from) {
+						chat_msg += '<div class="message info">' +
+							'<img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">' +
 
-$("#imgInp").change(function() {
-  readURL(this);
-});
+							'<div class="message-body">' +
+							'<div class="message-info">' +
+							'<h4 id="msg-from-name">' + ch.branchname + ' </h4>' +
+							'<h5> <i class="fa fa-clock-o"></i>' + ch.date + '</h5>' +
+							'</div>' +
+							'<hr>' +
+							'<div class="message-text" id="msg-from"><p>' +
+							ch.msg +
+							'</p></div>' +
+							'</div>' +
+							'<br>' +
+							'</div>';
+					} else {
+						chat_msg += '<div class="message my-message">' +
+							'<img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">' +
 
-$('#imgInp').filestyle({
-iconName : 'glyphicon glyphicon-file',
-buttonText : 'Select File',
-buttonName : 'btn-warning'
-});
+							'<div class="message-body">' +
+							'<div class="message-body-inner">' +
+							'<div class="message-info">' +
+							'<h4 id="msg-from-name">' + ch.branchname + '</h4>' +
+							'<h5> <i class="fa fa-clock-o"></i>' + ch.date + '</h5>' +
+							'</div>' +
+							'<hr>' +
+							'<div class="message-text" id="msg-to"><p>' +
+							ch.msg +
+							'</p></div>' +
+							'</div>' +
+							'</div>' +
+							'<br>' +
+							'</div>';
+						//chat_msg += "";
+					}
+				});
+				$('#inbox-chat-body').html(chat_msg);
+				$('#reply-from').val(to);
+				$('#reply-to').val(from);
+				$('#reply-text').val('');
+				// Prior to getting your messages.
+				var shouldScroll = messages.scrollTop + messages.clientHeight === messages.scrollHeight;
+				/*
+				 * Get your messages, we'll just simulate it by appending a new one syncronously.
+				 */
+				//appendMessage();
+				// After getting your messages.
+				if (!shouldScroll) {
+					scrollToBottom();
+				}
+				// here we will handle errors and validation messages
+			});
+		}
+		var messages = document.getElementById('inbox-chat-body');
 
-$(document).on('click', '[data-toggle="lightbox"]', function(event) {
-    event.preventDefault();
-    $(this).ekkoLightbox();
-});
-</script>
-@endif
-<script>
-$(document).ready(() => {
+		function scrollToBottom() {
+			messages.scrollTop = messages.scrollHeight;
+		}
 
-	particlesJS('page-head',
+		function clr_msg_box() {
+			$('#inbox-chat-body').html('');
+		}
+		scrollToBottom();
+	</script>
+	@endif
+	@if(Route::currentRouteName() == "gallery")
+	<script>
+		function readURL(input) {
 
-	  {
-	    "particles": {
-	      "number": {
-	        "value": 150,
-	        "density": {
-	          "enable": true,
-	          "value_area": 800
-	        }
-	      },
-	      "color": {
-	        "value": "#ffffff"
-	      },
-	      "shape": {
-	        "type": "circle",
-	        "stroke": {
-	          "width": 0,
-	          "color": "#000000"
-	        },
-	        "polygon": {
-	          "nb_sides": 5
-	        },
-	        "image": {
-	          "src": "img/github.svg",
-	          "width": 100,
-	          "height": 100
-	        }
-	      },
-	      "opacity": {
-	        "value": 0.5,
-	        "random": false,
-	        "anim": {
-	          "enable": false,
-	          "speed": 1,
-	          "opacity_min": 0.1,
-	          "sync": false
-	        }
-	      },
-	      "size": {
-	        "value": 5,
-	        "random": true,
-	        "anim": {
-	          "enable": false,
-	          "speed": 40,
-	          "size_min": 0.1,
-	          "sync": false
-	        }
-	      },
-	      "line_linked": {
-	        "enable": true,
-	        "distance": 150,
-	        "color": "#ffffff",
-	        "opacity": 0.4,
-	        "width": 1
-	      },
-	      "move": {
-	        "enable": true,
-	        "speed": 6,
-	        "direction": "none",
-	        "random": false,
-	        "straight": false,
-	        "out_mode": "out",
-	        "attract": {
-	          "enable": false,
-	          "rotateX": 600,
-	          "rotateY": 1200
-	        }
-	      }
-	    },
-	    "interactivity": {
-	      "detect_on": "canvas",
-	      "events": {
-	        "onhover": {
-	          "enable": true,
-	          "mode": "repulse"
-	        },
-	        "onclick": {
-	          "enable": true,
-	          "mode": "push"
-	        },
-	        "resize": true
-	      },
-	      "modes": {
-	        "grab": {
-	          "distance": 400,
-	          "line_linked": {
-	            "opacity": 1
-	          }
-	        },
-	        "bubble": {
-	          "distance": 400,
-	          "size": 40,
-	          "duration": 2,
-	          "opacity": 8,
-	          "speed": 3
-	        },
-	        "repulse": {
-	          "distance": 200
-	        },
-	        "push": {
-	          "particles_nb": 4
-	        },
-	        "remove": {
-	          "particles_nb": 2
-	        }
-	      }
-	    },
-	    "retina_detect": true,
-	    "config_demo": {
-	      "hide_card": false,
-	      "background_color": "#b61924",
-	      "background_image": "",
-	      "background_position": "50% 50%",
-	      "background_repeat": "no-repeat",
-	      "background_size": "cover"
-	    }
-	  }
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
 
-	);
+				reader.onload = function(e) {
+					$('#blah').attr('src', e.target.result);
+				}
 
-})
-</script>
+				reader.readAsDataURL(input.files[0]);
+			}
+		}
 
-@yield('js')
+		$("#imgInp").change(function() {
+			readURL(this);
+		});
+
+		$('#imgInp').filestyle({
+			iconName: 'glyphicon glyphicon-file',
+			buttonText: 'Select File',
+			buttonName: 'btn-warning'
+		});
+
+		$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+			event.preventDefault();
+			$(this).ekkoLightbox();
+		});
+	</script>
+	@endif
+	<script>
+		$(document).ready(() => {
+
+			particlesJS('page-head',
+
+				{
+					"particles": {
+						"number": {
+							"value": 150,
+							"density": {
+								"enable": true,
+								"value_area": 800
+							}
+						},
+						"color": {
+							"value": "#ffffff"
+						},
+						"shape": {
+							"type": "circle",
+							"stroke": {
+								"width": 0,
+								"color": "#000000"
+							},
+							"polygon": {
+								"nb_sides": 5
+							},
+							"image": {
+								"src": "img/github.svg",
+								"width": 100,
+								"height": 100
+							}
+						},
+						"opacity": {
+							"value": 0.5,
+							"random": false,
+							"anim": {
+								"enable": false,
+								"speed": 1,
+								"opacity_min": 0.1,
+								"sync": false
+							}
+						},
+						"size": {
+							"value": 5,
+							"random": true,
+							"anim": {
+								"enable": false,
+								"speed": 40,
+								"size_min": 0.1,
+								"sync": false
+							}
+						},
+						"line_linked": {
+							"enable": true,
+							"distance": 150,
+							"color": "#ffffff",
+							"opacity": 0.4,
+							"width": 1
+						},
+						"move": {
+							"enable": true,
+							"speed": 6,
+							"direction": "none",
+							"random": false,
+							"straight": false,
+							"out_mode": "out",
+							"attract": {
+								"enable": false,
+								"rotateX": 600,
+								"rotateY": 1200
+							}
+						}
+					},
+					"interactivity": {
+						"detect_on": "canvas",
+						"events": {
+							"onhover": {
+								"enable": true,
+								"mode": "repulse"
+							},
+							"onclick": {
+								"enable": true,
+								"mode": "push"
+							},
+							"resize": true
+						},
+						"modes": {
+							"grab": {
+								"distance": 400,
+								"line_linked": {
+									"opacity": 1
+								}
+							},
+							"bubble": {
+								"distance": 400,
+								"size": 40,
+								"duration": 2,
+								"opacity": 8,
+								"speed": 3
+							},
+							"repulse": {
+								"distance": 200
+							},
+							"push": {
+								"particles_nb": 4
+							},
+							"remove": {
+								"particles_nb": 2
+							}
+						}
+					},
+					"retina_detect": true,
+					"config_demo": {
+						"hide_card": false,
+						"background_color": "#b61924",
+						"background_image": "",
+						"background_position": "50% 50%",
+						"background_repeat": "no-repeat",
+						"background_size": "cover"
+					}
+				}
+
+			);
+
+		})
+	</script>
+
+	@yield('js')
 
 </body>
+
 </html>

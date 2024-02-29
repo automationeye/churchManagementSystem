@@ -41,6 +41,17 @@ Route::middleware('auth.member')->group(function () {
     Route::get('/team', 'VisitorController@team')->name('team');
     Route::get('/contact-support', 'VisitorController@contact-support')->name('contact-support');
 });
+
+
+
+
+// leader section
+
+
+Route::get('/leader/reg', 'VisitorController@leaderreg')->name('leaderreg');
+Route::post('/leader/reg/post', 'VisitorController@leaderregpost')->name('leaderregpost');
+
+
 Route::get('/leader/login', 'VisitorController@leaderlogin')->name('leaderlogin');
 Route::post('/leader/login/post', 'VisitorController@leaderloginpost')->name('leaderloginpost');
 
@@ -161,6 +172,14 @@ Route::group(['middleware' => ['auth.admin']], function () {
     Route::get('/member/analysis', 'MemberController@memberAnalysis')->name('member.analysis');
     Route::get('/member/stats', 'MemberController@memberRegStats')->name('member.reg.stats');
     Route::get('/member/attendance/{id}', 'MemberController@attendance')->name('member.attendance');
+
+
+    Route::get('/leaders/register', 'MemberController@create')->name('member.register.form');
+    Route::post('/leaders/register', 'MemberController@store')->name('member.register');
+
+    Route::post('/leaders/all', 'MemberController@store')->name('member.all');
+
+
 
     Route::get('/branches', 'BranchController@index')->name('branches');
     Route::get('/branches/{id}/destroy', 'BranchController@destroy')->name('branch.destroy');

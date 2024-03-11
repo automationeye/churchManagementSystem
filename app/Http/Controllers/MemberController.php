@@ -104,7 +104,7 @@ class MemberController extends Controller
             $image_name = $input['imagename'];
         }
 
-        $membername=$request->get('firstname');
+        $membername = $request->get('firstname');
 
         $member = new Member(array(
             'branch_id' => $user->id,
@@ -134,63 +134,63 @@ class MemberController extends Controller
 
         $originalNumber = $request->get('phone');
 
-// Remove the first character (0)
+        // Remove the first character (0)
         $modifiedNumber = substr($originalNumber, 1);
 
-        $message="Hello $membername, Welcome to new breed chapel. We are happy to have you service with us";
-        $this->sendSmsUsingCurl($modifiedNumber,'20642','plain',$message);
+        $message = "Hello $membername, Welcome to new breed chapel. We are happy to have you service with us";
+        $this->sendSmsUsingCurl($modifiedNumber, '20642', 'plain', $message);
         return response()->json(['status' => true, 'text' => "Member Successfully registered"]);
         // return redirect()->route('member.register.form')->with('status', 'Member Successfully registered');
     }
 
 
     function sendSmsUsingCurl($recipient, $senderId, $messageType, $message)
-{
-    $url = 'https://sms.coptic.co.ke/api/v3/sms/send';
+    {
+        $url = 'https://sms.coptic.co.ke/api/v3/sms/send';
 
-    $headers = [
-        'Authorization: Bearer 8|xOJrpxUxElUvaWhsQ6cA54AZ6fxdLh2moxyYZLUu9db2c618',
-        'Accept: application/json',
-        'Content-Type: application/json',
-    ];
+        $headers = [
+            'Authorization: Bearer 8|xOJrpxUxElUvaWhsQ6cA54AZ6fxdLh2moxyYZLUu9db2c618',
+            'Accept: application/json',
+            'Content-Type: application/json',
+        ];
 
-    $data = [
-        'recipient' => $recipient,
-        'sender_id' => $senderId,
-        'type' => $messageType,
-        'message' => $message,
-    ];
+        $data = [
+            'recipient' => $recipient,
+            'sender_id' => $senderId,
+            'type' => $messageType,
+            'message' => $message,
+        ];
 
-    $ch = curl_init();
+        $ch = curl_init();
 
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_POST, 1);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
-    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-    try {
-        $response = curl_exec($ch);
-        $statusCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        try {
+            $response = curl_exec($ch);
+            $statusCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
-        if ($statusCode >= 200 && $statusCode < 300) {
-            // Request was successful
-            $responseData = json_decode($response, true);
+            if ($statusCode >= 200 && $statusCode < 300) {
+                // Request was successful
+                $responseData = json_decode($response, true);
 
-            // Add your logic here based on the response
+                // Add your logic here based on the response
 
-            return ['success' => true, 'message' => $responseData];
-        } else {
-            // Request failed
-            return ['success' => false, 'message' => 'Request failed with status code: ' . $statusCode];
+                return ['success' => true, 'message' => $responseData];
+            } else {
+                // Request failed
+                return ['success' => false, 'message' => 'Request failed with status code: ' . $statusCode];
+            }
+        } catch (\Exception $e) {
+            // Handle any exceptions that occur during the cURL request
+            return ['success' => false, 'message' => $e->getMessage()];
+        } finally {
+            curl_close($ch);
         }
-    } catch (\Exception $e) {
-        // Handle any exceptions that occur during the cURL request
-        return ['success' => false, 'message' => $e->getMessage()];
-    } finally {
-        curl_close($ch);
     }
-}
 
 
     /**
@@ -221,15 +221,7 @@ class MemberController extends Controller
      */
     public function edit(Member $member)
     {
-        $array = array('id' => $id);
-        Validator::make($array, [
-            'id' => 'required|integer|max:10',
-        ])->validate();
-        $subjects = Subject::all();
-        $subject = Subject::whereId($id)->firstOrFail();
-        $edit = array('editmode' => 'true');
-        $classes = TheClass::all();
-        return view('subject.index', compact('subjects', 'subject', 'edit', 'classes'));
+        return view('members.edit', compact('member'));
     }
 
     /**
@@ -241,47 +233,21 @@ class MemberController extends Controller
      */
     public function update(Request $request, Member $member)
     {
-        // check if image isnt empty
-        if (!empty($request->file('image'))) {
-            // validate image
-            $this->validate($request, [
-                'class_id' => 'bail|required|integer|min:1',
-                'section_id' => 'required|integer|min:1',
-                'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            ]);
-            $image = $request->file('image');
-            $input['imagename'] = time() . '.' . $image->getClientOriginalExtension();
-            $destinationPath = public_path('/images');
-            $image->move($destinationPath, $input['imagename']);
-            $image_name = $input['imagename'];
-        }
+        // Validate the incoming request data
+        $validatedData = $request->validate([
+            'firstname' => 'required|string|max:255',
+            'lastname' => 'required|string|max:255',
+            'email' => ' email| required|string|max:255',
+            'phone' => 'required|string|max:255',
+            'team' => 'required|string|max:255',
+            // Add validation rules for other member details if needed
+        ]);
 
-        $member = Member::whereId($id)->firstOrFail();
-        $member->class_id = $request->get('class_id');
-        $member->section_id = $request->get('section_id');
-        $member->firstname = $request->get('firstname');
-        $member->lastname = $request->get('lastname');
-        //$member->image = $request->get('image');
-        $member->mobileno = $request->get('mobileno');
-        if (!empty($image_name) && ($image_name !== NULL)) $member->image = $image_name;
-        $member->gender = $request->get('gender');
-        $member->date_of_birth = $request->get('date_of_birth');
-        $member->current_address = $request->get('current_address');
-        $member->guardian_is = $request->get('guardian_is');
-        $member->father_name = $request->get('father_name');
-        $member->father_phone = $request->get('father_phone');
-        $member->father_occupation = $request->get('father_occupation');
-        $member->mother_name = $request->get('mother_name');
-        $member->mother_phone = $request->get('mother_phone');
-        $member->mother_occupation = $request->get('mother_occupation');
-        $member->guardian_name = $request->get('guardian_name');
-        $member->guardian_relation = $request->get('guardian_relation');
-        $member->guardian_phone = $request->get('guardian_phone');
-        $member->guardian_occupation = $request->get('guardian_occupation');
-        $member->guardian_address = $request->get('guardian_address');
-        $member->is_active = $request->get('is_active');
-        $member->save();
-        return redirect(action('MemberController@edit_form', $id))->with('status', 'Member Record Successfully updated');
+        // Update the member's details
+        $member->update($validatedData);
+
+        // Redirect the user back with a success message
+        return redirect()->route('members.all')->with('status', 'Member details updated successfully.');
     }
 
     /**
@@ -290,11 +256,12 @@ class MemberController extends Controller
      * @param  \App\Member  $member
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Member $member, $id)
+    public function destroy(Member $member)
     {
-        $member = Member::whereId($id)->firstOrFail();
         $member->delete();
-        return response()->json(['status' => true, 'text' => "$member->firstname has been deleted!"]);
+
+        // Redirect back to the members list or any other appropriate page
+        return redirect()->route('members.all')->with('success', 'Member deleted successfully');
     }
 
     public function delete(Request $request)

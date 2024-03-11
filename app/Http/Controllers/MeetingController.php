@@ -20,6 +20,24 @@ class MeetingController extends Controller
         return view('admin.admin.meeting');
     }
 
+    public function newmeeting()
+    {
+        return view('admin.admin.newmeeting');
+    }
+
+    public function viewmeeting()
+    {
+
+
+        // Fetch all meetings from the database
+        $meetings = Meeting::all();
+
+        // Pass the meetings data to the view
+        return view('admin.admin.viewmeeting', ['meetings' => $meetings]);
+    }
+
+
+
     /**
      * Show the form for creating a new resource.
      *

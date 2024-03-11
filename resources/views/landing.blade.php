@@ -229,7 +229,7 @@
             </div> <!-- Container -->
         </section> <!-- About Section End -->
         <!-- Get a Quote Section -->
-        <section id="get-quote-section" class="get-quote-section section-bg-img" data-bg="web/rs-plugin/assets/crowd.jpg">
+        <section id="get-quote-section" class="get-quote-section section-bg-img" data-bg="web/rs-plugin/assets/decree.JPG">
             <div class="container">
                 <!-- Row -->
                 <div class="row text-center">
@@ -328,7 +328,7 @@
                             <div class="ministries-box-style-2">
                                 <!-- Ministries Inner -->
                                 <div class="ministries-inner">
-                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/6.jpg" width="360" height="240" alt="Agricultural Processing"> </div>
+                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/children.jpg" width="360" height="240" alt="Agricultural Processing"> </div>
                                     <!-- Ministries Content -->
                                     <div class="ministries-content pad-30">
                                         <div class="ministries-title margin-bottom-15">

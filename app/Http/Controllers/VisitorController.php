@@ -13,6 +13,8 @@ use \App\Branch;
 use \App\Channel;
 use \App\Setting;
 use \App\Leave;
+
+
 use Auth;
 
 class VisitorController extends Controller
@@ -144,7 +146,7 @@ class VisitorController extends Controller
         $team = $request->team;
         $branch = $request->branch;
 
-        $update = Member::where('phone', $tel)->update(['team' => $team,'branch_id'=>$branch]);
+        $update = Member::where('phone', $tel)->update(['team' => $team, 'branch_id' => $branch]);
 
         if ($update) {
             return redirect()->back()->with('success', 'Team successfuly updated!');
@@ -181,9 +183,9 @@ class VisitorController extends Controller
         return view('admin.admin.addadmin');
     }
 
-    public function acceptleave()
+    public function memberleave()
     {
-        return view('admin.admin.acceptleave');
+        return view('admin.admin.memberleave');
     }
 
     public function approvemember(Request $request)
@@ -202,13 +204,14 @@ class VisitorController extends Controller
         }
     }
 
-    public function removemember(Request $request){
+    public function removemember(Request $request)
+    {
         $id = $request->id;
 
         if ($id == null) {
             return redirect()->route('managemember')->with('error', 'An error occured!');
         }
-        $update = Member::where('id', $id)->update(['team_status' => 0,'team'=>'']);
+        $update = Member::where('id', $id)->update(['team_status' => 0, 'team' => '']);
         if ($update) {
             return redirect()->route('managemember')->with('success', 'Member removed successfully!');
         } else {
@@ -260,15 +263,6 @@ class VisitorController extends Controller
         return view('admin.admin.editannouncement');
     }
 
-    public function newmeeting()
-    {
-        return view('admin.admin.newmeeting');
-    }
-
-    public function viewmeeting()
-    {
-        return view('admin.admin.viewmeeting');
-    }
 
     public function profile()
     {

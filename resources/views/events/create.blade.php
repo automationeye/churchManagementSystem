@@ -5,11 +5,9 @@ Events
 @endsection
 
 @section('link')
-<link href="{{ URL::asset('plugins/bootstrap-datepicker/bootstrap-datepicker.min.css') }}"
-    rel="stylesheet">
+<link href="{{ URL::asset('plugins/bootstrap-datepicker/bootstrap-datepicker.min.css') }}" rel="stylesheet">
 <link href="{{ URL::asset('css/sweetalert.css') }}" rel="stylesheet">
-<link href="{{ URL::asset('plugins/datatables/media/css/dataTables.bootstrap.css') }}"
-    rel="stylesheet">
+<link href="{{ URL::asset('plugins/datatables/media/css/dataTables.bootstrap.css') }}" rel="stylesheet">
 @endsection
 
 @section('content')
@@ -52,31 +50,35 @@ Events
                     @csrf
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="inputName">Event Name</label>
-                            <input type="text" class="form-control" id="inputName" name="title" placeholder="Event Name" required>
+                            <label for="inputTitle">Event Title</label>
+                            <input type="text" class="form-control" id="inputTitle" name="title" placeholder="Event Title" required>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="inputName">Location</label>
-                            <input type="text" class="form-control" name="location" id="inputName" placeholder="Event Location" required>
+                            <label for="inputLocation">Location</label>
+                            <input type="text" class="form-control" name="location" id="inputLocation" placeholder="Event Location" required>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="inputEmail">Date</label>
-                            <input type="date" class="form-control" name="date" id="inputEmail" placeholder="Event date" required>
+                            <label for="inputDate">Date</label>
+                            <input type="date" class="form-control" name="date" id="inputDate" placeholder="Event Date" required>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="inputEmail">Time</label>
-                            <input type="time" class="form-control" name="time" id="inputEmail" placeholder="Event Time" required>
+                            <label for="inputTime">Time</label>
+                            <input type="time" class="form-control" name="time" id="inputTime" placeholder="Event Time" required>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="inputEmail">Event details</label>
-                            <Textarea type="text" rows="5" class="form-control" name="details" id="inputEmail" placeholder="Event description"></Textarea>
+                            <label for="inputDetails">Event Details</label>
+                            <textarea rows="5" class="form-control" name="details" id="inputDetails" placeholder="Event Details"></textarea>
                         </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputAssign">Assign To</label>
+                            <input type="text" class="form-control" name="assign[]" id="inputAssign" placeholder="Assign To">
+                            <!-- This field can be multiple, hence using [] in name -->
+                        </div>
+                        <!-- Other form fields go here -->
                     </div>
-                   
-
-
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
+
             </div>
         </div>
         <!--===================================================-->

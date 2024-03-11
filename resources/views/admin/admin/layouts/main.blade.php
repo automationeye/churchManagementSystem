@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title> NBC ADMIN Members </title>
+    <title> NBC LEADERS TAB </title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -120,13 +120,13 @@
                     </div>
                 </div>
                 <div class="text-center">
-                    <h2 class="pt-3"> <b> NBC Members Tab </b></h2>
+                    <h2 class="pt-3"> <b> NBC LEADERS TAB </b></h2>
                 </div>
 
             </div>
         </div>
 
-        
+
         <!--**********************************
             Header end ti-comment-alt
         ***********************************-->
@@ -150,7 +150,7 @@
                             <i class="fa fa-address-card-o menu-icon"></i><span class="nav-text">Members</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="/addmember"> <i class="icon-plus menu-icon"></i><span class="nav-text">Add Member</span></a></li>
+                            <li><a href="/addmember"> <i class="icon-plus menu-icon"></i><span class="nav-text">Approve Member</span></a></li>
                             <li><a href="/managemember"> <i class="fa fa-tasks menu-icon"></i><span class="nav-text">Manage Member</span></a></li>
                             <!-- <li><a href="./"> <i class="fa fa-bar-chart menu-icon"></i><span class="nav-text">Salary Table</span></a></li> -->
 
@@ -250,27 +250,27 @@
 
             <div class="container-fluid">
 
-            @if($errors->any())
-                        <div class="alert alert-danger">
-                            <ul>
-                                @foreach($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    @endif
+                @if($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                @endif
 
-                    @if(session('error'))
-                        <div class="alert alert-danger">
-                            {{ session('error') }}
-                        </div>
-                    @endif
+                @if(session('error'))
+                <div class="alert alert-danger">
+                    {{ session('error') }}
+                </div>
+                @endif
 
-                    @if(session('success'))
-                        <div class="alert alert-success">
-                            {{ session('success') }}
-                        </div>
-                    @endif
+                @if(session('success'))
+                <div class="alert alert-success">
+                    {{ session('success') }}
+                </div>
+                @endif
 
                 @yield('content')
 

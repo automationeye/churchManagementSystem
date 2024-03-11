@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Auth;
 use Hash;
 use App\Member;
+
 class LeadersController extends Controller
 {
     /**
@@ -18,7 +19,7 @@ class LeadersController extends Controller
     {
         //
 
-        $leaders = leaders::where('id', '>', 0)->orderBy('id', 'DESC')->get();
+        $leaders = leaders::where('id', '>', 0)->orderBy('id', 'ASC')->get();
 
         return view('leaders.index')->with(compact('leaders'));
     }
@@ -46,10 +47,10 @@ class LeadersController extends Controller
         //this is the leaders id so we fetch data about the member and promote the leader
 
         $leaderid = $request->memberId;
-        $leaderDetails=Member::where('id',$leaderid)->first();
+        $leaderDetails = Member::where('id', $leaderid)->first();
         $phone = $leaderDetails->phone;
         $team = $leaderDetails->team;
-        $fullName=$leaderDetails->firstname;
+        $fullName = $leaderDetails->firstname;
         $admin = Auth::Guard('admin')->user();
         $admin->branchcode;
         $leaders = new Leaders();
@@ -85,6 +86,8 @@ class LeadersController extends Controller
     public function edit(Leaders $leaders)
     {
         //
+
+        return view('leaders.edit', compact('leaders'));
     }
 
     /**
@@ -97,6 +100,20 @@ class LeadersController extends Controller
     public function update(Request $request, Leaders $leaders)
     {
         //
+        // Validate the incoming request data
+        $validatedData = $request->validate([
+            'fullName' => 'required|string|max:255',
+
+            'phone' => 'required|string|max:255',
+            'team' => 'required|string|max:255',
+            // Add validation rules for other member details if needed
+        ]);
+
+        // Update the member's details
+        $leaders->update($validatedData);
+
+        // Redirect the user back with a success message
+        return redirect()->route('leaders.index')->with('status', 'Leader details updated successfully.');
     }
 
     /**
@@ -108,5 +125,10 @@ class LeadersController extends Controller
     public function destroy(Leaders $leaders)
     {
         //
+
+        $leaders->delete();
+
+        // Redirect back to the leaders list or any other appropriate page
+        return redirect()->route('leaders.index')->with('success', 'Leader deleted successfully');
     }
 }

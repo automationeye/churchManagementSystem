@@ -10,19 +10,39 @@
 
         <!-- Meeting Table -->
 
-        <table class="table">
+        <table class="table table-striped table-bordered" cellspacing="0" width="100%;">
             <thead>
                 <tr>
+                    <th>#</th>
                     <th>Title</th>
-                    <th>Details</th>
-                    <th>Date</th>
-                    <th>Time</th>
-                    <th>Status</th>
-                    <th>Adjust Details</th>
+                    <th>Description</th>
+                    <th>Venue</th>
+                    <th>Date & Time</th>
+                    <th>Edit</th>
+
                 </tr>
             </thead>
             <tbody id="meeting-table-body">
                 <!-- Scheduled meetings will be inserted here -->
+
+
+                @foreach($meetings as $meeting)
+                <tr>
+                    <td>{{ $loop->iteration }}</td>
+                    <td>{{ $meeting->title }}</td>
+                    <td>{{ $meeting->description }}</td>
+                    <td>{{ $meeting->venue }}</td>
+                    <td>{{ $meeting->datetime }}</td>
+                    <td>
+                        <form action="" method="GET" style="display: inline;">
+                            <button type="submit" class="btn btn-info">Edit</button>
+                        </form>
+
+                    </td>
+                </tr>
+                @endforeach
+
+
             </tbody>
         </table>
     </div>

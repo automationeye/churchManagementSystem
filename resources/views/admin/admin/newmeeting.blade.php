@@ -17,19 +17,16 @@
 
 
             <div class="form-group">
-                <label>Meeting Details :</label>
+                <label>Meeting Description :</label>
                 <input type="text" class="form-control" value=" " name="description">
 
             </div>
 
             <div class="form-group">
-                <label>Meeting Details:</label>
-                <select class="form-control" name="venue">
+                <label>Meeting Venue:</label>
+                <input type="text" class="form-control" value=" " name="venue">
 
-                    <option value="physical">Physical</option>
-                    <option value="virtual">virtual</option>
 
-                </select>
             </div>
 
             <div class="form-group">
@@ -41,21 +38,6 @@
         </form>
 
 
-        <!-- Meeting Table -->
-        <h2 class="mt-5">Scheduled Meetings</h2>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Details</th>
-                    <th>Date</th>
-                    <th>Time</th>
-                </tr>
-            </thead>
-            <tbody id="meeting-table-body">
-                <!-- Scheduled meetings will be inserted here -->
-            </tbody>
-        </table>
     </div>
 
 </div>

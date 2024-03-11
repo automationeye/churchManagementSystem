@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Auth;
 use App\Leave;
 use Illuminate\Http\Request;
@@ -15,7 +16,7 @@ class LeaveController extends Controller
     public function index()
     {
         //
-        return view ('members.requestleave');
+        return view('members.requestleave');
     }
 
     /**
@@ -28,6 +29,12 @@ class LeaveController extends Controller
         //
     }
 
+
+    // public function memberleave()
+    // {
+    //     return view('admin.admin.memberleave');
+    // }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -39,30 +46,29 @@ class LeaveController extends Controller
         //
 
 
-        $leaverequest=new Leave();
+        $leaverequest = new Leave();
 
 
-        $leaverequest->user_id=Auth::user()->id;
-        $leaverequest->from=$request->fromDate;
-        $leaverequest->to=$request->toDate;
-        $leaverequest->reason=$request->reason;
-        $leaverequest->status=0;
+        $leaverequest->user_id = Auth::user()->id;
+        $leaverequest->firstname = Auth::user()->firstname;
+        $leaverequest->lastname = Auth::user()->lastname;
 
-        try{
+        $leaverequest->from = $request->fromDate;
+        $leaverequest->to = $request->toDate;
+        $leaverequest->reason = $request->reason;
+        $leaverequest->status = 0;
+
+        try {
             $leaverequest->save();
 
-            if($leaverequest){
+            if ($leaverequest) {
                 return redirect('memberdash')->with('success', 'Leave successfuly created, await message from admin!');
-            }else{
+            } else {
                 return redirect('memberdash')->back()->with('error', 'An error occured!');
             }
-        }catch(Exception $e){
+        } catch (Exception $e) {
             return redirect()->back()->with('error', $e->getMessage());
         }
-
-
-
-        
     }
 
     /**

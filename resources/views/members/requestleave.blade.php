@@ -20,10 +20,10 @@
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="card">
-                <div class="card-header">
+                <div class="card-header" style="text-align: center; color:black; font-weight:700;">
                     Leave Request Form
                 </div>
-                <div class="card-body">
+                <div class="card-body" style=" color:black; font-weight:700;">
                     <form method="post" action="{{ url('memberleaverequest') }}">
                         @csrf
                         <div class="mb-3">
@@ -43,7 +43,9 @@
                 </div>
             </div>
         </div>
+
     </div>
+    <br><br><br><br>
 </div>
 
 @endsection

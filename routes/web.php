@@ -97,9 +97,9 @@ Route::group(['middleware' => ['auth.leader']], function () {
 
     Route::get('/editannouncement', 'VisitorController@editannouncement')->name('editannouncement');
 
-    Route::get('/newmeeting', 'VisitorController@newmeeting')->name('newmeeting');
+    Route::get('/newmeeting', 'MeetingController@newmeeting')->name('newmeeting');
 
-    Route::get('/viewmeeting', 'VisitorController@viewmeeting')->name('viewmeeting');
+    Route::get('/viewmeeting', 'MeetingController@viewmeeting')->name('viewmeeting');
 
     Route::get('/profile', 'VisitorController@profile')->name('profile');
 });
@@ -164,6 +164,16 @@ Route::group(['middleware' => ['auth.admin']], function () {
     Route::get('/member/register', 'MemberController@create')->name('member.register.form');
     Route::post('/member/register', 'MemberController@store')->name('member.register');
     Route::get('/members/all', 'MemberController@index')->name('members.all');
+
+    // Route for editing a member
+    Route::get('/edit-member/{member}', 'MemberController@edit')->name('edit-member');
+
+    Route::put('/members/{member}', 'MemberController@update')->name('update-member');
+
+
+    // Route for deleting a member
+    Route::delete('/members/{member}', 'MemberController@destroy')->name('delete-member');
+
     Route::get('/member/profile/{id}', 'MemberController@show')->name('member.profile');
     Route::get('/member/edit/{id}', 'MemberController@modify')->name('member.edit');
     Route::post('/member/delete/{id}', 'MemberController@destroy')->name('member.delete');
@@ -174,18 +184,23 @@ Route::group(['middleware' => ['auth.admin']], function () {
     Route::get('/member/analysis', 'MemberController@memberAnalysis')->name('member.analysis');
     Route::get('/member/stats', 'MemberController@memberRegStats')->name('member.reg.stats');
     Route::get('/member/attendance/{id}', 'MemberController@attendance')->name('member.attendance');
-
     //teams
     Route::get('/team/create', 'ChurchTeamsController@create')->name('teams.create');
     Route::get('/teams', 'ChurchTeamsController@index')->name('teams');
     Route::post('/teams/post', 'ChurchTeamsController@store')->name('teams.store');
-
-
-
+    //leaders
     Route::get('/leaders/register', 'LeadersController@create')->name('leaders.register');
     Route::post('/leaders/register', 'LeadersController@store')->name('leaders.register.post');
 
     Route::get('/leaders', 'LeadersController@index')->name('leaders');
+
+    // Route for editing a member
+    Route::get('/edit-leader/{leader}', 'LeadersController@edit')->name('edit-leader');
+
+    Route::put('/leaders/{leader}', 'LeadersController@update')->name('update-leader');
+
+    // Route for deleting a leader
+    Route::delete('/leaders/{leader}', 'LeadersController@destroy')->name('delete-leader');
 
 
 

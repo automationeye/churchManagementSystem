@@ -63,7 +63,7 @@ Sermons
                                 </tr>
                             </thead>
                             <tbody>
-
+                                <?php $leaders = App\Leaders::all() ?>
                                 @foreach($leaders as $leader)
                                 <tr>
                                     <td>{{ $leader->id }}</td>
@@ -71,8 +71,15 @@ Sermons
                                     <td>{{ App\ChurchTeams::where('id', $leader->team)->value('team') }}</td>
                                     <td>{{ $leader->created_at }}</td>
                                     <td>
-                                        <button class="btn btn-info">Edit</button>
-                                        <button class="btn btn-danger">Delete</button>
+                                        <form action="{{ route('edit-leader', ['leader' => $leader->id]) }}" method="GET" style="display: inline;">
+                                            <button type="submit" class="btn btn-info">Edit</button>
+                                        </form>
+
+                                        <form action="{{ route('delete-leader', ['leader' => $leader->id]) }}" method="POST" style="display: inline;">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this leader?')">Delete</button>
+                                        </form>
                                     </td>
 
                                 </tr>

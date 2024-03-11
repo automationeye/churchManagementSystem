@@ -24,29 +24,39 @@
 
 
 
-                <br><br>
+                <br>
 
                 @if(auth()->user()->team==null && auth()->user()->team_status==0)
 
-                    <div class="card card-primary card-outline alert alert-danger" style="text-align: center;"
-                        data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <p>You are currently not enrolled to a team, Click here to select a team and join one today</p>
-                    </div>
+                <div class="card card-primary card-outline alert alert-danger" style="text-align: center;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <p>You are currently not enrolled to a team, Click here to select a team and join one today</p>
+                </div>
                 @elseif(auth()->user()->team_status==0)
 
-                    <div class="card card-primary card-outline alert alert-warning" style="text-align: center;">
-                        You belong to team {{ auth()->user()->team }} but awaiting confirmation from admin
-                    </div>
+                <div class="card card-primary card-outline alert alert-warning" style="text-align: center;">
+                    You belong to team {{ auth()->user()->team }} but awaiting confirmation from admin
+                </div>
 
                 @else
 
-                    <div class="card card-primary card-outline alert alert-success" style="text-align: center;">
-                        You belong to team {{ auth()->user()->team }}
-                    </div>
+                <div class="card card-primary card-outline alert alert-success" style="text-align: center;">
+                    You belong to team {{ auth()->user()->team }}
+                </div>
 
                 @endif
 
+
+
                 <div class="card card-primary card-outline alert alert-success">
+
+                    <h4>Bishop Announcement</h4>
+                    <span style="text-align:center;"> Welcome to New Breed City Chapel.</span>
+                </div>
+
+
+                <div class="card card-primary card-outline alert alert-success">
+
+                    <h4>Leader Announcement</h4>
                     <marquee> 📣 We are pleased to announce the marriage of brother benard which will happen on 14th feb
                         2024 at new breed chapel starting from 10am.</marquee>
                 </div>
@@ -80,31 +90,31 @@
 
                                 @if(count($leaves)>0)
 
-                                    @foreach($leaves as $leave)
-                                        <tr>
-                                            <td>{{ $leave->from }}</td>
-                                            <td>{{ $leave->to }}</td>
-                                            <td>{{ $leave->reason }}</td>
+                                @foreach($leaves as $leave)
+                                <tr>
+                                    <td>{{ $leave->from }}</td>
+                                    <td>{{ $leave->to }}</td>
+                                    <td>{{ $leave->reason }}</td>
 
-                                            <td>
+                                    <td>
 
-                                                @if($leave->status==0)
-                                                    <span class="badge bg-warning text-dark">Pending</span>
-                                                @elseif($leave->status==1)
-                                                    <span class="badge bg-success">Approved</span>
-                                                @else
-                                                    <span class="badge bg-success">Rejected</span>
+                                        @if($leave->status==0)
+                                        <span class="badge bg-warning text-dark">Pending</span>
+                                        @elseif($leave->status==1)
+                                        <span class="badge bg-success">Approved</span>
+                                        @else
+                                        <span class="badge bg-success">Rejected</span>
 
-                                                @endif
-                                            </td>
+                                        @endif
+                                    </td>
 
-                                        </tr>
-                                    @endforeach
+                                </tr>
+                                @endforeach
 
                                 @else
-                                    <tr>
-                                        <td colspan="8">No Leave found found</td>
-                                    </tr>
+                                <tr>
+                                    <td colspan="8">No Leave found found</td>
+                                </tr>
                                 @endif
 
 
@@ -118,7 +128,7 @@
             </div>
 
 
-            <div class="col-md-6">
+            <div class="col-md-6 ">
 
 
                 <div class="card card-primary card-outline">
@@ -126,7 +136,7 @@
 
 
                         <button type="submit" class="btn btn-primary btn-block">
-                            <i class="fas fa-add"></i> Upcoming birthdays
+                            <i class="fas fa-add"></i> Upcoming Meetings
                         </button>
 
 
@@ -139,18 +149,28 @@
                             <table class="table table-bordered table-striped table-sm">
                                 <thead>
                                     <tr>
-
-                                        <th>Member</th>
-                                        <th>Date of Celebration</th>
-
+                                        <th>#</th>
+                                        <th>Title</th>
+                                        <th>Description</th>
+                                        <th>Venue</th>
+                                        <th>Date & Time</th>
 
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody id="meeting-table-body">
+                                    <!-- Scheduled meetings will be inserted here -->
+                                    <?php $meetings = App\Meeting::all() ?>
 
+                                    @foreach($meetings as $meeting)
                                     <tr>
-                                        <td colspan="8">No Upcoming birthday</td>
+                                        <td>{{ $loop->iteration }}</td>
+                                        <td>{{ $meeting->title }}</td>
+                                        <td>{{ $meeting->description }}</td>
+                                        <td>{{ $meeting->venue }}</td>
+                                        <td>{{ $meeting->datetime }}</td>
                                     </tr>
+                                    @endforeach
+
 
                                 </tbody>
                             </table>
@@ -162,6 +182,10 @@
                 </div>
             </div>
         </div>
+
+
+        <br><br>
+
 
         <div class="row">
             <div class="col-md-6 card card-primary card-outline">
@@ -177,19 +201,29 @@
                         <table class="table table-bordered table-striped table-sm">
                             <thead>
                                 <tr>
-
-                                    <th>Event description</th>
-                                    <th>From</th>
-                                    <th>To</th>
-                                    <th>Status</th>
+                                    <th>Event Title</th>
+                                    <th>Event Details</th>
+                                    <th>Location</th>
+                                    <th>Date</th>
+                                    <th>Time</th>
 
                                 </tr>
                             </thead>
                             <tbody>
+                                <!-- Scheduled eventss will be inserted here -->
+                                <?php $events = App\Event::all() ?>
 
+                                @foreach($events as $event)
                                 <tr>
-                                    <td colspan="8">No upcoming event found found</td>
+                                    <td>{{ $loop->iteration }}</td>
+                                    <td>{{ $event->title }}</td>
+                                    <td>{{ $event->details }}</td>
+                                    <td>{{ $event->location }}</td>
+                                    <td>{{ $event->date }}</td>
+                                    <td>{{ $event->time }}</td>
                                 </tr>
+                                @endforeach
+
 
                             </tbody>
                         </table>
@@ -244,9 +278,91 @@
             </div>
         </div>
 
+        <br><br>
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
+        <div class="row">
+            <div class="col-md-6 card card-primary card-outline">
+                <div class="card-header">
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-add"></i> Upcoming events
+                    </button>
+                </div>
+
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <h5 class="card-title m-0">Upcoming events</h5>
+                        <table class="table table-bordered table-striped table-sm">
+                            <thead>
+                                <tr>
+
+                                    <th>Event description</th>
+                                    <th>From</th>
+                                    <th>To</th>
+                                    <th>Status</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td colspan="8">No upcoming event found found</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6">
+
+
+                <div class="card card-primary card-outline">
+                    <div class="card-header">
+
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-add"></i> Upcoming birthdays
+                        </button>
+
+
+
+                    </div>
+
+                    <div class="card-body">
+                        <div class="table-responsive">
+
+                            <table class="table table-bordered table-striped table-sm">
+                                <thead>
+                                    <tr>
+
+                                        <th>Member</th>
+                                        <th>Date of Celebration</th>
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td colspan="8">No Upcoming birthday</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -263,10 +379,10 @@
                                     <!-- Use col-md-12 for full width on medium and larger screens -->
                                     <label for="teamSelect" class="form-label">Select Branch</label>
 
-                                    <?php $users=App\User::all();?>
+                                    <?php $users = App\User::all(); ?>
                                     <select class="form-control" id="teamSelect" name="branch">
                                         @foreach($users as $user)
-                                            <option value="{{ $user->id }}">{{ $user->branchname }}</option>
+                                        <option value="{{ $user->id }}">{{ $user->branchname }}</option>
                                         @endforeach
                                         <!-- Add more options as needed -->
                                     </select>
@@ -275,10 +391,10 @@
                                     <!-- Use col-md-12 for full width on medium and larger screens -->
                                     <label for="teamSelect" class="form-label">Select Team</label>
 
-                                    <?php $teams=App\ChurchTeams::all();?>
+                                    <?php $teams = App\ChurchTeams::all(); ?>
                                     <select class="form-control" id="teamSelect" name="team">
                                         @foreach($teams as $team)
-                                            <option value="{{ $team->id }}">{{ $team->team }}</option>
+                                        <option value="{{ $team->id }}">{{ $team->team }}</option>
                                         @endforeach
                                         <!-- Add more options as needed -->
                                     </select>
@@ -316,7 +432,7 @@
 
 
 <script>
-    $(function () {
+    $(function() {
 
     });
 
@@ -335,7 +451,6 @@
             }
         })
     }
-
 </script>
 
 

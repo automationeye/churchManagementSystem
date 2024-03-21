@@ -4,7 +4,7 @@
 <rs-module-wrap id="rev_slider_1_1_wrapper" data-alias="zegen-home-1" data-source="gallery" style="visibility:hidden;background:#000000;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
     <rs-module id="rev_slider_1_1" data-version="6.5.31">
         <rs-slides>
-            <rs-slide style="position: absolute;  " data-key="rs-1" data-title="Web Show" data-thumb="web/rs-plugin/assets/bishop.jpg" data-anim="adpr:false;e:slidingoverlay;ms:2000;" data-in="o:1;x:(100%);" data-out="a:false;"> <img src="web/rs-plugin/assets/nbcbishop.jpg" alt=" " title="zmain-slider-1.jpg" width="1536" height="864" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="web/rs-plugin/assets/bishop.jpg" data-parallax="5" data-no-retina><!--							-->
+            <rs-slide style="position: absolute;  " data-key="rs-1" data-title="Web Show" data-thumb="web/rs-plugin/assets/bspem.jpg" data-anim="adpr:false;e:slidingoverlay;ms:2000;" data-in="o:1;x:(100%);" data-out="a:false;"> <img src="web/rs-plugin/assets/bspem.jpg" alt=" " title="zmain-slider-1.jpg" width="1536" height="864" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="web/rs-plugin/assets/bspem.jpg" data-parallax="5" data-no-retina><!--							-->
                 <h1 id="slider-1-slide-1-layer-2" style="filter: brightness(3.5);" class="rs-layer Concept-Title" data-type="text" data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)" data-rsp_ch="on" data-xy="x:c;y:m;yo:10px,-26px,-10px,-33px;" data-text="w:normal,nowrap,nowrap,normal;s:54,50,45,30;l:52,55,50,40;ls:3px;fw:700;a:center;" data-dim="w:754px,699px,auto,400px;" data-padding="b:10;" data-frame_0="sX:2;sY:2;" data-frame_0_mask="u:t;" data-frame_1="e:power2.out;st:2110;sp:1270;sR:2110;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:5620;" data-frame_999_reverse="x:true;" style="z-index:10;font-family:'Garamond';text-transform:uppercase; ">NEW BREED CITY CHAPEL
                 </h1><!--							-->
                 <rs-layer id="slider-1-slide-1-layer-4" class="Concept-SubTitle" style="filter: brightness(3.5);" data-type="text" data-color="" data-rsp_ch="on" data-xy="x:c;y:m;yo:-42px,-83px,-64px,-71px;" data-text="w:normal,nowrap,nowrap,nowrap;s:21,20,20,15;l:21,25,20,20;fw:700;a:center,left,left,left;" data-dim="w:408px,auto,auto,auto;" data-padding="b:10;" data-frame_0="o:1;" data-frame_0_chars="d:5;y:100%;o:0;rZ:-35deg;" data-frame_0_mask="u:t;" data-frame_1="st:640;sp:1200;sR:640;" data-frame_1_chars="e:power4.inOut;d:10;rZ:0deg;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:4960;" data-frame_999_reverse="x:true;" style=" z-index:11;font-family:'Open Sans';text-transform:uppercase;">
@@ -223,7 +223,7 @@
                                 </div>
                             </div> <!-- Feature Box End -->
                         </div>
-                        <div class="button-section margin-top-35"> <a class="btn btn-default" href="/propheticword" title="Learn More">Learn More</a> </div>
+                        <div class="button-section margin-top-35"> <a class="btn btn-default" href="/about" title="Learn More">Learn More</a> </div>
                     </div> <!-- Col -->
                 </div> <!-- Row -->
             </div> <!-- Container -->
@@ -1098,7 +1098,7 @@
                                                         <div class="events-inner margin-bottom-35">
                                                             <!--events Thumb-->
                                                             <div class="events-thumb margin-bottom-30 relative">
-                                                                <img src="web/rs-plugin/assets/d5.jpg " class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
+                                                                <img src="web/rs-plugin/assets/passtor.jpg " class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
                                                             </div>
                                                             <!--events details-->
                                                             <div class="events-details pad-none">

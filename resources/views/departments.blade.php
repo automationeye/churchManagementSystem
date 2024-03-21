@@ -151,7 +151,7 @@
                                     <div class="events-inner margin-bottom-35">
                                         <!--events Thumb-->
                                         <div class="events-thumb margin-bottom-30 relative">
-                                            <img src="web/rs-plugin/assets/d5.jpg " class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
+                                            <img src="web/rs-plugin/assets/passtor.jpg " class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
                                         </div>
                                         <!--events details-->
                                         <div class="events-details pad-none">

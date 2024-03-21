@@ -82,13 +82,7 @@ Member Registration
                                 @csrf
                                 <div class="col-md-6">
                                     <!--Static-->
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="demo-readonly-input">Branch
-                                            Code</label>
-                                        <div class="col-md-9">
-                                            <input type="text" id="demo-readonly-input" value="{{ \Auth::guard('admin')->user()->branchcode }}" class="form-control" placeholder="Readonly input here..." readonly>
-                                        </div>
-                                    </div>
+
                                     <!--Text Input-->
                                     <div class="form-group">
                                         <label class="col-md-3 control-label" for="demo-text-input">Title</label>
@@ -153,100 +147,24 @@ Member Registration
                                         </div>
                                     </div>
                                     <!--Text Input-->
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="demo-text-input">Occupation</label>
-                                        <div class="col-md-9">
-                                            <select name="occupation" class="selectpicker col-xs-6 col-sm-4 col-md-6 col-lg-9" data-style="btn-success" required>
-                                                <option value="Doctor">Doctor</option>
-                                                <option value="Engineer">Engineer</option>
-                                                <option value="Surveyor">Surveyor</option>
-                                                <option value="Business Person">Business Person</option>
-                                                <option value="Lecturer">Lecturer</option>
-                                                <option value="Professor">Professor</option>
-                                                <option value="Pharmacist">Pharmacist</option>
-                                                <option value="Trader">Trader</option>
-                                                <option value="Civil Servant">Civil Servant</option>
-                                                <option value="Retired">*Retired</option>
-                                                <option value="Other">Other</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="demo-text-input">Position</label>
-                                        <div class="col-md-9">
-                                            <select name="position" class="selectpicker col-xs-6 col-sm-4 col-md-6 col-lg-9" data-style="btn-success">
-                                                <option value="senior pastor">Senior Pastor</option>
-                                                <option value="pastor">Pastor</option>
-                                                <option value="member">Member</option>
-                                                <option value="usher">Usher</option>
-                                                <option value="worker">Worker</option>
-                                                <option value="chorister">Chorister</option>
-                                                <option value="elder">Elder</option>
-                                                <option value="technician">Technician</option>
-                                                <option value="instrumentalist">Instrumentalist</option>
-                                                <option value="deacon">Deacon</option>
-                                                <option value="deaconess">Deaconess</option>
-                                                <option value="evangelist">Evangelist</option>
-                                                <option value="minister">Minister</option>
-                                                <option value="protocol">Protocol</option>
-                                                <option value="hod">HOD</option>
-                                            </select>
-                                        </div>
-                                    </div>
+
+
 
 
                                     <!--Textarea-->
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="demo-textarea-input">Address
-                                            I</label>
-                                        <div class="col-md-9">
-                                            <textarea id="demo-textarea-input" name="address" rows="5" class="form-control" placeholder="Address I"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="demo-textarea-input">Address
-                                            II</label>
-                                        <div class="col-md-9">
-                                            <textarea id="demo-textarea-input" name="address2" rows="5" class="form-control" placeholder="Address II"></textarea>
-                                        </div>
-                                    </div>
+
                                 </div>
                                 <div class="col-md-6">
                                     <?php $ipInfo = app('App\Http\Controllers\VisitorController')->ip_info(app('App\Http\Controllers\VisitorController')->getUserIP(), 'Location'); ?>
                                     <?php if ($ipInfo && $ipInfo['continent'] != 'Africa') { ?>
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label" for="demo-textarea-input">Postal</label>
-                                            <div class="col-md-9">
-                                                <input type="text" class="form-control" name="postal" placeholder="Enter member Postal/ZIP Code">
-                                            </div>
-                                        </div>
+
                                     <?php } ?>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="demo-textarea-input">City</label>
-                                        <div class="col-md-9">
-                                            <input type="text" class="form-control" name="city" placeholder="Enter member city">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="demo-textarea-input">State</label>
-                                        <div class="col-md-9">
-                                            <input type="text" class="form-control" name="state" placeholder="Enter member state">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="demo-textarea-input">Country</label>
-                                        <div class="col-md-9">
-                                            <!--input type="text" class="form-control" name="country" placeholder="Enter member country" required-->
-                                            <select class="form-control" name="country" required placeholder="Enter member country">
 
-                                                <option value="Kenya"> Kenya</option>
 
-                                            </select>
-                                        </div>
-                                    </div>
+
 
                                     <div class="form-group pad-ve">
-                                        <label class="col-md-3 control-label">Sex</label>
+                                        <label class="col-md-3 control-label">Gender</label>
                                         <div class="col-md-9">
 
                                             <!-- Radio Buttons -->
@@ -271,65 +189,12 @@ Member Registration
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="demo-text-input">Member
-                                            Since</label>
-                                        <div class="col-md-9">
-                                            <input type="text" id="member_since" placeholder="Member Since" name="member_since" class="datepicker form-control" />
 
-                                        </div>
-                                    </div>
-                                    <div class="form-group" id="member_status_div" style="display:none">
-                                        <label class="col-md-3 control-label" for="demo-text-input">Member
-                                            Status</label>
-                                        <div id="selectparent" class="col-md-9">
-                                            <select id="member_status" name="member_status" class="selectpicker col-xs-6 col-sm-4 col-md-6 col-lg-9" data-style="btn-info">
-                                                <option selected value="old">Member</option>
-                                                <option value="new">First Timer</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div id="wedding" class="form-group" style="display:none">
-                                        <label class="col-md-3 control-label" for="demo-text-input">Wedding
-                                            Aniversary</label>
-                                        <div class="col-md-9">
-                                            <input id="anniversary" type="text" placeholder="Wedding Anniversary" name="wedding_anniversary" class="datepicker form-control" />
 
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label">Photo</label>
-                                        <div class="col-md-9">
-                                            <div class="btn btn-file element">
-                                                <i class="fa fa-3x fa-folder"></i>
-                                                <span class="name">Choose File</span>
-                                                <input id="img-input" type="file" accept="image/*" name="photo">
-                                                <!-- <input  id="img-input" type="file" accept="image/*" capture="user" name="photo"> -->
-                                            </div>
-                                            <div class="btn element" data-toggle="modal" data-target="#myModal">
-                                                <i class="fa fa-camera"></i><span class="name">From Cam</span>
-                                                <input id="img-input" type="file" accept="image/*" capture name="photo" style="display: none">
-                                            </div>
-                                            <!-- <span class="pull-left btn btn-primary btn-file">
-               Select...
-               <input id="img-input" type="file" accept="image/*" capture name="photo">
-              </span> -->
-                                            <!-- <input type="file" accept="image/*" capture="camera"> -->
-                                        </div>
-                                    </div>
-                                    <div class="image" id="img-show-container" style="display: none">
-                                        <div class="fa fa-remove blue delete" onclick="resetImgUpl()"></div>
-                                        <canvas id="img-show" class="img-thumbnail img-response"></canvas>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label">Relative</label>
-                                        <div class="col-md-9">
-                                            <button type="button" data-target="#demo-default-modal" id="open-modal-btn" data-toggle="modal" class="btn btn-primary btn-lg" style="display:none;">Launch demo
-                                                modal</button>
-                                            <button id="add-relative-btn" class="btn btn-info" type="button">Add
-                                                Relative</button>
-                                        </div>
-                                    </div>
+
+
+
+
                                     <!-- <div class="row">
                                         <div class="col-md-3" style="padding-top:50px">
                                             <button class="btn btn-info pull-center" type="submit">REGISTER MEMBER</button>
@@ -355,90 +220,8 @@ Member Registration
                     <!-- END BASIC FORM ELEMENTS -->
                     <!--Default Bootstrap Modal-->
                     <!--===================================================-->
-                    <div class="modal fade" id="demo-default-modal" role="dialog" tabindex="-1" aria-labelledby="demo-default-modal" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-
-                                <!--Modal header-->
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal"><i class="pci-cross pci-circle"></i></button>
-                                    <h4 class="modal-title">Add a Relative</h4>
-                                </div>
 
 
-                                <!--Modal body-->
-                                <div class="modal-body">
-
-                                    <div class="form-group">
-                                        <label class="col-md-2 control-label" for="demo-email-input">Search
-                                            Relative</label>
-                                        <div class="col-md-10">
-                                            <input type="text" id="search-relative-input" class="form-control" name="name" placeholder="Enter relative Name">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12" id="relatives-result-container"></div>
-                                </div>
-
-                                <!--Modal footer-->
-                                <div class="modal-footer">
-                                    <button data-dismiss="modal" id="close-modal-btn" class="btn btn-default" type="button">Close</button>
-                                    <button class="btn btn-primary">Save changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel-footer panel-primary bg-dark">
-                        <!-- Modal -->
-                        <div id="myModal" class="modal fade" role="dialog">
-                            <div class="modal-dialog">
-
-                                <!-- Modal content-->
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="fa fa-3x close" onclick="stopWebcam();" data-dismiss="modal">&times;</button>
-                                        <h4 class="modal-title">Take a photo</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <!-- <h1>Take a snapshot of the current video stream</h1>
-        Click on the Start WebCam button.
-        <p>
-        <button onclick="startWebcam();">Start WebCam</button>
-        <button onclick="stopWebcam();">Stop WebCam</button>
-         <button onclick="snapshot();">Take Snapshot</button>
-        </p>
-        <video onclick="snapshot(this);" width=400 height=400 id="video" controls autoplay></video> -->
-                                        <div id="captured" class="" style="display:none">
-                                            <h3 class="text-primary"> Screenshots : <h3>
-                                                    <canvas id="myCanvas" width="400" height="350"></canvas>
-                                        </div>
-
-                                        <!--  -->
-                                        <div id="container-cam">
-                                            <button class="btn btn-warning" onclick="startWebcam();">Start
-                                                WebCam</button>
-                                            <div id="vid_container">
-                                                <video id="video" autoplay playsinline></video>
-                                                <div id="video_overlay"></div>
-                                            </div>
-                                            <div id="gui_controls">
-                                                <button id="switchCameraButton" class="button" name="switch Camera" type="button" aria-pressed="false"></button>
-                                                <button id="takePhotoButton" class="button" name="take Photo" type="button"></button>
-                                                <button id="toggleFullScreenButton" class="button" name="toggle FullScreen" type="button" aria-pressed="false" style="display:none"></button>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button id="choose-img" type="button" onclick="choose(canvas); stopWebcam();" class="btn btn-success" data-dismiss="modal" style="display:none">Select Image</button>
-                                        <button type="button" onclick="stopWebcam();" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
                     <!--===================================================-->
                     <!--End Default Bootstrap Modal-->
                 </div>

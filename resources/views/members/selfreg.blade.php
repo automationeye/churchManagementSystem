@@ -16,7 +16,6 @@
             border-radius: 10px;
             margin-top: 50px;
         }
-
     </style>
 </head>
 
@@ -30,25 +29,25 @@
                     <!-- Inside your register.blade.php file -->
 
                     @if($errors->any())
-                        <div class="alert alert-danger">
-                            <ul>
-                                @foreach($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
                     @endif
 
                     @if(session('error'))
-                        <div class="alert alert-danger">
-                            {{ session('error') }}
-                        </div>
+                    <div class="alert alert-danger">
+                        {{ session('error') }}
+                    </div>
                     @endif
 
                     @if(session('success'))
-                        <div class="alert alert-success">
-                            {{ session('success') }}
-                        </div>
+                    <div class="alert alert-success">
+                        {{ session('success') }}
+                    </div>
                     @endif
 
                     <!-- Your registration form goes here -->
@@ -56,24 +55,24 @@
                     <form method="post" action="{{ url('member/registration/post') }}">
                         @csrf
                         <div class="form-group">
-                            <label for="username">Username</label>
-                            <input type="text" name="firstname" class="form-control" id="username"
-                                placeholder="Enter username" required>
+                            <label for="Firstname">Firstname</label>
+                            <input type="text" name="firstname" class="form-control" id="username" placeholder="Enter first name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Lastname</label>
+                            <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Enter last name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email address</label>
-                            <input type="email" name="email" class="form-control" id="email" placeholder="Enter email"
-                                required>
+                            <input type="email" name="email" class="form-control" id="email" placeholder="Enter email" required>
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone</label>
-                            <input type="tel" min="1" max="10" name="phone" class="form-control" id="phone"
-                                placeholder="Enter phone number">
+                            <input type="tel" min="1" max="10" name="phone" class="form-control" id="phone" placeholder="Enter phone number">
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="password" name="password" class="form-control" id="password"
-                                placeholder="Password" required>
+                            <input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
                         </div>
                         <button type="submit" class="btn btn-primary btn-block">Register</button>
                     </form>

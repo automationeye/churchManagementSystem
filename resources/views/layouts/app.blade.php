@@ -305,6 +305,27 @@
 										</ul>
 									</li>
 
+									<!-- Announcements -->
+
+
+
+									<li class="">
+										<a href="">
+											<i class="fa fa-bullhorn"></i>
+											<span class="menu-title">Announcements</span>
+											<i class="arrow"></i>
+										</a>
+										<ul class="collapse">
+											<li class="">
+												<a href="/announcements"><i class="fa fa-list"></i>Announcements</a>
+											</li>
+											<li class="">
+												<a href="/announcements/create"><i class="fa fa-registered"></i>Create New</a>
+											</li>
+										</ul>
+									</li>
+
+
 									<li class="{{ (Route::currentRouteName() == 'members.all' || Route::currentRouteName() ==  'member.register.form') ? '' : ''}}
                   	{{Route::currentRouteName() === 'member.profile' ? 'active-sub' : ''}}">
 
@@ -354,7 +375,7 @@
 											</li>
 											<li class="{{ Route::currentRouteName() === 'member.register.form' ? 'active-sub active' : '' }}">
 												<a href="{{route('teams.create')}}"><i class="fa fa-registered"></i> Create Team</a>
-                      </li>
+											</li>
 										</ul>
 									</li>
 

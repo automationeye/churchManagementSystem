@@ -42,8 +42,8 @@
             <div class="form-input-content">
               <div class="card login-form mb-0">
                 <div class="card-body pt-5 shadow">
-
-                  <h4 class="text-center">Admin </h4>
+                  <h3 class="text-center">New Breed City Chapel </h3>
+                  <h4 class="text-center">Team Leader </h4>
                   <div class="text-center my-5">
 
 

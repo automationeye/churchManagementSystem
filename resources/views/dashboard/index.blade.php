@@ -87,8 +87,8 @@ $colors = colo(); //$generateColor($c_types);
                     <!--===================================================-->
                     <div class=" panel-purple panel-colorful col-md-3 col-xs-6">
                         <div class="pad-all text-center">
-                            <span class="text-3x text-thin">{{ $total['workers'] }}</span>
-                            <p>Workers</p>
+                            <span class="text-3x text-thin"> 6</span>
+                            <p>Leaders</p>
                             <i class="icofont icofont-workers-group text-success"></i>
                         </div>
                     </div>

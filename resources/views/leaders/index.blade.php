@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-Sermons
+Leaders
 @endsection
 
 @section('link')
@@ -54,10 +54,11 @@ Sermons
                                 <tr>
 
 
-                                    <th>Leader id</th>
+                                    <th>#</th>
                                     <th>Leader name</th>
                                     <th>Team</th>
-
+                                    <th>Email</th>
+                                    <th>Phone</th>
                                     <th>Created At</th>
                                     <th>Action</th>
                                 </tr>
@@ -66,19 +67,21 @@ Sermons
                                 <?php $leaders = App\Leaders::all() ?>
                                 @foreach($leaders as $leader)
                                 <tr>
-                                    <td>{{ $leader->id }}</td>
+                                    <td>{{ $loop->iteration }}</td>
                                     <td>{{ $leader->fullName }}</td>
-                                    <td>{{ App\ChurchTeams::where('id', $leader->team)->value('team') }}</td>
+                                    <td>{{ $leader->team }}</td>
+                                    <td>{{ $leader->email }}</td>
+                                    <td>{{ $leader->phone }}</td>
                                     <td>{{ $leader->created_at }}</td>
                                     <td>
-                                        <form action="{{ route('edit-leader', ['leader' => $leader->id]) }}" method="GET" style="display: inline;">
+                                        <form action="" method="GET" style="display: inline;">
                                             <button type="submit" class="btn btn-info">Edit</button>
                                         </form>
 
-                                        <form action="{{ route('delete-leader', ['leader' => $leader->id]) }}" method="POST" style="display: inline;">
+                                        <form action="{{ route('member.post' ) }}" method="POST" style="display: inline;">
                                             @csrf
-                                            @method('DELETE')
-                                            <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this leader?')">Delete</button>
+
+                                            <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to remove this leader?')">Delete</button>
                                         </form>
                                     </td>
 

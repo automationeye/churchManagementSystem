@@ -14,13 +14,24 @@ class AnnouncementController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function admincreate()
+    {
+        return view('announcements.create');
+    }
+
+    public function adminview()
+    {
+        return view('announcements.index');
+    }
     public function index()
     {
-        //
-
-
-        return view('admin.admin.announcement');
+        $announcements = Announcement::all();
+        return view('announcements.index', ['announcements' => $announcements]);
     }
+
+
+
 
     /**
      * Show the form for creating a new resource.
@@ -29,8 +40,56 @@ class AnnouncementController extends Controller
      */
     public function create()
     {
-        //
+        return view('announcements.create');
     }
+
+    public function save(Request $request)
+    {
+        $title = $request->input('title'); // accessing 'title' field from the form
+        $leader = $request->input('leader'); // accessing 'leader' field from the form
+
+        // Retrieve the authenticated admin
+        $admin = Auth::guard('admin')->user();
+
+        // Get the branch code of the authenticated admin
+        $branch_id = $admin->branchcode;
+
+        // Set the status
+        $status = 1;
+
+        // Create a new Announcement instance
+        $announcement = new Announcement();
+
+        // Set the attributes of the Announcement instance
+        $announcement->details = $title;
+        $announcement->by_who = $leader;
+        $announcement->branch_id = $branch_id;
+
+        // Save the Announcement instance
+        if ($announcement->save()) {
+            return redirect()->route('announcements.form', ['id' => $announcement->id])->with('success', 'Announcement created successfully');
+        } else {
+            return redirect('announcements/create')->with('error', 'Announcement not created');
+        }
+    }
+
+
+
+
+    public function all(Request $request)
+    {
+        $user = \Auth::guard('admin')->user();
+
+        if ($request->draw) {
+            return DataTables::of($user->announcements)->make(true);
+        } else {
+            $announcements = $user->announcements;
+            return view('announcements.index', compact('announcements'));
+        }
+    }
+
+
+
 
     /**
      * Store a newly created resource in storage.
@@ -44,9 +103,9 @@ class AnnouncementController extends Controller
         //dd($request->all());
 
 
-        $user=Auth::guard('leader')->user();
+        $user = Auth::guard('leader')->user();
 
-       
+
 
         $validatedData = $request->validate([
             'details' => 'required|string|max:255',
@@ -74,33 +133,33 @@ class AnnouncementController extends Controller
 
             //fetch members of that team
 
-            $team=$user->team;
+            $team = $user->team;
 
-            $members=Member::where('team',$team)->get('phone');
+            $members = Member::where('team', $team)->get('phone');
 
-            $message="Hello newbreed member\n, $request->details happening on $request->start_date from $request->start_time to $request->stop_date $request->stop_time\n";
-            foreach($members as $member){
-                $phones=$member->phone;
+            $message = "Hello newbreed member\n, $request->details happening on $request->start_date from $request->start_time to $request->stop_date $request->stop_time\n";
+            foreach ($members as $member) {
+                $phones = $member->phone;
                 $modifiedNumber = substr($phones, 1);
-                sendSmsUsingCurl($modifiedNumber,'20642','plain',$message);
+                sendSmsUsingCurl($modifiedNumber, '20642', 'plain', $message);
             }
 
-          
 
-            
-        
 
-            if($announcement->save()){
+
+
+
+            if ($announcement->save()) {
                 return redirect()->route('announcements')->with('success', 'Announcement created successfully');
-            }else{
+            } else {
                 return redirect()->route('announcements')->with('error', 'An error occured');
             }
 
             // Save the Announcement data into the database
-            
+
 
             // Optionally, you can redirect the user to a success page or return a success response
-            
+
         } catch (\Exception $e) {
             // Handle any exceptions that occur during the database operation
             // You can log the error, display a user-friendly message, or redirect the user to an error page

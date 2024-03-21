@@ -76,10 +76,10 @@ Members
                             <thead>
                                 <tr>
 
+                                    <th>#</th>
 
-                                    <th>Member id</th>
-                                    <th>Member First name</th>
-                                    <th>Member Last name</th>
+                                    <th> First name</th>
+                                    <th> Last name</th>
                                     <th>Team</th>
 
                                     <th>Email</th>
@@ -90,7 +90,8 @@ Members
                                 <?php $members = App\Member::all() ?>
                                 @foreach($members as $member)
                                 <tr>
-                                    <td>{{ $member->id }}</td>
+                                    <td>{{ $loop->iteration }}</td>
+
                                     <td>{{ $member->firstname }}</td>
                                     <td>{{ $member->lastname }}</td>
                                     <td>{{ $member->team }}</td>

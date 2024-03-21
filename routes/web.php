@@ -64,7 +64,7 @@ Route::group(['middleware' => ['auth.leader']], function () {
 
     Route::post('/meeting/post', 'MeetingController@store')->name('meeting.post');
 
-    Route::get('/announcements', 'AnnouncementController@index')->name('announcements');
+    // Route::get('/announcements', 'AnnouncementController@index')->name('announcements');
 
 
     Route::get('/leaderdash', 'VisitorController@leaderdash')->name('leaderdash');
@@ -156,6 +156,9 @@ Route::post('/login', 'Auth\LoginController@login')->name('login');
 
 //Route::get('/home', 'HomeController@index')->name('home');
 
+
+
+
 Route::group(['middleware' => ['auth.admin']], function () {
 
 
@@ -201,6 +204,14 @@ Route::group(['middleware' => ['auth.admin']], function () {
 
     // Route for deleting a leader
     Route::delete('/leaders/{leader}', 'LeadersController@destroy')->name('delete-leader');
+
+
+
+    Route::get('/announcements/create', 'AnnouncementController@create')->name('announcements.create');
+    Route::get('/announcements', 'AnnouncementController@all')->name('announcements.index');
+    Route::post('/announcements/post', 'AnnouncementController@save')->name('announcements.save');
+
+
 
 
 

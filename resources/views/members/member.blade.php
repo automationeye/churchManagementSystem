@@ -24,22 +24,22 @@
 
 
 
-                <br>
+
 
                 @if(auth()->user()->team==null && auth()->user()->team_status==0)
 
-                <div class="card card-primary card-outline alert alert-danger" style="text-align: center;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="card card-primary card-outline alert alert-danger" style="text-align: left;" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <p>You are currently not enrolled to a team, Click here to select a team and join one today</p>
                 </div>
                 @elseif(auth()->user()->team_status==0)
 
-                <div class="card card-primary card-outline alert alert-warning" style="text-align: center;">
+                <div class="card card-primary card-outline alert alert-warning" style="text-align: left;">
                     You belong to team {{ auth()->user()->team }} but awaiting confirmation from admin
                 </div>
 
                 @else
 
-                <div class="card card-primary card-outline alert alert-success" style="text-align: center;">
+                <div class="card card-primary card-outline alert alert-success" style="text-align: left;">
                     You belong to team {{ auth()->user()->team }}
                 </div>
 

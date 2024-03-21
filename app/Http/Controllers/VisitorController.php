@@ -67,6 +67,7 @@ class VisitorController extends Controller
         // Validate the incoming data
         $validatedData = $request->validate([
             'firstname' => 'required|string|max:255',
+            'lastname' => 'required|string|max:255',
             'email' => 'email|unique:admins,email',
             'phone' => 'nullable|string|max:20',
             'password' => 'required|string|min:6',
@@ -305,6 +306,7 @@ class VisitorController extends Controller
         // Validate the incoming data
         $validatedData = $request->validate([
             'firstname' => 'required|string|max:255',
+            'lastname' => 'required|string|max:255',
             'email' => 'email|unique:members,email',
             'phone' => 'nullable|string|max:20',
             'password' => 'required|string|min:6',
@@ -321,6 +323,7 @@ class VisitorController extends Controller
         // Create a new member instance
         $member = new Member();
         $member->firstname = $validatedData['firstname'];
+        $member->lastname = $validatedData['lastname'];
         $member->email = $validatedData['email'];
         $member->phone = $validatedData['phone'];
         $member->password = bcrypt($validatedData['password']); // You should hash the password for security

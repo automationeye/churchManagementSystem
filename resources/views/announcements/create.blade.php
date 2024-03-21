@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-Register Leaders
+Leaders
 @endsection
 
 @section('link')
@@ -18,7 +18,7 @@ Register Leaders
         <!--Page Title-->
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <div id="page-title">
-            <h1 class="page-header text-overflow">Register Leaders</h1>
+            <h1 class="page-header text-overflow">Leaders</h1>
         </div>
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <!--End page title-->
@@ -36,50 +36,44 @@ Register Leaders
     <!--Page content-->
     <!--===================================================-->
     <div id="page-content">
+        @include('layouts.error')
         <!-- Basic Data Tables -->
         <!--===================================================-->
         <div class="panel rounded-top" style="background-color: #e8ddd3;">
             <div class="panel-heading card-block text-center">
-                <h1 class="panel-title text-primary text-bold">Add Leader</h1>
+                <h1 class="panel-title text-primary text-bold">Create Announcement</h1>
             </div>
             <div class="panel-body">
                 <!--div style="height:100px;border:1px solid green">
                     Sort by Newest Members, Gender
                   </div-->
-                <form method="post" action="{{ route('leaders.register') }}">
+                <form method="post" action="{{ route('announcements.save') }}">
                     @csrf
                     <div class="form-row">
-                        <div class="form-group col-md-5">
-                            <label for="inputName" style="font-size: large;">Select Member For Promotion To Leadership Position</label>
-                            <select name="memberId" class="form-control" data-style="btn-success" style="font-size: medium;" required>
+                        <div class="form-group col-md-6">
+                            <label for="inputName">Announcement </label>
+                            <input type="text" class="form-control" id="inputName" name="title" placeholder="Team name" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputName">Leader</label>
+                            <select class="form-control" name="leader">
+                                {{$users=App\User::all()}}
 
-                                <?php $members = App\Member::all() ?>
+                                @foreach($users as $user)
 
-                                @foreach($members as $member)
-
-                                <option value="{{ $member->id }}" style="font-size: large;">{{ $member->firstname }} {{ $member->lastname }} </option>
+                                <option value="{{$user->id}}">{{$user->id}}</option>
 
                                 @endforeach
-
                             </select>
 
                         </div>
 
-
                     </div>
 
-                    <br> <br> <br>
 
-                    <button type="submit" class="btn btn-primary col-md-3" style="font-size: medium;">Register as Leader</button>
 
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
-
-                <form action="{{ route('delete-member', ['member' => $member->id]) }}" method="POST" style="display: inline;">
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" class="btn btn-info" onclick="return confirm('Are you sure you want to delete this member?')" style="font-size: medium;">Remove from the Members List</button>
-                </form>
-
             </div>
         </div>
         <!--===================================================-->

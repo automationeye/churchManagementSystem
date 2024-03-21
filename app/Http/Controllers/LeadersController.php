@@ -50,7 +50,7 @@ class LeadersController extends Controller
         $leaderDetails = Member::where('id', $leaderid)->first();
         $phone = $leaderDetails->phone;
         $team = $leaderDetails->team;
-        $fullName = $leaderDetails->firstname;
+        $fullName = $leaderDetails->firstname . ' ' . $leaderDetails->lastname;
         $admin = Auth::Guard('admin')->user();
         $admin->branchcode;
         $leaders = new Leaders();
@@ -60,7 +60,7 @@ class LeadersController extends Controller
         $leaders->password = $leaderDetails->password;
 
         if ($leaders->save()) {
-            return redirect('leaders')->with('success', 'Leader registered successfuly');
+            return redirect('leaders/register')->with('success', 'Leader registered successfuly');
         } else {
             return redirect('leaders.register')->with('error', 'Leader not registered');
         }
@@ -77,6 +77,11 @@ class LeadersController extends Controller
         //
     }
 
+    public function showLeadersCount()
+    {
+        $leadersCount = Leaders::count();
+        return view('dashboard/index')->with('leadersCount', $leadersCount);
+    }
     /**
      * Show the form for editing the specified resource.
      *

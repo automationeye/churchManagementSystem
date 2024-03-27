@@ -12,16 +12,29 @@
                     <div class="card login-form mb-0">
                         <div class="card-body pt-4 shadow">
                             <h4 class="text-center">Edit Announcement</h4>
-                            <table class="table  table-hover">
+                            <table class="table table-striped">
                                 <thead>
-                                    <tr class="">
-                                        <th scope="col">Title :</th>
-                                        <th scope="col">Message :</th>
+                                    <tr>
+                                        <th>Announcement Title</th>
+                                        <th>By Who</th>
+                                        <th>Start Date</th>
+                                        <th>Stop Date</th>
+                                        <th>Start Time</th>
+                                        <th>Stop Time</th>
                                     </tr>
-
                                 </thead>
                                 <tbody>
-
+                                    <?php $announcements = App\Announcement::all() ?>
+                                    @foreach($announcements as $announcement)
+                                    <tr>
+                                        <td>{{ $announcement->details }}</td>
+                                        <td>{{ $announcement->by_who }}</td>
+                                        <td>{{ $announcement->start_date }}</td>
+                                        <td>{{ $announcement->stop_date }}</td>
+                                        <td>{{ $announcement->start_time }}</td>
+                                        <td>{{ $announcement->stop_time }}</td>
+                                    </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>

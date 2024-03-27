@@ -5,11 +5,9 @@ Sermons
 @endsection
 
 @section('link')
-<link href="{{ URL::asset('plugins/bootstrap-datepicker/bootstrap-datepicker.min.css') }}"
-    rel="stylesheet">
+<link href="{{ URL::asset('plugins/bootstrap-datepicker/bootstrap-datepicker.min.css') }}" rel="stylesheet">
 <link href="{{ URL::asset('css/sweetalert.css') }}" rel="stylesheet">
-<link href="{{ URL::asset('plugins/datatables/media/css/dataTables.bootstrap.css') }}"
-    rel="stylesheet">
+<link href="{{ URL::asset('plugins/datatables/media/css/dataTables.bootstrap.css') }}" rel="stylesheet">
 @endsection
 
 @section('content')
@@ -54,29 +52,31 @@ Sermons
                         <table id="users-table" class="table table-striped table-bordered" cellspacing="0" width="100%">
                             <thead>
                                 <tr>
-
-
-                                    <th>Team id</th>
+                                    <th>#</th>
                                     <th>Team name</th>
                                     <th>Leader</th>
-                                   
                                     <th>Created At</th>
+                                    <th>Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
-
                                 @foreach($teams as $team)
-                                    <tr>
-                                    <td>{{ $team->id }}</td>
-                                        <td>{{ $team->team }}</td>
-                                        <td>{{ App\Admins::where('id', $team->leader)->value('fullName') }}</td>
-                                        <td>{{ $team->created_at }}</td>
-                                        
-                                    </tr>
+                                <tr>
+                                    <td>{{ $loop->iteration }}</td>
+                                    <td>{{ $team->team }}</td>
+                                    <td>{{ App\Admins::where('id', $team->leader)->value('fullName') }}</td>
+                                    <td>{{ $team->created_at }}</td>
+                                    <td>
+                                        <form action="{{ route('edit-team', ['team' => $team->id]) }}" method="GET" style="display: inline;">
+                                            <button type="submit" class="btn btn-info">Edit</button>
+                                        </form>
+
+                                    </td>
+                                </tr>
                                 @endforeach
                             </tbody>
                         </table>
-                        
+
                     </div>
                 </form>
             </div>

@@ -59,7 +59,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php $members = App\Member::all() ?>
+                        <?php $members = App\Member::where('team', 'D')->get(); ?>
                         @foreach($members as $member)
                         <tr>
                             <td>{{ $loop->iteration }}</td>

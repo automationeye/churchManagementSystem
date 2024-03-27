@@ -6,6 +6,10 @@ use App\Admins;
 use App\Admin;
 use Illuminate\Http\Request;
 use Dcblogdev\Countries\Facades\Countries;
+
+
+
+
 use \App\User;
 use \App\Member;
 use \App\Event;
@@ -15,7 +19,9 @@ use \App\Setting;
 use \App\Leave;
 
 
-use Auth;
+
+
+use Illuminate\Support\Facades\Auth;
 
 class VisitorController extends Controller
 {
@@ -265,10 +271,7 @@ class VisitorController extends Controller
     }
 
 
-    public function profile()
-    {
-        return view('admin.admin.profile');
-    }
+
 
 
     public function contributions()
@@ -284,10 +287,7 @@ class VisitorController extends Controller
         return view('members.member', compact('leaves'));
     }
 
-    public function team()
-    {
-        return view('members.team');
-    }
+
 
     public function contact()
     {

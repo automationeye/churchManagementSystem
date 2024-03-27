@@ -85,6 +85,9 @@ class ChurchTeamsController extends Controller
     public function edit(ChurchTeams $churchTeams)
     {
         //
+        {
+            return view('teams.edit', compact('churchTeams'));
+        }
     }
 
     /**
@@ -97,6 +100,19 @@ class ChurchTeamsController extends Controller
     public function update(Request $request, ChurchTeams $churchTeams)
     {
         //
+        // Validate the incoming request data
+        $validatedData = $request->validate([
+            'team' => 'required|string|max:255',
+            'leader' => 'required|string|max:255',
+
+            // Add validation rules for other member details if needed
+        ]);
+
+        // Update the member's details
+        $churchTeams->update($validatedData);
+
+        // Redirect the user back with a success message
+        return redirect()->route('teams.index')->with('status', 'Team details updated successfully.');
     }
 
     /**

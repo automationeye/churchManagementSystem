@@ -21,47 +21,6 @@
         <div class="row">
 
 
-
-
-
-
-
-            <div class="row">
-                <div class="col-md-3 card card-primary card-outline">
-                    <div class="card-header">
-                        <button type="submit" class="btn btn-primary btn-block">
-                            <i class="fas fa-add"></i> My Team
-                        </button>
-                    </div>
-
-                    <div class="card-body">
-                        <div class="inner">
-
-                            @if(auth()->user()->team==null)
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                Select team
-                            </button>
-
-                            @else
-                            <h3>
-                                {{ auth()->user()->team }}
-
-                            </h3>
-                            @endif
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-
-
-            </div>
-
-
-
             <div class="row">
                 <div class="col-md-6 card card-primary card-outline">
                     <div class="card-header">

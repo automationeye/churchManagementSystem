@@ -18,54 +18,60 @@
 <div class="content-wrapper pad-none">
     <div class="content-inner">
 
+
+
+
+
+
         <div class="row">
+            <div class="col-md-6 card card-primary card-outline" style="margin-left: 450px;">
+                <div class="card-header">
+                    <div class="button-section margin-top-35">
+                        <div class="button-section margin-top-35"> <a class="btn btn-default"> {{ auth()->user()->team }} Member</a> </div>
 
 
-            <div class="col-lg-8">
-                <div class="offset-md-2 col-md-8">
-                    <div class="title-wrap text-center">
-                        <div class="section-title">
-
-                            <h2 class="section-title margin-top-5">
-                                <a href="/team">
-                                    {{ auth()->user()->team }} Team Members
-                                </a>
-                            </h2>
-                            <span class="border-bottom center"></span>
-                        </div>
                     </div>
                 </div>
 
                 <div class="card-body">
                     <div class="table-responsive">
-
-
+                        <h5 class="card-title m-0">User</h5>
                         <table class="table table-bordered table-striped table-sm">
                             <thead>
                                 <tr>
-                                    <th>#</th>
-                                    <th>First Name:</th>
-                                    <th>Last Name:</th>
+
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Team</th>
+                                    <th>Phone Number</th>
+                                    <th>Email</th>
+
 
                                 </tr>
-
-
                             </thead>
                             <tbody>
-                                @foreach($teamMembers as $member)
                                 <tr>
-                                    <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $member->firstname }}</td>
-                                    <td>{{ $member->lastname }}</td>
+                                    <td>{{ $user->firstname }}</td>
+                                    <td>{{ $user->lastname }}</td>
+                                    <td>{{ $user->team }}</td>
+                                    <td>{{ $user->phone }}</td>
+                                    <td>{{ $user->email }}</td>
 
                                 </tr>
-                                @endforeach
                             </tbody>
                         </table>
                     </div>
                 </div>
+
             </div>
+
+
+
         </div>
+
+
+        <br><br>
+
 
 
 
@@ -73,6 +79,14 @@
 
     </div>
 </div>
+
+
+</div>
+
+
+@endsection
+@section('scripts')
+
 
 
 

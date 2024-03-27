@@ -15,9 +15,12 @@ class LeaveController extends Controller
      */
     public function index()
     {
-        //
+
+
+
         return view('members.requestleave');
     }
+
 
     /**
      * Show the form for creating a new resource.

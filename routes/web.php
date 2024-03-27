@@ -34,12 +34,19 @@ Route::get('/admin/login', 'VisitorController@adminlog')->name('admin.log');
 Route::middleware('auth.member')->group(function () {
     Route::get('/memberleaverequest', 'LeaveController@index')->name('leaverequest');
     Route::post('/memberleaverequest', 'LeaveController@store')->name('leaverequest');
+
+    Route::get('/recordattendance', 'AttendanceController@index')->name('attendancerecord');
+    Route::post('/recordattendance', 'AttendanceController@store')->name('attendancerecord');
+
     Route::get('/memberdash', 'VisitorController@member')->name('memberdash');
+    // Route::get('/memberdash', 'AnnouncementController@displayAnnouncements')->name('display.announcements');
+
     Route::get('/channels', 'VisitorController@channels')->name('channels');
     Route::get('/contributions', 'VisitorController@contributions')->name('contributions');
     Route::post('/update/team', 'VisitorController@updateteam')->name('updateteam');
-    Route::get('/team', 'VisitorController@team')->name('team');
+    Route::get('/team', 'MemberController@team')->name('team');
     Route::get('/contact-support', 'VisitorController@contact-support')->name('contact-support');
+    Route::get('/memberprofile', 'MemberController@read')->name('profile');
 });
 
 
@@ -64,7 +71,7 @@ Route::group(['middleware' => ['auth.leader']], function () {
 
     Route::post('/meeting/post', 'MeetingController@store')->name('meeting.post');
 
-    // Route::get('/announcements', 'AnnouncementController@index')->name('announcements');
+    Route::get('/announcements', 'AnnouncementController@index')->name('announcements');
 
 
     Route::get('/leaderdash', 'VisitorController@leaderdash')->name('leaderdash');
@@ -101,7 +108,7 @@ Route::group(['middleware' => ['auth.leader']], function () {
 
     Route::get('/viewmeeting', 'MeetingController@viewmeeting')->name('viewmeeting');
 
-    Route::get('/profile', 'VisitorController@profile')->name('profile');
+    Route::get('/profile', 'AdminsController@read')->name('leaderprofile');
 });
 
 
@@ -191,6 +198,15 @@ Route::group(['middleware' => ['auth.admin']], function () {
     Route::get('/team/create', 'ChurchTeamsController@create')->name('teams.create');
     Route::get('/teams', 'ChurchTeamsController@index')->name('teams');
     Route::post('/teams/post', 'ChurchTeamsController@store')->name('teams.store');
+
+
+    // Route for editing a member
+    Route::get('/edit-team/{team}', 'ChurchTeamsController@edit')->name('edit-team');
+
+    Route::put('/teams/{team}', 'ChurchTeamsController@update')->name('update-team');
+
+
+
     //leaders
     Route::get('/leaders/register', 'LeadersController@create')->name('leaders.register');
     Route::post('/leaders/register', 'LeadersController@store')->name('leaders.register.post');
@@ -208,7 +224,7 @@ Route::group(['middleware' => ['auth.admin']], function () {
 
 
     Route::get('/announcements/create', 'AnnouncementController@create')->name('announcements.create');
-    Route::get('/announcements', 'AnnouncementController@all')->name('announcements.index');
+    Route::get('/announcements', 'AnnouncementController@index')->name('announcements.index');
     Route::post('/announcements/post', 'AnnouncementController@save')->name('announcements.save');
 
 

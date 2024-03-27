@@ -29,7 +29,7 @@
                 @if(auth()->user()->team==null && auth()->user()->team_status==0)
 
                 <div class="card card-primary card-outline alert alert-danger" style="text-align: left;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <p>You are currently not enrolled to a team, Click here to select a team and join one today</p>
+                    <p style="cursor: pointer;"> <strong> You are currently not enrolled to a team, <b> CLICK HERE </b> to select a team and join one today </strong></p>
                 </div>
                 @elseif(auth()->user()->team_status==0)
 
@@ -46,12 +46,14 @@
                 @endif
 
 
-
                 <div class="card card-primary card-outline alert alert-success">
 
                     <h4>Bishop Announcement</h4>
-                    <span style="text-align:center;"> Welcome to New Breed City Chapel.</span>
+                    <span style="text-align: center;">All are welcome</span>
+
                 </div>
+
+
 
 
                 <div class="card card-primary card-outline alert alert-success">
@@ -64,10 +66,153 @@
             </div>
         </div>
 
+
+        <div class="row" style="margin-left: 15px;">
+            <div class="col-md-3 card card-primary card-outline" style="margin-right: 135px;">
+                <div class="card-header">
+                    <button type="submit" class="btn btn-default">
+                        <i class="fas fa-add"></i> My Team
+                    </button>
+                </div>
+
+                <div class="card-body">
+                    <div class="inner">
+
+                        @if(auth()->user()->team==null)
+                        <!-- <div class="btn btn-default" data-bs-toggle="modal" data-target="#exampleModal">
+                            Select team
+                        </div> -->
+
+                        @else
+                        <h3>
+                            {{ auth()->user()->team }}
+
+                        </h3>
+                        @endif
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- Check In and Check Out -->
+
+
+
+            <div class="col-md-6 card card-primary card-outline">
+                <div class="card-header">
+                    <a href="#" id="attendanceButton" class="btn btn-default" onclick="toggleTimer()">
+                        <i class="fas fa-add"></i> <span id="buttonText">Check In</span>
+                    </a>
+                </div>
+
+                <script>
+                    var startTime;
+                    var endTime;
+                    var timerInterval;
+                    var timerRunning = false;
+                    var elapsedTime = {
+                        hours: 0,
+                        minutes: 0,
+                        seconds: 0
+                    };
+
+                    function toggleTimer() {
+                        if (!timerRunning) {
+                            getLocation();
+                        } else {
+                            stopTimer();
+                        }
+                    }
+
+                    function getLocation() {
+                        if (navigator.geolocation) {
+                            navigator.geolocation.getCurrentPosition(startTimer, handleLocationError);
+                        } else {
+                            console.log("Geolocation is not supported by this browser.");
+                        }
+                    }
+
+                    function startTimer(position) {
+                        timerRunning = true;
+                        startTime = new Date();
+                        document.getElementById("buttonText").innerText = "Check Out";
+                        displayLocation(position);
+                        timerInterval = setInterval(updateTimer, 1000);
+                        console.log("Latitude:", position.coords.latitude);
+                        console.log("Longitude:", position.coords.longitude);
+                        // You can send this location data to your backend for recording
+                    }
+
+                    function stopTimer() {
+                        clearInterval(timerInterval);
+                        timerRunning = false;
+                        endTime = new Date();
+                        calculateTimeDifference();
+                        document.getElementById("buttonText").innerText = "Check In";
+                    }
+
+                    function updateTimer() {
+                        elapsedTime.seconds++;
+                        if (elapsedTime.seconds >= 60) {
+                            elapsedTime.seconds = 0;
+                            elapsedTime.minutes++;
+                            if (elapsedTime.minutes >= 60) {
+                                elapsedTime.minutes = 0;
+                                elapsedTime.hours++;
+                            }
+                        }
+                        document.getElementById("timeInfo").innerText = "Total Time: " + formatTime(elapsedTime.hours) + ":" + formatTime(elapsedTime.minutes) + ":" + formatTime(elapsedTime.seconds);
+                    }
+
+                    function formatTime(time) {
+                        return time < 10 ? "0" + time : time;
+                    }
+
+                    function calculateTimeDifference() {
+                        var timeDifferenceInSeconds = Math.floor((endTime - startTime) / 1000);
+                        elapsedTime.hours = Math.floor(timeDifferenceInSeconds / 3600);
+                        elapsedTime.minutes = Math.floor((timeDifferenceInSeconds % 3600) / 60);
+                        elapsedTime.seconds = timeDifferenceInSeconds % 60;
+                        console.log("Time Difference (hours:minutes:seconds):", elapsedTime.hours + ":" + elapsedTime.minutes + ":" + elapsedTime.seconds);
+                        // You can send this time difference to your backend for recording or display it on the frontend as needed
+                    }
+
+                    function displayLocation(position) {
+                        var locationInfo = "Latitude: " + position.coords.latitude + ", Longitude: " + position.coords.longitude;
+                        document.getElementById("locationInfo").innerText = "Location: " + locationInfo;
+                    }
+
+                    function handleLocationError(error) {
+                        console.log("Error getting location:", error.message);
+                        // You can handle the error here, e.g., display a message to the user
+                    }
+                </script>
+
+
+                <div class="card-body">
+                    <div class="inner">
+
+                        <h9 id="locationInfo" class="card-title m-0"></h9>
+                        <h5 id="timeInfo" class="card-title m-0"></h5>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
         <div class="row">
             <div class="col-md-6 card card-primary card-outline">
                 <div class="card-header">
-                    <a href="/memberleaverequest" type="submit" class="btn btn-primary btn-block">
+                    <a href="/memberleaverequest" type="submit" class="btn btn-default">
                         <i class="fas fa-add"></i> Request Leave
                     </a>
                 </div>
@@ -135,7 +280,7 @@
                     <div class="card-header">
 
 
-                        <button type="submit" class="btn btn-primary btn-block">
+                        <button type="submit" class="btn btn-default">
                             <i class="fas fa-add"></i> Upcoming Meetings
                         </button>
 
@@ -190,7 +335,7 @@
         <div class="row">
             <div class="col-md-6 card card-primary card-outline">
                 <div class="card-header">
-                    <button type="submit" class="btn btn-primary btn-block">
+                    <button type="submit" class="btn btn-default">
                         <i class="fas fa-add"></i> Upcoming events
                     </button>
                 </div>
@@ -240,7 +385,7 @@
                     <div class="card-header">
 
 
-                        <button type="submit" class="btn btn-primary btn-block">
+                        <button type="submit" class="btn btn-default">
                             <i class="fas fa-add"></i> My attendance History
                         </button>
 
@@ -283,7 +428,7 @@
         <div class="row">
             <div class="col-md-6 card card-primary card-outline">
                 <div class="card-header">
-                    <button type="submit" class="btn btn-primary btn-block">
+                    <button type="submit" class="btn btn-default">
                         <i class="fas fa-add"></i> Upcoming events
                     </button>
                 </div>
@@ -323,7 +468,7 @@
                     <div class="card-header">
 
 
-                        <button type="submit" class="btn btn-primary btn-block">
+                        <button type="submit" class="btn btn-default">
                             <i class="fas fa-add"></i> Upcoming birthdays
                         </button>
 
@@ -394,7 +539,7 @@
                                     <?php $teams = App\ChurchTeams::all(); ?>
                                     <select class="form-control" id="teamSelect" name="team">
                                         @foreach($teams as $team)
-                                        <option value="{{ $team->id }}">{{ $team->team }}</option>
+                                        <option value="{{ $team->team }}">{{ $team->team }}</option>
                                         @endforeach
                                         <!-- Add more options as needed -->
                                     </select>
@@ -405,12 +550,12 @@
                                 <!-- Use Bootstrap spacing class to add margin top -->
                                 <div class="col-md-6">
                                     <!-- Use appropriate col classes for responsive layout -->
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                 </div>
                                 <br>
                                 <div class="col-md-6">
                                     <!-- Use appropriate col classes for responsive layout -->
-                                    <button type="submit" class="btn btn-primary">Submit for Approval</button>
+                                    <button type="submit" class="btn btn-default">Submit for Approval</button>
                                 </div>
                             </div>
                         </div>

@@ -6,6 +6,8 @@ use App\Member;
 use DataTables;
 use App\CollectionsType;
 
+use Illuminate\Support\Facades\Auth;
+
 use Illuminate\Http\Request;
 
 class MemberController extends Controller
@@ -248,6 +250,32 @@ class MemberController extends Controller
 
         // Redirect the user back with a success message
         return redirect()->route('members.all')->with('status', 'Member details updated successfully.');
+    }
+
+
+    public function read()
+    {
+
+        // Retrieve the currently authenticated user
+        $user = Auth::user();
+
+        // Pass the user's data to the view
+        return view('members.memberprofile', compact('user'));
+    }
+
+
+    public function team()
+    {
+        // Retrieve the currently authenticated user
+        $user = Auth::user();
+
+        // Retrieve team members of the same team
+        $teamMembers = Member::where('team', $user->team)->get();
+
+        // Pass the team members to the view
+
+
+        return view('members.team', compact('teamMembers'));
     }
 
     /**

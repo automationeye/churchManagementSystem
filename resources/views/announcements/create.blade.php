@@ -47,32 +47,53 @@ Leaders
                 <!--div style="height:100px;border:1px solid green">
                     Sort by Newest Members, Gender
                   </div-->
-                <form method="post" action="{{ route('announcements.save') }}">
+                <form method="POST" action=" {{ url('announcement/post') }}">
                     @csrf
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="inputName">Announcement </label>
-                            <input type="text" class="form-control" id="inputName" name="title" placeholder="Team name" required>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="inputName">Leader</label>
-                            <select class="form-control" name="leader">
-                                {{$users=App\User::all()}}
-
-                                @foreach($users as $user)
-
-                                <option value="{{$user->id}}">{{$user->id}}</option>
-
-                                @endforeach
-                            </select>
-
-                        </div>
+                    <div class="form-group">
+                        <label> Announcement Details :</label>
+                        <input type="text" class="form-control" value="" name="details">
 
                     </div>
 
 
+                    <div class="form-group">
+                        <label>By Who:</label>
+                        <select class="form-control" name="by_who">
+                            <option value="Bishop">Bishop</option>
+                            <option value="leader1">leader1</option>
+                            <option value="leader2">leader2</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
 
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="form-group">
+                        <label for="start-date">Select Start Date:</label>
+                        <input type="date" class="form-control" id="start-date" name="start_date">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="stop-date">Select Stop Date:</label>
+                        <input type="date" class="form-control" id="stop-date" name="stop_date">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="start-time">Select Start Time:</label>
+                        <input type="time" class="form-control" id="start-time" name="start_time">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="stop-time">Select Stop Time:</label>
+                        <input type="time" class="form-control" id="stop-time" name="stop_time">
+                    </div>
+
+                    <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group">
+                            <input type="submit" value="Save" class="btn btn-primary w-20 " name="save_changes">
+                        </div>
+                        <div class="input-group">
+                            <a href="" class="btn btn-primary w-20">Close</a>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>

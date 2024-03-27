@@ -24,11 +24,18 @@ class AnnouncementController extends Controller
     {
         return view('announcements.index');
     }
+
+
     public function index()
     {
-        $announcements = Announcement::all();
-        return view('announcements.index', ['announcements' => $announcements]);
+        // Fetch announcement data from the database
+        $announcements = Announcement::where('id', '>', 0)->orderBy('id', 'ASC')->get();
+        // dd($announcements);
+
+        // Pass the data to the view
+        return view('announcements.index', compact('announcements'));
     }
+
 
 
 
@@ -65,6 +72,7 @@ class AnnouncementController extends Controller
         $announcement->by_who = $leader;
         $announcement->branch_id = $branch_id;
 
+
         // Save the Announcement instance
         if ($announcement->save()) {
             return redirect()->route('announcements.form', ['id' => $announcement->id])->with('success', 'Announcement created successfully');
@@ -76,17 +84,7 @@ class AnnouncementController extends Controller
 
 
 
-    public function all(Request $request)
-    {
-        $user = \Auth::guard('admin')->user();
 
-        if ($request->draw) {
-            return DataTables::of($user->announcements)->make(true);
-        } else {
-            $announcements = $user->announcements;
-            return view('announcements.index', compact('announcements'));
-        }
-    }
 
 
 
@@ -174,6 +172,22 @@ class AnnouncementController extends Controller
      * @param  \App\Announcement  $announcement
      * @return \Illuminate\Http\Response
      */
+
+
+    public function displayAnnouncements()
+    {
+        // Get all announcements
+        $announcements = Announcement::all();
+
+        // Filter announcements posted by the bishop
+        $bishopAnnouncements = $announcements->where('by_who', 'Bishop');
+
+        // Pass the filtered announcements to the view
+        return view('members.member', [
+            'bishopAnnouncements' => $bishopAnnouncements,
+        ]);
+    }
+
     public function show(Announcement $announcement)
     {
         //

@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
+
 use App\Admins;
 use Illuminate\Http\Request;
 
@@ -15,7 +17,7 @@ class AdminsController extends Controller
     public function index()
     {
 
-        
+
         //
     }
 
@@ -57,6 +59,20 @@ class AdminsController extends Controller
      * @param  \App\Admins  $admins
      * @return \Illuminate\Http\Response
      */
+
+
+    public function read()
+
+    {
+
+        // Retrieve the currently authenticated user
+        $user = Auth::user();
+
+        // Pass the user's data to the view
+        return view('admin.admin.leaderprofile', compact('user'));
+    }
+
+
     public function edit(Admins $admins)
     {
         //

@@ -44,39 +44,35 @@ Leaders
                 <h1 class="panel-title text-primary text-bold">List of Announcements</h1>
             </div>
             <div class="panel-body">
-                <!--div style="height:100px;border:1px solid green">
-                    Sort by Newest Members, Gender
-                  </div-->
-
-
-                <form method="post" action="{{ route('announcements.save') }}">
-                    @csrf
-                    <input type="hidden" name="announcement_id" value="{{ $announcement->id }}">
-                    <div class="form-group">
-                        <label for="title">Announcement Title</label>
-                        <input type="text" class="form-control" id="title" name="title" placeholder="Team name" value="{{ old('title', $announcement->details) }}" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="leader">Leader</label>
-                        <select class="form-control" name="leader">
-                            @foreach ($announcements as $announcement)
-                            <!-- Output details of each announcement -->
-                            <div>{{ $announcement->title }}</div>
-                            <!-- Add other details as needed -->
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Announcement Title</th>
+                                <th>By Who</th>
+                                <th>Start Date</th>
+                                <th>Stop Date</th>
+                                <th>Start Time</th>
+                                <th>Stop Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach($announcements as $announcement)
+                            <tr>
+                                <td>{{ $announcement->details }}</td>
+                                <td>{{ $announcement->by_who }}</td>
+                                <td>{{ $announcement->start_date }}</td>
+                                <td>{{ $announcement->stop_date }}</td>
+                                <td>{{ $announcement->start_time }}</td>
+                                <td>{{ $announcement->stop_time }}</td>
+                            </tr>
                             @endforeach
-
-
-
-                        </select>
-                    </div>
-                    <!-- Other form fields -->
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-
-
-
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
+
         <!--===================================================-->
         <!-- End Striped Table -->
     </div>

@@ -5,11 +5,9 @@ Events
 @endsection
 
 @section('link')
-<link href="{{ URL::asset('plugins/bootstrap-datepicker/bootstrap-datepicker.min.css') }}"
-    rel="stylesheet">
+<link href="{{ URL::asset('plugins/bootstrap-datepicker/bootstrap-datepicker.min.css') }}" rel="stylesheet">
 <link href="{{ URL::asset('css/sweetalert.css') }}" rel="stylesheet">
-<link href="{{ URL::asset('plugins/datatables/media/css/dataTables.bootstrap.css') }}"
-    rel="stylesheet">
+<link href="{{ URL::asset('plugins/datatables/media/css/dataTables.bootstrap.css') }}" rel="stylesheet">
 @endsection
 
 @section('content')
@@ -54,40 +52,30 @@ Events
                         <table id="users-table" class="table table-striped table-bordered" cellspacing="0" width="100%">
                             <thead>
                                 <tr>
-
-                                    <th>Name</th>
+                                    <th>Event Title</th>
+                                    <th>Event Details</th>
                                     <th>Location</th>
                                     <th>Date</th>
                                     <th>Time</th>
-                                    <th>Status</th>
+
                                 </tr>
                             </thead>
                             <tbody>
+                                <!-- Scheduled eventss will be inserted here -->
+                                <?php $events = App\Event::all() ?>
 
                                 @foreach($events as $event)
-                                    <tr>
-
-                                        <td>{{ $event->title }}</td>
-                                        <td>{{ $event->location }}</td>
-                                        <td>{{ $event->date }}</td>
-                                        <td>{{ $event->time }}</td>
-                                        <td>
-                                            @php
-                                                // Convert the event date to a Carbon instance for easy comparison
-                                                $eventDate = \Carbon\Carbon::parse($event->date);
-
-                                                // Check if the event date is in the past
-                                                $isPast = now()->gt($eventDate);
-                                            @endphp
-
-                                            @if($isPast)
-                                                Passed
-                                            @else
-                                                Upcoming
-                                            @endif
-                                        </td>
-                                    </tr>
+                                <tr>
+                                    <td>{{ $loop->iteration }}</td>
+                                    <td>{{ $event->title }}</td>
+                                    <td>{{ $event->details }}</td>
+                                    <td>{{ $event->location }}</td>
+                                    <td>{{ $event->date }}</td>
+                                    <td>{{ $event->time }}</td>
+                                </tr>
                                 @endforeach
+
+
                             </tbody>
                         </table>
                         <select id="action" name="action">

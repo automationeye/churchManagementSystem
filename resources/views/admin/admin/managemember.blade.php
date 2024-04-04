@@ -47,37 +47,25 @@
                 <table id="users-table" class="table table-striped table-bordered" cellspacing="0" width="100%">
                     <thead>
                         <tr>
-
                             <th>#</th>
+                            <th>First Name:</th>
+                            <th>Last Name:</th>
+                            <th>Email:</th>
+                            <th>Phone:</th>
+                            <th>Team:</th>
 
-                            <th>Member First name</th>
-                            <th>Member Last name</th>
-                            <th>Team</th>
-
-                            <th>Email</th>
-                            <th>Phone</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <?php $members = App\Member::where('team', 'D')->get(); ?>
+                        <?php $members = App\Member::all() ?>
                         @foreach($members as $member)
                         <tr>
                             <td>{{ $loop->iteration }}</td>
-
                             <td>{{ $member->firstname }}</td>
                             <td>{{ $member->lastname }}</td>
-                            <td>{{ $member->team }}</td>
                             <td>{{ $member->email }}</td>
                             <td>{{ $member->phone }}</td>
-
-                            <td>
-                                <form action="" method="GET" style="display: inline;">
-                                    <button type="submit" class="btn btn-info">Remove</button>
-                                </form>
-
-
-
-                            </td>
+                            <td>{{ $member->team }}</td>
 
                         </tr>
                         @endforeach

@@ -9,8 +9,17 @@ use Illuminate\Auth\Authenticatable as AuthenticatableTrait;
 class Admins extends Model implements Authenticatable
 {
     use AuthenticatableTrait;
-   
+
     protected $guarded = [];
+
+    // Assuming there's a column named 'role' in the admins table
+    public function isLeader()
+    {
+        // Check if the role of the admin is 'leader'
+        return $this->role === 'leader';
+    }
+
+
 
     public function getAuthIdentifierName()
     {

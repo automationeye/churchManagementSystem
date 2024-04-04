@@ -12,12 +12,14 @@
                 <table class="table table-bordered table-striped table-sm">
                     <thead>
                         <tr>
-                            <th>User ID</th>
+                            <th>#</th>
+
                             <th>First Name</th>
                             <th>Last Name</th>
                             <th>From</th>
                             <th>To</th>
                             <th>Reason</th>
+                            <th></th>
                             <th>Status</th>
 
                         </tr>
@@ -29,8 +31,10 @@
                         @if(count($leaves)>0)
 
                         @foreach($leaves as $leave)
+                        @if($leave->status !== 1 && $leave->status !== 2)
                         <tr>
-                            <td>{{ $leave->user_id }}</td>
+                            <td>{{ $loop->iteration }}</td>
+
                             <td>{{ $leave->firstname }}</td>
                             <td>{{ $leave->lastname }}</td>
                             <td>{{ $leave->from }}</td>
@@ -38,22 +42,30 @@
                             <td>{{ $leave->reason }}</td>
 
                             <td>
-
-
-
-                                <form action="" method="GET" style="display: inline;">
+                                <form action="{{ route('leave.accept', $leave->id) }}" method="POST" style="display: inline;">
+                                    @csrf
                                     <button type="submit" class="btn btn-info">Accept</button>
                                 </form>
 
-
-                                <form action="" method="GET" style="display: inline;">
+                                <form action="{{ route('leave.reject', $leave->id) }}" method="POST" style="display: inline;">
+                                    @csrf
                                     <button type="submit" class="btn btn-info">Reject</button>
                                 </form>
-
-
                             </td>
 
+                            <td>
+
+                                @if($leave->status==0)
+                                <span class="badge bg-warning text-dark">Pending</span>
+                                @elseif($leave->status==1)
+                                <span class=" badge bg-success">Approved</span>
+                                @else
+                                <span class="badge bg-danger">Rejected</span>
+
+                                @endif
+                            </td>
                         </tr>
+                        @endif
                         @endforeach
 
                         @else

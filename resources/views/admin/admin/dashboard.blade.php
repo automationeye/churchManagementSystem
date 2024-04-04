@@ -7,12 +7,12 @@
     </div>
 
     <?php
-    $user=Auth::guard('leader')->user();
-    
+    $user = Auth::guard('leader')->user();
+
     ?>
 
 
-   
+
 
     <div class="row mt-5">
         <div class="cardy">
@@ -20,7 +20,7 @@
                 <div class="card shadow " style="width: 18rem;">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item text-center">Meetings</li>
-                        <li class="list-group-item">Total Meetings : 0 </li>
+                        <li class="list-group-item">Total Meetings : {{ $total['meetings'] }}</li>
                         <li class="list-group-item text-center"><a href=""><b>View All Meetings</b></a></li>
                     </ul>
                 </div>
@@ -32,7 +32,7 @@
                 <div class="card shadow " style="width: 18rem;">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item text-center">Announcements</li>
-                        <li class="list-group-item">Total Announcements : 0</li>
+                        <li class="list-group-item">Total Announcements :{{ $total['announcements'] }}</li>
                         <li class="list-group-item text-center"><a href="manage-employee.php"> <b>View All Announcements</b></a></li>
                     </ul>
                 </div>
@@ -42,9 +42,9 @@
             <div class="col-4">
                 <div class="card shadow " style="width: 18rem;">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item text-center">Attendance</li>
-                        <li class="list-group-item">Today : </li>
-                        <li class="list-group-item">Tomorrow : </li>
+                        <li class="list-group-item text-center">Number Of Teams</li>
+                        <li class="list-group-item" style="text-align: center;"> {{ $total['teams'] }} </li>
+
                     </ul>
                 </div>
             </div>
@@ -57,8 +57,8 @@
                 <div class="card shadow " style="width: 18rem;">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item text-center">Total Members </li>
-                        <li class="list-group-item">All Members : </li>
-                        <li class="list-group-item">Available Members : </li>
+                        <li class="list-group-item" style="text-align: center;">All Members : {{ $total['members'] }} </li>
+
                     </ul>
                 </div>
             </div>
@@ -69,8 +69,9 @@
                 <div class="card shadow " style="width: 18rem;">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item text-center">Members on Leave </li>
-                        <li class="list-group-item">This Week : </li>
-                        <li class="list-group-item">Next Week : </li>
+                        <li class="list-group-item" style="text-align: center;"> {{ $total['leaves'] }}</li>
+                        <li class="list-group-item text-center"><a href="/memberleave"> <b>View A List Of Members On Leave</b></a></li>
+
                     </ul>
                 </div>
             </div>
@@ -79,9 +80,9 @@
             <div class="col-4">
                 <div class="card shadow " style="width: 18rem;">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item text-center">Admins on Leave </li>
-                        <li class="list-group-item">This Week : </li>
-                        <li class="list-group-item">This Month : </li>
+                        <li class="list-group-item text-center">Leaders </li>
+                        <li class="list-group-item">Number Of Leaders {{ $total['admins'] }} </li>
+
                     </ul>
                 </div>
             </div>

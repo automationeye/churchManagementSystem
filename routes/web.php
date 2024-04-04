@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\LeaveController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -74,11 +76,11 @@ Route::group(['middleware' => ['auth.leader']], function () {
     Route::get('/announcements', 'AnnouncementController@index')->name('announcements');
 
 
-    Route::get('/leaderdash', 'VisitorController@leaderdash')->name('leaderdash');
+    Route::get('/leaderdash', 'AdminsController@index')->name('leaderdash');
 
-    Route::get('/addmember', 'VisitorController@addmember')->name('addmember');
+    Route::get('/addmember', 'AdminsController@addmember')->name('addmember');
 
-    Route::get('/editmember', 'VisitorController@editmember')->name('editmember');
+    Route::get('/editmember', 'AdminsController@user')->name('editmember');
 
     Route::get('/addadmin', 'VisitorController@addadmin')->name('addadmin');
 
@@ -95,6 +97,9 @@ Route::group(['middleware' => ['auth.leader']], function () {
     // Route::get('/membersmanage', 'VisitorController@membersmanage')->name('membersmanage');
 
     Route::get('/memberleave', 'VisitorController@memberleave')->name('memberleave');
+
+    Route::post('/leave/{id}/accept', [LeaveController::class, 'accept'])->name('leave.accept');
+    Route::post('/leave/{id}/reject', [LeaveController::class, 'reject'])->name('leave.reject');
 
     Route::get('/adminlog', 'VisitorController@adminlog')->name('adminlog');
 

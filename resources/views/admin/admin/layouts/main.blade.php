@@ -183,16 +183,7 @@
                     </li>
 
 
-                    <li>
-                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                            <i class="fa fa-address-card-o menu-icon"></i><span class="nav-text">Admin</span>
-                        </a>
-                        <ul aria-expanded="false">
-                            <li><a href="./add-admin.php"> <i class="icon-plus menu-icon"></i><span class="nav-text">Add
-                                        Admin</span></a></li>
-                            <li><a href="./manage-admin.php"> <i class="fa fa-tasks menu-icon"></i><span class="nav-text">Manage Admins</span></a></li>
-                        </ul>
-                    </li>
+
 
                     <li>
                         <a href="/memberleave">

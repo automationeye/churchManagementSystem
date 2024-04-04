@@ -37,6 +37,32 @@ class MemberController extends Controller
         }
     }
 
+
+    public function announce()
+    {
+        // Retrieve the announcement details
+        $announcement = DB::table('announcements')->first(); // Retrieves the first row
+
+        if ($announcement) {
+            $announcement_content = $announcement->details; // Assuming 'details' is the column name
+            // Now $announcement_content contains the content of the first row of the 'announcements' table
+            // You can use this content as needed
+        } else {
+            // Handle the case when there are no announcements in the table
+            $announcement_content = null; // Set to null or handle accordingly
+        }
+
+        // Count total announcements
+        $announcements_info = DB::table('announcements')->count();
+
+        // Pass data to the view
+        return view('members.member', compact('announcement_content', 'announcements_info'));
+    }
+
+
+
+
+
     /**
      * Show the form for creating a new resource.
      *
@@ -69,77 +95,40 @@ class MemberController extends Controller
 
         $user = \Auth::guard('admin')->user();
 
-        $relatives = null;
+        $email = $request->email;
+        $firstname = $request->firstname;
+        $lastname = $request->lastname;
+        $phone = $request->phone;
+        $password = $request->password; // You should hash the password for security
+        $team = $request->team;
 
-        // filter $_POST data for keys starting with 'relative'
-        // if there's any, then one or more relatives have been assigned
-        $array_of_relations_id = array_filter(
-            $_POST,
-            function ($key) {
-                return substr($key, 0, 8) == 'relative' ? true : false;
-            },
-            ARRAY_FILTER_USE_KEY
-        );
-        if (count($array_of_relations_id) > 0) {
-            $relatives = [];
-            foreach ($array_of_relations_id as $relative_id) {
 
-                $relationship = $_POST["relationship_{$relative_id}"];
-                array_push($relatives, ['id' => $relative_id, 'relationship' => $relationship]);
-            }
-            $relatives = json_encode($relatives);
+        $member = new Member();
+
+        $member->email = $email;
+        $member->firstname = $firstname;
+        $member->lastname = $lastname;
+        $member->phone = $phone;
+        $member->password = bcrypt($password);
+        $member->team = $team;
+
+
+
+
+
+
+        if ($member->save()) {
+            return redirect('members/all')->with('success', 'Member added successfuly');
+        } else {
+            return redirect('members/register')->with('error', 'Member not added');
         }
-
-        $this->validate($request, [
-            'firstname' => 'bail|required|string|max:255',
-            'lastname' => 'required|string|max:255',
-            // 'photo' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            // 'dob' => 'required|string|max:255',
-            'phone' => 'required|string|max:255',
-        ]);
-        $image_name = 'profile.png'; // default profile image
-        if ($request->hasFile('photo')) {
-            $image = $request->file('photo');
-            $input['imagename'] = time() . '.' . $image->getClientOriginalExtension();
-            $destinationPath = public_path('/images');
-            $image->move($destinationPath, $input['imagename']);
-            $image_name = $input['imagename'];
-        }
-
-        $membername = $request->get('firstname');
-
-        $member = new Member(array(
-            'branch_id' => $user->id,
-            'title' => $request->get('title'),
-            'firstname' => $request->get('firstname'),
-            'lastname' => $request->get('lastname'),
-            'email' => $request->get('email'),
-            'dob' => date('Y-m-d', strtotime($request->get('dob'))),
-            'phone' => $request->get('phone'),
-            'occupation' => $request->get('occupation'),
-            'position' => $request->get('position'),
-            'address' => $request->get('address'),
-            'address2' => $request->get('address2'),
-            'postal' => $request->get('postal'),
-            'city' => $request->get('city'),
-            'state' => $request->get('state'),
-            'country' => $request->get('country'),
-            'sex' => $request->get('sex'),
-            'marital_status' => $request->get('marital_status'),
-            'member_since' => date('Y-m-d', strtotime($request->get('member_since'))),
-            'wedding_anniversary' => date('Y-m-d', strtotime($request->get('wedding_anniversary'))),
-            'photo' => $image_name,
-            'relative' => $relatives,
-            'member_status' => $request->member_status
-        ));
-        $member->save();
 
         $originalNumber = $request->get('phone');
 
         // Remove the first character (0)
         $modifiedNumber = substr($originalNumber, 1);
 
-        $message = "Hello $membername, Welcome to new breed chapel. We are happy to have you service with us";
+        $message = "Hello $firstname, Welcome to new breed chapel. We are happy to have you service with us";
         $this->sendSmsUsingCurl($modifiedNumber, '20642', 'plain', $message);
         return response()->json(['status' => true, 'text' => "Member Successfully registered"]);
         // return redirect()->route('member.register.form')->with('status', 'Member Successfully registered');

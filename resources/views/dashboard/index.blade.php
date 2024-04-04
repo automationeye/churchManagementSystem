@@ -87,7 +87,7 @@ $colors = colo(); //$generateColor($c_types);
                     <!--===================================================-->
                     <div class=" panel-purple panel-colorful col-md-3 col-xs-6">
                         <div class="pad-all text-center">
-                            <span class="text-3x text-thin"> 6</span>
+                            <span class="text-3x text-thin"> {{ $total['leaders'] }}</span>
                             <p>Leaders</p>
                             <i class="icofont icofont-workers-group text-success"></i>
                         </div>
@@ -99,8 +99,8 @@ $colors = colo(); //$generateColor($c_types);
                     <!--===================================================-->
                     <div class=" panel-dark panel-colorful col-md-3 col-xs-6">
                         <div class="pad-all text-center">
-                            <span class="text-3x text-thin">{{ $total['pastors'] }}</span>
-                            <p>Pastors</p>
+                            <span class="text-3x text-thin"> {{ $total['teams'] }} </span>
+                            <p>Teams</p>
                             <i class="icofont icofont-man-in-glasses text-success"></i>
                         </div>
                     </div>

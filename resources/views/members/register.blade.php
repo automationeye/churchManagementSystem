@@ -176,21 +176,21 @@ Member Registration
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-group pad-ver">
-                                        <label class="col-md-3 control-label">Marital Status</label>
-                                        <div class="col-md-9">
-                                            <div class="radio">
-                                                <!-- Inline radio buttons -->
-                                                <input id="demo-inline-form-radio" class="magic-radio" value="single" type="radio" name="marital_status" checked>
-                                                <label for="demo-inline-form-radio">Single</label>
 
-                                                <input id="demo-inline-form-radio-2" class="magic-radio" value="married" type="radio" name="marital_status">
-                                                <label for="demo-inline-form-radio-2">Married</label>
-                                            </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label" for="demo-email-input">Team</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" name="team" placeholder="Enter Team" required>
                                         </div>
                                     </div>
 
-
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label" for="demo-email-input">Password</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" name="password" placeholder="Enter Default Password // member123" required>
+                                        </div>
+                                    </div>
 
 
 

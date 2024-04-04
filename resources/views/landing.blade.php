@@ -3,7 +3,7 @@
 <p class="rs-p-wp-fix"> </p>
 <rs-module-wrap id="rev_slider_1_1_wrapper" data-alias="zegen-home-1" data-source="gallery" style="visibility:hidden;background:#000000;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
     <rs-module id="rev_slider_1_1" data-version="6.5.31">
-        <rs-slides>
+        <rs-slides style="background-image: linear-gradient( rgba(0,0,0,0.75),rgba(0,0,0,0.75));">
             <rs-slide style="position: absolute;  " data-key="rs-1" data-title="Web Show" data-thumb="web/rs-plugin/assets/bspem.jpg" data-anim="adpr:false;e:slidingoverlay;ms:2000;" data-in="o:1;x:(100%);" data-out="a:false;"> <img src="web/rs-plugin/assets/bspem.jpg" alt=" " title="zmain-slider-1.jpg" width="1536" height="864" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="web/rs-plugin/assets/bspem.jpg" data-parallax="5" data-no-retina><!--							-->
                 <h1 id="slider-1-slide-1-layer-2" style="filter: brightness(3.5);" class="rs-layer Concept-Title" data-type="text" data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)" data-rsp_ch="on" data-xy="x:c;y:m;yo:10px,-26px,-10px,-33px;" data-text="w:normal,nowrap,nowrap,normal;s:54,50,45,30;l:52,55,50,40;ls:3px;fw:700;a:center;" data-dim="w:754px,699px,auto,400px;" data-padding="b:10;" data-frame_0="sX:2;sY:2;" data-frame_0_mask="u:t;" data-frame_1="e:power2.out;st:2110;sp:1270;sR:2110;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:5620;" data-frame_999_reverse="x:true;" style="z-index:10;font-family:'Garamond';text-transform:uppercase; ">NEW BREED CITY CHAPEL
                 </h1><!--							-->

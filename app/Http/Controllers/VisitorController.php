@@ -174,10 +174,7 @@ class VisitorController extends Controller
         return view('admin.admin.dashboard');
     }
 
-    public function addmember()
-    {
-        return view('admin.admin.addmember');
-    }
+
 
     public function editmember()
     {

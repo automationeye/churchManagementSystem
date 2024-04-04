@@ -29,7 +29,7 @@ Edit Member Profile
                 </a>
             </li>
             <li>
-                <a href="{{ route('leaders.index') }}">Leaders</a>
+                <a href="">Leaders</a>
             </li>
             <li class="active">Edit</li>
         </ol>
@@ -75,8 +75,8 @@ Edit Member Profile
                                     @method('PUT')
 
                                     <div class="form-group">
-                                        <label for="firstname">full Name:</label>
-                                        <input type="text" class="form-control" id="fullName" name="fullName" value="{{ $leaders->firstname }}" required>
+                                        <label for="fullName">full Name:</label>
+                                        <input type="text" class="form-control" id="fullName" name="fullName" value="{{ $leaders->fullName }}" required>
                                     </div>
 
 
@@ -84,8 +84,13 @@ Edit Member Profile
 
 
                                     <div class="form-group">
-                                        <label for="lastname">Phone:</label>
+                                        <label for="phone">Phone:</label>
                                         <input type="text" class="form-control" id="phone" name="phone" value="{{ $leaders->phone }}" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="lastname">Email:</label>
+                                        <input type="text" class="form-control" id="email" name="email" value="{{ $leaders->email }}" required>
                                     </div>
 
                                     <div class="form-group">

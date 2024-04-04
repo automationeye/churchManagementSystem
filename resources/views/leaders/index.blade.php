@@ -74,7 +74,7 @@ Leaders
                                     <td>{{ $leader->phone }}</td>
                                     <td>{{ $leader->created_at }}</td>
                                     <td>
-                                        <form action="" method="GET" style="display: inline;">
+                                        <form action="{{ route('edit-leader', ['leader' => $leader->id]) }}" method="GET" style="display: inline;">
                                             <button type="submit" class="btn btn-info">Edit</button>
                                         </form>
 

@@ -29,18 +29,18 @@ class HomeController extends Controller
         if (Setting::notSet()) {
             return view('setup');
         }
-        $user=\Auth::guard('admin')->user();
+        $user = \Auth::guard('admin')->user();
 
-       
+
         $c_types = \App\CollectionsType::getTypes();
         $eventsall =  \App\Announcement::leftjoin('users', "announcements.branch_id", '=', 'users.id')->where('announcements.branch_id', $user->id)->orWhere('announcements.branch_id', $user->id)->orderBy('announcements.id', 'desc')->get();
         $members = \App\Member::where('branch_id', $user->id)->get();
         $events = Event::where('branch_id', $user->id)->orderBy('date', 'asc')->get();
         // dd($options);
         $num_members = $user->isAdmin() ? DB::table('members')->count() : DB::table('members')->where('branch_id', \Auth::user()->id)->count();
-        $num_pastors = $user->isAdmin() ? DB::table('members')->where('position', 'pastor')->orWhere('position', 'senior pastor')->count() : DB::table('members')->where('position', 'pastor')->orWhere('position', 'senior pastor')->where('branch_id', \Auth::user()->id)->count();
-        $num_workers = $user->isAdmin() ? DB::table('members')->where('position', 'worker')->count() : DB::table('members')->where('position', 'worker')->where('branch_id', \Auth::user()->id)->count();
-        $total = ['workers' => $num_workers, 'pastors' => $num_pastors, 'members' => $num_members];
+        $num_leaders = $user->isAdmin() ? DB::table('admins')->count() : DB::table('admins')->where('branch_id', \Auth::user()->id)->count();
+        $num_teams = $user->isAdmin() ? DB::table('church_teams')->count() : DB::table('church_teams')->where('branch_id', \Auth::user()->id)->count();
+        $total = ['teams' => $num_teams, 'leaders' => $num_leaders, 'members' => $num_members];
         $currencies = Countries::all();
         $options = Setting::findName(['logo', 'name']);
         // $currencies = findName(['logo', 'name'], $options);

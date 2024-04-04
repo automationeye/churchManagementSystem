@@ -21,6 +21,31 @@ class LeaveController extends Controller
         return view('members.requestleave');
     }
 
+    // Define the accept method to handle leave acceptance
+    public function accept($id)
+    {
+        // Find the leave request by its ID
+        $leave = Leave::findOrFail($id);
+
+        // Update the status to indicate acceptance (assuming you have a status column)
+        $leave->update(['status' => 1]);
+
+        // Redirect back or to a specific route
+        return redirect()->back()->with('success', 'Leave request accepted successfully.');
+    }
+
+    // Define the reject method to handle leave rejection
+    public function reject($id)
+    {
+        // Find the leave request by its ID
+        $leave = Leave::findOrFail($id);
+
+        // Update the status to indicate rejection (assuming you have a status column)
+        $leave->update(['status' => 2]);
+
+        // Redirect back or to a specific route
+        return redirect()->back()->with('success', 'Leave request rejected successfully.');
+    }
 
     /**
      * Show the form for creating a new resource.

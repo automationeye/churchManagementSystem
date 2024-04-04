@@ -49,7 +49,7 @@
                 <div class="card card-primary card-outline alert alert-success">
 
                     <h4>Bishop Announcement</h4>
-                    <span style="text-align: center;">All are welcome</span>
+                    <span style="text-align: center;">Welcome All </span>
 
                 </div>
 
@@ -223,7 +223,8 @@
                         <table class="table table-bordered table-striped table-sm">
                             <thead>
                                 <tr>
-
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
                                     <th>From</th>
                                     <th>To</th>
                                     <th>Reason</th>
@@ -236,7 +237,10 @@
                                 @if(count($leaves)>0)
 
                                 @foreach($leaves as $leave)
+
                                 <tr>
+                                    <td>{{ $leave->firstname }}</td>
+                                    <td>{{ $leave->lastname }}</td>
                                     <td>{{ $leave->from }}</td>
                                     <td>{{ $leave->to }}</td>
                                     <td>{{ $leave->reason }}</td>
@@ -248,7 +252,7 @@
                                         @elseif($leave->status==1)
                                         <span class="badge bg-success">Approved</span>
                                         @else
-                                        <span class="badge bg-success">Rejected</span>
+                                        <span class="badge bg-danger">Rejected</span>
 
                                         @endif
                                     </td>

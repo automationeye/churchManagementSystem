@@ -50,6 +50,7 @@ class LeadersController extends Controller
         $leaderDetails = Member::where('id', $leaderid)->first();
         $phone = $leaderDetails->phone;
         $team = $leaderDetails->team;
+        $email = $leaderDetails->email;
         $fullName = $leaderDetails->firstname . ' ' . $leaderDetails->lastname;
         $admin = Auth::Guard('admin')->user();
         $admin->branchcode;
@@ -57,6 +58,7 @@ class LeadersController extends Controller
         $leaders->team = $team;
         $leaders->fullName = $fullName;
         $leaders->phone = $phone;
+        $leaders->email = $email;
         $leaders->password = $leaderDetails->password;
 
         if ($leaders->save()) {
@@ -108,7 +110,7 @@ class LeadersController extends Controller
         // Validate the incoming request data
         $validatedData = $request->validate([
             'fullName' => 'required|string|max:255',
-
+            'email' => 'email|required|string|max:255',
             'phone' => 'required|string|max:255',
             'team' => 'required|string|max:255',
             // Add validation rules for other member details if needed

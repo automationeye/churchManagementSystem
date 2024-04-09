@@ -47,21 +47,23 @@
 
 
                 <div class="card card-primary card-outline alert alert-success">
-
-                    <h4>Bishop Announcement</h4>
-                    <span style="text-align: center;">Welcome All </span>
-
+                    <h4>Bishop Announcements</h4>
+                    @foreach($bishopAnnouncements as $announcement)
+                    <span style="text-align:center;"> {{ $announcement->details }}</span><br>
+                    @endforeach
                 </div>
-
 
 
 
                 <div class="card card-primary card-outline alert alert-success">
-
-                    <h4>Leader Announcement</h4>
-                    <marquee> 📣 We are pleased to announce the marriage of brother benard which will happen on 14th feb
-                        2024 at new breed chapel starting from 10am.</marquee>
+                    <h4>Leader Announcements</h4>
+                    @foreach($leaderAnnouncements as $announcement)
+                    <span style="text-align:center;"> {{ $announcement->details }}</span>
+                    <br>
+                    @endforeach
                 </div>
+
+
 
             </div>
         </div>

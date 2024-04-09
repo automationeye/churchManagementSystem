@@ -148,9 +148,9 @@ class AnnouncementController extends Controller
 
 
             if ($announcement->save()) {
-                return redirect()->route('announcements')->with('success', 'Announcement created successfully');
+                return redirect()->back()->with('success', 'Announcement created successfully');
             } else {
-                return redirect()->route('announcements')->with('error', 'An error occured');
+                return redirect()->back()->with('error', 'An error occured');
             }
 
             // Save the Announcement data into the database
@@ -183,9 +183,9 @@ class AnnouncementController extends Controller
         $bishopAnnouncements = $announcements->where('by_who', 'Bishop');
 
         // Pass the filtered announcements to the view
-        return view('members.member', [
-            'bishopAnnouncements' => $bishopAnnouncements,
-        ]);
+        // return view('members.member', [
+        //     'bishopAnnouncements' => $bishopAnnouncements,
+        // ]);
     }
 
     public function show(Announcement $announcement)
@@ -225,5 +225,20 @@ class AnnouncementController extends Controller
     public function destroy(Announcement $announcement)
     {
         //
+
+        $announcement->delete();
+
+        // Redirect back to the members list or any other appropriate page
+        return redirect()->back()->with('success', 'Announcement deleted successfully');
+    }
+
+    public function admindestroy(Announcement $announcement)
+    {
+        //
+
+        $announcement->delete();
+
+        // Redirect back to the members list or any other appropriate page
+        return redirect()->back()->with('success', 'Announcement deleted successfully');
     }
 }

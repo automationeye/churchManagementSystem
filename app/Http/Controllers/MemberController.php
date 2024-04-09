@@ -56,7 +56,7 @@ class MemberController extends Controller
         $announcements_info = DB::table('announcements')->count();
 
         // Pass data to the view
-        return view('members.member', compact('announcement_content', 'announcements_info'));
+        // return view('members.member', compact('announcement_content', 'announcements_info'));
     }
 
 

@@ -30,6 +30,20 @@
             background-color: #FFFFFF !important;
         }
     </style>
+
+    <style>
+        .overlay-container {
+            position: relative;
+            width: 100%;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+        }
+    </style>
     <style>
         .rs-layer.Concept-Content a,
         .rs-layer.Concept-Content a:visited {
@@ -183,27 +197,22 @@
     <!--Zmm Wrapper-->
     <div class="zmm-wrapper"> <a href="index.html#" class="zmm-close close"></a>
         <div class="zmm-inner bg-white typo-dark">
-            
+
             <div class="zmm-main-nav"> </div>
             <div class="search-form-wrapper margin-top-30">
                 <form class="search-form" role="search">
-                    <div class="input-group add-on"> <input class="form-control" placeholder="Search for.."
-                            name="srch-term" type="text">
-                        <div class="input-group-btn"> <button class="btn btn-default search-btn" type="submit"><i
-                                    class="ti-arrow-right"></i></button> </div>
+                    <div class="input-group add-on"> <input class="form-control" placeholder="Search for.." name="srch-term" type="text">
+                        <div class="input-group-btn"> <button class="btn btn-default search-btn" type="submit"><i class="ti-arrow-right"></i></button> </div>
                     </div>
                 </form>
             </div>
         </div>
     </div> <!-- Overlay Search -->
-    <div class="overlay-search text-center hide"> <a href="index.html#"
-            class="close close-light overlay-search-close"></a>
+    <div class="overlay-search text-center hide"> <a href="index.html#" class="close close-light overlay-search-close"></a>
         <div class="search-form-wrapper">
             <form class="navbar-form search-form sliding-search-form" role="search">
-                <div class="input-group add-on"> <input class="form-control" placeholder="Search for.." name="srch-term"
-                        type="text">
-                    <div class="input-group-btn"> <button class="btn btn-default search-btn" type="submit"><i
-                                class="ti-arrow-right"></i></button> </div>
+                <div class="input-group add-on"> <input class="form-control" placeholder="Search for.." name="srch-term" type="text">
+                    <div class="input-group-btn"> <button class="btn btn-default search-btn" type="submit"><i class="ti-arrow-right"></i></button> </div>
                 </div>
             </form>
         </div>
@@ -218,16 +227,13 @@
                             <div class="sticky-head">
                                 <div class="basic-container clearfix">
                                     <ul class="nav mobile-header-items pull-left">
-                                        <li class="nav-item"><a href="index.html#" class="zmm-toggle img-before"><i
-                                                    class="ti-menu"></i></a></li>
+                                        <li class="nav-item"><a href="index.html#" class="zmm-toggle img-before"><i class="ti-menu"></i></a></li>
                                     </ul>
                                     <ul class="nav mobile-header-items pull-center">
                                         <li> <a href="index.html" class="img-before"></a> </li>
                                     </ul>
                                     <ul class="nav mobile-header-items pull-right">
-                                        <li class="nav-item"><a href="index.html#"
-                                                class="img-before overlay-search-switch"><i
-                                                    class="icon-magnifier icons"></i></a></li>
+                                        <li class="nav-item"><a href="index.html#" class="img-before overlay-search-switch"><i class="icon-magnifier icons"></i></a></li>
                                     </ul>
                                 </div> <!-- .basic-container -->
                             </div> <!-- .sticky-head -->
@@ -244,42 +250,40 @@
                                     <ul class="nav header-info">
                                         <li>
                                             <div class="header-address typo-white"><span class="ti-location-pin"></span>
-                                            kiambu road, KENYA</div>
+                                                kiambu road, KENYA</div>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
                             <ul class="nav topbar-items pull-right">
                                 <li class="nav-item">
-                                    <div class="social-icons typo-white"> 
+                                    <div class="social-icons typo-white">
                                         <a href="https://www.facebook.com/NewBreedCityChapel" class="social-fb">
                                             <span class="ti-facebook"></span>
-                                        </a> 
-                                            <a href="https://twitter.com/newbreedcity" class="social-twitter">
-                                               <span class="ti-twitter"></span>
-                                            </a>
+                                        </a>
+                                        <a href="https://twitter.com/newbreedcity" class="social-twitter">
+                                            <span class="ti-twitter"></span>
+                                        </a>
 
-                                             <a href="https://www.instagram.com/newbreedcity_chapel/" class="social-instagram">
-                                                <span class="ti-instagram"></span>
-                                            </a> 
+                                        <a href="https://www.instagram.com/newbreedcity_chapel/" class="social-instagram">
+                                            <span class="ti-instagram"></span>
+                                        </a>
 
-                                        
 
-                                            <a href="https://www.youtube.com/channel/UCKCKWbNti31vgVbl0-LbvJw" class="social-youtube">
-                                                <span class="ti-youtube"></span>
-                                            </a> 
 
-                                             </div>
+                                        <a href="https://www.youtube.com/channel/UCKCKWbNti31vgVbl0-LbvJw" class="social-youtube">
+                                            <span class="ti-youtube"></span>
+                                        </a>
+
+                                    </div>
                                 </li>
-                                <li><a href="index.html#" class="full-view-switch text-center"><i
-                                            class="ti-search typo-white"></i></a></li>
+                                <li><a href="index.html#" class="full-view-switch text-center"><i class="ti-search typo-white"></i></a></li>
                             </ul>
                         </div>
                         <!--Search-->
                         <div class="full-view-wrapper hide"> <a href="index.html#" class="close full-view-close"></a>
                             <form class="navbar-form search-form" role="search">
-                                <div class="input-group"> <input class="form-control" placeholder="Search hit enter.."
-                                        name="srch-term" type="text"> </div>
+                                <div class="input-group"> <input class="form-control" placeholder="Search hit enter.." name="srch-term" type="text"> </div>
                             </form>
                         </div>
                     </div>
@@ -293,31 +297,26 @@
                                     <div class="">
                                         <!--Overlay Menu Switch-->
                                         <ul class="nav navbar-items pull-left">
-                                            <li class="list-item"> <a href="/" class="logo-general"><img
-                                                        src="web/images/newbreed.png" class="img-fluid changeable-light"
-                                                        width="166" height="50" alt="Logo" /></a> <a href="/"
-                                                    class="logo-sticky"><img src="web/images/newbreed.png"
-                                                        class="img-fluid changeable-dark" width="166" height="100"
-                                                        alt="Logo" /></a> </li>
+                                            <li class="list-item"> <a href="/" class="logo-general"><img src="web/images/newbreed.png" class="img-fluid changeable-light" width="166" height="50" alt="Logo" /></a> <a href="/" class="logo-sticky"><img src="web/images/newbreed.png" class="img-fluid changeable-dark" width="166" height="100" alt="Logo" /></a> </li>
                                         </ul> <!-- Menu -->
                                         <ul class="nav navbar-items pull-right">
                                             <!--List Item-->
                                             <li class="list-item">
                                                 <ul class="nav navbar-main menu-white">
                                                     <li class=""><a href="/">Home</a>
-                                                  
+
                                                     </li>
 
-                                                    
+
 
                                                     <li class="dropdown dropdown-sub"><a href="/about">About Us</a>
-                                                   
+
                                                         <ul class="dropdown-menu">
-                                                                <li><a >Mission</a></li>
-                                                                <li><a href="/about#vision">Vision</a></li>
-                                                                <li><a href="/about#leaders">Leadership Structure</a></li>
-                                                                <li><a href="/about#apostles">Apostolic Counsel</a></li>
-                                                                <li><a href="/about#dreamteam">Dream Team</a></li>                                                         
+                                                            <li><a>Mission</a></li>
+                                                            <li><a href="/about#vision">Vision</a></li>
+                                                            <li><a href="/about#leaders">Leadership Structure</a></li>
+                                                            <li><a href="/about#apostles">Apostolic Counsel</a></li>
+                                                            <li><a href="/about#dreamteam">Dream Team</a></li>
 
                                                         </ul>
 
@@ -325,40 +324,40 @@
 
                                                     <li class="dropdown dropdown-sub"><a href="/ministries">Ministries</a>
                                                         <ul class="dropdown-menu">
-                                                                <li><a href="/ministries#men">Mwanaume</a></li>
-                                                                <li><a href="/ministries#women">Mrembo</a></li>
-                                                                <li><a href="/ministries#children">Children's Church</a></li>
-                                                                <li><a href="/ministries#jawabu">Jawabu</a></li>
-                                                                <li><a href="/ministries#teens">Teens</a></li>
-                                                                <li><a href="/ministries#wapenzi">Wapenzi</a></li>  
-                                                                <li><a href="/ministries#deliverance">Deliverance</a></li>                                                    
+                                                            <li><a href="/ministries#men">Mwanaume</a></li>
+                                                            <li><a href="/ministries#women">Mrembo</a></li>
+                                                            <li><a href="/ministries#children">Children's Church</a></li>
+                                                            <li><a href="/ministries#jawabu">Jawabu</a></li>
+                                                            <li><a href="/ministries#teens">Teens</a></li>
+                                                            <li><a href="/ministries#wapenzi">Wapenzi</a></li>
+                                                            <li><a href="/ministries#deliverance">Deliverance</a></li>
 
                                                         </ul>
                                                     </li>
 
                                                     <li class="dropdown dropdown-sub"><a href="/events">Events</a>
                                                         <ul class="dropdown-menu">
-                                                                <li> <a href="">Conference</a> </li>
-                                                                <li><a href="">Camps</a></li>
-                                                                <li><a href="">Fun Days</a></li>
-                                                                <li><a href="">Gallery</a></li>
-                                                                                                                        
+                                                            <li> <a href="">Conference</a> </li>
+                                                            <li><a href="">Camps</a></li>
+                                                            <li><a href="">Fun Days</a></li>
+                                                            <li><a href="">Gallery</a></li>
+
 
                                                         </ul>
 
                                                     </li>
                                                     <li class="dropdown dropdown-sub"><a href="/departments">Departments</a>
-                                                   
+
                                                         <ul class="dropdown-menu">
-                                                                <li><a href="/departments#protocol">Protocol</a></li>
-                                                                <li><a href="/departments#praise">Praise and Worship</a></li>
-                                                                <li><a href="/departments#sound">Sound</a></li>
-                                                                <li><a href="/departments#media">Media Team</a></li>
-                                                                <li><a href="/departments#visitors">Visitors</a></li>
-                                                                <li><a href="/departments#discipleship">Discipleship</a></li>   
-                                                                <li><a href="/departments#grounds">Grounds</a></li>
-                                                                <li><a href="/departments#finance">Finance</a></li>
-                                                                <li><a href="/departments#bishop">Bishop</a></li>                                                        
+                                                            <li><a href="/departments#protocol">Protocol</a></li>
+                                                            <li><a href="/departments#praise">Praise and Worship</a></li>
+                                                            <li><a href="/departments#sound">Sound</a></li>
+                                                            <li><a href="/departments#media">Media Team</a></li>
+                                                            <li><a href="/departments#visitors">Visitors</a></li>
+                                                            <li><a href="/departments#discipleship">Discipleship</a></li>
+                                                            <li><a href="/departments#grounds">Grounds</a></li>
+                                                            <li><a href="/departments#finance">Finance</a></li>
+                                                            <li><a href="/departments#bishop">Bishop</a></li>
 
                                                         </ul>
 
@@ -367,36 +366,35 @@
 
                                                     <li class="dropdown dropdown-sub"> <a href="/about#branches">Branches</a>
 
-                                                    <ul class="dropdown-menu">
-                                                                <li><a href="/about#branches">NBC HQ</a></li>
-                                                                <li><a href="/about#branches">NBC Thome</a></li>
-                                                                <li><a href="/about#branches">NBC Kasarani</a></li>
-                                                                <li><a href="/about#branches">NBC Kitengela</a></li>
-                                                                <li><a href="/about#branches">NBC Rongai</a></li>
-                                                                <li><a href="/about#branches">NBC Nakuru</a></li>  
-                                                                <li><a href="/about#branches">NBC Kisumu</a></li>
-                                                                <li><a href="/about#branches">NBC Kakamega</a></li>
-                                                                <li><a href="/about#branches">NBC Abuja</a></li>
-                                                                <li><a href="/about#branches">NBC Dallas</a></li>
-                                                                <li><a href="/about#branches">NBC Diaspora</a></li>                                                       
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="/about#branches">NBC HQ</a></li>
+                                                            <li><a href="/about#branches">NBC Thome</a></li>
+                                                            <li><a href="/about#branches">NBC Kasarani</a></li>
+                                                            <li><a href="/about#branches">NBC Kitengela</a></li>
+                                                            <li><a href="/about#branches">NBC Rongai</a></li>
+                                                            <li><a href="/about#branches">NBC Nakuru</a></li>
+                                                            <li><a href="/about#branches">NBC Kisumu</a></li>
+                                                            <li><a href="/about#branches">NBC Kakamega</a></li>
+                                                            <li><a href="/about#branches">NBC Abuja</a></li>
+                                                            <li><a href="/about#branches">NBC Dallas</a></li>
+                                                            <li><a href="/about#branches">NBC Diaspora</a></li>
 
                                                         </ul>
 
                                                     </li>
-                                                    
-                                                 
+
+
                                                     <li class="">
                                                         <a href="/contact">Contact Us</a>
                                                     </li>
 
-                                                    
+
                                                 </ul>
                                             </li>
                                             <!--List Item End-->
                                             <!--List Item-->
                                             <li class="list-item">
-                                                <div class="header-navbar-text-1"><a href="/member/login"
-                                                        class="h-donate-btn">LOGIN</a></div>
+                                                <div class="header-navbar-text-1"><a href="/member/login" class="h-donate-btn">LOGIN</a></div>
                                             </li>
                                             <!--List Item End-->
                                         </ul> <!-- Menu -->
@@ -410,7 +408,7 @@
                 </div>
             </header> <!-- header -->
             <!-- Revolution Slider Section -->
-           @yield('content')
+            @yield('content')
         </div> <!-- .page-wrapper-inner -->
     </div>
     <!--page-wrapper-->
@@ -430,21 +428,21 @@
                             <div class="widget-text margin-bottom-30">
                                 <p>New Breed City Chapel</p>
                             </div>
-                            <div class="social-icons"> 
+                            <div class="social-icons">
                                 <a href="https://www.facebook.com/NewBreedCityChapel/" class="social-fb">
                                     <span class="ti-facebook"></span>
                                 </a>
-                                
+
                                 <a href="https://twitter.com/newbreedcity" class="social-twitter">
                                     <span class="ti-twitter"></span>
-                                </a> 
+                                </a>
                                 <a href="https://www.instagram.com/newbreedcity_chapel/" class="social-instagram">
                                     <span class="ti-instagram"></span>
-                                </a> 
-                               
+                                </a>
+
                                 <a href="https://www.youtube.com/channel/UCKCKWbNti31vgVbl0-LbvJw" class="social-youtube">
                                     <span class="ti-youtube"></span>
-                                </a> 
+                                </a>
                             </div>
                         </div> <!-- Col -->
                         <div class="col-lg-3 widget text-widget">
@@ -457,7 +455,7 @@
                                     <li class="menu-item"><a href="/about">Who We Are?</a></li>
                                     <li class="menu-item"><a href="index.html#">Support and FAQ’s</a></li>
                                     <li class="menu-item"><a href="index.html#">Partnerships</a></li>
-                                    
+
                                     <li class="menu-item"><a href="index.html#">Join Us</a></li>
                                 </ul>
                             </div>
@@ -471,15 +469,15 @@
                                 <ul class="footer-list-posts">
                                     <!-- List Items -->
                                     <li>
-                                        
+
                                         <div class="side-item-text"><a href="blog-single.html">OUR PROPHETIC COVENANT ANOINTING SERVICE WITH BISHOP ERICK MWANGI</a>
-                                         <span class="post-date d-block">JAN 7, 2024</span>
+                                            <span class="post-date d-block">JAN 7, 2024</span>
                                         </div>
                                     </li>
                                     <li>
-                                        
+
                                         <div class="side-item-text"><a href="blog-single.html"> OUR NIGHT OF DOMINION CROSSOVER KESHA With BISHOP ERICK MWANGI AND PROPHET NANA YAW OBENG</a>
-                                         <span class="post-date d-block">JAN 1, 2024</span> 
+                                            <span class="post-date d-block">JAN 1, 2024</span>
                                         </div>
                                     </li>
                                 </ul>
@@ -494,13 +492,9 @@
                                 Email updates on new product Announcements, Gift Ideas, Special Promotions and More.</p>
                             <div class="mailchimp-widget-wrap">
                                 <!-- subscribe form -->
-                                <form id="subscribe-form-1" class="subscribe-form"
-                                    action=" ">
-                                    <div class="input-group add-on"> <input type="text" class="form-control"
-                                            name="mcemail" autocomplete="off" id="mcemail-1"
-                                            placeholder="Email Address">
-                                        <div class="input-group-btn"> <button class="btn btn-default subscribe-btn"
-                                                type="submit">Sign Up</button> </div>
+                                <form id="subscribe-form-1" class="subscribe-form" action=" ">
+                                    <div class="input-group add-on"> <input type="text" class="form-control" name="mcemail" autocomplete="off" id="mcemail-1" placeholder="Email Address">
+                                        <div class="input-group-btn"> <button class="btn btn-default subscribe-btn" type="submit">Sign Up</button> </div>
                                     </div>
                                     <p class="subscribe-status-msg hide"></p>
                                 </form>
@@ -520,8 +514,7 @@
                                 <li class="nav-item">
                                     <div class="nav-item-inner"> Copyrights © <script>
                                             document.write(new Date().getFullYear())
-                                        </script> <a href="index.html">   </a>. Designed by <a
-                                            href="http://automationeye.com">Automation Eye Limited</a>  </div>
+                                        </script> <a href="index.html"> </a>. Designed by <a href="http://automationeye.com">Automation Eye Limited</a> </div>
                                 </li>
                             </ul>
                             <ul class="footer-bottom-items footer-menu pull-right">
@@ -535,7 +528,7 @@
             </div>
         </div>
     </footer> <!-- Footer -->
-   
+
     <!-- jQuery Lib -->
     <script src="web/js/jquery.min.js"></script> <!-- Bootstrap Js -->
     <script src="web/js/bootstrap.bundle.min.js"></script> <!-- Easing Js -->

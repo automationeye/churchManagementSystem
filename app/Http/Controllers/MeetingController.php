@@ -84,7 +84,7 @@ class MeetingController extends Controller
 
 
             // Optionally, you can redirect the user to a success page or return a success response
-            return redirect()->route('meetings.index')->with('success', 'Meeting created successfully');
+            return redirect()->route('meeting')->with('success', 'Meeting created successfully');
         } catch (\Exception $e) {
             // Handle any exceptions that occur during the database operation
             // You can log the error, display a user-friendly message, or redirect the user to an error page

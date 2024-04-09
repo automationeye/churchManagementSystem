@@ -71,9 +71,14 @@ Route::group(['middleware' => ['auth.leader']], function () {
 
     Route::post('/announcement/post', 'AnnouncementController@store')->name('announcement.post');
 
-    Route::post('/meeting/post', 'MeetingController@store')->name('meeting.post');
 
     Route::get('/announcements', 'AnnouncementController@index')->name('announcements');
+
+    // Route for deleting announcement
+    Route::delete('/announcements/{announcement}', 'AnnouncementController@destroy')->name('delete-announcement');
+
+
+    Route::post('/meeting/post', 'MeetingController@store')->name('meeting.post');
 
 
     Route::get('/leaderdash', 'AdminsController@index')->name('leaderdash');
@@ -232,6 +237,8 @@ Route::group(['middleware' => ['auth.admin']], function () {
     Route::get('/announcements', 'AnnouncementController@index')->name('announcements.index');
     Route::post('/announcements/post', 'AnnouncementController@save')->name('announcements.save');
 
+    // Route for deleting announcement
+    Route::delete('/announcements/{announcement}', 'AnnouncementController@admindestroy')->name('delete-announcement');
 
 
 

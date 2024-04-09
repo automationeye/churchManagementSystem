@@ -60,8 +60,8 @@ Leaders
                         <label>By Who:</label>
                         <select class="form-control" name="by_who">
                             <option value="Bishop">Bishop</option>
-                            <option value="leader1">leader1</option>
-                            <option value="leader2">leader2</option>
+                            <option value="Leader">Leader</option>
+
                             <!-- Add more options as needed -->
                         </select>
                     </div>

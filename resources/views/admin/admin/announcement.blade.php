@@ -24,7 +24,7 @@
 
                                     <div class="form-group">
                                         <label>By Who :</label>
-                                        <input type="text" class="form-control" value=" " name="by_who">
+                                        <input type="text" class="form-control" value="Leader" name="by_who" readonly>
 
                                     </div>
 

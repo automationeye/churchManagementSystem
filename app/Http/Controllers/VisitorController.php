@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Announcement;
+
 use App\Admins;
 use App\Admin;
 use Illuminate\Http\Request;
@@ -279,9 +281,19 @@ class VisitorController extends Controller
     public function member()
     {
 
+
         $leaves = Leave::where('id', '!=', -1)->orderBy('id', 'DESC')->get();
 
-        return view('members.member', compact('leaves'));
+
+        $announcements = Announcement::all();
+
+        // Filter announcements posted by the bishop
+        $bishopAnnouncements = $announcements->where('by_who', 'Bishop');
+
+        $leaderAnnouncements = $announcements->where('by_who', 'Leader');
+
+
+        return view('members.member', compact('bishopAnnouncements', 'leaves', 'leaderAnnouncements'));
     }
 
 

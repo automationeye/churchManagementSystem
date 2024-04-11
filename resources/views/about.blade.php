@@ -887,7 +887,7 @@
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">New Breed City</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">New Breed City</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Kasarani</p>
@@ -918,7 +918,7 @@
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">New Breed City</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">New Breed City</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Kitengela</p>
@@ -945,7 +945,7 @@
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">New Breed City</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">New Breed City</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Rongai</p>
@@ -976,7 +976,7 @@
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">New Breed City</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">New Breed City</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Nakuru</p>
@@ -1007,7 +1007,7 @@
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">New Breed City</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">New Breed City</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Kisumu</p>
@@ -1038,7 +1038,7 @@
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">New Breed City</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">New Breed City</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Kakamega</p>
@@ -1068,7 +1068,7 @@
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">New Breed City</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">New Breed City</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Abuja</p>
@@ -1097,7 +1097,7 @@
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">New Breed City</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">New Breed City</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Dallas</p>
@@ -1126,7 +1126,7 @@
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">New Breed City</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">New Breed City</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Diaspora</p>

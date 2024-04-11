@@ -53,7 +53,6 @@
 													<p>Men ministry invites gentlemen to fellowship and worship together in the house of The Lord.</p>
 												</div>
 												<div class="ministries-link margin-top-15 margin-bottom-30 text-center">
-													<a target="_blank" href="/ministries#men" class="link">Read More</a>
 												</div>
 											</div>
 										</div>
@@ -81,7 +80,6 @@
 													<p>A Women’s ministry includes hosting Bible studies, services, support group, and gathering events. The goal of this women’s ministry</p>
 												</div>
 												<div class="ministries-link margin-top-15 margin-bottom-30 text-center">
-													<a target="_blank" href="/ministries#women" class="link">Read More</a>
 												</div>
 											</div>
 										</div>
@@ -107,7 +105,6 @@
 													<p>Children’s ministry helps kids learn about the Lord Jesus</p>
 												</div>
 												<div class="ministries-link margin-top-15 margin-bottom-30 text-center">
-													<a target="_blank" href="/ministries#children" class="link">Read More</a>
 												</div>
 											</div>
 										</div>
@@ -134,7 +131,6 @@
 													<p>We are very grateful for our part in the work of Jawabu Ministries and the opportunity to be on</p>
 												</div>
 												<div class="ministries-link margin-top-15 margin-bottom-30 text-center">
-													<a target="_blank" href="/ministries#jawabu" class="link">Read More</a>
 												</div>
 											</div>
 										</div>
@@ -160,7 +156,6 @@
 													<p>Teens Ministry welcomes the young ones, our leaders of tomorrow to fellowship and bond in the house of the Lord.</p>
 												</div>
 												<div class="ministries-link margin-top-15 margin-bottom-30 text-center">
-													<a target="_blank" href="/ministries#teens" class="link">Read More</a>
 												</div>
 											</div>
 										</div>
@@ -186,7 +181,6 @@
 													<p> For those that destiny has united. </p>
 												</div>
 												<div class="ministries-link margin-top-15 margin-bottom-30 text-center">
-													<a target="_blank" href="/ministries#couple" class="link">Read More</a>
 												</div>
 											</div>
 										</div>

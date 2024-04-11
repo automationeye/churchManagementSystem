@@ -453,10 +453,10 @@
                             <div class="menu-quick-links">
                                 <ul class="menu">
                                     <li class="menu-item"><a href="/about">Who We Are?</a></li>
-                                    <li class="menu-item"><a href="index.html#">Support and FAQ’s</a></li>
-                                    <li class="menu-item"><a href="index.html#">Partnerships</a></li>
+                                    <li class="menu-item"><a href="/contact">Support and FAQ’s</a></li>
+                                    <li class="menu-item"><a href="/ministries">Partnerships</a></li>
 
-                                    <li class="menu-item"><a href="index.html#">Join Us</a></li>
+                                    <li class="menu-item"><a href="member/registration">Join Us</a></li>
                                 </ul>
                             </div>
                         </div> <!-- Col -->
@@ -470,13 +470,13 @@
                                     <!-- List Items -->
                                     <li>
 
-                                        <div class="side-item-text"><a href="blog-single.html">OUR PROPHETIC COVENANT ANOINTING SERVICE WITH BISHOP ERICK MWANGI</a>
+                                        <div class="side-item-text"><a href="#">OUR PROPHETIC COVENANT ANOINTING SERVICE WITH BISHOP ERICK MWANGI</a>
                                             <span class="post-date d-block">JAN 7, 2024</span>
                                         </div>
                                     </li>
                                     <li>
 
-                                        <div class="side-item-text"><a href="blog-single.html"> OUR NIGHT OF DOMINION CROSSOVER KESHA With BISHOP ERICK MWANGI AND PROPHET NANA YAW OBENG</a>
+                                        <div class="side-item-text"><a href="#"> OUR NIGHT OF DOMINION CROSSOVER KESHA With BISHOP ERICK MWANGI AND PROPHET NANA YAW OBENG</a>
                                             <span class="post-date d-block">JAN 1, 2024</span>
                                         </div>
                                     </li>
@@ -518,8 +518,7 @@
                                 </li>
                             </ul>
                             <ul class="footer-bottom-items footer-menu pull-right">
-                                <li class="nav-item"> <a href="index.html#">Privacy</a> </li>
-                                <li class="nav-item"> <a href="index.html#">Sermons</a> </li>
+                               
                                 <li class="nav-item"> <a href="/contact">Contact Us</a> </li>
                             </ul>
                         </div>

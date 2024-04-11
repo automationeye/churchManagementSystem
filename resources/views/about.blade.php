@@ -167,15 +167,15 @@
 												<div class="social-icons">
 													<a href="https://www.facebook.com/BishopErickMwangi"><span class="ti-facebook"></span></a>
 													<a href="https://www.youtube.com/@bishoperickmwangi735"><span class="ti-youtube"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													<a href=""><span class="ti-twitter"></span></a>
+													<a href=""><span class="ti-instagram"></span></a>
+													<a href=""><span class="ti-linkedin"></span></a>
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">Bishop Erick Mwangi</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">Bishop Erick Mwangi</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Church Bishop</p>
@@ -197,16 +197,16 @@
 											<img src="web/rs-plugin/assets/pastor.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href="about-us.html#"><span class="ti-facebook"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													<a href=""><span class="ti-facebook"></span></a>
+													<a href=""><span class="ti-twitter"></span></a>
+													<a href=""><span class="ti-instagram"></span></a>
+													<a href=""><span class="ti-linkedin"></span></a>
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">Names</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">Names</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Lead Pastor</p>
@@ -228,16 +228,16 @@
 											<img src="web/rs-plugin/assets/pastor1.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href="about-us.html#"><span class="ti-facebook"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													<a href=""><span class="ti-facebook"></span></a>
+													<a href=""><span class="ti-twitter"></span></a>
+													<a href=""><span class="ti-instagram"></span></a>
+													<a href=""><span class="ti-linkedin"></span></a>
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">Names</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">Names</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Pastor</p>
@@ -259,16 +259,16 @@
 											<img src="web/rs-plugin/assets/pastor2.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href="about-us.html#"><span class="ti-facebook"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													<a href=""><span class="ti-facebook"></span></a>
+													<a href=""><span class="ti-twitter"></span></a>
+													<a href=""><span class="ti-instagram"></span></a>
+													<a href=""><span class="ti-linkedin"></span></a>
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">Names</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">Names</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Pastor</p>
@@ -290,16 +290,16 @@
 											<img src="web/rs-plugin/assets/pastor3.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href="about-us.html#"><span class="ti-facebook"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													<a href=""><span class="ti-facebook"></span></a>
+													<a href=""><span class="ti-twitter"></span></a>
+													<a href=""><span class="ti-instagram"></span></a>
+													<a href=""><span class="ti-linkedin"></span></a>
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">Names</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">Names</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Pastor</p>
@@ -323,16 +323,16 @@
 											<img src="images/team/team-5.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href="about-us.html#"><span class="ti-facebook"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													<a href=""><span class="ti-facebook"></span></a>
+													<a href=""><span class="ti-twitter"></span></a>
+													<a href=""><span class="ti-instagram"></span></a>
+													<a href=""><span class="ti-linkedin"></span></a>
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">Names</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">Names</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Senior Pastor</p>
@@ -391,15 +391,15 @@
 												<div class="social-icons">
 													<a href=" "><span class="ti-facebook"></span></a>
 													<a href=" "><span class="ti-youtube"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													<a href=""><span class="ti-twitter"></span></a>
+													<a href=""><span class="ti-instagram"></span></a>
+													<a href=""><span class="ti-linkedin"></span></a>
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">Names</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">Names</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Apostle</p>
@@ -421,16 +421,16 @@
 											<img src="images/team/team-2.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href="about-us.html#"><span class="ti-facebook"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													<a href=""><span class="ti-facebook"></span></a>
+													<a href=""><span class="ti-twitter"></span></a>
+													<a href=""><span class="ti-instagram"></span></a>
+													<a href=""><span class="ti-linkedin"></span></a>
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">Names</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">Names</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Apostle</p>
@@ -452,16 +452,16 @@
 											<img src="images/team/team-1.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href="about-us.html#"><span class="ti-facebook"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													<a href=""><span class="ti-facebook"></span></a>
+													<a href=""><span class="ti-twitter"></span></a>
+													<a href=""><span class="ti-instagram"></span></a>
+													<a href=""><span class="ti-linkedin"></span></a>
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">Names</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">Names</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Apostle</p>
@@ -483,16 +483,16 @@
 											<img src="images/team/team-4.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href="about-us.html#"><span class="ti-facebook"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													<a href=""><span class="ti-facebook"></span></a>
+													<a href=""><span class="ti-twitter"></span></a>
+													<a href=""><span class="ti-instagram"></span></a>
+													<a href=""><span class="ti-linkedin"></span></a>
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">Names</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">Names</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Apostle</p>
@@ -514,16 +514,16 @@
 											<img src="images/team/team-3.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href="about-us.html#"><span class="ti-facebook"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													<a href=""><span class="ti-facebook"></span></a>
+													<a href=""><span class="ti-twitter"></span></a>
+													<a href=""><span class="ti-instagram"></span></a>
+													<a href=""><span class="ti-linkedin"></span></a>
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">Names</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">Names</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Apostle</p>
@@ -545,16 +545,16 @@
 											<img src="images/team/team-5.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href="about-us.html#"><span class="ti-facebook"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													<a href=""><span class="ti-facebook"></span></a>
+													<a href=""><span class="ti-twitter"></span></a>
+													<a href=""><span class="ti-instagram"></span></a>
+													<a href=""><span class="ti-linkedin"></span></a>
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">Full Names</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">Full Names</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Apostle</p>
@@ -603,15 +603,15 @@
 												<div class="social-icons">
 													<a href=" "><span class="ti-facebook"></span></a>
 													<a href=" "><span class="ti-youtube"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													<a href=""><span class="ti-twitter"></span></a>
+													<a href=""><span class="ti-instagram"></span></a>
+													<a href=""><span class="ti-linkedin"></span></a>
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">Names</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">Names</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Apostle</p>
@@ -633,16 +633,16 @@
 											<img src="images/team/team-2.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href="about-us.html#"><span class="ti-facebook"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													<a href=""><span class="ti-facebook"></span></a>
+													<a href=""><span class="ti-twitter"></span></a>
+													<a href=""><span class="ti-instagram"></span></a>
+													<a href=""><span class="ti-linkedin"></span></a>
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">Names</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">Names</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Apostle</p>
@@ -664,16 +664,16 @@
 											<img src="images/team/team-1.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href="about-us.html#"><span class="ti-facebook"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													<a href=""><span class="ti-facebook"></span></a>
+													<a href=""><span class="ti-twitter"></span></a>
+													<a href=""><span class="ti-instagram"></span></a>
+													<a href=""><span class="ti-linkedin"></span></a>
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">Names</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">Names</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Apostle</p>
@@ -695,16 +695,16 @@
 											<img src="images/team/team-4.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href="about-us.html#"><span class="ti-facebook"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													<a href=""><span class="ti-facebook"></span></a>
+													<a href=""><span class="ti-twitter"></span></a>
+													<a href=""><span class="ti-instagram"></span></a>
+													<a href=""><span class="ti-linkedin"></span></a>
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">Names</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">Names</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Apostle</p>
@@ -726,16 +726,16 @@
 											<img src="images/team/team-3.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href="about-us.html#"><span class="ti-facebook"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													<a href=""><span class="ti-facebook"></span></a>
+													<a href=""><span class="ti-twitter"></span></a>
+													<a href=""><span class="ti-instagram"></span></a>
+													<a href=""><span class="ti-linkedin"></span></a>
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">Names</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">Names</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Apostle</p>
@@ -757,16 +757,16 @@
 											<img src="images/team/team-5.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href="about-us.html#"><span class="ti-facebook"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													<a href=""><span class="ti-facebook"></span></a>
+													<a href=""><span class="ti-twitter"></span></a>
+													<a href=""><span class="ti-instagram"></span></a>
+													<a href=""><span class="ti-linkedin"></span></a>
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">Full Names</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">Full Names</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Apostle</p>
@@ -815,17 +815,18 @@
 											<img src="web/rs-plugin/assets/nbc.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href=" "><span class="ti-facebook"></span></a>
-													<a href=" "><span class="ti-youtube"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													<a href="https://www.facebook.com/NewBreedCityChapel "><span class="ti-facebook"></span></a>
+													<a href="https://www.youtube.com/channel/UCKCKWbNti31vgVbl0-LbvJw "><span class="ti-youtube"></span></a>
+													
+													<a href="https://www.instagram.com/newbreedcity_chapel/"><span class="ti-instagram"></span></a>
+													
+													
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">New Breed City</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">New Breed City</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">HQ</p>
@@ -847,16 +848,16 @@
 											<img src="web/rs-plugin/assets/thome.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href="about-us.html#"><span class="ti-facebook"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													<a href="https://www.facebook.com/profile.php?id=100089752944306"><span class="ti-facebook"></span></a>
+													
+													<a href="https://www.instagram.com/newbreedcitychapel_thome/"><span class="ti-instagram"></span></a>
+												
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="about-us.html#" class="client-name typo-white">New Breed City</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">New Breed City</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Thome</p>
@@ -878,10 +879,9 @@
 											<img src="web/rs-plugin/assets/kasarani.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href="about-us.html#"><span class="ti-facebook"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													<a href="https://www.facebook.com/NewBreedCityKasarani"><span class="ti-facebook"></span></a>
+													
+													<a href="https://www.instagram.com/new.breedcitychapel_kasarani/"><span class="ti-instagram"></span></a>
 												</div>
 											</div>
 										</div>
@@ -909,10 +909,10 @@
 											<img src="web/rs-plugin/assets/nbc.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href="about-us.html#"><span class="ti-facebook"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													<a href="https://www.facebook.com/NewBreedKitengela"><span class="ti-facebook"></span></a>
+													
+													<a href="https://www.instagram.com/newbreedcitychapelkitengela/"><span class="ti-instagram"></span></a>
+													
 												</div>
 											</div>
 										</div>
@@ -940,10 +940,6 @@
 											<img src="web/rs-plugin/assets/nbc.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href="about-us.html#"><span class="ti-facebook"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
 												</div>
 											</div>
 										</div>
@@ -971,10 +967,10 @@
 											<img src="web/rs-plugin/assets/nakuru.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href="about-us.html#"><span class="ti-facebook"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													<a href="https://www.facebook.com/NEWBREEDCITYCHAPELNAKURU"><span class="ti-facebook"></span></a>
+													
+													<a href="https://www.instagram.com/explore/tags/newbreedcitychapelnakuru/"><span class="ti-instagram"></span></a>
+													
 												</div>
 											</div>
 										</div>
@@ -1004,10 +1000,8 @@
 											<img src="web/rs-plugin/assets/kisumu.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href="about-us.html#"><span class="ti-facebook"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													<a href="https://www.facebook.com/groups/284186476588191"><span class="ti-facebook"></span></a>
+													
 												</div>
 											</div>
 										</div>
@@ -1037,10 +1031,8 @@
 											<img src="web/rs-plugin/assets/kakamega.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href="about-us.html#"><span class="ti-facebook"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													<a href="https://www.facebook.com/groups/284186476588191"><span class="ti-facebook"></span></a>
+													
 												</div>
 											</div>
 										</div>
@@ -1067,10 +1059,10 @@
 											<img src="web/rs-plugin/assets/abuja.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href="about-us.html#"><span class="ti-facebook"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													<a href="https://www.facebook.com/profile.php?id=100090149830345"><span class="ti-facebook"></span></a>
+													
+													<a href="https://www.instagram.com/nbcabuja/"><span class="ti-instagram"></span></a>
+												
 												</div>
 											</div>
 										</div>
@@ -1100,10 +1092,6 @@
 											<img src="web/rs-plugin/assets/nbc.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href="about-us.html#"><span class="ti-facebook"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
 												</div>
 											</div>
 										</div>
@@ -1132,10 +1120,7 @@
 											<img src="web/rs-plugin/assets/nbc.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href="about-us.html#"><span class="ti-facebook"></span></a>
-													<a href="about-us.html#"><span class="ti-twitter"></span></a>
-													<a href="about-us.html#"><span class="ti-instagram"></span></a>
-													<a href="about-us.html#"><span class="ti-linkedin"></span></a>
+													
 												</div>
 											</div>
 										</div>

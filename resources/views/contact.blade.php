@@ -48,9 +48,9 @@
 												<div class="feature-title">
 													<h5 class="mb-2">Phone Number</h5>
 												</div>
-												<a href="tel:(+254)724825746">(+254) </a>
+												<a href="">tel: (+254) 0724825746 </a>
 												<br>
-												<a href="tel:(+254)724825746">(+254) </a>
+												<a href="">tel: (+254) 0724825746</a>
 											</div>											
 										</div>
 									</div>

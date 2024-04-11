@@ -95,7 +95,7 @@
 										<!-- Ministries Inner -->
 										<div class="ministries-inner">
 											<div class="ministries-thumb">
-												<img class="img-fluid squared w-100" src="web/rs-plugin/assets/children.JPG" width="360" height="240" alt=" Processing">
+												<img class="img-fluid squared w-100" src="web/rs-plugin/assets/children.jpg" width="360" height="240" alt=" Processing">
 											</div>
 
 											<!-- Ministries Content -->

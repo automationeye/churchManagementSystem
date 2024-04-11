@@ -226,22 +226,22 @@
 									</div>
 									<ul class="category-list">
 										<li class="cat-item">
-											<a href="ministries-grid-2.html#">Mwanaume</a>
+											<a href="/ministries#mwanaume">Mwanaume</a>
 										</li>
 										<li class="cat-item">
-											<a href="ministries-grid-2.html#">Mrembo</a>
+											<a href="/ministries#mrembo">Mrembo</a>
 										</li>
 										<li class="cat-item">
-											<a href="ministries-grid-2.html#">Children's Church</a>
+											<a href="/ministries#children">Children's Church</a>
 										</li>
 										<li class="cat-item">
-											<a href="ministries-grid-2.html#">Jawabu</a>
+											<a href="/ministries#jawabu">Jawabu</a>
 										</li>
 										<li class="cat-item">
-											<a href="ministries-grid-2.html#">Teens</a>
+											<a href="/ministries#teens">Teens</a>
 										</li>
 										<li class="cat-item">
-											<a href="ministries-grid-2.html#">Wapenzi</a>
+											<a href="/ministries#wapenzi">Wapenzi</a>
 										</li>
 									</ul>
 								</div>
@@ -290,13 +290,10 @@
 										<h3 class="title">Tags</h3>
 									</div>
 									<div class="tagcloud">
-										<a href="ministries-grid-2.html#" class="tag-cloud-link">events</a>
-										<a href="ministries-grid-2.html#" class="tag-cloud-link">Departments</a>
-										<a href="ministries-grid-2.html#" class="tag-cloud-link">Sermons</a>
-										<a href="ministries-grid-2.html#" class="tag-cloud-link">About Us</a>
-										<a href="ministries-grid-2.html#" class="tag-cloud-link">Contact Us</a>
-										<a href="ministries-grid-2.html#" class="tag-cloud-link">New Breed TV</a>
-										<a href="ministries-grid-2.html#" class="tag-cloud-link">Jenga Hekalu</a>
+										<a href="/events" class="tag-cloud-link">events</a>
+										<a href="/departments" class="tag-cloud-link">Departments</a>
+										<a href="/about" class="tag-cloud-link">About Us</a>
+										<a href="/contact" class="tag-cloud-link">Contact Us</a>
 									</div>
 								</div>
 								<!-- Tag Cloud -->

@@ -48,9 +48,9 @@
 												<div class="feature-title">
 													<h5 class="mb-2">Phone Number</h5>
 												</div>
-												<a href="tel:(+55)654-545-5418">(+254) </a>
+												<a href="tel:(+254)724825746">(+254) </a>
 												<br>
-												<a href="tel:(+55)654-545-1235">(+254) </a>
+												<a href="tel:(+254)724825746">(+254) </a>
 											</div>											
 										</div>
 									</div>
@@ -66,9 +66,9 @@
 												<div class="feature-title">
 													<h5 class="mb-2">Email Address</h5>
 												</div>
-												<a href="mailto:info@.com">info@   .com</a>
+												<a href="Info@newbreedcitychapel.org">Info@newbreedcitychapel.org</a>
 												<br>
-												<a href="mailto:info@zegen.com">newbreedchapelcity@gmail.com</a>
+												<a href="Info@newbreedcitychapel.org">newbreedchapelcity@gmail.com</a>
 											</div>											
 										</div>
 									</div>

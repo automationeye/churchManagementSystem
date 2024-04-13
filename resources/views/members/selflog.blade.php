@@ -12,13 +12,16 @@
 
 
         .registration-form {
-            max-width: 500px;
+            max-width: 400px;
+            max-height: 500px;
             margin: 0 auto;
             padding: 20px;
             background-color: #dc3545;
             border-radius: 10px;
             margin-top: 150px;
         }
+
+        
     </style>
 </head>
 

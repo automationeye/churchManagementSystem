@@ -41,7 +41,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+            background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60));
         }
     </style>
     <style>
@@ -208,7 +208,7 @@
             </div>
         </div>
     </div> <!-- Overlay Search -->
-    <div class="overlay-search text-center hide"> <a href="index.html#" class="close close-light overlay-search-close"></a>
+    <div class="overlay-search text-center hide"> <a href="#" class="close close-light overlay-search-close"></a>
         <div class="search-form-wrapper">
             <form class="navbar-form search-form sliding-search-form" role="search">
                 <div class="input-group add-on"> <input class="form-control" placeholder="Search for.." name="srch-term" type="text">
@@ -227,13 +227,13 @@
                             <div class="sticky-head">
                                 <div class="basic-container clearfix">
                                     <ul class="nav mobile-header-items pull-left">
-                                        <li class="nav-item"><a href="index.html#" class="zmm-toggle img-before"><i class="ti-menu"></i></a></li>
+                                        <li class="nav-item"><a href="#" class="zmm-toggle img-before"><i class="ti-menu"></i></a></li>
                                     </ul>
                                     <ul class="nav mobile-header-items pull-center">
-                                        <li> <a href="index.html" class="img-before"></a> </li>
+                                        <li> <a href="#" class="img-before"></a> </li>
                                     </ul>
                                     <ul class="nav mobile-header-items pull-right">
-                                        <li class="nav-item"><a href="index.html#" class="img-before overlay-search-switch"><i class="icon-magnifier icons"></i></a></li>
+                                        <li class="nav-item"><a href="#" class="img-before overlay-search-switch"><i class="icon-magnifier icons"></i></a></li>
                                     </ul>
                                 </div> <!-- .basic-container -->
                             </div> <!-- .sticky-head -->
@@ -297,7 +297,7 @@
                                     <div class="">
                                         <!--Overlay Menu Switch-->
                                         <ul class="nav navbar-items pull-left">
-                                            <li class="list-item"> <a href="/" class="logo-general"><img src="web/images/newbreed.png" class="img-fluid changeable-light" width="166" height="50" alt="Logo" /></a> <a href="/" class="logo-sticky"><img src="web/images/newbreed.png" class="img-fluid changeable-dark" width="166" height="100" alt="Logo" /></a> </li>
+                                            <li class="list-item"> <a href="/" class="logo-general"><img src="web/images/nbc.jpg" class="img-fluid changeable-light" width="166" height="75" alt="Logo" /></a> <a href="/" class="logo-sticky"><img src="web/images/nbc.jpg"  width="350" height="200" alt="Logo" /></a> </li>
                                         </ul> <!-- Menu -->
                                         <ul class="nav navbar-items pull-right">
                                             <!--List Item-->
@@ -388,6 +388,9 @@
                                                         <a href="/contact">Contact Us</a>
                                                     </li>
 
+                                                    <li class="">
+                                                        <a href="/member/login">Contact Us</a>
+                                                    </li>
 
                                                 </ul>
                                             </li>

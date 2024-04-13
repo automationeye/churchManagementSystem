@@ -9,7 +9,8 @@
     <style>
         /* Add custom styles if needed */
         .registration-form {
-            max-width: 500px;
+            max-width: 400px;
+            max-height: 800px;
             margin: 0 auto;
             padding: 20px;
             background-color: #dc3545;

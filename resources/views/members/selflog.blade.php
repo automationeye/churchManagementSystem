@@ -12,8 +12,8 @@
 
 
         .registration-form {
-            max-width: 400px;
-            max-height: 500px;
+            max-width: 300px;
+            max-height: 420px;
             margin: 0 auto;
             padding: 20px;
             background-color: #dc3545;

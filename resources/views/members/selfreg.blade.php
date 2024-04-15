@@ -8,15 +8,77 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* Add custom styles if needed */
+
+
         .registration-form {
-            max-width: 400px;
-            max-height: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #dc3545;
-            border-radius: 10px;
-            margin-top: 50px;
-        }
+    max-width: 80%; /* Adjusted for responsiveness */
+    margin: 150px auto 0 auto;
+    padding: 20px;
+    background-color: #dc3545; /* Semi-transparent background */
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Blur effect */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+}
+
+.registration-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.registration-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.registration-form input[type="tel"],
+.registration-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+}
+
+.registration-form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.registration-form button:hover {
+    background-color: #0056b3;
+}
+
+.registration-form .form-group {
+    margin-bottom: 20px;
+}
+
+.registration-form .form-group p {
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.registration-form .form-group a {
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.registration-form .form-group a:hover {
+    text-decoration: underline;
+}
+
+
     </style>
 </head>
 
@@ -83,7 +145,7 @@
                         <br>
 
                         <div class="form-group">
-                            <p style="color: white; font-weight: 400;"> Already Registered As A Member? <span style="font-weight: 700; cursor: pointer; color: blue;"> <a href="/member/login" style="color: blue; font-weight:800;"> Log In </a> </span> </p>
+                            <p style="color: white; font-weight: 400;"> Registered As A Member? <span style="font-weight: 700; cursor: pointer; color: blue;"> <a href="/member/login" style="color: blue; font-weight:800;"> Log In </a> </span> </p>
                         </div>
                     </form>
                 </div>

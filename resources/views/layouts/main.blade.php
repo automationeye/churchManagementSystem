@@ -31,7 +31,7 @@
         }
     </style>
 
-    <style>
+    <!-- <style>
         .overlay-container {
             position: relative;
             width: 100%;
@@ -43,7 +43,7 @@
             height: 100%;
             background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60));
         }
-    </style>
+    </style> -->
     <style>
         .rs-layer.Concept-Content a,
         .rs-layer.Concept-Content a:visited {

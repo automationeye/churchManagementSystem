@@ -9,9 +9,9 @@
     <style>
         /* Add custom styles if needed */
 
-
-        .registration-form {
-    max-width: 80%; /* Adjusted for responsiveness */
+/* General Styles */
+.registration-form {
+    max-width: 80%;
     margin: 150px auto 0 auto;
     padding: 20px;
     background-color: #dc3545; /* Semi-transparent background */
@@ -78,6 +78,22 @@
     text-decoration: underline;
 }
 
+/* Media Query for Mobile */
+@media (max-width: 576px) {
+    .registration-form {
+        max-width: 90%;
+        margin-top: 50px; /* Adjusted margin for better appearance on mobile */
+        padding: 15px; /* Adjusted padding for better appearance on mobile */
+    }
+}
+
+/* Additional Styling for Computer View */
+@media (min-width: 768px) {
+    .registration-form {
+        max-width: 400px; /* Adjusted width for better appearance on larger screens */
+        margin-top: 150px; /* Adjusted margin for better appearance on larger screens */
+    }
+}
 
     </style>
 </head>

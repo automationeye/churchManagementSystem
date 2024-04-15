@@ -389,7 +389,7 @@
                                                     </li>
 
                                                     <li class="">
-                                                        <a href="/member/login">Contact Us</a>
+                                                        <a href="/member/login">Log In</a>
                                                     </li>
 
                                                 </ul>

@@ -311,24 +311,12 @@
                                                         <a href="{{ url('contributions') }}" class="nav-link">Contributions</a>
                                                     </li>
 
-
-                                                    <li class="nav-item dropdown">
-                                                        <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Profile </a>
-                                                        <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
-                                                            <li><a href="/memberprofile" class="dropdown-item">View profile </a></li>
-                                                            <li><a href="#" class="dropdown-item">Change password</a>
-                                                            </li>
-
-                                                            <li class="dropdown-divider"></li>
-
-                                                            <!-- Level two dropdown-->
-                                                            <li class="dropdown-submenu dropdown-hover">
-                                                                <a id="dropdownSubMenu2" href="/logout" class="dropdown-item ">Logout</a>
-
-                                                            </li>
-                                                            <!-- End Level two -->
-                                                        </ul>
+                                                    <li class="nav-item">
+                                                        <a href="{{ url('/memberprofile') }}" class="nav-link">View Profile</a>
                                                     </li>
+
+
+                        
 
 
 
@@ -377,7 +365,9 @@
             </div>
             @endif
 
-            >>>>>>> origin/main
+          
+
+
             @yield('content')
         </div> <!-- .page-wrapper-inner -->
     </div>

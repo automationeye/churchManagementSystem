@@ -16,8 +16,10 @@ class AttendanceController extends Controller
      */
     public function index()
     {
-        //
-        return view('members.recordattendance');
+       // Retrieve the currently authenticated user
+       $user = Auth::user();
+          // Pass the user's data to the view
+          return view('members.member', compact('user'));
     }
 
     /**
@@ -36,16 +38,22 @@ class AttendanceController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+   
+
+     
     public function store(Request $request)
     {
-        $attendancerecord = new Attendance();
+        // Store attendance record in the database
+        Attendance::create([
+            
+            'id' => $request->user_id,
+            'latitude' => $request->latitude,
+            'longitude' => $request->longitude,
+            'checkIn' => now(), // Store the current time as check-in time
+            'checkOut' => now(), // Store the current time as check-in time
+        ]);
 
-
-        $attendancerecord->user_id = Auth::user()->id;
-        $attendancerecord->firstname = Auth::user()->firstname;
-        $attendancerecord->lastname = Auth::user()->lastname;
-
-        $attendancerecord->location = $request->location;
+        return view('members.member', compact('user'));
     }
 
     /**

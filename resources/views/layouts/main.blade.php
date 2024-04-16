@@ -303,6 +303,12 @@
                                             <!--List Item-->
                                             <li class="list-item">
                                                 <ul class="nav navbar-main menu-white">
+
+                                                    <li class="">
+                                                        <a href="/member/login">Log In</a>
+                                                    </li>
+
+
                                                     <li class=""><a href="/">Home</a>
 
                                                     </li>
@@ -388,10 +394,7 @@
                                                         <a href="/contact">Contact Us</a>
                                                     </li>
 
-                                                    <li class="">
-                                                        <a href="/member/login">Log In</a>
-                                                    </li>
-
+                                                 
                                                 </ul>
                                             </li>
                                             <!--List Item End-->

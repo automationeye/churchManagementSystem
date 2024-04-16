@@ -104,112 +104,117 @@
 
 
 
-            <div class="col-md-6 card card-primary card-outline">
-                <div class="card-header">
-                    <a href="#" id="attendanceButton" class="btn btn-default" onclick="toggleTimer()">
-                        <i class="fas fa-add"></i> <span id="buttonText">Check In</span>
-                    </a>
-                </div>
+            <d<div class="col-md-6 card card-primary card-outline">
+    <form id="attendanceForm" action="{{ route('attendance.store') }}" method="POST">
+        @csrf
+        <input type="hidden" name="latitude" id="latitudeInput">
+        <input type="hidden" name="longitude" id="longitudeInput">
+        <button type="button" class="btn btn-default" onclick="toggleTimer()">
+            <i class="fas fa-add"></i> <span id="buttonText">Check In</span>
+        </button>
+    </form>
 
-                <script>
-                    var startTime;
-                    var endTime;
-                    var timerInterval;
-                    var timerRunning = false;
-                    var elapsedTime = {
-                        hours: 0,
-                        minutes: 0,
-                        seconds: 0
-                    };
-
-                    function toggleTimer() {
-                        if (!timerRunning) {
-                            getLocation();
-                        } else {
-                            stopTimer();
-                        }
-                    }
-
-                    function getLocation() {
-                        if (navigator.geolocation) {
-                            navigator.geolocation.getCurrentPosition(startTimer, handleLocationError);
-                        } else {
-                            console.log("Geolocation is not supported by this browser.");
-                        }
-                    }
-
-                    function startTimer(position) {
-                        timerRunning = true;
-                        startTime = new Date();
-                        document.getElementById("buttonText").innerText = "Check Out";
-                        displayLocation(position);
-                        timerInterval = setInterval(updateTimer, 1000);
-                        console.log("Latitude:", position.coords.latitude);
-                        console.log("Longitude:", position.coords.longitude);
-                        // You can send this location data to your backend for recording
-                    }
-
-                    function stopTimer() {
-                        clearInterval(timerInterval);
-                        timerRunning = false;
-                        endTime = new Date();
-                        calculateTimeDifference();
-                        document.getElementById("buttonText").innerText = "Check In";
-                    }
-
-                    function updateTimer() {
-                        elapsedTime.seconds++;
-                        if (elapsedTime.seconds >= 60) {
-                            elapsedTime.seconds = 0;
-                            elapsedTime.minutes++;
-                            if (elapsedTime.minutes >= 60) {
-                                elapsedTime.minutes = 0;
-                                elapsedTime.hours++;
-                            }
-                        }
-                        document.getElementById("timeInfo").innerText = "Total Time: " + formatTime(elapsedTime.hours) + ":" + formatTime(elapsedTime.minutes) + ":" + formatTime(elapsedTime.seconds);
-                    }
-
-                    function formatTime(time) {
-                        return time < 10 ? "0" + time : time;
-                    }
-
-                    function calculateTimeDifference() {
-                        var timeDifferenceInSeconds = Math.floor((endTime - startTime) / 1000);
-                        elapsedTime.hours = Math.floor(timeDifferenceInSeconds / 3600);
-                        elapsedTime.minutes = Math.floor((timeDifferenceInSeconds % 3600) / 60);
-                        elapsedTime.seconds = timeDifferenceInSeconds % 60;
-                        console.log("Time Difference (hours:minutes:seconds):", elapsedTime.hours + ":" + elapsedTime.minutes + ":" + elapsedTime.seconds);
-                        // You can send this time difference to your backend for recording or display it on the frontend as needed
-                    }
-
-                    function displayLocation(position) {
-                        var locationInfo = "Latitude: " + position.coords.latitude + ", Longitude: " + position.coords.longitude;
-                        document.getElementById("locationInfo").innerText = "Location: " + locationInfo;
-                    }
-
-                    function handleLocationError(error) {
-                        console.log("Error getting location:", error.message);
-                        // You can handle the error here, e.g., display a message to the user
-                    }
-                </script>
-
-
-                <div class="card-body">
-                    <div class="inner">
-
-                        <h9 id="locationInfo" class="card-title m-0"></h9>
-                        <h5 id="timeInfo" class="card-title m-0"></h5>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-
+    <div class="card-body">
+        <div class="inner">
+            <h9> {{ $user->id }}</h9>
+            <h9 id="locationInfo" class="card-title m-0"></h9>
+            <h5 id="timeInfo" class="card-title m-0"></h5>
         </div>
+    </div>
+
+    <script>
+        var startTime;
+        var endTime;
+        var timerInterval;
+        var timerRunning = false;
+        var elapsedTime = {
+            hours: 0,
+            minutes: 0,
+            seconds: 0
+        };
+
+        function toggleTimer() {
+            if (!timerRunning) {
+                getLocation();
+            } else {
+                stopTimer();
+            }
+        }
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(startTimer, handleLocationError);
+            } else {
+                console.log("Geolocation is not supported by this browser.");
+            }
+        }
+
+        function startTimer(position) {
+            timerRunning = true;
+            startTime = new Date();
+            document.getElementById("buttonText").innerText = "Check Out";
+            displayLocation(position);
+            timerInterval = setInterval(updateTimer, 1000);
+
+            // Populate form inputs with latitude and longitude
+            document.getElementById("latitudeInput").value = position.coords.latitude;
+            document.getElementById("longitudeInput").value = position.coords.longitude;
+
+            // Submit the form
+            document.getElementById("attendanceForm").submit();
+        }
+
+        function stopTimer() {
+            clearInterval(timerInterval);
+            timerRunning = false;
+            endTime = new Date();
+            calculateTimeDifference();
+            document.getElementById("buttonText").innerText = "Check In";
+        }
+
+        function updateTimer() {
+            elapsedTime.seconds++;
+            if (elapsedTime.seconds >= 60) {
+                elapsedTime.seconds = 0;
+                elapsedTime.minutes++;
+                if (elapsedTime.minutes >= 60) {
+                    elapsedTime.minutes = 0;
+                    elapsedTime.hours++;
+                }
+            }
+            document.getElementById("timeInfo").innerText = "Total Time: " + formatTime(elapsedTime.hours) + ":" + formatTime(elapsedTime.minutes) + ":" + formatTime(elapsedTime.seconds);
+        }
+
+        function formatTime(time) {
+            return time < 10 ? "0" + time : time;
+        }
+
+        function calculateTimeDifference() {
+            var timeDifferenceInSeconds = Math.floor((endTime - startTime) / 1000);
+            elapsedTime.hours = Math.floor(timeDifferenceInSeconds / 3600);
+            elapsedTime.minutes = Math.floor((timeDifferenceInSeconds % 3600) / 60);
+            elapsedTime.seconds = timeDifferenceInSeconds % 60;
+            console.log("Time Difference (hours:minutes:seconds):", elapsedTime.hours + ":" + elapsedTime.minutes + ":" + elapsedTime.seconds);
+        }
+
+        function displayLocation(position) {
+            var locationInfo = "Latitude: " + position.coords.latitude + ", Longitude: " + position.coords.longitude;
+            document.getElementById("locationInfo").innerText = "Location: " + locationInfo;
+        }
+
+        function handleLocationError(error) {
+            console.log("Error getting location:", error.message);
+        }
+    </script>
+</div>
+
+
+
+
+            
+        </div>
+
+        
 
         <div class="row">
             <div class="col-md-6 card card-primary card-outline">

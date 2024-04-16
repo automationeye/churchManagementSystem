@@ -49,6 +49,9 @@ Route::middleware('auth.member')->group(function () {
     Route::get('/team', 'MemberController@team')->name('team');
     Route::get('/contact-support', 'VisitorController@contact-support')->name('contact-support');
     Route::get('/memberprofile', 'MemberController@read')->name('profile');
+    Route::post('/attendance/store', 'AttendanceController@store')->name('attendance.store');
+    Route::get('/attendance/index', 'AttendanceController@index')->name('attendance.index');
+
 });
 
 

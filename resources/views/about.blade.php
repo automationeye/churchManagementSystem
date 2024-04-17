@@ -62,9 +62,9 @@
 
 										<div class="feature-content">
 											<div class="feature-title relative margin-bottom-15">
-												<h4>Mission</h4>
+												<h4>Vision</h4>
 											</div>
-											<p class="mb-0">In New Breed City Chapel you will feel divinity, piety, goodness, faith or right beliefs.</p>
+											<p class="mb-0">To Build Kingdom Cities... Hebrews 11:9.   Being in Church is not the end game. The whole essence of Christian Faith is Seeking a city, a civilizationthat God has built.</p>
 										</div>
 									</div>
 								</div>
@@ -78,9 +78,9 @@
 
 										<div class="feature-content">
 											<div class="feature-title relative margin-bottom-15">
-												<h4>Vision</h4>
+												<h4>Mission</h4>
 											</div>
-											<p class="mb-0">Learn the Bible enhance your wisdom, give you boldness about your faith.</p>
+											<p class="mb-0">We are called to build Kingdom cities by Revelation, Manifestation, Demonstration & Elevation.</p>
 										</div>
 									</div>
 								</div>
@@ -178,7 +178,7 @@
 												<h3 class="mb-0"><a href="" class="client-name typo-white">Bishop Erick Mwangi</a></h3>
 											</div>
 											<div class="team-designation">
-												<p class="mb-0">Church Bishop</p>
+												<p class="mb-0">THE EXECUTIVE</p>
 											</div>
 										</div>
 									</div>
@@ -371,7 +371,7 @@
 							<div class="title-wrap text-center">
 								<div class="section-title">
 									<span class="sub-title theme-color text-uppercase">Apostolic Counsel</span>
-									<h2 class="section-title margin-top-5">Apostles</h2>
+									<h2 class="section-title margin-top-5">JESUS IS THE APOSTLE OF OUR FAITH</h2>
 									<span class="border-bottom center"></span>
 								</div>
 							</div>
@@ -399,7 +399,7 @@
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="" class="client-name typo-white">Names</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">Apostle Kyalo</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Apostle</p>
@@ -430,7 +430,7 @@
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="" class="client-name typo-white">Names</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">Apostle Dennis Ndirangu</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Apostle</p>
@@ -461,7 +461,7 @@
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="" class="client-name typo-white">Names</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">Apostle D'</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Apostle</p>
@@ -492,7 +492,7 @@
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="" class="client-name typo-white">Names</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">Apostle Hiram</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Apostle</p>
@@ -523,7 +523,7 @@
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="" class="client-name typo-white">Names</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">Apostle E</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Apostle</p>
@@ -554,7 +554,7 @@
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="" class="client-name typo-white">Full Names</a></h3>
+												<h3 class="mb-0"><a href="" class="client-name typo-white">Apostle Dice</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Apostle</p>
@@ -574,6 +574,7 @@
 			</section>
 		</div>
 
+{{-- 		
 		<div id=dreamteam>
 			<section id="team-section" class="team-section pad-top-95 pad-bottom-90">
 				<div class="container">
@@ -784,9 +785,9 @@
 				</div>
 				<!-- Container -->
 			</section>
-		</div>
+		</div> --}}
 
-
+	
 		<div id="branches">
 
 			<section id="team-section" class="team-section pad-top-95 pad-bottom-90">
@@ -815,18 +816,15 @@
 											<img src="web/rs-plugin/assets/nbc.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													<a href="https://www.facebook.com/NewBreedCityChapel "><span class="ti-facebook"></span></a>
-													<a href="https://www.youtube.com/channel/UCKCKWbNti31vgVbl0-LbvJw "><span class="ti-youtube"></span></a>
-													
+													<a href=" https://www.facebook.com/NewBreedCityChapel "><span class="ti-facebook"></span></a>
+													<a href=" https://www.youtube.com/channel/UCKCKWbNti31vgVbl0-LbvJw "><span class="ti-youtube"></span></a>
 													<a href="https://www.instagram.com/newbreedcity_chapel/"><span class="ti-instagram"></span></a>
-													
-													
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="" class="client-name typo-white">New Breed City</a></h3>
+												<h3 class="mb-0"><a href="/about" class="client-name typo-white">New Breed City</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">HQ</p>
@@ -849,15 +847,13 @@
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
 													<a href="https://www.facebook.com/profile.php?id=100089752944306"><span class="ti-facebook"></span></a>
-													
 													<a href="https://www.instagram.com/newbreedcitychapel_thome/"><span class="ti-instagram"></span></a>
-												
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="" class="client-name typo-white">New Breed City</a></h3>
+												<h3 class="mb-0"><a href="/about" class="client-name typo-white">New Breed City</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Thome</p>
@@ -868,6 +864,68 @@
 								</div>
 							</div>
 							<!--Item Ends-->
+	
+							  <!--Item-->
+							  <div id="thome" class="item">
+								<div class="team-style-1">
+									<!--Team Inner-->
+									<div class="team-inner margin-bottom-20">
+										<div class="team-thumb mb-0 relative">
+											<!--Team Overlay-->
+											<div class="team-overlay"></div>
+											<img src="web/rs-plugin/assets/nbc.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
+											<div class="team-overlay-details top-left-overlay typo-white text-center">
+												<div class="social-icons">
+													{{-- <a href="https://www.facebook.com/profile.php?id=100089752944306"><span class="ti-facebook"></span></a>
+													<a href="https://www.instagram.com/newbreedcitychapel_thome/"><span class="ti-instagram"></span></a> --}}
+												</div>
+											</div>
+										</div>
+										<div class="team-details text-center pad-20">
+											<div class="team-name">
+												<h3 class="mb-0"><a href="/about" class="client-name typo-white">New Breed City</a></h3>
+											</div>
+											<div class="team-designation">
+												<p class="mb-0">Ngong</p>
+											</div>
+										</div>
+									</div>
+									<!--Team Inner Ends-->
+								</div>
+							</div>
+							<!--Item Ends-->
+	
+							  <!--Item-->
+							  <div id="thome" class="item">
+								<div class="team-style-1">
+									<!--Team Inner-->
+									<div class="team-inner margin-bottom-20">
+										<div class="team-thumb mb-0 relative">
+											<!--Team Overlay-->
+											<div class="team-overlay"></div>
+											<img src="web/rs-plugin/assets/nbc.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
+											<div class="team-overlay-details top-left-overlay typo-white text-center">
+												<div class="social-icons">
+													<a href="https://www.facebook.com/newbreedthika"><span class="ti-facebook"></span></a>
+													<a href="https://www.instagram.com/newbreedcitychapel_thika/"><span class="ti-instagram"></span></a>
+												</div>
+											</div>
+										</div>
+										<div class="team-details text-center pad-20">
+											<div class="team-name">
+												<h3 class="mb-0"><a href="/about" class="client-name typo-white">New Breed City</a></h3>
+											</div>
+											<div class="team-designation">
+												<p class="mb-0">Thika</p>
+											</div>
+										</div>
+									</div>
+									<!--Team Inner Ends-->
+								</div>
+							</div>
+							<!--Item Ends-->
+	
+	
 							<!--Item-->
 							<div id="kasarani" class="item">
 								<div class="team-style-1">
@@ -880,14 +938,13 @@
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
 													<a href="https://www.facebook.com/NewBreedCityKasarani"><span class="ti-facebook"></span></a>
-													
 													<a href="https://www.instagram.com/new.breedcitychapel_kasarani/"><span class="ti-instagram"></span></a>
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="" class="client-name typo-white">New Breed City</a></h3>
+												<h3 class="mb-0"><a href="/about" class="client-name typo-white">New Breed City</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Kasarani</p>
@@ -910,15 +967,13 @@
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
 													<a href="https://www.facebook.com/NewBreedKitengela"><span class="ti-facebook"></span></a>
-													
 													<a href="https://www.instagram.com/newbreedcitychapelkitengela/"><span class="ti-instagram"></span></a>
-													
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="" class="client-name typo-white">New Breed City</a></h3>
+												<h3 class="mb-0"><a href="/about" class="client-name typo-white">New Breed City</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Kitengela</p>
@@ -930,6 +985,8 @@
 							</div>
 							<!--Item Ends-->
 							<!--Item-->
+	
+	{{-- 
 							<div id="rongai" class="item">
 								<div class="team-style-1">
 									<!--Team Inner-->
@@ -945,7 +1002,7 @@
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="" class="client-name typo-white">New Breed City</a></h3>
+												<h3 class="mb-0"><a href="/about" class="client-name typo-white">New Breed City</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Rongai</p>
@@ -954,7 +1011,9 @@
 									</div>
 									<!--Team Inner Ends-->
 								</div>
-							</div>
+							</div> --}}
+	
+	
 							<!--Item Ends-->
 							<!--Item-->
 							<div id="nakuru" class="item">
@@ -968,15 +1027,13 @@
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
 													<a href="https://www.facebook.com/NEWBREEDCITYCHAPELNAKURU"><span class="ti-facebook"></span></a>
-													
 													<a href="https://www.instagram.com/explore/tags/newbreedcitychapelnakuru/"><span class="ti-instagram"></span></a>
-													
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="" class="client-name typo-white">New Breed City</a></h3>
+												<h3 class="mb-0"><a href="/about" class="client-name typo-white">New Breed City</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Nakuru</p>
@@ -987,10 +1044,12 @@
 								</div>
 							</div>
 							<!--Item Ends-->
-
-
+	
+	
 							<!--Item-->
-							<div id="kisumu" class="item">
+	
+	
+							{{-- <div id="kisumu" class="item">
 								<div class="team-style-1">
 									<!--Team Inner-->
 									<div class="team-inner margin-bottom-20">
@@ -1001,13 +1060,13 @@
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
 													<a href="https://www.facebook.com/groups/284186476588191"><span class="ti-facebook"></span></a>
-													
+	
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="" class="client-name typo-white">New Breed City</a></h3>
+												<h3 class="mb-0"><a href="/about" class="client-name typo-white">New Breed City</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Kisumu</p>
@@ -1016,10 +1075,10 @@
 									</div>
 									<!--Team Inner Ends-->
 								</div>
-							</div>
+							</div> --}}
 							<!--Item Ends-->
-
-
+	
+	
 							<!--Item-->
 							<div id="kakamega" class="item">
 								<div class="team-style-1">
@@ -1032,13 +1091,14 @@
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
 													<a href="https://www.facebook.com/groups/284186476588191"><span class="ti-facebook"></span></a>
-													
+	
+	
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="" class="client-name typo-white">New Breed City</a></h3>
+												<h3 class="mb-0"><a href="/about" class="client-name typo-white">New Breed City</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Kakamega</p>
@@ -1049,6 +1109,7 @@
 								</div>
 							</div>
 							<!--Item Ends--><!--Item-->
+	{{-- 
 							<div id="abuja" class="item">
 								<div class="team-style-1">
 									<!--Team Inner-->
@@ -1060,15 +1121,14 @@
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
 													<a href="https://www.facebook.com/profile.php?id=100090149830345"><span class="ti-facebook"></span></a>
-													
 													<a href="https://www.instagram.com/nbcabuja/"><span class="ti-instagram"></span></a>
-												
+	
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="" class="client-name typo-white">New Breed City</a></h3>
+												<h3 class="mb-0"><a href="/about" class="client-name typo-white">New Breed City</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Abuja</p>
@@ -1078,11 +1138,12 @@
 									<!--Team Inner Ends-->
 								</div>
 							</div>
+							 --}}
 							<!--Item Ends-->
-
-
+	
+	
 							<!--Item-->
-							<div id="dallas" class="item">
+							{{-- <div id="dallas" class="item">
 								<div class="team-style-1">
 									<!--Team Inner-->
 									<div class="team-inner margin-bottom-20">
@@ -1092,12 +1153,13 @@
 											<img src="web/rs-plugin/assets/nbc.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
+	
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="" class="client-name typo-white">New Breed City</a></h3>
+												<h3 class="mb-0"><a href="/about" class="client-name typo-white">New Breed City</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Dallas</p>
@@ -1106,11 +1168,11 @@
 									</div>
 									<!--Team Inner Ends-->
 								</div>
-							</div>
+							</div> --}}
 							<!--Item Ends-->
-
+	
 							<!--Item-->
-							<div id="diaspora" class="item">
+							{{-- <div id="diaspora" class="item">
 								<div class="team-style-1">
 									<!--Team Inner-->
 									<div class="team-inner margin-bottom-20">
@@ -1120,13 +1182,13 @@
 											<img src="web/rs-plugin/assets/nbc.jpg" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
 											<div class="team-overlay-details top-left-overlay typo-white text-center">
 												<div class="social-icons">
-													
+	
 												</div>
 											</div>
 										</div>
 										<div class="team-details text-center pad-20">
 											<div class="team-name">
-												<h3 class="mb-0"><a href="" class="client-name typo-white">New Breed City</a></h3>
+												<h3 class="mb-0"><a href="/about" class="client-name typo-white">New Breed City</a></h3>
 											</div>
 											<div class="team-designation">
 												<p class="mb-0">Diaspora</p>
@@ -1135,13 +1197,13 @@
 									</div>
 									<!--Team Inner Ends-->
 								</div>
-							</div>
+							</div> --}}
 							<!--Item Ends-->
-
-
-
-
-
+	
+	
+	
+	
+	
 						</div>
 						<!--Team Owl Slider-->
 					</div>

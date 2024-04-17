@@ -31,21 +31,23 @@
                             <div class="row">
 
                                 <!-- Col-md -->
-                                <div id="protocol" class="col-lg-4 col-md-6">
+                                <div id="ushering" class="col-lg-4 col-md-6">
                                     <!--events Inner-->
                                     <div class="events-inner margin-bottom-35">
                                         <!--events Thumb-->
                                         <div class="events-thumb margin-bottom-30 relative">
-                                            <img src="web/rs-plugin/assets/p.jpg" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
+                                            <img src="web/rs-plugin/assets/" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
                                         </div>
                                         <!--events details-->
                                         <div class="events-details pad-none">
-                                            <div class="event-date mb-2">Protocol<span class="event-time">Department</span>
+                                            <div class="event-date mb-2">Ushering<span class="event-time">Department</span>
                                             </div>
                                             <div class="event-title pt-1 mb-3">
-                                                <h5><a href="event-details.html"> Our Protocol Department</a></h5>
+                                                <h5><a href="/departments#ushering">  Ushering Department</a></h5>
                                             </div>
-
+                                            <div class="read-more">
+                                                <a href="/departments#ushering">Learn More</a>
+                                            </div>
                                         </div>
                                         <!--events details-->
                                     </div>
@@ -63,12 +65,14 @@
                                         </div>
                                         <!--events details-->
                                         <div class="events-details pad-none">
-                                            <div class="event-date mb-2">Praise<span class="event-time">& Worship</span>
+                                            <div class="event-date mb-2">Worship<span class="event-time"> Team</span>
                                             </div>
                                             <div class="event-title pt-1 mb-3">
-                                                <h5><a href="event-details.html">Our Praise and Worship Department</a></h5>
+                                                <h5><a href="/departments#praise"> Worship Team Department</a></h5>
                                             </div>
-
+                                            <div class="read-more">
+                                                <a href="/departments#praise">Learn More</a>
+                                            </div>
                                         </div>
                                         <!--events details-->
                                     </div>
@@ -86,12 +90,14 @@
                                         </div>
                                         <!--events details-->
                                         <div class="events-details pad-none">
-                                            <div class="event-date mb-2">Sound<span class="event-time">Department</span>
+                                            <div class="event-date mb-2">Media & Sound<span class="event-time">Department</span>
                                             </div>
                                             <div class="event-title pt-1 mb-3">
-                                                <h5><a href="event-details.html">Our Sound Department</a></h5>
+                                                <h5><a href="/departments#sound"> Media & Sound Department</a></h5>
                                             </div>
-
+                                            <div class="read-more">
+                                                <a href="/departments#sound">Learn More</a>
+                                            </div>
                                         </div>
                                         <!--events details-->
                                     </div>
@@ -100,7 +106,7 @@
                                 <!--Col-md Ends-->
 
                                 <!-- Col-md -->
-                                <div id="media" class="col-lg-4 col-md-6">
+                                <div id="film" class="col-lg-4 col-md-6">
                                     <!--events Inner-->
                                     <div class="events-inner margin-bottom-35">
                                         <!--events Thumb-->
@@ -109,12 +115,14 @@
                                         </div>
                                         <!--events details-->
                                         <div class="events-details pad-none">
-                                            <div class="event-date mb-2">Media<span class="event-time">Department</span>
+                                            <div class="event-date mb-2">Film<span class="event-time">Department</span>
                                             </div>
                                             <div class="event-title pt-1 mb-3">
-                                                <h5><a href="event-details.html">Our Media Team </a></h5>
+                                                <h5><a href="/departments#film"> Film Department </a></h5>
                                             </div>
-
+                                            <div class="read-more">
+                                                <a href="/departments#film">Learn More</a>
+                                            </div>
                                         </div>
                                         <!--events details-->
                                     </div>
@@ -122,22 +130,182 @@
                                 </div>
                                 <!--Col-md Ends-->
 
-                                <!-- Col-md -->
-                                <div id="visitors" class="col-lg-4 col-md-6">
+                                 <!-- Col-md -->
+                                 <div id="hospitality" class="col-lg-4 col-md-6">
                                     <!--events Inner-->
                                     <div class="events-inner margin-bottom-35">
                                         <!--events Thumb-->
                                         <div class="events-thumb margin-bottom-30 relative">
-                                            <img src="web/rs-plugin/assets/v.jpg" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
+                                            <img src="web/rs-plugin/assets/" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
                                         </div>
                                         <!--events details-->
                                         <div class="events-details pad-none">
-                                            <div class="event-date mb-2">First Time<span class="event-time">Visitors Department</span>
+                                            <div class="event-date mb-2">Hospitality<span class="event-time">Department</span>
                                             </div>
                                             <div class="event-title pt-1 mb-3">
-                                                <h5><a href="event-details.html">Welcome to our Visitors Department.</a></h5>
+                                                <h5><a href="/departments#hospitality"> Hospitality Department </a></h5>
                                             </div>
+                                            <div class="read-more">
+                                                <a href="/departments#hospitality">Learn More</a>
+                                            </div>
+                                        </div>
+                                        <!--events details-->
+                                    </div>
+                                    <!--events Inner Ends-->
+                                </div>
+                                <!--Col-md Ends-->
 
+
+                                 <!-- Col-md -->
+                                 <div id="security" class="col-lg-4 col-md-6">
+                                    <!--events Inner-->
+                                    <div class="events-inner margin-bottom-35">
+                                        <!--events Thumb-->
+                                        <div class="events-thumb margin-bottom-30 relative">
+                                            <img src="web/rs-plugin/assets/" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
+                                        </div>
+                                        <!--events details-->
+                                        <div class="events-details pad-none">
+                                            <div class="event-date mb-2">Security<span class="event-time">Department</span>
+                                            </div>
+                                            <div class="event-title pt-1 mb-3">
+                                                <h5><a href="/departments#security"> Security Department </a></h5>
+                                            </div>
+                                            <div class="read-more">
+                                                <a href="/departments#security">Learn More</a>
+                                            </div>
+                                        </div>
+                                        <!--events details-->
+                                    </div>
+                                    <!--events Inner Ends-->
+                                </div>
+                                <!--Col-md Ends-->
+
+
+                                 <!-- Col-md -->
+                                 <div id="dance" class="col-lg-4 col-md-6">
+                                    <!--events Inner-->
+                                    <div class="events-inner margin-bottom-35">
+                                        <!--events Thumb-->
+                                        <div class="events-thumb margin-bottom-30 relative">
+                                            <img src="web/rs-plugin/assets/" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
+                                        </div>
+                                        <!--events details-->
+                                        <div class="events-details pad-none">
+                                            <div class="event-date mb-2">Dance<span class="event-time">Department</span>
+                                            </div>
+                                            <div class="event-title pt-1 mb-3">
+                                                <h5><a href="/departments#dance"> Dance Department </a></h5>
+                                            </div>
+                                            <div class="read-more">
+                                                <a href="/departments#dance">Learn More</a>
+                                            </div>
+                                        </div>
+                                        <!--events details-->
+                                    </div>
+                                    <!--events Inner Ends-->
+                                </div>
+                                <!--Col-md Ends-->
+
+
+                                 <!-- Col-md -->
+                                 <div id="love" class="col-lg-4 col-md-6">
+                                    <!--events Inner-->
+                                    <div class="events-inner margin-bottom-35">
+                                        <!--events Thumb-->
+                                        <div class="events-thumb margin-bottom-30 relative">
+                                            <img src="web/rs-plugin/assets/" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
+                                        </div>
+                                        <!--events details-->
+                                        <div class="events-details pad-none">
+                                            <div class="event-date mb-2">Love Bank<span class="event-time">Department</span>
+                                            </div>
+                                            <div class="event-title pt-1 mb-3">
+                                                <h5><a href="/departments#love"> Love Bank Department </a></h5>
+                                            </div>
+                                            <div class="read-more">
+                                                <a href="/departments#love">Learn More</a>
+                                            </div>
+                                        </div>
+                                        <!--events details-->
+                                    </div>
+                                    <!--events Inner Ends-->
+                                </div>
+                                <!--Col-md Ends-->
+
+
+                      
+                    
+                    
+                     <!-- Col-md -->
+                     <div id="children" class="col-lg-4 col-md-6">
+                        <!--events Inner-->
+                        <div class="events-inner margin-bottom-35">
+                            <!--events Thumb-->
+                            <div class="events-thumb margin-bottom-30 relative">
+                                <img src="web/rs-plugin/assets/children.jpg" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
+                            </div>
+                            <!--events details-->
+                            <div class="events-details pad-none">
+                                <div class="event-date mb-2">Children's Church<span class="event-time">Department</span>
+                                </div>
+                                <div class="event-title pt-1 mb-3">
+                                    <h5><a href="/departments#children">Children's Church Department </a></h5>
+                                </div>
+                                <div class="read-more">
+                                    <a href="/departments#children">Learn More</a>
+                                </div>
+                            </div>
+                            <!--events details-->
+                        </div>
+                        <!--events Inner Ends-->
+                    </div>
+                    <!--Col-md Ends-->
+
+                     <!-- Col-md -->
+                     <div id="protocol" class="col-lg-4 col-md-6">
+                        <!--events Inner-->
+                        <div class="events-inner margin-bottom-35">
+                            <!--events Thumb-->
+                            <div class="events-thumb margin-bottom-30 relative">
+                                <img src="web/rs-plugin/assets/p.jpg" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
+                            </div>
+                            <!--events details-->
+                            <div class="events-details pad-none">
+                                <div class="event-date mb-2">Protocol<span class="event-time">Department</span>
+                                </div>
+                                <div class="event-title pt-1 mb-3">
+                                    <h5><a href="/departments#protocol"> Protocol Department </a></h5>
+                                </div>
+                                <div class="read-more">
+                                    <a href="/departments#protocol">Learn More</a>
+                                </div>
+                            </div>
+                            <!--events details-->
+                        </div>
+                        <!--events Inner Ends-->
+                    </div>
+                    <!--Col-md Ends-->
+
+
+                                <!-- Col-md -->
+                                <div id="catering" class="col-lg-4 col-md-6">
+                                    <!--events Inner-->
+                                    <div class="events-inner margin-bottom-35">
+                                        <!--events Thumb-->
+                                        <div class="events-thumb margin-bottom-30 relative">
+                                            <img src="web/rs-plugin/assets/" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
+                                        </div>
+                                        <!--events details-->
+                                        <div class="events-details pad-none">
+                                            <div class="event-date mb-2">Catering<span class="event-time"> Department</span>
+                                            </div>
+                                            <div class="event-title pt-1 mb-3">
+                                                <h5><a href="/departments#catering"> Catering Department.</a></h5>
+                                            </div>
+                                            <div class="read-more">
+                                                <a href="/departments#catering">Learn More</a>
+                                            </div>
                                         </div>
                                         <!--events details-->
                                     </div>
@@ -158,9 +326,11 @@
                                             <div class="event-date mb-2">Discipleship<span class="event-time">Department</span>
                                             </div>
                                             <div class="event-title pt-1 mb-3">
-                                                <h5><a href="event-details.html">Welcome to our Discipleship Department.</a></h5>
+                                                <h5><a href="/departments#discipleship">  Discipleship Department.</a></h5>
                                             </div>
-
+                                            <div class="read-more">
+                                                <a href="/departments#discipleship">Learn More</a>
+                                            </div>
                                         </div>
                                         <!--events details-->
                                     </div>
@@ -184,9 +354,11 @@
                                             <div class="event-date mb-2">Grounds<span class="event-time">Department</span>
                                             </div>
                                             <div class="event-title pt-1 mb-3">
-                                                <h5><a href="event-details.html">Our Grounds Department </a></h5>
+                                                <h5><a href="/departments#grounds"> Grounds Department </a></h5>
                                             </div>
-
+                                            <div class="read-more">
+                                                <a href="/departments#grounds">Learn More</a>
+                                            </div>
                                         </div>
                                         <!--events details-->
                                     </div>
@@ -207,9 +379,11 @@
                                             <div class="event-date mb-2">Finance<span class="event-time">Department</span>
                                             </div>
                                             <div class="event-title pt-1 mb-3">
-                                                <h5><a href="event-details.html">Welcome to our Finance Department.</a></h5>
+                                                <h5><a href="/departments#finance">  Finance Department.</a></h5>
                                             </div>
-
+                                            <div class="read-more">
+                                                <a href="/departments#finance">Learn More</a>
+                                            </div>
                                         </div>
                                         <!--events details-->
                                     </div>
@@ -230,9 +404,11 @@
                                             <div class="event-date mb-2">Bishops<span class="event-time">Department</span>
                                             </div>
                                             <div class="event-title pt-1 mb-3">
-                                                <h5><a href="event-details.html">Welcome to our Bishops Department.</a></h5>
+                                                <h5><a href="/departments#bishop">  Bishops Department.</a></h5>
                                             </div>
-
+                                            <div class="read-more">
+                                                <a href="/departments#bishop">Learn More</a>
+                                            </div>
                                         </div>
                                         <!--events details-->
                                     </div>

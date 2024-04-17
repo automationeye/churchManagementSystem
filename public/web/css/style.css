@@ -6232,17 +6232,10 @@ span.form-bg {
     border: unset;
 	margin-bottom: 20px;
 }
-.events-style-1 .events-inner::before {
-    content: "\e6b6";
-    position: absolute;
-    font-family: "themify";
-    bottom: 30%;
-    right: -30px;
-    font-size: 85px;
-    color: #f1f1f1;
-    z-index: 0;
-    transform: rotate(-49deg);
-}
+
+
+
+
 .events-style-1 .events-item .event-date,
 .events-style-2 .events-details .event-date {
     padding: 25px 15px 3px 15px;

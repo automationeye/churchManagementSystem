@@ -320,9 +320,21 @@
                                                         <ul class="dropdown-menu">
                                                             <li><a>Mission</a></li>
                                                             <li><a href="/about#vision">Vision</a></li>
-                                                            <li><a href="/about#leaders">Leadership Structure</a></li>
-                                                            <li><a href="/about#apostles">Apostolic Counsel</a></li>
-                                                            <li><a href="/about#dreamteam">Dream Team</a></li>
+                                                            <li class="dropdown">
+                                                                <a href="/about#leaders">Leadership Structure</a>
+
+                                                                <ul class="dropdown-menu child-dropdown-menu">
+                                                                    <li><a href="#">The Executive </a></li>
+                                                                    <li><a href="#">The Apostolic Council</a></li>
+                                                                    <li><a href="#">the Strategic Committee</a></li>
+                                                                    <li><a href="#">The Resident Pastorate (HQ & Branches)</a></li>
+                                                                     <li><a href="#">The Dream Team</a> </li>
+                                                                     <li><a href="#">The Task Force</a>   </li>
+                                                                    <li><a href="#">The Congregation</a></li>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                           
 
                                                         </ul>
 

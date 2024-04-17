@@ -37,11 +37,11 @@ Route::middleware('auth.member')->group(function () {
     Route::get('/memberleaverequest', 'LeaveController@index')->name('leaverequest');
     Route::post('/memberleaverequest', 'LeaveController@store')->name('leaverequest');
 
-    Route::get('/recordattendance', 'AttendanceController@index')->name('attendancerecord');
-    Route::post('/recordattendance', 'AttendanceController@store')->name('attendancerecord');
+     Route::get('/recordattendance', 'AttendanceController@index')->name('attendancerecord');
+     Route::post('/recordattendance', 'AttendanceController@store')->name('attendancerecord');
 
     Route::get('/memberdash', 'VisitorController@member')->name('memberdash');
-    // Route::get('/memberdash', 'AnnouncementController@displayAnnouncements')->name('display.announcements');
+     Route::get('/announce', 'AnnouncementController@displayAnnouncements')->name('display.announcements');
 
     Route::get('/channels', 'VisitorController@channels')->name('channels');
     Route::get('/contributions', 'VisitorController@contributions')->name('contributions');
@@ -53,8 +53,6 @@ Route::middleware('auth.member')->group(function () {
     Route::get('/attendance/index', 'AttendanceController@index')->name('attendance.index');
 
 });
-
-
 
 
 // leader section

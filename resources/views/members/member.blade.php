@@ -104,7 +104,7 @@
 
 
 
-            <d<div class="col-md-6 card card-primary card-outline">
+            <div class="col-md-6 card card-primary card-outline" style="width: 420px">
     <form id="attendanceForm" action="{{ route('attendance.store') }}" method="POST">
         @csrf
         <input type="hidden" name="latitude" id="latitudeInput">
@@ -114,9 +114,9 @@
         </button>
     </form>
 
-    <div class="card-body">
+    <div class="card-body" >
         <div class="inner">
-            <h9> {{ $user->id }}</h9>
+           
             <h9 id="locationInfo" class="card-title m-0"></h9>
             <h5 id="timeInfo" class="card-title m-0"></h5>
         </div>
@@ -436,86 +436,7 @@
 
         <br><br>
 
-        <div class="row">
-            <div class="col-md-6 card card-primary card-outline">
-                <div class="card-header">
-                    <button type="submit" class="btn btn-default">
-                        <i class="fas fa-add"></i> Upcoming events
-                    </button>
-                </div>
-
-                <div class="card-body">
-                    <div class="table-responsive">
-                        <h5 class="card-title m-0">Upcoming events</h5>
-                        <table class="table table-bordered table-striped table-sm">
-                            <thead>
-                                <tr>
-
-                                    <th>Event description</th>
-                                    <th>From</th>
-                                    <th>To</th>
-                                    <th>Status</th>
-
-                                </tr>
-                            </thead>
-                            <tbody>
-
-                                <tr>
-                                    <td colspan="8">No upcoming event found found</td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div class="col-md-6">
-
-
-                <div class="card card-primary card-outline">
-                    <div class="card-header">
-
-
-                        <button type="submit" class="btn btn-default">
-                            <i class="fas fa-add"></i> Upcoming birthdays
-                        </button>
-
-
-
-                    </div>
-
-                    <div class="card-body">
-                        <div class="table-responsive">
-
-                            <table class="table table-bordered table-striped table-sm">
-                                <thead>
-                                    <tr>
-
-                                        <th>Member</th>
-                                        <th>Date of Celebration</th>
-
-
-                                    </tr>
-                                </thead>
-                                <tbody>
-
-                                    <tr>
-                                        <td colspan="8">No Upcoming birthday</td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-center">
-
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <br><br>
 
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

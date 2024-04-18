@@ -8,7 +8,7 @@
                 <div class="overlay-container">
                     <img src="web/rs-plugin/assets/bspem.jpg" alt=" " title="zmain-slider-1.jpg" width="1536" height="864" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="web/rs-plugin/assets/bspem.jpg" data-parallax="5" data-no-retina>
                 </div> <!--							-->
-                <h1 id="slider-1-slide-1-layer-2" class="rs-layer Concept-Title" data-type="text" data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)" data-rsp_ch="on" data-xy="x:c;y:m;yo:10px,-26px,-10px,-33px;" data-text="w:normal,nowrap,nowrap,normal;s:54,50,45,30;l:52,55,50,40;ls:3px;fw:700;a:center;" data-dim="w:754px,699px,auto,400px;" data-padding="b:10;" data-frame_0="sX:2;sY:2;" data-frame_0_mask="u:t;" data-frame_1="e:power2.out;st:2110;sp:1270;sR:2110;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:5620;" data-frame_999_reverse="x:true;" style="z-index:10;font-family:'Garamond';text-transform:uppercase; "> 
+                <h1 id="slider-1-slide-1-layer-2" class="rs-layer Concept-Title" data-type="text" data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)" data-rsp_ch="on" data-xy="x:c;y:m;yo:10px,-26px,-10px,-33px;" data-text="w:normal,nowrap,nowrap,normal;s:54,50,45,30;l:52,55,50,40;ls:3px;fw:700;a:center;" data-dim="w:754px,699px,auto,400px;" data-padding="b:10;" data-frame_0="sX:2;sY:2;" data-frame_0_mask="u:t;" data-frame_1="e:power2.out;st:2110;sp:1270;sR:2110;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:5620;" data-frame_999_reverse="x:true;" style="z-index:10; text-transform:uppercase; "> 
                 
                  NEW BREED CITY CHAPEL 
 
@@ -32,7 +32,7 @@
                 <rs-layer id="slider-1-slide-1-layer-21" style="filter: brightness(3.5);" data-type="image" data-rsp_ch="on" data-xy="x:c;yo:228px,95px,91px,90px;" data-text="w:normal;s:20,16,12,7;l:0,20,15,9;" data-dim="w:67px,60px,56px,45px;h:67px,60px,56px,45px;" data-frame_0="x:100%;" data-frame_0_mask="u:t;" data-frame_1="st:210;sp:1000;sR:210;" data-frame_1_mask="u:t;" data-frame_999="o:0;st:w;sR:7790;" style="z-index:12;"> </rs-layer>
                 <!---->
             </rs-slide>
-            <rs-slide style="position: absolute;" data-key="rs-2" data-title="Web Show" data-thumb="web/rs-plugin/assets/cong.jpg" data-anim="adpr:false;e:slidingoverlay;ms:2000;" data-in="o:1;x:(100%);" data-out="a:false;">
+            {{-- <rs-slide style="position: absolute;" data-key="rs-2" data-title="Web Show" data-thumb="web/rs-plugin/assets/cong.jpg" data-anim="adpr:false;e:slidingoverlay;ms:2000;" data-in="o:1;x:(100%);" data-out="a:false;">
                 <div class="overlay-container">
                     <img src="web/rs-plugin/assets/cong.jpg" alt=" " title="zmain-slider-3.jpg" width="1536" height="864" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="web/rs-plugin/assets/cong.jpg" data-parallax="5" data-no-retina>
                 </div><!--							-->
@@ -60,7 +60,7 @@
             <!--							-->
                 <rs-layer id="slider-1-slide-2-layer-21" data-type="image" style="filter: brightness(3.5);" data-rsp_ch="on" data-xy="x:c;yo:228px,133px,102px,89px;" data-text="w:normal;s:20,16,12,7;l:0,20,15,9;" data-dim="w:67px,60px,56px,45px;h:67px,60px,56px,45px;" data-frame_0="x:100%;" data-frame_0_mask="u:t;" data-frame_1="st:210;sp:1000;sR:210;" data-frame_1_mask="u:t;" data-frame_999="o:0;st:w;sR:7790;" style="z-index:12;"> </rs-layer>
                 <!---->
-            </rs-slide>
+            </rs-slide> --}}
             <rs-slide style="position: absolute;" data-key="rs-3" style="filter: brightness(1.5);" data-title="Web Show" data-thumb="web/rs-plugin/assets/a.jpg" data-anim="adpr:false;e:slidingoverlay;ms:2000;" data-in="o:1;x:(100%);" data-out="a:false;">
                 <div class="overlay-container">
                     <img src="web/rs-plugin/assets/a.jpg" alt=" " title="zmain-slider-2.jpg" width="1536" height="864" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="web/rs-plugin/assets/a.jpg" data-parallax="5" data-no-retina>
@@ -93,7 +93,7 @@
                 <!---->
             </rs-slide>
 
-            <rs-slide style="position: absolute;" data-key="rs-4" data-title="Web Show" data-thumb="web/rs-plugin/assets/ee.jpg" data-anim="adpr:false;e:slidingoverlay;ms:2000;" data-in="o:1;x:(100%);" data-out="a:false;">
+            {{-- <rs-slide style="position: absolute;" data-key="rs-4" data-title="Web Show" data-thumb="web/rs-plugin/assets/ee.jpg" data-anim="adpr:false;e:slidingoverlay;ms:2000;" data-in="o:1;x:(100%);" data-out="a:false;">
                 <div class="overlay-container">
                     <img src="web/rs-plugin/assets/ee.jpg" alt=" " title="zmain-slider-2.jpg" width="1536" height="864" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="web/rs-plugin/assets/ee.jpg" data-parallax="5" data-no-retina>
                 </div> <!--							-->
@@ -121,7 +121,7 @@
         <!--							-->
                 <rs-layer id="slider-1-slide-4-layer-21" style="filter: brightness(3.5);" data-type="image" data-rsp_ch="on" data-xy="x:c;yo:228px,133px,102px,85px;" data-text="w:normal;s:20,16,12,7;l:0,20,15,9;" data-dim="w:67px,60px,56px,45px;h:67px,60px,56px,45px;" data-frame_0="x:100%;" data-frame_0_mask="u:t;" data-frame_1="st:210;sp:1000;sR:210;" data-frame_1_mask="u:t;" data-frame_999="o:0;st:w;sR:7790;" style="z-index:12;"> </rs-layer>
                 <!---->
-            </rs-slide>
+            </rs-slide> --}}
 
             <rs-slide style="position: absolute;" style="filter: brightness(3.5);" data-key="rs-5" data-title="Web Show" data-thumb="web/rs-plugin/assets/crowd.jpg" data-anim="adpr:false;e:slidingoverlay;ms:2000;" data-in="o:1;x:(100%);" data-out="a:false;">
                 <div class="overlay-container">
@@ -153,7 +153,7 @@
                 <!---->
             </rs-slide>
 
-            <rs-slide style="position: absolute;" style="filter: brightness(3.5);" data-key="rs-6" data-title="Web Show" data-thumb="web/rs-plugin/assets/sea.jpg" data-anim="adpr:false;e:slidingoverlay;ms:2000;" data-in="o:1;x:(100%);" data-out="a:false;">
+            {{-- <rs-slide style="position: absolute;" style="filter: brightness(3.5);" data-key="rs-6" data-title="Web Show" data-thumb="web/rs-plugin/assets/sea.jpg" data-anim="adpr:false;e:slidingoverlay;ms:2000;" data-in="o:1;x:(100%);" data-out="a:false;">
                 <div class="overlay-container">
                     <img src="web/rs-plugin/assets/sea.jpg" alt=" " title="zmain-slider-2.jpg" width="1536" height="864" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="web/rs-plugin/assets/sea.jpg" data-parallax="5" data-no-retina>
                 </div> <!--							-->
@@ -181,7 +181,7 @@
         <!--							-->
                 <rs-layer id="slider-1-slide-6-layer-21" data-type="image" style="filter: brightness(3.5);" data-rsp_ch="on" data-xy="x:c;yo:228px,133px,102px,85px;" data-text="w:normal;s:20,16,12,7;l:0,20,15,9;" data-dim="w:67px,60px,56px,45px;h:67px,60px,56px,45px;" data-frame_0="x:100%;" data-frame_0_mask="u:t;" data-frame_1="st:210;sp:1000;sR:210;" data-frame_1_mask="u:t;" data-frame_999="o:0;st:w;sR:7790;" style="z-index:12;"> </rs-layer>
                 <!---->
-            </rs-slide>
+            </rs-slide> --}}
         </rs-slides>
         <rs-static-layers>
             <!--					-->
@@ -571,7 +571,7 @@
     <div class="ministries-box-style-2">
         <!-- Ministries Inner -->
         <div class="ministries-inner">
-            <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/" width="360" height="240" alt="Agricultural Processing"> </div>
+            <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/tl.jpg" width="360" height="240" alt="Agricultural Processing"> </div>
             <!-- Ministries Content -->
             <div class="ministries-content pad-30">
                 <div class="ministries-title margin-bottom-15">
@@ -1230,7 +1230,7 @@
                                                         <div class="events-inner margin-bottom-35">
                                                             <!--events Thumb-->
                                                             <div class="events-thumb margin-bottom-30 relative">
-                                                                <img src="web/rs-plugin/assets/mediateam.jpg" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
+                                                                <img src="web/rs-plugin/assets/dance2.jpg" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
                                                             </div>
                                                             <!--events details-->
                                                             <div class="events-details pad-none">
@@ -1256,7 +1256,7 @@
                                                         <div class="events-inner margin-bottom-35">
                                                             <!--events Thumb-->
                                                             <div class="events-thumb margin-bottom-30 relative">
-                                                                <img src="web/rs-plugin/assets/mediateam.jpg" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
+                                                                <img src="web/rs-plugin/assets/tl.jpg" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
                                                             </div>
                                                             <!--events details-->
                                                             <div class="events-details pad-none">
@@ -1285,7 +1285,7 @@
                                             <div class="events-inner margin-bottom-35">
                                                 <!--events Thumb-->
                                                 <div class="events-thumb margin-bottom-30 relative">
-                                                    <img src="web/rs-plugin/assets/mediateam.jpg" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
+                                                    <img src="web/rs-plugin/assets/watoto.jpg" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
                                                 </div>
                                                 <!--events details-->
                                                 <div class="events-details pad-none">
@@ -1310,7 +1310,7 @@
                                             <div class="events-inner margin-bottom-35">
                                                 <!--events Thumb-->
                                                 <div class="events-thumb margin-bottom-30 relative">
-                                                    <img src="web/rs-plugin/assets/mediateam.jpg" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
+                                                    <img src="web/rs-plugin/assets/protocol.jpg" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
                                                 </div>
                                                 <!--events details-->
                                                 <div class="events-details pad-none">

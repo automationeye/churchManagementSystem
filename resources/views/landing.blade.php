@@ -10,7 +10,7 @@
                 </div> <!--							-->
                 <h1 id="slider-1-slide-1-layer-2" class="rs-layer Concept-Title" data-type="text" data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)" data-rsp_ch="on" data-xy="x:c;y:m;yo:10px,-26px,-10px,-33px;" data-text="w:normal,nowrap,nowrap,normal;s:54,50,45,30;l:52,55,50,40;ls:3px;fw:700;a:center;" data-dim="w:754px,699px,auto,400px;" data-padding="b:10;" data-frame_0="sX:2;sY:2;" data-frame_0_mask="u:t;" data-frame_1="e:power2.out;st:2110;sp:1270;sR:2110;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:5620;" data-frame_999_reverse="x:true;" style="z-index:10;font-family:'Garamond';text-transform:uppercase; "> 
                 
-                <!-- NEW BREED CITY CHAPEL -->
+                 NEW BREED CITY CHAPEL 
 
                 </h1><!--							-->
                 <rs-layer id="slider-1-slide-1-layer-4" class="Concept-SubTitle" style="filter: brightness(3.5);" data-type="text" data-color="" data-rsp_ch="on" data-xy="x:c;y:m;yo:-42px,-83px,-64px,-71px;" data-text="w:normal,nowrap,nowrap,nowrap;s:21,20,20,15;l:21,25,20,20;fw:700;a:center,left,left,left;" data-dim="w:408px,auto,auto,auto;" data-padding="b:10;" data-frame_0="o:1;"  data-frame_0_chars="d:5;y:100%;o:0;rZ:-35deg;" data-frame_0_mask="u:t;" data-frame_1="st:640;sp:1200;sR:640;" data-frame_1_chars="e:power4.inOut;d:10;rZ:0deg;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:4960;" data-frame_999_reverse="x:true;" style=" z-index:11;font-family:'Open Sans';text-transform:uppercase;">
@@ -39,7 +39,7 @@
                 <h1 id="slider-1-slide-2-layer-2" class="rs-layer Concept-Title" style="filter: brightness(3.5);" data-type="text" data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)" data-rsp_ch="on" data-xy="x:c;y:m;yo:10px,0,-10px,-32px;" data-text="w:normal,nowrap,nowrap,normal;s:54,50,45,28;l:52,55,50,30;ls:3px;fw:700;a:center;" data-dim="w:922px,845px,736px,478px;h:62px,auto,auto,35px;" data-padding="b:10;" data-frame_0="sX:2;sY:2;" data-frame_0_mask="u:t;" data-frame_1="e:power2.out;st:2110;sp:1270;sR:2110;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:5620;" data-frame_999_reverse="x:true;" style="z-index:10;font-family:'Garamond';text-transform:uppercase;">
                 
                 <!-- A Place of Love -->
-
+                NEW BREED CITY CHAPEL 
                 </h1><!--							-->
                 <rs-layer id="slider-1-slide-2-layer-4" class="Concept-SubTitle" style="filter: brightness(3.5);" data-type="text" data-color="" data-rsp_ch="on" data-xy="x:c;y:m;yo:-42px,-47px,-55px,-72px;" data-text="w:normal,nowrap,nowrap,nowrap;s:21,20,20,15;l:21,25,20,20;fw:700;a:center,center,left,left;" data-dim="w:446px,424px,auto,auto;" data-padding="b:10;" data-frame_0="o:1;" data-frame_0_chars="d:5;y:100%;o:0;rZ:-35deg;" data-frame_0_mask="u:t;" data-frame_1="st:640;sp:1200;sR:640;" data-frame_1_chars="e:power4.inOut;d:10;rZ:0deg;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:4960;" data-frame_999_reverse="x:true;" style="z-index:11;font-family:'Open Sans';text-transform:uppercase;">
 
@@ -68,7 +68,7 @@
                 <h1 id="slider-1-slide-3-layer-2" class="rs-layer Concept-Title" style="filter: brightness(3.5);" data-type="text" data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)" data-rsp_ch="on" data-xy="x:c;y:m;yo:10px,0,-10px,-38px;" data-text="w:normal,nowrap,nowrap,normal;s:54,50,45,28;l:52,55,50,30;ls:3px;fw:700;a:center;" data-dim="w:922px,845px,736px,478px;h:62px,auto,auto,35px;" data-padding="b:10;" data-frame_0="sX:2;sY:2;" data-frame_0_mask="u:t;" data-frame_1="e:power2.out;st:2110;sp:1270;sR:2110;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:5620;" data-frame_999_reverse="x:true;" style="z-index:10;font-family:'Garamond';text-transform:uppercase;">
                 
                 <!-- A Place of Purpose -->
-
+                NEW BREED CITY CHAPEL 
                 </h1><!--							-->
                 <rs-layer id="slider-1-slide-3-layer-4" class="Concept-SubTitle" style="filter: brightness(3.5);" data-type="text" data-color="" data-rsp_ch="on" data-xy="x:c;y:m;yo:-42px,-47px,-55px,-76px;" data-text="w:normal,nowrap,nowrap,nowrap;s:21,20,20,15;l:21,25,20,20;fw:700;a:center,center,left,left;" data-dim="w:446px,424px,auto,auto;" data-padding="b:10;" data-frame_0="o:1;" data-frame_0_chars="d:5;y:100%;o:0;rZ:-35deg;" data-frame_0_mask="u:t;" data-frame_1="st:640;sp:1200;sR:640;" data-frame_1_chars="e:power4.inOut;d:10;rZ:0deg;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:4960;" data-frame_999_reverse="x:true;" style="z-index:11;font-family:'Open Sans';text-transform:uppercase;">
 
@@ -100,7 +100,7 @@
                 <h1 id="slider-1-slide-4-layer-2" class="rs-layer Concept-Title" style="filter: brightness(3.5);" data-type="text" data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)" data-rsp_ch="on" data-xy="x:c;y:m;yo:10px,0,-10px,-38px;" data-text="w:normal,nowrap,nowrap,normal;s:54,50,45,28;l:52,55,50,30;ls:3px;fw:700;a:center;" data-dim="w:922px,845px,736px,478px;h:62px,auto,auto,35px;" data-padding="b:10;" data-frame_0="sX:2;sY:2;" data-frame_0_mask="u:t;" data-frame_1="e:power2.out;st:2110;sp:1270;sR:2110;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:5620;" data-frame_999_reverse="x:true;" style="z-index:10;font-family:'Garamond';text-transform:uppercase;">
                 
                 <!-- A place Of Dominion -->
-
+                NEW BREED CITY CHAPEL 
                 </h1><!--							-->
                 <rs-layer id="slider-1-slide-4-layer-4" class="Concept-SubTitle" style="filter: brightness(3.5);" data-type="text" data-color="" data-rsp_ch="on" data-xy="x:c;y:m;yo:-42px,-47px,-55px,-76px;" data-text="w:normal,nowrap,nowrap,nowrap;s:21,20,20,15;l:21,25,20,20;fw:700;a:center,center,left,left;" data-dim="w:446px,424px,auto,auto;" data-padding="b:10;" data-frame_0="o:1;" data-frame_0_chars="d:5;y:100%;o:0;rZ:-35deg;" data-frame_0_mask="u:t;" data-frame_1="st:640;sp:1200;sR:640;" data-frame_1_chars="e:power4.inOut;d:10;rZ:0deg;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:4960;" data-frame_999_reverse="x:true;" style="z-index:11;font-family:'Open Sans';text-transform:uppercase;">
 
@@ -130,7 +130,7 @@
                 <h1 id="slider-1-slide-5-layer-2" class="rs-layer Concept-Title" style="filter: brightness(3.5);" data-type="text" data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)" data-rsp_ch="on" data-xy="x:c;y:m;yo:10px,0,-10px,-38px;" data-text="w:normal,nowrap,nowrap,normal;s:54,50,45,28;l:52,55,50,30;ls:3px;fw:700;a:center;" data-dim="w:922px,845px,736px,478px;h:62px,auto,auto,35px;" data-padding="b:10;" data-frame_0="sX:2;sY:2;" data-frame_0_mask="u:t;" data-frame_1="e:power2.out;st:2110;sp:1270;sR:2110;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:5620;" data-frame_999_reverse="x:true;" style="z-index:10;font-family:'Garamond';text-transform:uppercase;">
                 
                 <!-- New Breed Connect TV -->
-
+                NEW BREED CITY CHAPEL 
                 </h1><!--							-->
                 <rs-layer id="slider-1-slide-5-layer-4" class="Concept-SubTitle" style="filter: brightness(3.5);" data-type="text" data-color="" data-rsp_ch="on" data-xy="x:c;y:m;yo:-42px,-47px,-55px,-76px;" data-text="w:normal,nowrap,nowrap,nowrap;s:21,20,20,15;l:21,25,20,20;fw:700;a:center,center,left,left;" data-dim="w:446px,424px,auto,auto;" data-padding="b:10;" data-frame_0="o:1;" data-frame_0_chars="d:5;y:100%;o:0;rZ:-35deg;" data-frame_0_mask="u:t;" data-frame_1="st:640;sp:1200;sR:640;" data-frame_1_chars="e:power4.inOut;d:10;rZ:0deg;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:4960;" data-frame_999_reverse="x:true;" style="z-index:11;font-family:'Open Sans';text-transform:uppercase;">
 
@@ -160,7 +160,7 @@
                 <h1 id="slider-1-slide-6-layer-2" class="rs-layer Concept-Title" style="filter: brightness(3.5);" data-type="text" data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)" data-rsp_ch="on" data-xy="x:c;y:m;yo:10px,0,-10px,-38px;" data-text="w:normal,nowrap,nowrap,normal;s:54,50,45,28;l:52,55,50,30;ls:3px;fw:700;a:center;" data-dim="w:922px,845px,736px,478px;h:62px,auto,auto,35px;" data-padding="b:10;" data-frame_0="sX:2;sY:2;" data-frame_0_mask="u:t;" data-frame_1="e:power2.out;st:2110;sp:1270;sR:2110;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:5620;" data-frame_999_reverse="x:true;" style="z-index:10;font-family:'Garamond';text-transform:uppercase;">
                 
                 <!-- Jenga Hekalu -->
-
+                NEW BREED CITY CHAPEL 
                 </h1><!--							-->
                 <rs-layer id="slider-1-slide-6-layer-4" class="Concept-SubTitle" style="filter: brightness(3.5);" data-type="text" data-color="" data-rsp_ch="on" data-xy="x:c;y:m;yo:-42px,-47px,-55px,-76px;" data-text="w:normal,nowrap,nowrap,nowrap;s:21,20,20,15;l:21,25,20,20;fw:700;a:center,center,left,left;" data-dim="w:446px,424px,auto,auto;" data-padding="b:10;" data-frame_0="o:1;" data-frame_0_chars="d:5;y:100%;o:0;rZ:-35deg;" data-frame_0_mask="u:t;" data-frame_1="st:640;sp:1200;sR:640;" data-frame_1_chars="e:power4.inOut;d:10;rZ:0deg;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:4960;" data-frame_999_reverse="x:true;" style="z-index:11;font-family:'Open Sans';text-transform:uppercase;">
 
@@ -227,9 +227,9 @@
                                             <!-- Ministries Content -->
                                             <div class="event-content">
                                                 <div class="event-title">
-                                                    <h5><a href="#">Vision</a></h5>
+                                                    <h5><a href="/about">Vision</a></h5>
                                                 </div>
-                                                <div class="read-more"><a href="#">To Build Kingdom Cities... Hebrews 11:9.   Being in Church is not the end game. The whole essence of Christian Faith is Seeking a city, a civilizationthat God has built.</a></div>
+                                                <div class="read-more"><a href="/about">To Build Kingdom Cities... Hebrews 11:9.   Being in Church is not the end game. The whole essence of Christian Faith is Seeking a city, a civilizationthat God has built.</a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -250,9 +250,9 @@
                                             <!-- Ministries Content -->
                                             <div class="event-content">
                                                 <div class="event-title">
-                                                    <h5><a href="/events">Mission</a></h5>
+                                                    <h5><a href="/about">Mission</a></h5>
                                                 </div>
-                                                <div class="read-more"><a href="/events">We are called to build Kingdom cities by Revelation, Manifestation, Demonstration & Elevation.</a></div>
+                                                <div class="read-more"><a href="/about">We are called to build Kingdom cities by Revelation, Manifestation, Demonstration & Elevation.</a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -341,13 +341,13 @@
                                             <div class="feature-title relative margin-bottom-15">
                                                 <h4>Prophetic Word of the Month </h4>
                                             </div>
-                                            <p class="mb-0">January 2024 is our Month of Prayer and Consecration</p>
+                                            {{-- <p class="mb-0">January 2024 is our Month of Prayer and Consecration</p> --}}
                                         </div>
                                     </div>
                                 </div>
                             </div> <!-- Feature Box End -->
                         </div>
-                        <div class="button-section margin-top-35"> <a class="btn btn-default" href="/about" title="Learn More">Learn More</a> </div>
+                        {{-- <div class="button-section margin-top-35"> <a class="btn btn-default" href="/about" title="Learn More">Learn More</a> </div> --}}
                     </div> <!-- Col -->
                 </div> <!-- Row -->
             </div> <!-- Container -->
@@ -375,11 +375,11 @@
                                     <h2 class="title mb-3">“I Decree and Declare Over Your Life, That in this Year 2024, You will Walk in Dominion and Fruitfulness, in Jesus Christ Mighty Name, Amen!”
 
                                     </h2>
-                                    <span class="dancing-text">-Bishop Erick Mwangi
+                                    <span class="dancing-text">  -Bishop Erick Mwangi
                                     </span>
                                 </div>
-                                <div class="get-quote-btn"> <a class="btn btn-default" href="/ministries" title="ministries">Listen to the Word of the Year</a>
-                                </div>
+                                {{-- <div class="get-quote-btn"> <a class="btn btn-default" href="/ministries" title="ministries">Listen to the Word of the Year</a>
+                                </div> --}}
                             </div>
                         </div>
                     </div> <!-- Col -->
@@ -393,8 +393,8 @@
                 <div class="row">
                     <div class="offset-md-2 col-md-8">
                         <div class="title-wrap text-center">
-                            <div class="section-title"> <span class="sub-title theme-color text-uppercase"> <a href="/ministries">Ministries</a></span>
-                                <h2 class="section-title margin-top-5"> <a href="/ministries">Our Ministries </a></h2> <span class="border-bottom center"></span>
+                            <div class="section-title"> <span class="sub-title theme-color text-uppercase"> <a href="/ministries">TEAMS</a></span>
+                                <h2 class="section-title margin-top-5"> <a href="/ministries">Our TEAMS </a></h2> <span class="border-bottom center"></span>
                             </div>
                         </div>
                     </div>
@@ -405,19 +405,19 @@
                             <div class="ministries-box-style-2">
                                 <!-- Ministries Inner -->
                                 <div class="ministries-inner">
-                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/d5.jpg" width="360" height="240" alt="Agricultural Processing"> </div>
+                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/" width="360" height="240" alt="Agricultural Processing"> </div>
                                     <!-- Ministries Content -->
                                     <div class="ministries-content pad-30">
                                         <div class="ministries-title margin-bottom-15">
-                                            <h4><a href="/ministries#men" class="ministries-link">Mwanaume</a></h4>
+                                            <h4><a href="#" class="ministries-link">Resident Pastorate</a></h4>
                                         </div>
-                                        <div class="ministries-desc">
+                                        {{-- <div class="ministries-desc">
                                             <p>Mwanaume is a Men's Ministry Under the Leadership of our Visionary, Bishop Erick Mwangi.
                                                 We have three main tenants, Faith, Family and Finance.
                                                 We believe in taking responsibility and having our place as positioned by God </p>
-                                        </div>
-                                        <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries#men" class="link">Read More</a>
-                                        </div>
+                                        </div> --}}
+                                        {{-- <div class="ministries-link margin-top-20"> <a target="_blank" href="#" class="link">Read More</a>
+                                        </div> --}}
                                     </div>
                                 </div> <!-- Ministries Inner Ends -->
                             </div>
@@ -428,20 +428,20 @@
                             <div class="ministries-box-style-2">
                                 <!-- Ministries Inner -->
                                 <div class="ministries-inner">
-                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/women.jpg" width="360" height="240" alt="Agricultural Processing"> </div>
+                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/" width="360" height="240" alt="Agricultural Processing"> </div>
                                     <!-- Ministries Content -->
                                     <div class="ministries-content pad-30">
                                         <div class="ministries-title margin-bottom-15">
-                                            <h4><a href="/ministries#women" class="ministries-link">Mrembo </a></h4>
+                                            <h4><a href="#" class="ministries-link">The Strategic Team </a></h4>
                                         </div>
-                                        <div class="ministries-desc">
+                                        {{-- <div class="ministries-desc">
                                             <p>Mrembo is a women's Ministry under the leadership of our Visionary Mrembo, Rev Vicky Mwangi.
                                                 We learn about our place as women.
                                                 We have various groups that all women can fit into.
                                             </p>
                                         </div>
                                         <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries#women" class="link">Read More</a>
-                                        </div>
+                                        </div> --}}
                                     </div>
                                 </div> <!-- Ministries Inner Ends -->
                             </div>
@@ -452,19 +452,19 @@
                             <div class="ministries-box-style-2">
                                 <!-- Ministries Inner -->
                                 <div class="ministries-inner">
-                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/children.jpg" width="360" height="240" alt="Agricultural Processing"> </div>
+                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/" width="360" height="240" alt="Agricultural Processing"> </div>
                                     <!-- Ministries Content -->
                                     <div class="ministries-content pad-30">
                                         <div class="ministries-title margin-bottom-15">
-                                            <h4><a href="/ministries#children" class="ministries-link">Children's Church</a></h4>
+                                            <h4><a href="/ministries#children" class="ministries-link">Missions Team</a></h4>
                                         </div>
-                                        <div class="ministries-desc">
+                                        {{-- <div class="ministries-desc">
                                             <p>Children's Church is our Children's Ministry.
                                                 We believe in raising our Children in the way of the Lord and when they grow up they will not depart from it.
                                             </p>
                                         </div>
                                         <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries#children" class="link">Read More</a>
-                                        </div>
+                                        </div> --}}
                                     </div>
                                 </div> <!-- Ministries Inner Ends -->
                             </div>
@@ -479,14 +479,15 @@
                                     <!-- Ministries Content -->
                                     <div class="ministries-content pad-30">
                                         <div class="ministries-title margin-bottom-15">
-                                            <h4><a href="/ministries#jawabu" class="ministries-link">Jawabu Ministry</a></h4>
+                                            <h4><a href="#" class="ministries-link">Jawabu Ministry</a></h4>
                                         </div>
-                                        <div class="ministries-desc">
+                                        {{-- <div class="ministries-desc">
                                             <p>Jawabu is our Youth Ministry.
                                                 Here, Our Youth are trained to be solutions to the world, as Lights of the World and Salt of the Earth.
                                             </p>
                                         </div>
-                                        <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries#jawabu" class="link">Read More</a> </div>
+                                        <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries#jawabu" class="link">Read More</a> 
+                                        </div> --}}
                                     </div>
                                 </div> <!-- Ministries Inner Ends -->
                             </div>
@@ -498,17 +499,18 @@
                             <div class="ministries-box-style-2">
                                 <!-- Ministries Inner -->
                                 <div class="ministries-inner">
-                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/t.jpg" width="360" height="240" alt="Agricultural Processing"> </div>
+                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/" width="360" height="240" alt="Agricultural Processing"> </div>
                                     <!-- Ministries Content -->
                                     <div class="ministries-content pad-30">
                                         <div class="ministries-title margin-bottom-15">
-                                            <h4><a href="/ministries#jawabu" class="ministries-link">Teens</a></h4>
+                                            <h4><a href="#" class="ministries-link">Sceptor</a></h4>
                                         </div>
-                                        <div class="ministries-desc">
+                                        {{-- <div class="ministries-desc">
                                             <p>Teens Church is our Teens Ministry where our Teens are methodically trained to be able to transition well through the critical stages of their lives.
                                             </p>
                                         </div>
-                                        <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries#jawabu" class="link">Read More</a> </div>
+                                        <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries#jawabu" class="link">Read More</a> 
+                                        </div> --}}
                                     </div>
                                 </div> <!-- Ministries Inner Ends -->
                             </div>
@@ -524,19 +526,70 @@
                                     <!-- Ministries Content -->
                                     <div class="ministries-content pad-30">
                                         <div class="ministries-title margin-bottom-15">
-                                            <h4><a href="/ministries#jawabu" class="ministries-link">Wapenzi</a></h4>
+                                            <h4><a href="/ministries#jawabu" class="ministries-link">Waziri / Ministers</a></h4>
                                         </div>
-                                        <div class="ministries-desc">
+                                        {{-- <div class="ministries-desc">
                                             <p>Wapenzi is our Couples Ministry under the leadership of our Bishop and Rev. We believe in Godly marriages.
                                                 We are trained on practical solutions to Godly Kingdom marriages and our responsibilities In the same
                                             </p>
                                         </div>
-                                        <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries#jawabu" class="link">Read More</a> </div>
+                                        <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries#jawabu" class="link">Read More</a>
+                                         </div> --}}
                                     </div>
                                 </div> <!-- Ministries Inner Ends -->
                             </div>
                         </div>
                         <!--Item Ends-->
+
+
+                         <!--Item-->
+                         <div class="item">
+                            <div class="ministries-box-style-2">
+                                <!-- Ministries Inner -->
+                                <div class="ministries-inner">
+                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/" width="360" height="240" alt="Agricultural Processing"> </div>
+                                    <!-- Ministries Content -->
+                                    <div class="ministries-content pad-30">
+                                        <div class="ministries-title margin-bottom-15">
+                                            <h4><a href="#" class="ministries-link">Discipleship</a></h4>
+                                        </div>
+                                        {{-- <div class="ministries-desc">
+                                            <p>Wapenzi is our Couples Ministry under the leadership of our Bishop and Rev. We believe in Godly marriages.
+                                                We are trained on practical solutions to Godly Kingdom marriages and our responsibilities In the same
+                                            </p>
+                                        </div>
+                                        <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries#jawabu" class="link">Read More</a>
+                                         </div> --}}
+                                    </div>
+                                </div> <!-- Ministries Inner Ends -->
+                            </div>
+                        </div>
+                        <!--Item Ends-->
+
+ <!--Item-->
+ <div class="item">
+    <div class="ministries-box-style-2">
+        <!-- Ministries Inner -->
+        <div class="ministries-inner">
+            <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/" width="360" height="240" alt="Agricultural Processing"> </div>
+            <!-- Ministries Content -->
+            <div class="ministries-content pad-30">
+                <div class="ministries-title margin-bottom-15">
+                    <h4><a href="#" class="ministries-link">True Love</a></h4>
+                </div>
+                {{-- <div class="ministries-desc">
+                    <p>Wapenzi is our Couples Ministry under the leadership of our Bishop and Rev. We believe in Godly marriages.
+                        We are trained on practical solutions to Godly Kingdom marriages and our responsibilities In the same
+                    </p>
+                </div>
+                <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries#jawabu" class="link">Read More</a>
+                 </div> --}}
+            </div>
+        </div> <!-- Ministries Inner Ends -->
+    </div>
+</div>
+<!--Item Ends-->
+
 
 
 
@@ -593,7 +646,7 @@
                                     </div>
                                     <div class="team-details text-center pad-20">
                                         <div class="team-name">
-                                            <h3 class="mb-0"><a href="/about" class="client-name typo-white">New Breed City</a></h3>
+                                            <h3 class="mb-0"><a href="/about#branches" class="client-name typo-white">New Breed City</a></h3>
                                         </div>
                                         <div class="team-designation">
                                             <p class="mb-0">HQ</p>
@@ -622,7 +675,7 @@
                                     </div>
                                     <div class="team-details text-center pad-20">
                                         <div class="team-name">
-                                            <h3 class="mb-0"><a href="/about" class="client-name typo-white">New Breed City</a></h3>
+                                            <h3 class="mb-0"><a href="/about#branches" class="client-name typo-white">New Breed City</a></h3>
                                         </div>
                                         <div class="team-designation">
                                             <p class="mb-0">Thome</p>
@@ -652,7 +705,7 @@
                                     </div>
                                     <div class="team-details text-center pad-20">
                                         <div class="team-name">
-                                            <h3 class="mb-0"><a href="/about" class="client-name typo-white">New Breed City</a></h3>
+                                            <h3 class="mb-0"><a href="/about#branches" class="client-name typo-white">New Breed City</a></h3>
                                         </div>
                                         <div class="team-designation">
                                             <p class="mb-0">Ngong</p>
@@ -682,7 +735,7 @@
                                     </div>
                                     <div class="team-details text-center pad-20">
                                         <div class="team-name">
-                                            <h3 class="mb-0"><a href="/about" class="client-name typo-white">New Breed City</a></h3>
+                                            <h3 class="mb-0"><a href="/about#branches" class="client-name typo-white">New Breed City</a></h3>
                                         </div>
                                         <div class="team-designation">
                                             <p class="mb-0">Thika</p>
@@ -713,7 +766,7 @@
                                     </div>
                                     <div class="team-details text-center pad-20">
                                         <div class="team-name">
-                                            <h3 class="mb-0"><a href="/about" class="client-name typo-white">New Breed City</a></h3>
+                                            <h3 class="mb-0"><a href="/about#branches" class="client-name typo-white">New Breed City</a></h3>
                                         </div>
                                         <div class="team-designation">
                                             <p class="mb-0">Kasarani</p>
@@ -742,7 +795,7 @@
                                     </div>
                                     <div class="team-details text-center pad-20">
                                         <div class="team-name">
-                                            <h3 class="mb-0"><a href="/about" class="client-name typo-white">New Breed City</a></h3>
+                                            <h3 class="mb-0"><a href="/about#branches" class="client-name typo-white">New Breed City</a></h3>
                                         </div>
                                         <div class="team-designation">
                                             <p class="mb-0">Kitengela</p>
@@ -802,7 +855,7 @@
                                     </div>
                                     <div class="team-details text-center pad-20">
                                         <div class="team-name">
-                                            <h3 class="mb-0"><a href="/about" class="client-name typo-white">New Breed City</a></h3>
+                                            <h3 class="mb-0"><a href="/about#branches" class="client-name typo-white">New Breed City</a></h3>
                                         </div>
                                         <div class="team-designation">
                                             <p class="mb-0">Nakuru</p>
@@ -867,7 +920,7 @@
                                     </div>
                                     <div class="team-details text-center pad-20">
                                         <div class="team-name">
-                                            <h3 class="mb-0"><a href="/about" class="client-name typo-white">New Breed City</a></h3>
+                                            <h3 class="mb-0"><a href="/about#branches" class="client-name typo-white">New Breed City</a></h3>
                                         </div>
                                         <div class="team-designation">
                                             <p class="mb-0">Kakamega</p>
@@ -1034,9 +1087,9 @@
                                                                 <div class="event-title pt-1 mb-3">
                                                                     <h5><a href="/departments#ushering">  Ushering Department</a></h5>
                                                                 </div>
-                                                                <div class="read-more">
+                                                                {{-- <div class="read-more">
                                                                     <a href="/departments#ushering">Learn More</a>
-                                                                </div>
+                                                                </div> --}}
                                                             </div>
                                                             <!--events details-->
                                                         </div>
@@ -1059,9 +1112,9 @@
                                                                 <div class="event-title pt-1 mb-3">
                                                                     <h5><a href="/departments#praise"> Worship Team Department</a></h5>
                                                                 </div>
-                                                                <div class="read-more">
+                                                                {{-- <div class="read-more">
                                                                     <a href="/departments#praise">Learn More</a>
-                                                                </div>
+                                                                </div> --}}
                                                             </div>
                                                             <!--events details-->
                                                         </div>
@@ -1084,9 +1137,9 @@
                                                                 <div class="event-title pt-1 mb-3">
                                                                     <h5><a href="/departments#sound"> Media & Sound Department</a></h5>
                                                                 </div>
-                                                                <div class="read-more">
+                                                                {{-- <div class="read-more">
                                                                     <a href="/departments#sound">Learn More</a>
-                                                                </div>
+                                                                </div> --}}
                                                             </div>
                                                             <!--events details-->
                                                         </div>
@@ -1109,9 +1162,9 @@
                                                                 <div class="event-title pt-1 mb-3">
                                                                     <h5><a href="/departments#film"> Film Department </a></h5>
                                                                 </div>
-                                                                <div class="read-more">
+                                                                {{-- <div class="read-more">
                                                                     <a href="/departments#film">Learn More</a>
-                                                                </div>
+                                                                </div> --}}
                                                             </div>
                                                             <!--events details-->
                                                         </div>
@@ -1134,9 +1187,9 @@
                                                                 <div class="event-title pt-1 mb-3">
                                                                     <h5><a href="/departments#hospitality"> Hospitality Department </a></h5>
                                                                 </div>
-                                                                <div class="read-more">
+                                                                {{-- <div class="read-more">
                                                                     <a href="/departments#hospitality">Learn More</a>
-                                                                </div>
+                                                                </div> --}}
                                                             </div>
                                                             <!--events details-->
                                                         </div>
@@ -1160,9 +1213,9 @@
                                                                 <div class="event-title pt-1 mb-3">
                                                                     <h5><a href="/departments#security"> Security Department </a></h5>
                                                                 </div>
-                                                                <div class="read-more">
+                                                                {{-- <div class="read-more">
                                                                     <a href="/departments#security">Learn More</a>
-                                                                </div>
+                                                                </div> --}}
                                                             </div>
                                                             <!--events details-->
                                                         </div>
@@ -1186,9 +1239,9 @@
                                                                 <div class="event-title pt-1 mb-3">
                                                                     <h5><a href="/departments#dance"> Dance Department </a></h5>
                                                                 </div>
-                                                                <div class="read-more">
+                                                                {{-- <div class="read-more">
                                                                     <a href="/departments#dance">Learn More</a>
-                                                                </div>
+                                                                </div> --}}
                                                             </div>
                                                             <!--events details-->
                                                         </div>
@@ -1212,9 +1265,9 @@
                                                                 <div class="event-title pt-1 mb-3">
                                                                     <h5><a href="/departments#love"> Love Bank Department </a></h5>
                                                                 </div>
-                                                                <div class="read-more">
+                                                                {{-- <div class="read-more">
                                                                     <a href="/departments#love">Learn More</a>
-                                                                </div>
+                                                                </div> --}}
                                                             </div>
                                                             <!--events details-->
                                                         </div>
@@ -1241,9 +1294,9 @@
                                                     <div class="event-title pt-1 mb-3">
                                                         <h5><a href="/departments#children">Church's Church Department </a></h5>
                                                     </div>
-                                                    <div class="read-more">
+                                                    {{-- <div class="read-more">
                                                         <a href="/departments#children">Learn More</a>
-                                                    </div>
+                                                    </div> --}}
                                                 </div>
                                                 <!--events details-->
                                             </div>
@@ -1266,9 +1319,9 @@
                                                     <div class="event-title pt-1 mb-3">
                                                         <h5><a href="/departments#protocol"> Protocol Department </a></h5>
                                                     </div>
-                                                    <div class="read-more">
+                                                    {{-- <div class="read-more">
                                                         <a href="/departments#protocol">Learn More</a>
-                                                    </div>
+                                                    </div> --}}
                                                 </div>
                                                 <!--events details-->
                                             </div>
@@ -1292,9 +1345,9 @@
                                                                 <div class="event-title pt-1 mb-3">
                                                                     <h5><a href="/departments#catering"> Catering Department.</a></h5>
                                                                 </div>
-                                                                <div class="read-more">
+                                                                {{-- <div class="read-more">
                                                                     <a href="/departments#catering">Learn More</a>
-                                                                </div>
+                                                                </div> --}}
                                                             </div>
                                                             <!--events details-->
                                                         </div>
@@ -1317,9 +1370,9 @@
                                                                 <div class="event-title pt-1 mb-3">
                                                                     <h5><a href="/departments#discipleship">  Discipleship Department.</a></h5>
                                                                 </div>
-                                                                <div class="read-more">
+                                                                {{-- <div class="read-more">
                                                                     <a href="/departments#discipleship">Learn More</a>
-                                                                </div>
+                                                                </div> --}}
                                                             </div>
                                                             <!--events details-->
                                                         </div>
@@ -1345,9 +1398,9 @@
                                                                 <div class="event-title pt-1 mb-3">
                                                                     <h5><a href="/departments#grounds"> Grounds Department </a></h5>
                                                                 </div>
-                                                                <div class="read-more">
+                                                                {{-- <div class="read-more">
                                                                     <a href="/departments#grounds">Learn More</a>
-                                                                </div>
+                                                                </div> --}}
                                                             </div>
                                                             <!--events details-->
                                                         </div>
@@ -1370,9 +1423,9 @@
                                                                 <div class="event-title pt-1 mb-3">
                                                                     <h5><a href="/departments#finance">  Finance Department.</a></h5>
                                                                 </div>
-                                                                <div class="read-more">
+                                                                {{-- <div class="read-more">
                                                                     <a href="/departments#finance">Learn More</a>
-                                                                </div>
+                                                                </div> --}}
                                                             </div>
                                                             <!--events details-->
                                                         </div>
@@ -1395,9 +1448,9 @@
                                                                 <div class="event-title pt-1 mb-3">
                                                                     <h5><a href="/departments#bishop">  Bishops Department.</a></h5>
                                                                 </div>
-                                                                <div class="read-more">
+                                                                {{-- <div class="read-more">
                                                                     <a href="/departments#bishop">Learn More</a>
-                                                                </div>
+                                                                </div> --}}
                                                             </div>
                                                             <!--events details-->
                                                         </div>
@@ -1455,12 +1508,12 @@
                                     <!-- Ministries Content -->
                                     <div class="ministries-content pad-30">
                                         <div class="ministries-title margin-bottom-15">
-                                            <h4><a href="/ministries#men" class="ministries-link">The Executive</a></h4>
+                                            <h4><a href="/about#leaders" class="ministries-link">The Executive</a></h4>
                                         </div>
                                         <div class="ministries-desc">
                                             <p>The Bishop's & Reverend's office who is also the Senior Apostle, the second in command in New Breed City Chapel. </p>
                                         </div>
-                                        <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries#men" class="link">Read More</a>
+                                        <div class="ministries-link margin-top-20"> <a target="_blank" href="/about#leaders" class="link">Read More</a>
                                         </div>
                                     </div>
                                 </div> <!-- Ministries Inner Ends -->
@@ -1476,14 +1529,14 @@
                                     <!-- Ministries Content -->
                                     <div class="ministries-content pad-30">
                                         <div class="ministries-title margin-bottom-15">
-                                            <h4><a href="/ministries#women" class="ministries-link">Apostolic Council </a></h4>
+                                            <h4><a href="/about#apostles" class="ministries-link">Apostolic Council </a></h4>
                                         </div>
                                         <div class="ministries-desc">
                                             <p>
                                                 Jesus is the Apostle of our faith. The son's who have grown to the level of Apostles
                                             </p>
                                         </div>
-                                        <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries#women" class="link">Read More</a>
+                                        <div class="ministries-link margin-top-20"> <a target="_blank" href="/about#apostles" class="link">Read More</a>
                                         </div>
                                     </div>
                                 </div> <!-- Ministries Inner Ends -->

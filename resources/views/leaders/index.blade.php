@@ -74,15 +74,14 @@ Leaders
                                     <td>{{ $leader->phone }}</td>
                                     <td>{{ $leader->created_at }}</td>
                                     <td>
-                                        <form action="{{ route('edit-leader', ['leader' => $leader->id]) }}" method="GET" style="display: inline;">
-                                            <button type="submit" class="btn btn-info">Edit</button>
-                                        </form>
+                                     
 
-                                        <form action="{{ route('member.post' ) }}" method="POST" style="display: inline;">
+                                        <form action="{{ route('delete.leader', ['leader' => $leader->id]) }}" method="POST" style="display: inline;">
                                             @csrf
-
+                                            @method('DELETE')
                                             <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to remove this leader?')">Delete</button>
                                         </form>
+                                        
                                     </td>
 
                                 </tr>

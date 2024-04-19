@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\LeaveController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -230,7 +231,8 @@ Route::group(['middleware' => ['auth.admin']], function () {
     Route::put('/leaders/{leader}', 'LeadersController@update')->name('update-leader');
 
     // Route for deleting a leader
-    Route::delete('/leaders/{leader}', 'LeadersController@destroy')->name('delete-leader');
+    Route::delete('/leaders/{leader}', 'LeadersController@destroy')->name('delete.leader');
+
 
 
 

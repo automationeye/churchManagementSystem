@@ -129,13 +129,12 @@ class LeadersController extends Controller
      * @param  \App\Leaders  $leaders
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Leaders $leaders)
+    public function destroy(Leaders $leader)
     {
-        //
-
-        $leaders->delete();
-
+        // Delete the leader
+        $leader->delete();
+    
         // Redirect back to the leaders list or any other appropriate page
-        return redirect()->route('leaders.index')->with('success', 'Leader deleted successfully');
+        return redirect()->route('leaders')->with('success', 'Leader deleted successfully');
     }
-}
+}    

@@ -343,7 +343,7 @@
 											</li>
 										</ul>
 									</li>
-									<li class="{{ (Route::currentRouteName() == 'members.all' || Route::currentRouteName() ==  'member.register.form') ? '' : ''}}
+									{{-- <li class="{{ (Route::currentRouteName() == 'members.all' || Route::currentRouteName() ==  'member.register.form') ? '' : ''}}
                   	{{Route::currentRouteName() === 'member.profile' ? 'active-sub' : ''}}">
 
 										<a href="{{route('members.all')}}">
@@ -359,7 +359,7 @@
 												<a href="{{route('sermons.create')}}"><i class="fa fa-registered"></i> Create Sermon</a>
 											</li>
 										</ul>
-									</li>
+									</li> --}}
 
 									<li class="{{ (Route::currentRouteName() == 'teams.all' || Route::currentRouteName() ==  'member.register.form') ? '' : ''}}
                   	{{Route::currentRouteName() === 'member.profile' ? 'active-sub' : ''}}">
@@ -474,13 +474,16 @@
 										</ul>
 									</li>
 									<!-- @ endif -->
-									<li class="{{Route::currentRouteName() === 'calendar' ? 'active-sub' : ''}}">
+									{{-- <li class="{{Route::currentRouteName() === 'calendar' ? 'active-sub' : ''}}">
 										<a href="{{ route('calendar') }}">
 											<i class="fa fa-calendar"></i>
 											<span class="menu-title">Calendar & Events</span>
 											<!--<i class="arrow"></i>-->
 										</a>
-									</li>
+									</li> --}}
+
+
+{{-- 									
 									<li class="{{Route::currentRouteName() == 'report.membership.all' || Route::currentRouteName() == 'report.membership' || Route::currentRouteName() == 'report.collections' || Route::currentRouteName() == 'report.collections.all' || Route::currentRouteName() == 'report.attendance' || Route::currentRouteName() == 'report.attendance.all' ? 'active-sub active' : ''}}">
 										<a href="#">
 											<i class="fa fa-signal"></i>
@@ -550,13 +553,16 @@
 
 									@endif
 								</ul>
-								</li>
-								<li class="{{Route::currentRouteName() == 'ticket' ? 'active-sub' : ''}}">
+								</li> --}}
+
+
+
+								{{-- <li class="{{Route::currentRouteName() == 'ticket' ? 'active-sub' : ''}}">
 									<a href="{{ route('ticket') }}">
 										<i class="fa fa-life-ring"></i>
 										<span class="menu-title">Ticket</span>
 									</a>
-								</li>
+								</li> --}}
 								<li>
 									<form id="logout" method="POST" action="{{route('logout')}}">
 										@csrf

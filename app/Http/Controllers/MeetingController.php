@@ -136,5 +136,9 @@ class MeetingController extends Controller
     public function destroy(Meeting $meeting)
     {
         //
+        $meeting->delete();
+
+        // Redirect back to the members list or any other appropriate page
+        return redirect('viewmeeting')->with('success', 'Meeting deleted');
     }
 }

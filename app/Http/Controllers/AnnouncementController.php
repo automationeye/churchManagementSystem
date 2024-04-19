@@ -229,7 +229,7 @@ class AnnouncementController extends Controller
         $announcement->delete();
 
         // Redirect back to the members list or any other appropriate page
-        return redirect()->back()->with('success', 'Announcement deleted successfully');
+        return redirect('editannouncement')->with('success', 'Announcement deleted');
     }
 
     public function admindestroy(Announcement $announcement)

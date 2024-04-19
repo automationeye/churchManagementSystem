@@ -33,7 +33,7 @@
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item text-center">Announcements</li>
                         <li class="list-group-item">Total Announcements :{{ $total['announcements'] }}</li>
-                        <li class="list-group-item text-center"><a href="manage-employee.php"> <b>View All Announcements</b></a></li>
+                        <li class="list-group-item text-center"><a href="/editannouncement"> <b>View All Announcements</b></a></li>
                     </ul>
                 </div>
             </div>

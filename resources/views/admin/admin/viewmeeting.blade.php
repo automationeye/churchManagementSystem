@@ -18,8 +18,7 @@
                     <th>Description</th>
                     <th>Venue</th>
                     <th>Date & Time</th>
-                    <th>Edit</th>
-
+                    
                 </tr>
             </thead>
             <tbody id="meeting-table-body">
@@ -34,10 +33,14 @@
                     <td>{{ $meeting->venue }}</td>
                     <td>{{ $meeting->datetime }}</td>
                     <td>
-                        <form action="" method="GET" style="display: inline;">
-                            <button type="submit" class="btn btn-info">Edit</button>
-                        </form>
 
+
+
+                        <form action="{{ route('delete-meeting', ['meeting' => $meeting->id]) }}" method="POST" style="display: inline;">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-info" onclick="return confirm('Are you sure you want to delete this meeting?')">Delete</button>
+                        </form>
                     </td>
                 </tr>
                 @endforeach

@@ -124,5 +124,9 @@ class ChurchTeamsController extends Controller
     public function destroy(ChurchTeams $churchTeams)
     {
         //
+        $churchTeams->delete();
+
+        // Redirect back to the members list or any other appropriate page
+        return redirect()->route('teams.index')->with('success', 'Team deleted successfully');
     }
 }

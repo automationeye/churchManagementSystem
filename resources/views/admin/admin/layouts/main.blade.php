@@ -176,7 +176,7 @@
                         </a>
                         <ul aria-expanded="false">
                             <li><a href="/announcement"> <i class="icon-plus menu-icon"></i><span class="nav-text">Create Announcement</span></a></li>
-                            <li><a href="/editannouncement"> <i class="fa fa-pencil menu-icon"></i><span class="nav-text">Edit An Announcement</span></a></li>
+                            <li><a href="/editannouncement"> <i class="fas fa-trash"></i><span class="nav-text">Remove Announcement</span></a></li>
                             <!-- <li><a href="./"> <i class="fa fa-bar-chart menu-icon"></i><span class="nav-text">Salary Table</span></a></li> -->
 
                         </ul>
@@ -191,7 +191,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/adminlog">
+                        <a href="/">
                             <i class="icon-logout menu-icon"></i><span class="nav-text">Logout</span>
                         </a>
                     </li>

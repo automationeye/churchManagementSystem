@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-Edit Member Profile
+Edit team Profile
 @endsection
 
 @section('content')
@@ -29,7 +29,7 @@ Edit Member Profile
                 </a>
             </li>
             <li>
-                <a href="{{ route('teams') }}">Team</a>
+                <a href="">Team</a>
             </li>
             <li class="active">Edit</li>
         </ol>
@@ -70,18 +70,18 @@ Edit Member Profile
                             <!-- BASIC FORM ELEMENTS -->
                             <!--===================================================-->
                             <div class="card-body">
-                                <form action="{{ route('update-team', ['team' => $churchTeams->id]) }}" method="POST">
+                                <form action="{{ route('update-team',  $churchTeams->id ) }}" method="POST">
                                     @csrf
                                     @method('PUT')
 
                                     <div class="form-group">
                                         <label for="team">Team Name:</label>
-                                        <input type="text" class="form-control" name="team" value="{{ $churchTeams->team }}" required>
+                                        <input type="text" class="form-control" id="team" name="team" value="{{ $churchTeams->team }}" required>
                                     </div>
 
                                     <div class="form-group">
                                         <label for="leader">Leader:</label>
-                                        <input type="text" class="form-control" name="leader" value="{{ $churchTeams->leader }}" required>
+                                        <input type="text" class="form-control" id="leader" name="leader" value="{{ $churchTeams->leader }}" required>
                                     </div>
 
 

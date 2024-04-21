@@ -71,6 +71,12 @@ Sermons
                                             <button type="submit" class="btn btn-info">Edit</button>
                                         </form>
 
+
+                                        <form action="{{ route('delete-team', ['team' => $team->id]) }}" method="POST" style="display: inline;">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this team?')">Delete</button>
+                                        </form>
                                     </td>
                                 </tr>
                                 @endforeach

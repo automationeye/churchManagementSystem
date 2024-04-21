@@ -8,9 +8,9 @@
                 <div class="overlay-container">
                     <img src="web/rs-plugin/assets/bspem.jpg" alt=" " title="zmain-slider-1.jpg" width="1536" height="864" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="web/rs-plugin/assets/bspem.jpg" data-parallax="5" data-no-retina>
                 </div> <!--							-->
-                <h1 id="slider-1-slide-1-layer-2" class="rs-layer Concept-Title" data-type="text" data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)" data-rsp_ch="on" data-xy="x:c;y:m;yo:10px,-26px,-10px,-33px;" data-text="w:normal,nowrap,nowrap,normal;s:54,50,45,30;l:52,55,50,40;ls:3px;fw:700;a:center;" data-dim="w:754px,699px,auto,400px;" data-padding="b:10;" data-frame_0="sX:2;sY:2;" data-frame_0_mask="u:t;" data-frame_1="e:power2.out;st:2110;sp:1270;sR:2110;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:5620;" data-frame_999_reverse="x:true;" style="z-index:10; text-transform:uppercase; "> 
-                
-                 NEW BREED CITY CHAPEL 
+                <h1 id="slider-1-slide-1-layer-2" class="rs-layer Concept-Title" data-type="text" data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)" data-rsp_ch="on" data-xy="x:c;y:m;yo:10px,-26px,-10px,-33px;" data-text="w:normal,nowrap,nowrap,normal;s:54,50,45,30;l:52,55,50,40;ls:3px;fw:700;a:center;" data-dim="w:754px,699px,auto,400px;" data-padding="b:10;" data-frame_0="sX:2;sY:2;" data-frame_0_mask="u:t;" data-frame_1="e:power2.out;st:2110;sp:1270;sR:2110;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:5620;" data-frame_999_reverse="x:true;" style="z-index:10; text-transform:uppercase; ">
+
+                 NEW BREED CITY CHAPEL
 
                 </h1><!--							-->
                 <rs-layer id="slider-1-slide-1-layer-4" class="Concept-SubTitle" style="filter: brightness(3.5);" data-type="text" data-color="" data-rsp_ch="on" data-xy="x:c;y:m;yo:-42px,-83px,-64px,-71px;" data-text="w:normal,nowrap,nowrap,nowrap;s:21,20,20,15;l:21,25,20,20;fw:700;a:center,left,left,left;" data-dim="w:408px,auto,auto,auto;" data-padding="b:10;" data-frame_0="o:1;"  data-frame_0_chars="d:5;y:100%;o:0;rZ:-35deg;" data-frame_0_mask="u:t;" data-frame_1="st:640;sp:1200;sR:640;" data-frame_1_chars="e:power4.inOut;d:10;rZ:0deg;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:4960;" data-frame_999_reverse="x:true;" style=" z-index:11;font-family:'Open Sans';text-transform:uppercase;">
@@ -19,15 +19,15 @@
 
                 </rs-layer><!--							-->
                 <rs-layer id="slider-1-slide-1-layer-14" data-type="text" style="filter: brightness(3.5);" data-rsp_ch="on" data-xy="x:c;y:m,t,t,t;yo:78px,286px,271px,233px;" data-text="w:normal;s:18,18,16,15;l:31,30,30,27;a:center;" data-dim="w:806px,805px,689px,388px;h:auto,auto,auto,89px;" data-frame_0="y:100%;" data-frame_0_mask="u:t;" data-frame_1="st:2680;sp:1360;sR:2680;"  data-frame_1_mask="u:t;" data-frame_999="o:0;st:w;sR:4960;" style="z-index:9;font-family:Garamond">
-             
+
                 <!-- A place of Love, Purpose And Dominion  -->
-            
+
             </rs-layer>
 
                 <!-- <rs-layer id="slider-1-slide-1-layer-16" class="res-slide-btn pop rev-btn" data-type="button" data-color="rgba(255,255,255,1)" data-xy="x:c;y:m;yo:162px,130px,128px,117px;" data-text="s:16,16,14,14;l:17;fw:500;a:center;" data-rsp_bd="off" data-padding="t:15,15,10,10;r:35,35,25,25;b:15,15,10,10;l:35,35,25,25;" data-border="bor:3px,3px,3px,3px;" data-frame_0="rX:-70deg;oZ:-50;" data-frame_1="oZ:-50;e:power4.inOut;st:3160;sp:1750;" data-frame_999="o:0;st:w;sR:4640;" data-frame_hover="bgc:#000;boc:#000;bor:3px,3px,3px,3px;bos:solid;oX:50;oY:50;sp:0;" style="z-index:8;font-family:'Poppins';cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">
-                   
-               <a href="/contact" style="color: white;" > Contact Us </a>  
-            
+
+               <a href="/contact" style="color: white;" > Contact Us </a>
+
             </rs-layer> -->
                 <rs-layer id="slider-1-slide-1-layer-21" style="filter: brightness(3.5);" data-type="image" data-rsp_ch="on" data-xy="x:c;yo:228px,95px,91px,90px;" data-text="w:normal;s:20,16,12,7;l:0,20,15,9;" data-dim="w:67px,60px,56px,45px;h:67px,60px,56px,45px;" data-frame_0="x:100%;" data-frame_0_mask="u:t;" data-frame_1="st:210;sp:1000;sR:210;" data-frame_1_mask="u:t;" data-frame_999="o:0;st:w;sR:7790;" style="z-index:12;"> </rs-layer>
                 <!---->
@@ -37,9 +37,9 @@
                     <img src="web/rs-plugin/assets/cong.jpg" alt=" " title="zmain-slider-3.jpg" width="1536" height="864" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="web/rs-plugin/assets/cong.jpg" data-parallax="5" data-no-retina>
                 </div><!--							-->
                 <h1 id="slider-1-slide-2-layer-2" class="rs-layer Concept-Title" style="filter: brightness(3.5);" data-type="text" data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)" data-rsp_ch="on" data-xy="x:c;y:m;yo:10px,0,-10px,-32px;" data-text="w:normal,nowrap,nowrap,normal;s:54,50,45,28;l:52,55,50,30;ls:3px;fw:700;a:center;" data-dim="w:922px,845px,736px,478px;h:62px,auto,auto,35px;" data-padding="b:10;" data-frame_0="sX:2;sY:2;" data-frame_0_mask="u:t;" data-frame_1="e:power2.out;st:2110;sp:1270;sR:2110;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:5620;" data-frame_999_reverse="x:true;" style="z-index:10;font-family:'Garamond';text-transform:uppercase;">
-                
+
                 <!-- A Place of Love -->
-                NEW BREED CITY CHAPEL 
+                NEW BREED CITY CHAPEL
                 </h1><!--							-->
                 <rs-layer id="slider-1-slide-2-layer-4" class="Concept-SubTitle" style="filter: brightness(3.5);" data-type="text" data-color="" data-rsp_ch="on" data-xy="x:c;y:m;yo:-42px,-47px,-55px,-72px;" data-text="w:normal,nowrap,nowrap,nowrap;s:21,20,20,15;l:21,25,20,20;fw:700;a:center,center,left,left;" data-dim="w:446px,424px,auto,auto;" data-padding="b:10;" data-frame_0="o:1;" data-frame_0_chars="d:5;y:100%;o:0;rZ:-35deg;" data-frame_0_mask="u:t;" data-frame_1="st:640;sp:1200;sR:640;" data-frame_1_chars="e:power4.inOut;d:10;rZ:0deg;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:4960;" data-frame_999_reverse="x:true;" style="z-index:11;font-family:'Open Sans';text-transform:uppercase;">
 
@@ -47,16 +47,16 @@
 
                 </rs-layer><!--							-->
                 <rs-layer id="slider-1-slide-2-layer-14" data-type="text" style="filter: brightness(3.5);" data-rsp_ch="on" data-xy="x:c;y:m,t,t,t;yo:78px,312px,271px,234px;" data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)" data-text="w:normal;s:18,18,16,15;l:31,30,30,27;a:center;" data-dim="w:806px,805px,689px,388px;h:auto,auto,auto,89px;" data-frame_0="y:100%;" data-frame_0_mask="u:t;" data-frame_1="st:2680;sp:1360;sR:2680;" data-frame_1_mask="u:t;" data-frame_999="o:0;st:w;sR:4960;" style="z-index:9;font-family:'Garamond';">
-              
+
                 <!-- We Showcase God's Love to us by loving one another  -->
-                
+
                 </rs-layer><!--							-->
                 <!-- <a id="slider-1-slide-2-layer-16" class="rs-layer res-slide-btn pop rev-btn" href="/departments" target="_self" data-type="button" data-color="rgba(255,255,255,1)" data-xy="x:c;y:m;yo:177px,156px,128px,118px;" data-text="s:16,16,14,14;l:17;fw:500;a:center;" data-rsp_bd="off" data-padding="t:15,15,10,10;r:35,35,25,25;b:15,15,10,10;l:35,35,25,25;" data-border="bor:3px,3px,3px,3px;" data-frame_0="y:100%;" data-frame_1="e:power4.inOut;st:3160;sp:1200;sR:3160;" data-frame_999="o:0;st:w;sR:4640;" data-frame_hover="bgc:#000;boc:#000;bor:3px,3px,3px,3px;bos:solid;oX:50;oY:50;sp:0;" style="z-index:8;font-family:'Poppins';cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">
-               
-                Read More 
-            
+
+                Read More
+
             </a> -->
-            
+
             <!--							-->
                 <rs-layer id="slider-1-slide-2-layer-21" data-type="image" style="filter: brightness(3.5);" data-rsp_ch="on" data-xy="x:c;yo:228px,133px,102px,89px;" data-text="w:normal;s:20,16,12,7;l:0,20,15,9;" data-dim="w:67px,60px,56px,45px;h:67px,60px,56px,45px;" data-frame_0="x:100%;" data-frame_0_mask="u:t;" data-frame_1="st:210;sp:1000;sR:210;" data-frame_1_mask="u:t;" data-frame_999="o:0;st:w;sR:7790;" style="z-index:12;"> </rs-layer>
                 <!---->
@@ -66,28 +66,28 @@
                     <img src="web/rs-plugin/assets/a.jpg" alt=" " title="zmain-slider-2.jpg" width="1536" height="864" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="web/rs-plugin/assets/a.jpg" data-parallax="5" data-no-retina>
                 </div> <!--							-->
                 <h1 id="slider-1-slide-3-layer-2" class="rs-layer Concept-Title" style="filter: brightness(3.5);" data-type="text" data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)" data-rsp_ch="on" data-xy="x:c;y:m;yo:10px,0,-10px,-38px;" data-text="w:normal,nowrap,nowrap,normal;s:54,50,45,28;l:52,55,50,30;ls:3px;fw:700;a:center;" data-dim="w:922px,845px,736px,478px;h:62px,auto,auto,35px;" data-padding="b:10;" data-frame_0="sX:2;sY:2;" data-frame_0_mask="u:t;" data-frame_1="e:power2.out;st:2110;sp:1270;sR:2110;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:5620;" data-frame_999_reverse="x:true;" style="z-index:10;font-family:'Garamond';text-transform:uppercase;">
-                
+
                 <!-- A Place of Purpose -->
-                NEW BREED CITY CHAPEL 
+                NEW BREED CITY CHAPEL
                 </h1><!--							-->
                 <rs-layer id="slider-1-slide-3-layer-4" class="Concept-SubTitle" style="filter: brightness(3.5);" data-type="text" data-color="" data-rsp_ch="on" data-xy="x:c;y:m;yo:-42px,-47px,-55px,-76px;" data-text="w:normal,nowrap,nowrap,nowrap;s:21,20,20,15;l:21,25,20,20;fw:700;a:center,center,left,left;" data-dim="w:446px,424px,auto,auto;" data-padding="b:10;" data-frame_0="o:1;" data-frame_0_chars="d:5;y:100%;o:0;rZ:-35deg;" data-frame_0_mask="u:t;" data-frame_1="st:640;sp:1200;sR:640;" data-frame_1_chars="e:power4.inOut;d:10;rZ:0deg;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:4960;" data-frame_999_reverse="x:true;" style="z-index:11;font-family:'Open Sans';text-transform:uppercase;">
 
 
                 </rs-layer><!--							-->
                 <rs-layer id="slider-1-slide-3-layer-14" style="filter: brightness(3.5);" data-type="text" data-rsp_ch="on" data-xy="x:c;y:m,t,t,t;yo:78px,312px,271px,228px;" data-text="w:normal;s:18,18,16,15;l:31,30,30,27;a:center;" data-dim="w:806px,805px,689px,388px;h:auto,auto,auto,89px;" data-frame_0="y:100%;" data-frame_0_mask="u:t;" data-frame_1="st:2680;sp:1360;sR:2680;" data-frame_1_mask="u:t;" data-frame_999="o:0;st:w;sR:4960;" style="z-index:9;font-family:'Garamond';">
-                
+
                 <!-- We are Soul winners and Church Builders. We believe in walking in the Purposes God has put in us  -->
-            
+
             </rs-layer><!--							-->
-            
-            
+
+
             <!-- <a id="slider-1-slide-3-layer-16" class="rs-layer res-slide-btn pop rev-btn" href="/ministries" target="_self" data-type="button" data-color="rgba(255,255,255,1)" data-xy="x:c;y:m;yo:162px,156px,128px,112px;" data-text="s:16,16,14,14;l:17;fw:500;a:center;" data-rsp_bd="off" data-padding="t:15,15,10,10;r:35,35,25,25;b:15,15,10,10;l:35,35,25,25;" data-border="bor:3px,3px,3px,3px;" data-frame_0="y:100%;" data-frame_1="e:power4.inOut;st:3160;sp:1200;sR:3160;" data-frame_999="o:0;st:w;sR:4640;" data-frame_hover="bgc:#000;boc:#000;bor:3px,3px,3px,3px;bos:solid;oX:50;oY:50;sp:0;" style="z-index:8;font-family:'Poppins';cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">
-              
+
             Read More
-            
+
             </a> -->
 
-            
+
             <!--							-->
                 <rs-layer id="slider-1-slide-3-layer-21" data-type="image" style="filter: brightness(3.5);" data-rsp_ch="on" data-xy="x:c;yo:228px,133px,102px,85px;" data-text="w:normal;s:20,16,12,7;l:0,20,15,9;" data-dim="w:67px,60px,56px,45px;h:67px,60px,56px,45px;" data-frame_0="x:100%;" data-frame_0_mask="u:t;" data-frame_1="st:210;sp:1000;sR:210;" data-frame_1_mask="u:t;" data-frame_999="o:0;st:w;sR:7790;" style="z-index:12;"> </rs-layer>
                 <!---->
@@ -98,26 +98,26 @@
                     <img src="web/rs-plugin/assets/ee.jpg" alt=" " title="zmain-slider-2.jpg" width="1536" height="864" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="web/rs-plugin/assets/ee.jpg" data-parallax="5" data-no-retina>
                 </div> <!--							-->
                 <h1 id="slider-1-slide-4-layer-2" class="rs-layer Concept-Title" style="filter: brightness(3.5);" data-type="text" data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)" data-rsp_ch="on" data-xy="x:c;y:m;yo:10px,0,-10px,-38px;" data-text="w:normal,nowrap,nowrap,normal;s:54,50,45,28;l:52,55,50,30;ls:3px;fw:700;a:center;" data-dim="w:922px,845px,736px,478px;h:62px,auto,auto,35px;" data-padding="b:10;" data-frame_0="sX:2;sY:2;" data-frame_0_mask="u:t;" data-frame_1="e:power2.out;st:2110;sp:1270;sR:2110;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:5620;" data-frame_999_reverse="x:true;" style="z-index:10;font-family:'Garamond';text-transform:uppercase;">
-                
+
                 <!-- A place Of Dominion -->
-                NEW BREED CITY CHAPEL 
+                NEW BREED CITY CHAPEL
                 </h1><!--							-->
                 <rs-layer id="slider-1-slide-4-layer-4" class="Concept-SubTitle" style="filter: brightness(3.5);" data-type="text" data-color="" data-rsp_ch="on" data-xy="x:c;y:m;yo:-42px,-47px,-55px,-76px;" data-text="w:normal,nowrap,nowrap,nowrap;s:21,20,20,15;l:21,25,20,20;fw:700;a:center,center,left,left;" data-dim="w:446px,424px,auto,auto;" data-padding="b:10;" data-frame_0="o:1;" data-frame_0_chars="d:5;y:100%;o:0;rZ:-35deg;" data-frame_0_mask="u:t;" data-frame_1="st:640;sp:1200;sR:640;" data-frame_1_chars="e:power4.inOut;d:10;rZ:0deg;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:4960;" data-frame_999_reverse="x:true;" style="z-index:11;font-family:'Open Sans';text-transform:uppercase;">
 
 
                 </rs-layer><!--							-->
                 <rs-layer id="slider-1-slide-4-layer-14" style="filter: brightness(3.5);" data-type="text" data-rsp_ch="on" data-xy="x:c;y:m,t,t,t;yo:78px,312px,271px,228px;" data-text="w:normal;s:18,18,16,15;l:31,30,30,27;a:center;" data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)" data-dim="w:806px,805px,689px,388px;h:auto,auto,auto,89px;" data-frame_0="y:100%;" data-frame_0_mask="u:t;" data-frame_1="st:2680;sp:1360;sR:2680;" data-frame_1_mask="u:t;" data-frame_999="o:0;st:w;sR:4960;" style="z-index:9;font-family:'Garamond';">
-                
+
                 <!-- We are Kings and Priests. We are Those that are Planted in the House of The Lord and we flourish in the Courts of Our God (Psalm 92:13) -->
-               
+
             </rs-layer><!--							-->
-            
+
             <!-- <a id="slider-1-slide-4-layer-16" class="rs-layer res-slide-btn pop rev-btn" href="/about" target="_self" data-type="button" data-color="rgba(255,255,255,1)" data-xy="x:c;y:m;yo:162px,156px,128px,112px;" data-text="s:16,16,14,14;l:17;fw:500;a:center;" data-rsp_bd="off" data-padding="t:15,15,10,10;r:35,35,25,25;b:15,15,10,10;l:35,35,25,25;" data-border="bor:3px,3px,3px,3px;" data-frame_0="y:100%;" data-frame_1="e:power4.inOut;st:3160;sp:1200;sR:3160;" data-frame_999="o:0;st:w;sR:4640;" data-frame_hover="bgc:#000;boc:#000;bor:3px,3px,3px,3px;bos:solid;oX:50;oY:50;sp:0;" style="z-index:8;font-family:'Poppins';cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">
-           
-            View  Ministries 
-        
+
+            View  Ministries
+
         </a> -->
-        
+
         <!--							-->
                 <rs-layer id="slider-1-slide-4-layer-21" style="filter: brightness(3.5);" data-type="image" data-rsp_ch="on" data-xy="x:c;yo:228px,133px,102px,85px;" data-text="w:normal;s:20,16,12,7;l:0,20,15,9;" data-dim="w:67px,60px,56px,45px;h:67px,60px,56px,45px;" data-frame_0="x:100%;" data-frame_0_mask="u:t;" data-frame_1="st:210;sp:1000;sR:210;" data-frame_1_mask="u:t;" data-frame_999="o:0;st:w;sR:7790;" style="z-index:12;"> </rs-layer>
                 <!---->
@@ -128,26 +128,26 @@
                     <img src="web/rs-plugin/assets/crowd.jpg" alt=" " title="zmain-slider-2.jpg" width="1536" height="864" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="web/rs-plugin/assets/crowd.jpg" data-parallax="5" data-no-retina>
                 </div> <!--							-->
                 <h1 id="slider-1-slide-5-layer-2" class="rs-layer Concept-Title" style="filter: brightness(3.5);" data-type="text" data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)" data-rsp_ch="on" data-xy="x:c;y:m;yo:10px,0,-10px,-38px;" data-text="w:normal,nowrap,nowrap,normal;s:54,50,45,28;l:52,55,50,30;ls:3px;fw:700;a:center;" data-dim="w:922px,845px,736px,478px;h:62px,auto,auto,35px;" data-padding="b:10;" data-frame_0="sX:2;sY:2;" data-frame_0_mask="u:t;" data-frame_1="e:power2.out;st:2110;sp:1270;sR:2110;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:5620;" data-frame_999_reverse="x:true;" style="z-index:10;font-family:'Garamond';text-transform:uppercase;">
-                
+
                 <!-- New Breed Connect TV -->
-                NEW BREED CITY CHAPEL 
+                NEW BREED CITY CHAPEL
                 </h1><!--							-->
                 <rs-layer id="slider-1-slide-5-layer-4" class="Concept-SubTitle" style="filter: brightness(3.5);" data-type="text" data-color="" data-rsp_ch="on" data-xy="x:c;y:m;yo:-42px,-47px,-55px,-76px;" data-text="w:normal,nowrap,nowrap,nowrap;s:21,20,20,15;l:21,25,20,20;fw:700;a:center,center,left,left;" data-dim="w:446px,424px,auto,auto;" data-padding="b:10;" data-frame_0="o:1;" data-frame_0_chars="d:5;y:100%;o:0;rZ:-35deg;" data-frame_0_mask="u:t;" data-frame_1="st:640;sp:1200;sR:640;" data-frame_1_chars="e:power4.inOut;d:10;rZ:0deg;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:4960;" data-frame_999_reverse="x:true;" style="z-index:11;font-family:'Open Sans';text-transform:uppercase;">
 
 
                 </rs-layer><!--							-->
                 <rs-layer id="slider-1-slide-5-layer-14" data-type="text" style="filter: brightness(3.5);" data-rsp_ch="on" data-xy="x:c;y:m,t,t,t;yo:78px,312px,271px,228px;" data-text="w:normal;s:18,18,16,15;l:31,30,30,27;a:center;" data-dim="w:806px,805px,689px,388px;h:auto,auto,auto,89px;" data-frame_0="y:100%;" data-frame_0_mask="u:t;" data-frame_1="st:2680;sp:1360;sR:2680;" data-frame_1_mask="u:t;" data-frame_999="o:0;st:w;sR:4960;" style="z-index:9;font-family:'Garamond';">
-                
+
                 <!-- You are welcome to Connect with our Family of Faith, Online and Onsite  -->
 
             </rs-layer><!--							-->
-            
+
             <!-- <a id="slider-1-slide-5-layer-16" class="rs-layer res-slide-btn pop rev-btn" href="/ministries" target="_self" data-type="button" data-color="rgba(255,255,255,1)" data-xy="x:c;y:m;yo:162px,156px,128px,112px;" data-text="s:16,16,14,14;l:17;fw:500;a:center;" data-rsp_bd="off" data-padding="t:15,15,10,10;r:35,35,25,25;b:15,15,10,10;l:35,35,25,25;" data-border="bor:3px,3px,3px,3px;" data-frame_0="y:100%;" data-frame_1="e:power4.inOut;st:3160;sp:1200;sR:3160;" data-frame_999="o:0;st:w;sR:4640;" data-frame_hover="bgc:#000;boc:#000;bor:3px,3px,3px,3px;bos:solid;oX:50;oY:50;sp:0;" style="z-index:8;font-family:'Poppins';cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">
-            
-            Connect With Us 
-        
+
+            Connect With Us
+
         </a> -->
-        
+
         <!--							-->
                 <rs-layer id="slider-1-slide-5-layer-21" data-type="image" style="filter: brightness(3.5);" data-rsp_ch="on" data-xy="x:c;yo:228px,133px,102px,85px;" data-text="w:normal;s:20,16,12,7;l:0,20,15,9;" data-dim="w:67px,60px,56px,45px;h:67px,60px,56px,45px;" data-frame_0="x:100%;" data-frame_0_mask="u:t;" data-frame_1="st:210;sp:1000;sR:210;" data-frame_1_mask="u:t;" data-frame_999="o:0;st:w;sR:7790;" style="z-index:12;"> </rs-layer>
                 <!---->
@@ -158,26 +158,26 @@
                     <img src="web/rs-plugin/assets/sea.jpg" alt=" " title="zmain-slider-2.jpg" width="1536" height="864" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="web/rs-plugin/assets/sea.jpg" data-parallax="5" data-no-retina>
                 </div> <!--							-->
                 <h1 id="slider-1-slide-6-layer-2" class="rs-layer Concept-Title" style="filter: brightness(3.5);" data-type="text" data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)" data-rsp_ch="on" data-xy="x:c;y:m;yo:10px,0,-10px,-38px;" data-text="w:normal,nowrap,nowrap,normal;s:54,50,45,28;l:52,55,50,30;ls:3px;fw:700;a:center;" data-dim="w:922px,845px,736px,478px;h:62px,auto,auto,35px;" data-padding="b:10;" data-frame_0="sX:2;sY:2;" data-frame_0_mask="u:t;" data-frame_1="e:power2.out;st:2110;sp:1270;sR:2110;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:5620;" data-frame_999_reverse="x:true;" style="z-index:10;font-family:'Garamond';text-transform:uppercase;">
-                
+
                 <!-- Jenga Hekalu -->
-                NEW BREED CITY CHAPEL 
+                NEW BREED CITY CHAPEL
                 </h1><!--							-->
                 <rs-layer id="slider-1-slide-6-layer-4" class="Concept-SubTitle" style="filter: brightness(3.5);" data-type="text" data-color="" data-rsp_ch="on" data-xy="x:c;y:m;yo:-42px,-47px,-55px,-76px;" data-text="w:normal,nowrap,nowrap,nowrap;s:21,20,20,15;l:21,25,20,20;fw:700;a:center,center,left,left;" data-dim="w:446px,424px,auto,auto;" data-padding="b:10;" data-frame_0="o:1;" data-frame_0_chars="d:5;y:100%;o:0;rZ:-35deg;" data-frame_0_mask="u:t;" data-frame_1="st:640;sp:1200;sR:640;" data-frame_1_chars="e:power4.inOut;d:10;rZ:0deg;" data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:4960;" data-frame_999_reverse="x:true;" style="z-index:11;font-family:'Open Sans';text-transform:uppercase;">
 
 
                 </rs-layer><!--							-->
                 <rs-layer id="slider-1-slide-6-layer-14" data-type="text" style="filter: brightness(3.5);" data-rsp_ch="on" data-xy="x:c;y:m,t,t,t;yo:78px,312px,271px,228px;" data-text="w:normal;s:18,18,16,15;l:31,30,30,27;a:center;" data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)" data-dim="w:806px,805px,689px,388px;h:auto,auto,auto,89px;" data-frame_0="y:100%;" data-frame_0_mask="u:t;" data-frame_1="st:2680;sp:1360;sR:2680;" data-frame_1_mask="u:t;" data-frame_999="o:0;st:w;sR:4960;" style="z-index:9;font-family:'Garamond';">
-                
+
                 <!-- Partner With us as we Build The House of the Lord  -->
-            
+
             </rs-layer><!--							-->
-            
+
             <!-- <a id="slider-1-slide-6-layer-16" class="rs-layer res-slide-btn pop rev-btn" href="/departments" target="_self" data-type="button" data-color="rgba(255,255,255,1)" data-xy="x:c;y:m;yo:162px,156px,128px,112px;" data-text="s:16,16,14,14;l:17;fw:500;a:center;" data-rsp_bd="off" data-padding="t:15,15,10,10;r:35,35,25,25;b:15,15,10,10;l:35,35,25,25;" data-border="bor:3px,3px,3px,3px;" data-frame_0="y:100%;" data-frame_1="e:power4.inOut;st:3160;sp:1200;sR:3160;" data-frame_999="o:0;st:w;sR:4640;" data-frame_hover="bgc:#000;boc:#000;bor:3px,3px,3px,3px;bos:solid;oX:50;oY:50;sp:0;" style="z-index:8;font-family:'Poppins';cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">
-          
-            See  More 
-        
+
+            See  More
+
         </a> -->
-        
+
         <!--							-->
                 <rs-layer id="slider-1-slide-6-layer-21" data-type="image" style="filter: brightness(3.5);" data-rsp_ch="on" data-xy="x:c;yo:228px,133px,102px,85px;" data-text="w:normal;s:20,16,12,7;l:0,20,15,9;" data-dim="w:67px,60px,56px,45px;h:67px,60px,56px,45px;" data-frame_0="x:100%;" data-frame_0_mask="u:t;" data-frame_1="st:210;sp:1000;sR:210;" data-frame_1_mask="u:t;" data-frame_999="o:0;st:w;sR:7790;" style="z-index:12;"> </rs-layer>
                 <!---->
@@ -215,7 +215,7 @@
                 <div class="row">
                     <!--Events Main Slider-->
                     <div class="owl-carousel events-main-wrapper events-style-1" data-loop="1" data-nav="0" data-dots="1" data-autoplay="0" data-autoplaypause="1" data-autoplaytime="5000" data-smartspeed="1000" data-margin="30" data-items="2" data-items-tab="1" data-items-mob="1">
-        
+
                         <!-- Item 1 -->
                         <div class="item">
                             <!-- Events Inner -->
@@ -238,7 +238,7 @@
                             <!-- Events Inner Ends -->
                         </div>
                         <!-- Item 1 Ends -->
-        
+
                         <!-- Item 2 -->
                         <div class="item">
                             <!-- Events Inner -->
@@ -261,16 +261,16 @@
                             <!-- Events Inner Ends -->
                         </div>
                         <!-- Item 2 Ends -->
-        
+
                         <!-- Add more items for additional events -->
-        
+
                     </div>
                     <!-- Events Owl Slider -->
                 </div> <!-- Row -->
             </div> <!-- Container -->
         </section>
         <!-- Events Section End -->
-        
+
 
         <!-- About Section -->
         <section id="section-about" class="section-about pad-top-90">
@@ -394,7 +394,7 @@
                     <div class="offset-md-2 col-md-8">
                         <div class="title-wrap text-center">
                             <div class="section-title"> <span class="sub-title theme-color text-uppercase"> <a href="/ministries">TEAMS</a></span>
-                                <h2 class="section-title margin-top-5"> <a href="/ministries">Our TEAMS </a></h2> <span class="border-bottom center"></span>
+                                <h2 class="section-title margin-top-5"> <a href="/ministries">OUR TEAMS </a></h2> <span class="border-bottom center"></span>
                             </div>
                         </div>
                     </div>
@@ -405,7 +405,7 @@
                             <div class="ministries-box-style-2">
                                 <!-- Ministries Inner -->
                                 <div class="ministries-inner">
-                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/" width="360" height="240" alt="Agricultural Processing"> </div>
+                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/passtorr.jpg" width="360" height="240" alt="Agricultural Processing"> </div>
                                     <!-- Ministries Content -->
                                     <div class="ministries-content pad-30">
                                         <div class="ministries-title margin-bottom-15">
@@ -428,7 +428,7 @@
                             <div class="ministries-box-style-2">
                                 <!-- Ministries Inner -->
                                 <div class="ministries-inner">
-                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/" width="360" height="240" alt="Agricultural Processing"> </div>
+                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/2protocol.jpg" width="360" height="240" alt="Agricultural Processing"> </div>
                                     <!-- Ministries Content -->
                                     <div class="ministries-content pad-30">
                                         <div class="ministries-title margin-bottom-15">
@@ -452,7 +452,7 @@
                             <div class="ministries-box-style-2">
                                 <!-- Ministries Inner -->
                                 <div class="ministries-inner">
-                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/" width="360" height="240" alt="Agricultural Processing"> </div>
+                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/mission.jpg" width="360" height="240" alt="Agricultural Processing"> </div>
                                     <!-- Ministries Content -->
                                     <div class="ministries-content pad-30">
                                         <div class="ministries-title margin-bottom-15">
@@ -486,7 +486,7 @@
                                                 Here, Our Youth are trained to be solutions to the world, as Lights of the World and Salt of the Earth.
                                             </p>
                                         </div>
-                                        <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries#jawabu" class="link">Read More</a> 
+                                        <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries#jawabu" class="link">Read More</a>
                                         </div> --}}
                                     </div>
                                 </div> <!-- Ministries Inner Ends -->
@@ -499,7 +499,7 @@
                             <div class="ministries-box-style-2">
                                 <!-- Ministries Inner -->
                                 <div class="ministries-inner">
-                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/" width="360" height="240" alt="Agricultural Processing"> </div>
+                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/sceptor.jpg" width="360" height="240" alt="Agricultural Processing"> </div>
                                     <!-- Ministries Content -->
                                     <div class="ministries-content pad-30">
                                         <div class="ministries-title margin-bottom-15">
@@ -509,7 +509,7 @@
                                             <p>Teens Church is our Teens Ministry where our Teens are methodically trained to be able to transition well through the critical stages of their lives.
                                             </p>
                                         </div>
-                                        <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries#jawabu" class="link">Read More</a> 
+                                        <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries#jawabu" class="link">Read More</a>
                                         </div> --}}
                                     </div>
                                 </div> <!-- Ministries Inner Ends -->
@@ -522,7 +522,7 @@
                             <div class="ministries-box-style-2">
                                 <!-- Ministries Inner -->
                                 <div class="ministries-inner">
-                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/couple.jpg" width="360" height="240" alt="Agricultural Processing"> </div>
+                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/pastoor3.jpg" width="360" height="240" alt="Agricultural Processing"> </div>
                                     <!-- Ministries Content -->
                                     <div class="ministries-content pad-30">
                                         <div class="ministries-title margin-bottom-15">
@@ -547,7 +547,7 @@
                             <div class="ministries-box-style-2">
                                 <!-- Ministries Inner -->
                                 <div class="ministries-inner">
-                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/" width="360" height="240" alt="Agricultural Processing"> </div>
+                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/92.jpg" width="360" height="240" alt="Agricultural Processing"> </div>
                                     <!-- Ministries Content -->
                                     <div class="ministries-content pad-30">
                                         <div class="ministries-title margin-bottom-15">
@@ -600,7 +600,7 @@
         </section> <!-- Ministries Section End -->
 
 
-       
+
 
 
         <section id="ministries-section" class="ministries-section pad-top-95 pad-bottom-70">
@@ -808,7 +808,7 @@
                         <!--Item Ends-->
                         <!--Item-->
 
-{{-- 
+{{--
                         <div id="rongai" class="item">
                             <div class="team-style-1">
                                 <!--Team Inner-->
@@ -931,7 +931,7 @@
                             </div>
                         </div>
                         <!--Item Ends--><!--Item-->
-{{-- 
+{{--
                         <div id="abuja" class="item">
                             <div class="team-style-1">
                                 <!--Team Inner-->
@@ -1178,7 +1178,7 @@
                                                         <div class="events-inner margin-bottom-35">
                                                             <!--events Thumb-->
                                                             <div class="events-thumb margin-bottom-30 relative">
-                                                                <img src="web/rs-plugin/assets/" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
+                                                                <img src="web/rs-plugin/assets/sidl.jpg" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
                                                             </div>
                                                             <!--events details-->
                                                             <div class="events-details pad-none">
@@ -1204,7 +1204,7 @@
                                                         <div class="events-inner margin-bottom-35">
                                                             <!--events Thumb-->
                                                             <div class="events-thumb margin-bottom-30 relative">
-                                                                <img src="web/rs-plugin/assets/mediateam.jpg" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
+                                                                <img src="web/rs-plugin/assets/hmlc.jpg" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
                                                             </div>
                                                             <!--events details-->
                                                             <div class="events-details pad-none">
@@ -1276,9 +1276,9 @@
                                                     <!--Col-md Ends-->
 
 
-                                          
-                                        
-                                        
+
+
+
                                          <!-- Col-md -->
                                          <div id="children" class="col-lg-4 col-md-6">
                                             <!--events Inner-->
@@ -1504,7 +1504,7 @@
                             <div class="ministries-box-style-2">
                                 <!-- Ministries Inner -->
                                 <div class="ministries-inner">
-                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/" width="360" height="240" alt="Agricultural Processing"> </div>
+                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/bishoperick.jpg" width="360" height="240" alt="Agricultural Processing"> </div>
                                     <!-- Ministries Content -->
                                     <div class="ministries-content pad-30">
                                         <div class="ministries-title margin-bottom-15">
@@ -1525,7 +1525,7 @@
                             <div class="ministries-box-style-2">
                                 <!-- Ministries Inner -->
                                 <div class="ministries-inner">
-                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/" width="360" height="240" alt="Agricultural Processing"> </div>
+                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/apo.jpg" width="360" height="240" alt="Agricultural Processing"> </div>
                                     <!-- Ministries Content -->
                                     <div class="ministries-content pad-30">
                                         <div class="ministries-title margin-bottom-15">
@@ -1548,18 +1548,18 @@
                             <div class="ministries-box-style-2">
                                 <!-- Ministries Inner -->
                                 <div class="ministries-inner">
-                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/" width="360" height="240" alt="Agricultural Processing"> </div>
+                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/2protocol.jpg" width="360" height="240" alt="Agricultural Processing"> </div>
                                     <!-- Ministries Content -->
                                     <div class="ministries-content pad-30">
                                         <div class="ministries-title margin-bottom-15">
-                                            <h4><a href="/ministries#children" class="ministries-link">The Strategic Committee</a></h4>
+                                            <h4><a href="/ministries" class="ministries-link">The Strategic Committee</a></h4>
                                         </div>
                                         <div class="ministries-desc">
                                             <p>
-                                               Addressed as Kings. A select team of people that are Kings that assist in Strategic Matters of the Vision. 
+                                               Addressed as Kings. A select team of people that are Kings that assist in Strategic Matters of the Vision.
                                             </p>
                                         </div>
-                                        <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries#children" class="link">Read More</a>
+                                        <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries" class="link">Read More</a>
                                         </div>
                                     </div>
                                 </div> <!-- Ministries Inner Ends -->
@@ -1571,17 +1571,17 @@
                             <div class="ministries-box-style-2">
                                 <!-- Ministries Inner -->
                                 <div class="ministries-inner">
-                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/" width="360" height="240" alt="Agricultural Processing"> </div>
+                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/passtorr.jpg" width="360" height="240" alt="Agricultural Processing"> </div>
                                     <!-- Ministries Content -->
                                     <div class="ministries-content pad-30">
                                         <div class="ministries-title margin-bottom-15">
-                                            <h4><a href="/ministries#jawabu" class="ministries-link">The Resident Pastorate ( HQ & Branches)</a></h4>
+                                            <h4><a href="/ministries" class="ministries-link">The Resident Pastorate ( HQ & Branches)</a></h4>
                                         </div>
                                         <div class="ministries-desc">
                                             <p>
                                                 This is the team that runs the churches of New Breed City Chapel directly. </p>
                                         </div>
-                                        <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries#jawabu" class="link">Read More</a> </div>
+                                        <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries" class="link">Read More</a> </div>
                                     </div>
                                 </div> <!-- Ministries Inner Ends -->
                             </div>
@@ -1593,18 +1593,18 @@
                             <div class="ministries-box-style-2">
                                 <!-- Ministries Inner -->
                                 <div class="ministries-inner">
-                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/" width="360" height="240" alt="Agricultural Processing"> </div>
+                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/protocol.jpg" width="360" height="240" alt="Agricultural Processing"> </div>
                                     <!-- Ministries Content -->
                                     <div class="ministries-content pad-30">
                                         <div class="ministries-title margin-bottom-15">
-                                            <h4><a href="/ministries#jawabu" class="ministries-link">The Dream Team</a></h4>
+                                            <h4><a href="/ministries" class="ministries-link">The Dream Team</a></h4>
                                         </div>
                                         <div class="ministries-desc">
                                             <p>
                                                 The combination Leaders from Branches, HQ strategic teams and all campuses globally.
                                             </p>
                                         </div>
-                                        <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries#jawabu" class="link">Read More</a> </div>
+                                        <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries" class="link">Read More</a> </div>
                                     </div>
                                 </div> <!-- Ministries Inner Ends -->
                             </div>
@@ -1616,18 +1616,18 @@
                             <div class="ministries-box-style-2">
                                 <!-- Ministries Inner -->
                                 <div class="ministries-inner">
-                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/" width="360" height="240" alt="Agricultural Processing"> </div>
+                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/s.jpg" width="360" height="240" alt="Agricultural Processing"> </div>
                                     <!-- Ministries Content -->
                                     <div class="ministries-content pad-30">
                                         <div class="ministries-title margin-bottom-15">
-                                            <h4><a href="/ministries#jawabu" class="ministries-link">The Task Force </a></h4>
+                                            <h4><a href="/ministries" class="ministries-link">The Task Force </a></h4>
                                         </div>
                                         <div class="ministries-desc">
                                             <p>
-                                              This is the team of workers in every branch that are in all departments, deltas and ministries  
+                                              This is the team of workers in every branch that are in all departments, deltas and ministries
                                             </p>
                                         </div>
-                                        <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries#jawabu" class="link">Read More</a> </div>
+                                        <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries" class="link">Read More</a> </div>
                                     </div>
                                 </div> <!-- Ministries Inner Ends -->
                             </div>
@@ -1640,11 +1640,11 @@
                             <div class="ministries-box-style-2">
                                 <!-- Ministries Inner -->
                                 <div class="ministries-inner">
-                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/" width="360" height="240" alt="Agricultural Processing"> </div>
+                                    <div class="ministries-thumb"> <img class="img-fluid squared w-100" src="web/rs-plugin/assets/crowd.jpg" width="360" height="240" alt="Agricultural Processing"> </div>
                                     <!-- Ministries Content -->
                                     <div class="ministries-content pad-30">
                                         <div class="ministries-title margin-bottom-15">
-                                            <h4><a href="/ministries#jawabu" class="ministries-link">The Congregation </a></h4>
+                                            <h4><a href="/ministries" class="ministries-link">The Congregation </a></h4>
                                         </div>
                                         <div class="ministries-desc">
                                             <p>
@@ -1652,7 +1652,7 @@
 
                                             </p>
                                         </div>
-                                        <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries#jawabu" class="link">Read More</a> </div>
+                                        <div class="ministries-link margin-top-20"> <a target="_blank" href="/ministries" class="link">Read More</a> </div>
                                     </div>
                                 </div> <!-- Ministries Inner Ends -->
                             </div>
@@ -1793,12 +1793,12 @@
 
 
         <!-- Contact Section -->
-        
+
         <section class="contact-form-section typo-white section-bg-img o-visible pad-top-80 pad-bottom-160" data-bg="web/rs-plugin/assets/sea.jpg">
-        
+
         <div class="shape-bottom" data-negative="false"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-                   
-                   
+
+
                 </svg> </div>
             <div class="container">
                 <div class="row">

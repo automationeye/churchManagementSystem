@@ -69,7 +69,7 @@ Leaders
                                     <form action="{{ route('delete-announcement', ['announcement' => $announcement->id]) }}" method="POST" style="display: inline;">
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="btn btn-info" onclick="return confirm('Are you sure you want to delete this announcement?')">Delete</button>
+                                        <button type="submit" class="btn btn-warning" onclick="return confirm('Are you sure you want to delete this announcement?')">Delete</button>
                                     </form>
                                 </td>
                             </tr>

@@ -36,7 +36,7 @@
                                     <div class="events-inner margin-bottom-35">
                                         <!--events Thumb-->
                                         <div class="events-thumb margin-bottom-30 relative">
-                                            <img src="web/rs-plugin/assets/" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
+                                            <img src="web/rs-plugin/assets/p.jpg" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
                                         </div>
                                         <!--events details-->
                                         <div class="events-details pad-none">
@@ -136,7 +136,7 @@
                                     <div class="events-inner margin-bottom-35">
                                         <!--events Thumb-->
                                         <div class="events-thumb margin-bottom-30 relative">
-                                            <img src="web/rs-plugin/assets/" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
+                                            <img src="web/rs-plugin/assets/sidl.jpg" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
                                         </div>
                                         <!--events details-->
                                         <div class="events-details pad-none">
@@ -162,7 +162,7 @@
                                     <div class="events-inner margin-bottom-35">
                                         <!--events Thumb-->
                                         <div class="events-thumb margin-bottom-30 relative">
-                                            <img src="web/rs-plugin/assets/" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
+                                            <img src="web/rs-plugin/assets/hmlc.jpg" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
                                         </div>
                                         <!--events details-->
                                         <div class="events-details pad-none">
@@ -188,7 +188,7 @@
                                     <div class="events-inner margin-bottom-35">
                                         <!--events Thumb-->
                                         <div class="events-thumb margin-bottom-30 relative">
-                                            <img src="web/rs-plugin/assets/" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
+                                            <img src="web/rs-plugin/assets/dance2.jpg" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
                                         </div>
                                         <!--events details-->
                                         <div class="events-details pad-none">
@@ -214,7 +214,7 @@
                                     <div class="events-inner margin-bottom-35">
                                         <!--events Thumb-->
                                         <div class="events-thumb margin-bottom-30 relative">
-                                            <img src="web/rs-plugin/assets/" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
+                                            <img src="web/rs-plugin/assets/tl.jpg" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
                                         </div>
                                         <!--events details-->
                                         <div class="events-details pad-none">
@@ -234,9 +234,9 @@
                                 <!--Col-md Ends-->
 
 
-                      
-                    
-                    
+
+
+
                      <!-- Col-md -->
                      <div id="children" class="col-lg-4 col-md-6">
                         <!--events Inner-->
@@ -268,7 +268,7 @@
                         <div class="events-inner margin-bottom-35">
                             <!--events Thumb-->
                             <div class="events-thumb margin-bottom-30 relative">
-                                <img src="web/rs-plugin/assets/p.jpg" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
+                                <img src="web/rs-plugin/assets/protocol.jpg" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
                             </div>
                             <!--events details-->
                             <div class="events-details pad-none">
@@ -294,7 +294,7 @@
                                     <div class="events-inner margin-bottom-35">
                                         <!--events Thumb-->
                                         <div class="events-thumb margin-bottom-30 relative">
-                                            <img src="web/rs-plugin/assets/" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
+                                            <img src="web/rs-plugin/assets/v.jpg" class="img-fluid thumb w-100" width="768" height="550" alt="events-img" />
                                         </div>
                                         <!--events details-->
                                         <div class="events-details pad-none">

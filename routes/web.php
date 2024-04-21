@@ -75,13 +75,19 @@ Route::group(['middleware' => ['auth.leader']], function () {
 
 
     Route::get('/announcements', 'AnnouncementController@index')->name('announcements');
+    Route::get('/announcement', 'VisitorController@announcement')->name('announcement');
 
+    Route::get('/editannouncement', 'VisitorController@editannouncement')->name('editannouncement');
     // Route for deleting announcement
     Route::delete('/announcements/{announcement}', 'AnnouncementController@destroy')->name('delete-announcements');
 
 
     Route::post('/meeting/post', 'MeetingController@store')->name('meeting.post');
     Route::delete('/meeting/{meeting}', 'meetingController@destroy')->name('delete-meeting');
+    Route::get('/newmeeting', 'MeetingController@newmeeting')->name('newmeeting');
+    Route::get('/viewmeeting', 'MeetingController@viewmeeting')->name('viewmeeting');
+
+
 
     Route::get('/leaderdash', 'AdminsController@index')->name('leaderdash');
 
@@ -112,13 +118,8 @@ Route::group(['middleware' => ['auth.leader']], function () {
 
     Route::get('/edit', 'VisitorController@edit')->name('edit');
 
-    Route::get('/announcement', 'VisitorController@announcement')->name('announcement');
 
-    Route::get('/editannouncement', 'VisitorController@editannouncement')->name('editannouncement');
 
-    Route::get('/newmeeting', 'MeetingController@newmeeting')->name('newmeeting');
-
-    Route::get('/viewmeeting', 'MeetingController@viewmeeting')->name('viewmeeting');
 
     Route::get('/profile', 'AdminsController@read')->name('leaderprofile');
 });
@@ -217,7 +218,8 @@ Route::group(['middleware' => ['auth.admin']], function () {
 
     Route::put('/teams/{team}', 'ChurchTeamsController@update')->name('update-team');
 
-
+    // Route for deleting a member
+    Route::delete('/teams/{team}', 'ChurchTeamsController@destroy')->name('delete-team');
 
     //leaders
     Route::get('/leaders/register', 'LeadersController@create')->name('leaders.register');

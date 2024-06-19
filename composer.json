@@ -18,7 +18,8 @@
         "laravel/tinker": "^2.6",
         "laravel/ui": "^3.3",
         "myckhel/laravel-paystack": "^1.1",
-        "yajra/laravel-datatables-oracle": "~9.0"
+        "yajra/laravel-datatables-oracle": "~9.0",
+        "yoeunes/toastr": "^2.3"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

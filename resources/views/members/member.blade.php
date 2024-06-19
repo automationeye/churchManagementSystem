@@ -2,6 +2,38 @@
 
 @section('content')
 
+<style>
+    <style><blade keyframes|%20spinner%20%7B%0D>to {
+        transform: rotate(360deg);
+    }
+    }
+
+    .spinner {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+        border-top-color: #000;
+        animation: spinner 0.6s linear infinite;
+    }
+
+    .button-loading {
+        position: relative;
+    }
+
+    .button-loading .spinner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -0.5em;
+        margin-left: -0.5em;
+    }
+
+</style>
+
+</style>
+
 <div class="page-title-wrap typo-white">
     <div class="page-title-wrap-inner section-bg-img" data-bg="images/page-title.jpg">
         <span class="theme-overlay"></span>
@@ -21,200 +53,58 @@
         <div class="row">
             <div class="col-lg-12">
 
-<br><br>
-
-
-
-
+                <br><br>
                 @if(auth()->user()->team==null && auth()->user()->team_status==0)
 
-                <div class="card card-primary card-outline alert alert-danger" style="text-align: left;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <p style="cursor: pointer;"> <strong> You are currently not enrolled to a team, <b> CLICK HERE </b> to select a team and join one today </strong></p>
-                </div>
+                    <div class="card card-primary card-outline alert alert-danger" style="text-align: left;"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <p style="cursor: pointer;"> <strong> You are currently not enrolled to a team, <b> CLICK HERE
+                                </b> to select a team and join one today </strong></p>
+                    </div>
                 @elseif(auth()->user()->team_status==0)
 
-                <div class="card card-primary card-outline alert alert-warning" style="text-align: left;">
-                    You belong to team {{ auth()->user()->team }} but awaiting confirmation from admin
-                </div>
+                    <div class="card card-primary card-outline alert alert-warning" style="text-align: left;">
+                        You belong to team {{ auth()->user()->team }} but awaiting confirmation from admin
+                    </div>
 
                 @else
 
-                <div class="card card-primary card-outline alert alert-success" style="text-align: left;">
-                    You belong to team {{ auth()->user()->team }}
-                </div>
+                    <div class="card card-primary card-outline alert alert-success" style="text-align: left;">
+                        You belong to team {{ auth()->user()->team }}
+                    </div>
 
                 @endif
 
 
-                <div class="card card-primary card-outline alert alert-success">
-                    <h4>Bishop Announcements</h4>
-                    @foreach($bishopAnnouncements as $announcement)
-                    <span style="text-align:center;"> {{ $announcement->details }}</span><br>
-                    @endforeach
-                </div>
-
-
-
-                <div class="card card-primary card-outline alert alert-success">
-                    <h4>Leader Announcements</h4>
-                    @foreach($leaderAnnouncements as $announcement)
-                    <span style="text-align:center;"> {{ $announcement->details }}</span>
-                    <br>
-                    @endforeach
-                </div>
-
-
-
-            </div>
-        </div>
-
-
-        <div class="row" style="margin-left: 15px;">
-            <div class="col-md-3 card card-primary card-outline" style="margin-right: 135px;">
-                <div class="card-header">
-                    <button type="submit" class="btn btn-default">
-                        <i class="fas fa-add"></i> My Team
-                    </button>
-                </div>
-
-                <div class="card-body">
-                    <div class="inner">
-
-                        @if(auth()->user()->team==null)
-                        <!-- <div class="btn btn-default" data-bs-toggle="modal" data-target="#exampleModal">
-                            Select team
-                        </div> -->
-
-                        @else
-                        <h3>
-                            {{ auth()->user()->team }}
-
-                        </h3>
-                        @endif
-
+                <!-- if there is a new bishop announcement -->
+                @if(count($bishopAnnouncements) > 0)
+                    <div class="card card-primary card-outline alert alert-success">
+                        <h4>Bishop Announcements</h4>
+                        @foreach($bishopAnnouncements as $announcement)
+                            <span style="text-align:center;">{{ $announcement->details }}</span><br>
+                        @endforeach
                     </div>
+                @endif
 
 
-                </div>
+                <!-- if there is a new leader announcement -->
+
+
+
+                @if(count($bishopAnnouncements) > 0)
+                    <div class="card card-primary card-outline alert alert-success">
+                        <h4>Leader Announcements</h4>
+                        @foreach($leaderAnnouncements as $announcement)
+                            <span style="text-align:center;"> {{ $announcement->details }}</span>
+                            <br>
+                        @endforeach
+                    </div>
+                @endif
+
+
 
             </div>
-
-
-            <!-- Check In and Check Out -->
-
-
-
-            <div class="col-md-6 card card-primary card-outline" style="width: 420px">
-    <form id="attendanceForm" action="{{ route('attendance.store') }}" method="POST">
-        @csrf
-        <input type="hidden" name="latitude" id="latitudeInput">
-        <input type="hidden" name="longitude" id="longitudeInput">
-        <button type="button" class="btn btn-default" onclick="toggleTimer()">
-            <i class="fas fa-add"></i> <span id="buttonText">Check In</span>
-        </button>
-    </form>
-
-    <div class="card-body" >
-        <div class="inner">
-           
-            <h9 id="locationInfo" class="card-title m-0"></h9>
-            <h5 id="timeInfo" class="card-title m-0"></h5>
         </div>
-    </div>
-
-    <script>
-        var startTime;
-        var endTime;
-        var timerInterval;
-        var timerRunning = false;
-        var elapsedTime = {
-            hours: 0,
-            minutes: 0,
-            seconds: 0
-        };
-
-        function toggleTimer() {
-            if (!timerRunning) {
-                getLocation();
-            } else {
-                stopTimer();
-            }
-        }
-
-        function getLocation() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(startTimer, handleLocationError);
-            } else {
-                console.log("Geolocation is not supported by this browser.");
-            }
-        }
-
-        function startTimer(position) {
-            timerRunning = true;
-            startTime = new Date();
-            document.getElementById("buttonText").innerText = "Check Out";
-            displayLocation(position);
-            timerInterval = setInterval(updateTimer, 1000);
-
-            // Populate form inputs with latitude and longitude
-            document.getElementById("latitudeInput").value = position.coords.latitude;
-            document.getElementById("longitudeInput").value = position.coords.longitude;
-
-            // Submit the form
-            document.getElementById("attendanceForm").submit();
-        }
-
-        function stopTimer() {
-            clearInterval(timerInterval);
-            timerRunning = false;
-            endTime = new Date();
-            calculateTimeDifference();
-            document.getElementById("buttonText").innerText = "Check In";
-        }
-
-        function updateTimer() {
-            elapsedTime.seconds++;
-            if (elapsedTime.seconds >= 60) {
-                elapsedTime.seconds = 0;
-                elapsedTime.minutes++;
-                if (elapsedTime.minutes >= 60) {
-                    elapsedTime.minutes = 0;
-                    elapsedTime.hours++;
-                }
-            }
-            document.getElementById("timeInfo").innerText = "Total Time: " + formatTime(elapsedTime.hours) + ":" + formatTime(elapsedTime.minutes) + ":" + formatTime(elapsedTime.seconds);
-        }
-
-        function formatTime(time) {
-            return time < 10 ? "0" + time : time;
-        }
-
-        function calculateTimeDifference() {
-            var timeDifferenceInSeconds = Math.floor((endTime - startTime) / 1000);
-            elapsedTime.hours = Math.floor(timeDifferenceInSeconds / 3600);
-            elapsedTime.minutes = Math.floor((timeDifferenceInSeconds % 3600) / 60);
-            elapsedTime.seconds = timeDifferenceInSeconds % 60;
-            console.log("Time Difference (hours:minutes:seconds):", elapsedTime.hours + ":" + elapsedTime.minutes + ":" + elapsedTime.seconds);
-        }
-
-        function displayLocation(position) {
-            var locationInfo = "Latitude: " + position.coords.latitude + ", Longitude: " + position.coords.longitude;
-            document.getElementById("locationInfo").innerText = "Location: " + locationInfo;
-        }
-
-        function handleLocationError(error) {
-            console.log("Error getting location:", error.message);
-        }
-    </script>
-</div>
-
-
-
-
-            
-        </div>
-
-        
 
         <div class="row">
             <div class="col-md-6 card card-primary card-outline">
@@ -243,34 +133,44 @@
 
                                 @if(count($leaves)>0)
 
-                                @foreach($leaves as $leave)
+                                    @foreach($leaves as $leave)
 
-                                <tr>
-                                    <td>{{ $leave->firstname }}</td>
-                                    <td>{{ $leave->lastname }}</td>
-                                    <td>{{ $leave->from }}</td>
-                                    <td>{{ $leave->to }}</td>
-                                    <td>{{ $leave->reason }}</td>
+                                        <tr>
+                                            <td>
+                                           {{
+                                                App\Member::find($leave->user_id)->firstname
+                                            }}
+                                            </td>
+                                            <td>
+                                                {{
+                                                App\Member::find($leave->user_id)->lastname
+                                            
+                                           }}
 
-                                    <td>
+                                            </td>
+                                            <td>{{ $leave->from }}</td>
+                                            <td>{{ $leave->to }}</td>
+                                            <td>{{ $leave->reason }}</td>
 
-                                        @if($leave->status==0)
-                                        <span class="badge bg-warning text-dark">Pending</span>
-                                        @elseif($leave->status==1)
-                                        <span class="badge bg-success">Approved</span>
-                                        @else
-                                        <span class="badge bg-danger">Rejected</span>
+                                            <td>
 
-                                        @endif
-                                    </td>
+                                                @if($leave->status==0)
+                                                    <span class="badge bg-warning text-dark">Pending</span>
+                                                @elseif($leave->status==1)
+                                                    <span class="badge bg-success">Approved</span>
+                                                @else
+                                                    <span class="badge bg-danger">Rejected</span>
 
-                                </tr>
-                                @endforeach
+                                                @endif
+                                            </td>
+
+                                        </tr>
+                                    @endforeach
 
                                 @else
-                                <tr>
-                                    <td colspan="8">No Leave found found</td>
-                                </tr>
+                                    <tr>
+                                        <td colspan="8">No Leave found found</td>
+                                    </tr>
                                 @endif
 
 
@@ -305,26 +205,50 @@
                             <table class="table table-bordered table-striped table-sm">
                                 <thead>
                                     <tr>
-                                        <th>#</th>
+
                                         <th>Title</th>
-                                        <th>Description</th>
                                         <th>Venue</th>
                                         <th>Date & Time</th>
+                                        <th>Action</th>
 
                                     </tr>
                                 </thead>
                                 <tbody id="meeting-table-body">
+
+                                    @php
+                                        $userId = auth()->user()->id;
+                                        $checkedInMeetings = App\GeneralAttendances::where('user_id', $userId)
+                                        ->where('type', 'meeting')
+                                        ->pluck('eventormeetingid')
+                                        ->toArray();
+                                    @endphp
+
+                                    <input type="hidden" id="user_id" value="{{ Auth::user()->id }}">
                                     <!-- Scheduled meetings will be inserted here -->
-                                    <?php $meetings = App\Meeting::all() ?>
+                                    <?php
+                                    
+                                    use Carbon\Carbon;
+                                    $meetings = App\Meeting::where('datetime', '>', Carbon::now())->get();  
+                                    
+                                    ?>
 
                                     @foreach($meetings as $meeting)
-                                    <tr>
-                                        <td>{{ $loop->iteration }}</td>
-                                        <td>{{ $meeting->title }}</td>
-                                        <td>{{ $meeting->description }}</td>
-                                        <td>{{ $meeting->venue }}</td>
-                                        <td>{{ $meeting->datetime }}</td>
-                                    </tr>
+                                        <tr>
+                                            <input type="hidden" class="meetingid" id="meetingid{{ $meeting->id }}"
+                                                value="{{ $meeting->id }}">
+
+                                            <td>{{ $meeting->title }}</td>
+                                            <td>{{ $meeting->venue }}</td>
+                                            <td>{{ $meeting->datetime }}</td>
+
+                                            <td>
+                                                @if(in_array($meeting->id, $checkedInMeetings))
+                                                    <button class="btn btn-info checkin-btn" data-meeting-id="{{ $meeting->id }}" disabled>Checked in</button>
+                                                @else
+                                                    <button class="btn btn-info checkin-btn" data-meeting-id="{{ $meeting->id }}">Check in</button>
+                                                @endif
+                                            </td>
+                                        </tr>
                                     @endforeach
 
 
@@ -358,26 +282,32 @@
                             <thead>
                                 <tr>
                                     <th>Event Title</th>
-                                    <th>Event Details</th>
                                     <th>Location</th>
-                                    <th>Date</th>
-                                    <th>Time</th>
+                                    <th>DateTime</th>
+                                 
 
                                 </tr>
                             </thead>
                             <tbody>
                                 <!-- Scheduled eventss will be inserted here -->
-                                <?php $events = App\Event::all() ?>
+                                <?php
+
+                                
+                                $events = App\Event::where('date', '>', Carbon::now())->get();
+                                
+                                
+                                
+                                ?>
 
                                 @foreach($events as $event)
-                                <tr>
-                                    <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $event->title }}</td>
-                                    <td>{{ $event->details }}</td>
-                                    <td>{{ $event->location }}</td>
-                                    <td>{{ $event->date }}</td>
-                                    <td>{{ $event->time }}</td>
-                                </tr>
+                                    <tr>
+                                       
+                                        <td>{{ $event->title }}</td>
+                                       
+                                        <td>{{ $event->location }}</td>
+                                        <td>{{ $event->date }} {{ $event->time }}</td>
+                                        <td></td>
+                                    </tr>
                                 @endforeach
 
 
@@ -410,18 +340,29 @@
                             <table class="table table-bordered table-striped table-sm">
                                 <thead>
                                     <tr>
-
-                                        <th>Member</th>
-                                        <th>Status</th>
-
-
+                                        <th>Meeting</th>
+                                        <th>type</th>
+                                        <th>Checkin time</th>
                                     </tr>
                                 </thead>
                                 <tbody>
 
-                                    <tr>
-                                        <td colspan="8">No attendance history found</td>
-                                    </tr>
+                                    <?php $attendances = App\GeneralAttendances::where('user_id', Auth::user()->id)->get(); ?>
+
+                                    @foreach($attendances as $attendance)
+                                        <tr>
+                                            <td>
+                                                @if($attendance->type=='meeting')
+                                                    {{ App\Meeting::find($attendance->eventormeetingid)->title }}
+                                                @else
+                                                    {{ App\Event::find($attendance->eventormeetingid)->title }}
+                                                @endif
+                                            </td>
+                                            <td>{{ $attendance->type }}</td>
+                                            <td>{{ $attendance->created_at }}</td>
+                                        </tr>
+
+                                    @endforeach
 
                                 </tbody>
                             </table>
@@ -436,10 +377,11 @@
 
         <br><br>
 
-        
+
         <br><br>
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -459,7 +401,7 @@
                                     <?php $users = App\User::all(); ?>
                                     <select class="form-control" id="teamSelect" name="branch">
                                         @foreach($users as $user)
-                                        <option value="{{ $user->id }}">{{ $user->branchname }}</option>
+                                            <option value="{{ $user->id }}">{{ $user->branchname }}</option>
                                         @endforeach
                                         <!-- Add more options as needed -->
                                     </select>
@@ -471,7 +413,7 @@
                                     <?php $teams = App\ChurchTeams::all(); ?>
                                     <select class="form-control" id="teamSelect" name="team">
                                         @foreach($teams as $team)
-                                        <option value="{{ $team->team }}">{{ $team->team }}</option>
+                                            <option value="{{ $team->team }}">{{ $team->team }}</option>
                                         @endforeach
                                         <!-- Add more options as needed -->
                                     </select>
@@ -502,14 +444,94 @@
 
 
 </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Attach click event listener to all buttons with class 'checkin-btn'
+        document.querySelectorAll('.checkin-btn').forEach(button => {
+            button.addEventListener('click', function () {
 
+
+                // Get the meeting ID from the data attribute
+                const meetingId = this.getAttribute('data-meeting-id');
+                const hiddenInput = document.getElementById('meetingid' + meetingId);
+                const userid = {{ Auth::user()->id }}; // Get the user ID from the hidden input
+
+                // Add loading spinner
+                button.classList.add('button-loading');
+                button.innerHTML = '<div class="spinner"></div> Checking in...';
+                button.disabled = true; // Disable button to prevent multiple clicks
+
+                console.log("Button clicked".meetingId, hiddenInput.value);
+
+                // Get current location
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(
+                        function (position) {
+                            const latitude = position.coords.latitude;
+                            const longitude = position.coords.longitude;
+                            console.log("Meeting ID: " + hiddenInput.value);
+                            console.log("User ID: " + userid);
+                            console.log("Latitude: " + latitude + ", Longitude: " +
+                                longitude);
+
+                            // You can send this data to your server or process it further here
+                            // Example: Send data to the server using AJAX
+
+                            fetch('/api/checkin', {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                    'X-CSRF-TOKEN': '{{ csrf_token() }}' // Include CSRF token for Laravel
+                                },
+                                body: JSON.stringify({
+                                    meeting_id: hiddenInput.value,
+                                    user_id: userid,
+                                    type: 'meeting',
+                                    latitude: latitude,
+                                    longitude: longitude
+                                })
+                            }).then(response => {
+                                return response.json();
+                            }).then(data => {
+                                console.log('Success:', data);
+                                // Remove loading spinner
+                                button.classList.remove('button-loading');
+                                button.innerHTML = 'Checked in';
+                                button.disabled =
+                                true; // Disable button after check-in
+
+                            }).catch(error => {
+                                console.error('Error:', error);
+
+                                button.classList.remove('button-loading');
+                                button.innerHTML = 'Check in';
+                                button.disabled = false;
+                            });
+
+                        },
+                        function (error) {
+                            console.error("Error Code = " + error.code + " - " + error
+                                .message);
+                        }
+                    );
+                } else {
+                    console.error("Geolocation is not supported by this browser.");
+                }
+            });
+        });
+    });
+
+</script>
 
 @endsection
 @section('scripts')
 
 
+
+
+
 <script>
-    $(function() {
+    $(function () {
 
     });
 
@@ -528,6 +550,7 @@
             }
         })
     }
+
 </script>
 
 

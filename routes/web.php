@@ -22,18 +22,10 @@ Route::get('/member/registration', 'VisitorController@memberreg')->name('member.
 Route::post('/member/registration/post', 'VisitorController@memberregpost')->name('member.post');
 Route::post('/member/login/post', 'VisitorController@memberlogpost')->name('member.logpost');
 Route::get('/member/login', 'VisitorController@memberlog')->name('member.log');
-
-
-
-
 Route::get('/admin/registration', 'VisitorController@adminreg')->name('admin.registration');
-
 Route::post('/admin/registration/post', 'VisitorController@adminregpost')->name('admin.regpost');
-
 Route::post('/admin/login/post', 'VisitorController@adminlogpost')->name('admin.logpost');
 Route::get('/admin/login', 'VisitorController@adminlog')->name('admin.log');
-
-
 Route::middleware('auth.member')->group(function () {
     Route::get('/memberleaverequest', 'LeaveController@index')->name('leaverequest');
     Route::post('/memberleaverequest', 'LeaveController@store')->name('leaverequest');
@@ -167,7 +159,7 @@ Route::get('/setup/user', 'VisitorController@setupUser')->name('setupUser');
 Route::post('/setup/user', 'VisitorController@register')->name('visitor.register');
 Route::post('/setup/logo', 'VisitorController@uploadLogo')->name('app.logo');
 Route::post('/setup/name', 'VisitorController@saveAppName')->name('app.name');
-Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
+Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('/login', 'Auth\LoginController@login')->name('login');

@@ -78,8 +78,8 @@ class LeaveController extends Controller
 
 
         $leaverequest->user_id = Auth::user()->id;
-        $leaverequest->firstname = Auth::user()->firstname;
-        $leaverequest->lastname = Auth::user()->lastname;
+        // $leaverequest->firstname = Auth::user()->firstname;
+        // $leaverequest->lastname = Auth::user()->lastname;
 
         $leaverequest->from = $request->fromDate;
         $leaverequest->to = $request->toDate;
@@ -87,9 +87,7 @@ class LeaveController extends Controller
         $leaverequest->status = 0;
 
         try {
-            $leaverequest->save();
-
-            if ($leaverequest) {
+            if ($leaverequest->save()) {
                 return redirect('memberdash')->with('success', 'Leave successfuly created, await message from admin!');
             } else {
                 return redirect('memberdash')->back()->with('error', 'An error occured!');

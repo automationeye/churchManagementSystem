@@ -38,7 +38,7 @@ class EventController extends Controller
 
     public function showevents()
     {
-        $user = \Auth::user();
+        $user = \Auth::Guard('admin')->user();
         $pastors = Member::whereIn('position', ['senior pastor', 'pastor'])
             ->where('branch_id', $user->id)->get();
         $events = Event::where('events.branch_id', $user->id)
@@ -59,35 +59,36 @@ class EventController extends Controller
             'title' => 'required|string|min:0',
             'location' => 'required|string|min:0',
             'time' => 'required|string|min:0',
-            'by_who'  => 'required|string|min:0',
+            
             'date' => 'required|date ',
         ]);
 
         // Retrieve the 'assign' field as an array and convert it to a comma-separated string
         $assign_to = implode(",", $request->get('assign') ?? []);
 
+        $user = \Auth::Guard('admin')->user();
         // Create a new event instance with the form data
         $event = new Event([
             'title' => $request->get('title'),
             'location' => $request->get('location'),
             'time' => $request->get('time'),
-            'assign_to' => $assign_to,
-            'by_who' => \Auth::user()->id,
+            'assign_to' => null,
+            'by_who' => $user->id,
             'details' => $request->get('details'),
-            'branch_id' => \Auth::user()->id, // Assuming you want to assign the current user's ID to 'branch_id'
+            'branch_id' =>$user->id, // Assuming you want to assign the current user's ID to 'branch_id'
             'date' => $request->get('date'), // Laravel will automatically convert this to a valid date format
         ]);
 
         // Save the event to the database
         $event->save();
 
-        // Send email notifications to assigned users
-        foreach ($request->assign ?? [] as $to) {
-            \Mail::to($to)->send(new EventNotice($request)); // Assuming you have defined 'EventNotice' mail class
-        }
+        // // Send email notifications to assigned users
+        // foreach ($request->assign ?? [] as $to) {
+        //     \Mail::to($to)->send(new EventNotice($request)); // Assuming you have defined 'EventNotice' mail class
+        // }
 
         // Redirect back with success message
-        return redirect()->route('events')->with('status', 'Event successfully saved');
+        return redirect()->route('events.all')->with('status', 'Event successfully saved');
     }
 
     /**

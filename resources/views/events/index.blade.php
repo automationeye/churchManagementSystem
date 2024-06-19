@@ -55,8 +55,8 @@ Events
                                     <th>Event Title</th>
                                     <th>Event Details</th>
                                     <th>Location</th>
-                                    <th>Date</th>
-                                    <th>Time</th>
+                                    <th>Date Time</th>
+                                   
 
                                 </tr>
                             </thead>
@@ -66,12 +66,12 @@ Events
 
                                 @foreach($events as $event)
                                 <tr>
-                                    <td>{{ $loop->iteration }}</td>
+                                    
                                     <td>{{ $event->title }}</td>
                                     <td>{{ $event->details }}</td>
                                     <td>{{ $event->location }}</td>
-                                    <td>{{ $event->date }}</td>
-                                    <td>{{ $event->time }}</td>
+                                    <td>{{ $event->date }} {{ $event->time }}</td>
+                                    
                                 </tr>
                                 @endforeach
 
